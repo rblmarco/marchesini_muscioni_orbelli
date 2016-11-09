@@ -131,12 +131,954 @@ phantom{x}
 
 \end_layout
 
-\begin_layout Section
-ciao
+\begin_layout Title
+
+\size huge
+Requirements Analysis and Specifications Document
+\end_layout
+
+\begin_layout Author
+\noindent
+Guido Muscioni (mat.
+ 876151)
+\begin_inset Newline newline
+\end_inset
+
+Marco Orbelli (mat.
+ 876649)
+\begin_inset Newline newline
+\end_inset
+
+Paola Marchesini (mat.
+ 876541)
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantom{x}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-questa è la prima sezione
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Purpose
+\end_layout
+
+\begin_layout Standard
+The aim of the project is to develop a digital system for an electric car-sharin
+g company, called PowerEnjoy.
+\end_layout
+
+\begin_layout Subsection
+Document Conventions
+\end_layout
+
+\begin_layout Standard
+Qui verrà inserito il glossario: credentials, sapcial parking area, safe
+ area, unsafe area, state,time expire fine, terminate ride, final informations,
+ tipi di discount
+\end_layout
+
+\begin_layout Subsection
+Intended Audience And Reading Suggestions
+\end_layout
+
+\begin_layout Standard
+A chi verrà rivolto il documento
+\end_layout
+
+\begin_layout Subsection
+Product Scope
+\end_layout
+
+\begin_layout Standard
+The aim of the softwar is to deveolp a system which will satisfy these goals:
+\end_layout
+
+\begin_layout Paragraph
+Employee
+\end_layout
+
+\begin_layout Itemize
+[G1] Allows the employee to log in in the system, by app or website.
+\end_layout
+
+\begin_layout Itemize
+[G2] Allow the employee to put the car in unavailable mode.
+\end_layout
+
+\begin_layout Itemize
+[G3] Allow the employee to know what car he/she has to take care.
+\end_layout
+
+\begin_layout Paragraph
+User
+\end_layout
+
+\begin_layout Itemize
+[G1] 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Allows user to create an account.
+\end_layout
+
+\begin_layout Itemize
+[G2] 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Allows user to log in in the system, by application or website.
+\end_layout
+
+\begin_layout Itemize
+[G3] 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Allow user to modify his/her credentials.
+\end_layout
+
+\begin_layout Itemize
+[G4] 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Allows user to look for cars nearby.
+\end_layout
+
+\begin_layout Itemize
+[G5] 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Allows user to reserve a car.
+\end_layout
+
+\begin_layout Itemize
+[G6] 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Allow user to send a request for opening the car.
+\end_layout
+
+\begin_layout Itemize
+[G7] 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Allow user to enable the money saving option.
+\end_layout
+
+\begin_layout Itemize
+[G8]
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+ Allow user to finish his/her ride and visualize the information about it.
+\end_layout
+
+\begin_layout Itemize
+[G9] 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Allow user to view the special parking area in the map.
+\end_layout
+
+\begin_layout Itemize
+[G10] Allows user to pay for the ride.
+\end_layout
+
+\begin_layout Subsection
+References
+\end_layout
+
+\begin_layout Standard
+Documenti di riferimento
+\end_layout
+
+\begin_layout Section
+Overall Description
+\end_layout
+
+\begin_layout Subsection
+Product Perspective
+\end_layout
+
+\begin_layout Standard
+Diagrammi vari (non use case queli vanno nella terza sezione) e decrione
+ delle interfacce esterne
+\end_layout
+
+\begin_layout Subsection
+Product functions
+\end_layout
+
+\begin_layout Paragraph
+Functional requirements
+\end_layout
+
+\begin_layout Subparagraph
+Employee:
+\end_layout
+
+\begin_layout Itemize
+[G1] Allows the employee to log in in the system, by app or website:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The system must be able to check if the credentials provided are correct.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[G2] Allow the employee to put the car in unavailable mode.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The employee must be able to set the state of the car in unavailable mode,
+ in order to take car of the car.
+\end_layout
+
+\begin_layout Itemize
+The employee must be able to release the car, to make it available by all
+ users.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[G3] Allow the employee to know what car he/she has to take care.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+In the headquarters, the employee will receive a list of car which he/she
+ has to take care and the daily colleague.
+\end_layout
+
+\begin_layout Itemize
+That list is continuously being update according to the daily activity delivered
+ by the system.
+\end_layout
+
+\end_deeper
+\begin_layout Subparagraph
+User:
+\end_layout
+
+\begin_layout Itemize
+[G1] 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Allows user to create an account.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The user inserts his credentials into the specific section on the website
+ or the application.
+\end_layout
+
+\begin_layout Itemize
+The system must verify the existence of the email account and then sends
+ the password to the new user.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[G2] 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Allows user to log in in the system, by application or website.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The system must be able to check if the credentials provided are correct.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[G3] 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Allow user to modify his/her credentials.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The user must be able to modify the photo of his/her driving license.
+\end_layout
+
+\begin_layout Itemize
+The user must be able to modify his/her phone number.
+\end_layout
+
+\begin_layout Itemize
+The user must be able his/her mail address.
+ 
+\end_layout
+
+\begin_layout Itemize
+The user must be able to modify his/her payment information.
+\end_layout
+
+\begin_layout Itemize
+The user must be able to modify his/her password.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[G4] 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Allows user to look for cars nearby.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The system must be able to know the position of the user who want to reserve
+ a car.
+\end_layout
+
+\begin_layout Itemize
+The system must be able to send the positions of the cars parked nearby.
+\end_layout
+
+\begin_layout Itemize
+The user must be able to zoom in and zoom out the area which is visualized
+ by the application to look for free cars.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[G5] 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Allows user to reserve a car.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The user must be able to verify the state of the chosen car.
+\end_layout
+
+\begin_layout Itemize
+The user must be able to visualize the way to reach the car.
+\end_layout
+
+\begin_layout Itemize
+The user must be able to verify if the reservation time expires.
+\end_layout
+
+\begin_layout Itemize
+The system must send a message to the phone number of the user.
+ This message explaines how to open the car in case of troubles with the
+ GPS or with the internet connection.
+\end_layout
+
+\begin_layout Itemize
+The user must be able to delete the reservation if he does not need the
+ car anymore.
+\end_layout
+
+\begin_layout Itemize
+The system must be able to fine (with the 
+\begin_inset Quotes eld
+\end_inset
+
+Time expire fine
+\begin_inset Quotes erd
+\end_inset
+
+) the user if he/she does not reach the car in time.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[G6] 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Allow user to send a request for opening the car.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The user can open the car with a button in the application.
+\end_layout
+
+\begin_layout Itemize
+The user can open the car answeriing to the message received when he reserved
+ the car.
+\end_layout
+
+\begin_layout Itemize
+The system must verifies if the user is near the car.
+\end_layout
+
+\begin_layout Itemize
+If the conditions are verified, the system send to the car the opening command.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[G7] 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Allow user to enable the money saving option.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The user can activate this mode with a button on the screen.
+\end_layout
+
+\begin_layout Itemize
+The user can input the final destination.
+\end_layout
+
+\begin_layout Itemize
+The user can visualize the special parking area near his/her destination.
+\end_layout
+
+\begin_layout Itemize
+The user can select a special parking area.
+\end_layout
+
+\begin_layout Itemize
+The user can see the way for the selected location.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[G8]
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+ Allow user to finish his/her ride and visualize the information about it.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If the car has been parked in a safe area, the user can select the option
+ of "Terminate ride".
+\end_layout
+
+\begin_layout Itemize
+The user must be able to see the final information about the ride, but not
+ the possible discounts.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[G9] 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Allow user to view the special parking area in the map.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The user must be able to see the map of the special parking area during
+ the ride.
+\end_layout
+
+\begin_layout Itemize
+The user must be able to select a specific parking area, and see the way
+ to it.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[G10] Allows user to pay for the ride.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The system has to be able to send, to the payment system, the payment credential
+s that the user provides during the registration phase.
+\end_layout
+
+\begin_layout Itemize
+The user has to be able to receive the confirmation of the payment, with
+ the possible discounts.
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+Non-functional requirements
+\end_layout
+
+\begin_layout Standard
+vari requisiti non funzionali, mockup ecc...
+\end_layout
+
+\begin_layout Itemize
+When the user finishes his/her ride, he/she has 1 minute to plug the car.
+ 
+\end_layout
+
+\begin_layout Itemize
+The system closes the car 20 seconds after the user came out from the vehicle.
+ 
+\end_layout
+
+\begin_layout Subsection
+User characterics
+\end_layout
+
+\begin_layout Standard
+These are some usefull scenarios to understan in a better way the needs
+ of an user.
+\end_layout
+
+\begin_layout Paragraph
+Scenario 1
+\end_layout
+
+\begin_layout Standard
+scenario di quello che si deve registrare
+\end_layout
+
+\begin_layout Paragraph
+Scenario 2
+\end_layout
+
+\begin_layout Standard
+Yesterday Marco, that is a student at Politecnico di Milano, brought his
+ scooter to a workshop to do the annual revision.
+ Today he has a lecture at 9:30 am at his university, so he, who do not
+ have a subscription for public service, decides to use a car of PowerEnjoy
+ service, thus Marco enters the PowerEnjoy App, and looks for a car nearby.
+ When he decides what car to rent, he reserve the car, and he starts to
+ prepare himself because he knows that he has 1 hour before the reservation
+ expires.
+ Following the way that the application proposed, Marco arrives at the car
+ and tap the button, which is visualized in the application, to open the
+ car.
+ He starts his ride to Politecnico and, once he arrives, he parks the car
+ and stop it, to end the ride.
+\end_layout
+
+\begin_layout Paragraph
+Scanario 3
+\end_layout
+
+\begin_layout Standard
+Filippo usually go to work with the public transport, because he thinks
+ that he does not have to buy a car in a big city like Milan, in fact Milan
+ is full of other service that Filippo could use to move in the city.
+ However, today the public transport society of Milan call a general strike
+ and Filippo must go to work in another way.
+ During his little breakfast, he decides to open his Laptop and go to the
+ PowerEnjoy website.
+ He clicks on the login button and he types his credentials.
+ After that, he specifies his actual location and he look for a car nearby.
+ When he finds it, he reserves the car and he turns off his Laptop.
+ After ten minutes, Filippo is ready to go and he takes his smartphone to
+ see the way to the reserved car in the PowerEnjoy application.
+ Once arrived at the car he taps on the open button and wait the opening
+ of the car.
+ He starts his ride to work and, once he arrives, he parks the car and stop
+ it, to end the ride.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Scanerio 4
+\end_layout
+
+\begin_layout Standard
+Today Marco has to go to his grandfather, but his scooter is still in the
+ workshop, so he has to take for another time the PowerEnjoy service.
+ He opens the application, and look for a car nearby, when he finds it he
+ decides to reserve the car.
+ After that, he goes out from his home and he starts to walk in order to
+ reach the car.
+ Once arrived, Marco notice that his smartphone has a very slow internet
+ connection, and sometimes he remains only with a signal that can allow
+ him to make call or send SMS.
+ He tries to tap the open button in the application, and in that moment,
+ the application visualizes a message to make Marco know that he can open
+ the car answering the SMS that the service sent to him when the reservation
+ resolves successfully.
+ Marco open the message application in his smartphone, he finds the message
+ and he notice that he must answer with the identification code of the car,
+ that is in the left part of the car.
+ When he sends that message, the car opens and finally Marco goes to his
+ grandfather.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Scenario 5
+\end_layout
+
+\begin_layout Standard
+Filippo has to go to an important convention of the society where he works,
+ so he needs a car to reach that place which is about 5 km out of the centre
+ of Milan.
+ He decided to reserve a PowerEnjoy car, so he opens the application and
+ he does it.
+ When he arrives to the car, he taps the open button on the application,
+ but after few seconds the application answer that he cannot be located,
+ and show four white square when he can type the code located to the left
+ of the car, in order to show that he is near the car.
+ Once he does it, the car opens his door and Filippo start his ride to the
+ convention, that finishes when he parks and exits from the car.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Scenario 6
+\end_layout
+
+\begin_layout Standard
+Paola, who is just exit from a pub, because there is no public bus at night,
+ decides that is the right occasion to try the new electric car sharing
+ that is called PowerEnjoy.
+ She opens the specific application and, once she selects the car, based
+ on her preferences, she reaches it, following the path visualized on the
+ map of the app.
+ When she gets in it, she sees on the screen of the car that there is an
+ interesting option to save some money, named “Money saving option”.
+ She selects it and inserts her destination.
+ The system calculates automatically the recharges station nearby her destinatio
+n and the ride starts.
+ Once she is arrived at the recharge station selected before, she plugs
+ the car and she receives a notification on the app, visualizing the final
+ cost of her ride, including the discount.
+\end_layout
+
+\begin_layout Paragraph
+Scenario 7
+\end_layout
+
+\begin_layout Standard
+Caterina needs to go to the party of her university and she decides to reserve
+ a car, using the PowerEnjoy application.
+ Selected the nearest car, she reaches it and, once she gets in it, she
+ selects the “Money saving option”.
+ She already knows the way to go, so she does not insert her destination.
+ Once she is arrived at destination, she plugs the car and she receives
+ a notification on the app, visualizing the final cost of her ride, including
+ discount.
+\end_layout
+
+\begin_layout Paragraph
+Scenario 8
+\end_layout
+
+\begin_layout Standard
+Anthony lives in Milan and, when some of his American friends organized
+ a trip to visit him and the city, he decides to show them the old town
+ centre and some characteristic places.
+ Because Anthony knows that it is forbidden to go downtown with his car,
+ he decides to use the PowerEnjoy application.
+ Once selected the car, visualizing information about its state (battery,
+ autonomy, place where it is parked etc.…), he reaches the car with his three
+ friends.
+ Started up the car, the sensors on the seats notice that there are more
+ than two passengers, so the system is notified to give a discount of 10%
+ at the end of the ride.
+ Arrived to the destination, Anthony, tapping on the screen, terminates
+ his ride and the screen notifies that he is going to have a discount due
+ to the numbers of passengers.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Scenario 9
+\end_layout
+
+\begin_layout Standard
+Today Guido has an important meeting with a society that is interested in
+ the application of the new renewable energy.
+ To share the principles of that new technology company he decides to try
+ the service develop by the PowerEnjoy society, which allowed, with a simple
+ subscription to its website, to use an electric car.
+ After Guido registers in the system, he reserved a car near his home from
+ the website.
+ Reached the car, he starts his ride and, because the office of the society
+ is near his home, he arrives at destination in about 10 minutes.
+ The system detects that the car still has 80% of battery so, it applies
+ 20% discount to the cost of the ride because the user has left more than
+ 50% of the battery.
+ Once comes back home, Guido sees on the website how much he spent, and
+ he sees the discount of his ride as well.
+\end_layout
+
+\begin_layout Paragraph
+Scenario 10
+\end_layout
+
+\begin_layout Standard
+Paola decides to reserve a car to go to the train station to wait for one
+ of her friends coming to Milan to look for a job.
+ Because her friend Margherita has some baggage, she reserved an electric
+ car, using the PowerEnjoy application.
+ When she arrives at the station, she sees on the screen of the car that
+ the parking area of the station is one of the “special parking area”.
+ So, she immediately decides to park in this area, knowing that she can
+ obtain a discount if she plugs the car.
+ Plugged it, she goes to the right platform to wait for Margherita and she
+ receives a notify from the app about the final fare with the 30% discount.
+\end_layout
+
+\begin_layout Paragraph
+Scenario 11
+\end_layout
+
+\begin_layout Standard
+It is Sunday morning and Marco needs to go to San Siro Stadium to watch
+ the match between Milan against Inter.
+ He is late, so he decides to reserve an electric car to drive in the preferenti
+al lane, avoiding the traffic.
+ He opens the PowerEnjoy application and he reserves a car.
+ Marco knows that near the stadium there is a “special parking area”, but
+ when he arrives he notices that this area is closed due to security purposes.
+ So, he is forced to park the car 3 km away from the special area and, because
+ the initial level of battery was more than 70%, he pays the charges of
+ 30% more in the cost of the ride.
+\end_layout
+
+\begin_layout Paragraph
+Scenario 12
+\end_layout
+
+\begin_layout Standard
+It is Sunday and Jack with his family decides to go to the hippodrome.
+ They decide to use an electric car so Jack opens the PowerEnjoy applications
+ and reserve it.
+ He drives until the stadium, but, because of the traffic, the battery level
+ goes down 20%.
+ Marco has taken the car with a level battery better than 70% and he does
+ not recharge the car.
+ Therefore, when he finishes the ride, the system applies a fee, about 30%
+ of the cost of the ride, to compensate for the cost required to charge
+ the car on site.
+\end_layout
+
+\begin_layout Subsection
+Constraints
+\end_layout
+
+\begin_layout Standard
+Costrizioni dell' user da fare
+\end_layout
+
+\begin_layout Subsection
+Assumptions and dependencies
+\end_layout
+
+\begin_layout Standard
+We supposed that these properties hold in the analysed word:
+\end_layout
+
+\begin_layout Itemize
+All the cars are already accessible by the system.
+\end_layout
+
+\begin_layout Itemize
+All the cars have already a way for recharge their battery, in special parking
+ area and on site;
+\end_layout
+
+\begin_layout Itemize
+The safe areas are already defined;
+\end_layout
+
+\begin_layout Itemize
+The special parking areas are already defined;
+\end_layout
+
+\begin_layout Itemize
+All cars can park in all the parking available without pay any fine;
+\end_layout
+
+\begin_layout Itemize
+All cars contain a set of sensors that allow us to take all the information
+ about the state of the car that we need, as the state of the battery, the
+ number of passengers, and all other stuff that a normal auto contains;
+\end_layout
+
+\begin_layout Itemize
+All the users use the system in the respect of the law;
+\end_layout
+
+\begin_layout Itemize
+All the employees use the system in the respect of the law defined by the
+ company;
+\end_layout
+
+\begin_layout Itemize
+There is an external company that deals with accident;
+\end_layout
+
+\begin_layout Itemize
+There are other employees, of our company, that deals with car parked in
+ unsafe area;
+\end_layout
+
+\begin_layout Itemize
+All cars have a functional GPS connection that works without internet;
+\end_layout
+
+\begin_layout Itemize
+The fine must be applied only if the initial battery level was more than
+ 70%;
+\end_layout
+
+\begin_layout Itemize
+Before the ride starts, the system keeps in memory the initial state of
+ the car, to verify, at the end, the conditions for a discount;
+\end_layout
+
+\begin_layout Itemize
+The manufacturer of the car has already provided it with a touch screen;
+ 
+\end_layout
+
+\begin_layout Itemize
+The manufacturer of the car has already provided it with a data connection;
+\end_layout
+
+\begin_layout Itemize
+There is a call center, deals with the emergency situation, localized in
+ the headquarter;
+\end_layout
+
+\begin_layout Itemize
+The employees works in couple, because of safety law.
+\end_layout
+
+\begin_layout Section
+Specific requirements
+\end_layout
+
+\begin_layout Standard
+ci metterò tutti gli use case
+\end_layout
+
+\begin_layout Section
+Appendices
 \end_layout
 
 \end_body
