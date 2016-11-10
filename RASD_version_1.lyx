@@ -248,6 +248,17 @@ Login Credentials : are email and password that the user has to provide
 \end_layout
 
 \begin_layout Itemize
+Check message: is the message that the system sends to the user if he/she
+ fills out the form, during the registration phase, with information that
+ are not correct.
+\end_layout
+
+\begin_layout Itemize
+Reservation message: is the message that the system send to the user who
+ has just reserved a car.
+\end_layout
+
+\begin_layout Itemize
 State: is the state of the car which includes the level of battery, position
  and the number of passengers.
  If the vehicle is reserved or used the state will be associated with the
