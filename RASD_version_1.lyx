@@ -243,7 +243,7 @@ All Credentials: these are all information about the user that the system
 \end_layout
 
 \begin_layout Itemize
-Login Credentials : are email and password that the user has to provide
+Login Credentials : these are email and password that the user has to provide
  at the login phase.
 \end_layout
 
@@ -267,7 +267,7 @@ State: is the state of the car which includes the level of battery, position
 \end_layout
 
 \begin_layout Itemize
-Special Parking Areas : are special areas with plugs for the car.
+Special Parking Areas : these are special areas with plugs for the car.
  
 \end_layout
 
@@ -1173,6 +1173,11 @@ There is an external company that deals with accident;
 \begin_layout Itemize
 There are other employees, of our company, that deals with car parked in
  unsafe area;
+\end_layout
+
+\begin_layout Itemize
+If the user cannot open the car with the standar commands, at the headquarter,
+ the operators have a special command to open cars.
 \end_layout
 
 \begin_layout Itemize
