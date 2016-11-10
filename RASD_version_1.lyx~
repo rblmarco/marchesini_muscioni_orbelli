@@ -280,9 +280,17 @@ Unsafe fine: the fine that the user has to pay if he/she left the car in
 
 \begin_layout Itemize
 Time Expire: the period of time from the reservation that the user has to
- get to the cMoney saving option: If the user enables the money saving option,
- he/she can input his/her final destination and the system provides information
- about the station where to leave the car to get a discount.
+ get to the 
+\begin_inset Quotes eld
+\end_inset
+
+Money saving option
+\begin_inset Quotes erd
+\end_inset
+
+: If the user enables the money saving option, he/she can input his/her
+ final destination and the system provides information about the station
+ where to leave the car to get a discount.
  This station is determined to ensure a uniform distribution of cars in
  the city and depends both on the destination of the user and on the availabilit
 y of power plugs at the selected station.
@@ -317,30 +325,26 @@ Money saving option: if the user enables the money saving option, he/she
  This station is determined to ensure a uniform distribution of cars in
  the city and depends both on the destination of the user and on the availabilit
 y of power plugs at the selected station.
- 
 \end_layout
 
 \begin_layout Itemize
-Types of discount: 
+Types of discount:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 If the system detects the user took at least two other passengers onto the
  car, the system applies a discount of 10% on the last ride.
-  
 \end_layout
 
 \begin_layout Itemize
 If a car is left with no more than 50% of the battery empty, the system
  applies a discount of 20% on the last ride.
-  
 \end_layout
 
 \begin_layout Itemize
 If a car is left at special parking areas where they can be recharged the
  system applies a discount of 30% on the last ride.
- 
 \end_layout
 
 \end_deeper
