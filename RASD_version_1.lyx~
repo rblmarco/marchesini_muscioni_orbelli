@@ -131,44 +131,6 @@ phantom{x}
 
 \end_layout
 
-\begin_layout Title
-
-\size huge
-Requirements Analysis and Specifications Document
-\end_layout
-
-\begin_layout Author
-\noindent
-Guido Muscioni (mat.
- 876151)
-\begin_inset Newline newline
-\end_inset
-
-Marco Orbelli (mat.
- 876649)
-\begin_inset Newline newline
-\end_inset
-
-Paola Marchesini (mat.
- 876541)
-\end_layout
-
-\begin_layout Date
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-phantom{x}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
@@ -523,7 +485,7 @@ Login of the user
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float table
+\begin_inset Float figure
 placement H
 wide false
 sideways false
@@ -532,7 +494,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/diagram_section_svg/Login sequence diagram.svg
-	scale 50
+	scale 70
 
 \end_inset
 
@@ -540,7 +502,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Login of the user (sequence diagrams)
 \end_layout
 
 \end_inset
@@ -587,7 +549,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/diagram_section_svg/Reservation and reachinf of the car sequence diagram.svg
-	scale 50
+	scale 70
 
 \end_inset
 
@@ -595,7 +557,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Reservation and opening of the car (sequence diagrams)
 \end_layout
 
 \end_inset
