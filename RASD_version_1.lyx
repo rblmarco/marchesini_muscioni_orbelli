@@ -1573,7 +1573,7 @@ Name
 \begin_inset Text
 
 \begin_layout Plain Layout
-Login.
+Create an account.
 \end_layout
 
 \end_inset
@@ -1593,7 +1593,7 @@ Actors
 \begin_inset Text
 
 \begin_layout Plain Layout
-Employee
+Human.
 \end_layout
 
 \end_inset
@@ -1613,7 +1613,7 @@ Entry conditions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
+The human has an internet connection.
 \end_layout
 
 \end_inset
@@ -1633,16 +1633,16 @@ Flow of events
 \begin_inset Text
 
 \begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
+The human opens the website or the app and he/she selects the option “Sign
+ up”.
 \end_layout
 
 \begin_layout Enumerate
-The employee must insert his ID and his password;
+The human inserts all his/her credentials.
 \end_layout
 
 \begin_layout Enumerate
-\noindent
-The employee must click the log-in button.
+The system verifies the correctness of the credentials inserted.
 \end_layout
 
 \end_inset
@@ -1662,7 +1662,7 @@ Exit conditions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The website or the app redirects him to his personal page.
+The system sends the password to the mail address of the new user.
 \end_layout
 
 \end_inset
@@ -1681,11 +1681,24 @@ Exceptions
 <cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
+\begin_layout Itemize
+The system detects that the email address is wrong or does not exist so
+ it does not send the password.
+ The system redirects the human on the registration page, asking him to
+ write correctly his credentials;
+\end_layout
+
+\begin_layout Itemize
+The PowerEnjoy staff detect that the driving license inserted is not valid,
+ so the system sends an email to the new user, asking to take a better picture
+ of his/her license;
+\end_layout
+
+\begin_layout Itemize
+The system does not successfully withdraw the symbolic amount using the
+ payment information inserted.
+ The system redirects the human on the registration page, asking to insert
+ the payment information correctly.
 \end_layout
 
 \end_inset
@@ -2045,7 +2058,7 @@ Name
 \begin_inset Text
 
 \begin_layout Plain Layout
-Login.
+Look for car nearby.
 \end_layout
 
 \end_inset
@@ -2065,7 +2078,7 @@ Actors
 \begin_inset Text
 
 \begin_layout Plain Layout
-Employee
+User.
 \end_layout
 
 \end_inset
@@ -2085,7 +2098,7 @@ Entry conditions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
+The user must be logged in the application or in the website.
 \end_layout
 
 \end_inset
@@ -2105,16 +2118,17 @@ Flow of events
 \begin_inset Text
 
 \begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
+The user must select the specific option (tapping on the phone or clicking
+ with the mouse).
 \end_layout
 
 \begin_layout Enumerate
-The employee must insert his ID and his password;
+The user can insert his position manually if he/she does not have a GPS
+ connection.
 \end_layout
 
 \begin_layout Enumerate
-\noindent
-The employee must click the log-in button.
+The user clicks or taps the option to start the research.
 \end_layout
 
 \end_inset
@@ -2134,7 +2148,7 @@ Exit conditions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The website or the app redirects him to his personal page.
+The user visualizes correctly the cars nearby him/her position.
 \end_layout
 
 \end_inset
@@ -2153,11 +2167,21 @@ Exceptions
 <cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
+\begin_layout Itemize
+The system does not detect the position through the GPS, so it retries for
+ 30 seconds.
+ If the GPS connection is still unavailable, the system asks to the user
+ to insert manually his/her position.
+\end_layout
+
+\begin_layout Itemize
+The system detects that the positions inserted manually by the user does
+ not exist, so it asks to the user to write an existent location.
+\end_layout
+
+\begin_layout Itemize
+The system is not able to establish the position of the cars, so it shows
+ an error message asking to try again.
 \end_layout
 
 \end_inset
@@ -2448,7 +2472,7 @@ Name
 \begin_inset Text
 
 \begin_layout Plain Layout
-Login.
+Reserve a car.
 \end_layout
 
 \end_inset
@@ -2468,7 +2492,7 @@ Actors
 \begin_inset Text
 
 \begin_layout Plain Layout
-Employee
+User.
 \end_layout
 
 \end_inset
@@ -2488,7 +2512,7 @@ Entry conditions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
+The user has looked for a car nearby.
 \end_layout
 
 \end_inset
@@ -2508,16 +2532,20 @@ Flow of events
 \begin_inset Text
 
 \begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
+The user can visualize the state of the car;
 \end_layout
 
 \begin_layout Enumerate
-The employee must insert his ID and his password;
+The user selects one of the car near his/her position, tapping on the screen
+ or clicking on it;
 \end_layout
 
 \begin_layout Enumerate
-\noindent
-The employee must click the log-in button.
+The user could decide to visualize the way to reach the car selected;
+\end_layout
+
+\begin_layout Enumerate
+The user click or tap on the screen the reserve option to officialise it.
 \end_layout
 
 \end_inset
@@ -2536,8 +2564,16 @@ Exit conditions
 <cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Plain Layout
-The website or the app redirects him to his personal page.
+\begin_layout Itemize
+The system shows to the user the reservation time;
+\end_layout
+
+\begin_layout Itemize
+The system enables the option to delete the reservation;
+\end_layout
+
+\begin_layout Itemize
+The user receives the reservation message on his phone number.
 \end_layout
 
 \end_inset
@@ -2557,10 +2593,9 @@ Exceptions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
+Another person has reserved the car that the user selected.
+ The system shows a message to communicate the fact to the user, asking
+ him if he/she wants to select another car.
 \end_layout
 
 \end_inset
@@ -2859,7 +2894,7 @@ Name
 \begin_inset Text
 
 \begin_layout Plain Layout
-Login.
+Select the “Money saving option”.
 \end_layout
 
 \end_inset
@@ -2879,7 +2914,7 @@ Actors
 \begin_inset Text
 
 \begin_layout Plain Layout
-Employee
+User.
 \end_layout
 
 \end_inset
@@ -2898,8 +2933,12 @@ Entry conditions
 <cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
+\begin_layout Itemize
+The user must have reserve a car;
+\end_layout
+
+\begin_layout Itemize
+The user must get into the car.
 \end_layout
 
 \end_inset
@@ -2919,16 +2958,21 @@ Flow of events
 \begin_inset Text
 
 \begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
+The user visualizes the screen in the car;
 \end_layout
 
 \begin_layout Enumerate
-The employee must insert his ID and his password;
+The user selects the “Money saving option” tapping on the screen;
 \end_layout
 
 \begin_layout Enumerate
-\noindent
-The employee must click the log-in button.
+The user can input the final destination and he/she could visualize the
+ way to reach it;
+\end_layout
+
+\begin_layout Enumerate
+The user can select a special parking area near his/her destination and
+ he/she could visualize the way to reach it.
 \end_layout
 
 \end_inset
@@ -2948,7 +2992,8 @@ Exit conditions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The website or the app redirects him to his personal page.
+The user confirms his/her choices and the system notifies on the screen
+ that the “Money saving option” is enabled.
 \end_layout
 
 \end_inset
@@ -2968,10 +3013,11 @@ Exceptions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
+The screen of the car is temporally unavailable.
+ The user is forced to call the emergency number that he/she can find in
+ the car, asking to the call center to enable the “Money saving option”
+ for his/her ride, telling to the operator his choices about the option
+ chosen.
 \end_layout
 
 \end_inset
@@ -3262,7 +3308,7 @@ Name
 \begin_inset Text
 
 \begin_layout Plain Layout
-Login.
+Open the car.
 \end_layout
 
 \end_inset
@@ -3282,7 +3328,7 @@ Actors
 \begin_inset Text
 
 \begin_layout Plain Layout
-Employee
+User.
 \end_layout
 
 \end_inset
@@ -3301,8 +3347,12 @@ Entry conditions
 <cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
+\begin_layout Itemize
+The user must have reserved a car.
+\end_layout
+
+\begin_layout Itemize
+The user must reach the car, and he/she can see it.
 \end_layout
 
 \end_inset
@@ -3322,16 +3372,25 @@ Flow of events
 \begin_inset Text
 
 \begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
+The system detects, thanks to the GPS, the position of the user;
 \end_layout
 
 \begin_layout Enumerate
-The employee must insert his ID and his password;
+If the system establishes that the user is near the car, it enables the
+ button to open the car in the application;
 \end_layout
 
 \begin_layout Enumerate
-\noindent
-The employee must click the log-in button.
+If the user has reserved the car using the website, he/she could open the
+ reservation message sent to him/she by the system when he has done the
+ reservation;
+\end_layout
+
+\begin_layout Enumerate
+The user execute the command to open the car, but the car does not open.
+ The user call the emergency number written on the car.
+ The operator at the call center verifies the correctness of the reservation
+ and then he/she opens the car with a special command.
 \end_layout
 
 \end_inset
@@ -3351,7 +3410,7 @@ Exit conditions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The website or the app redirects him to his personal page.
+The system receives correctly the command to open the car and it opens it.
 \end_layout
 
 \end_inset
@@ -3370,11 +3429,27 @@ Exceptions
 <cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
+\begin_layout Itemize
+The user taps the button on the application, but there is no connection.
+ In this case, the user is forced to open the message that the system sent
+ to him/she when he reserved the car.
+ He/she answers to this message, writing the code of the car.
+ The system receives the message and it opens the car;
+\end_layout
+
+\begin_layout Itemize
+The user loses the signal of the GPS.
+ In this case, the user is forced to open the message that the system sent
+ to him/she when he/she reserved the car.
+ He/she answers to this message, writing the code of the car.
+ The system receives the message and it opens the car;
+\end_layout
+
+\begin_layout Itemize
+The user execute the command to open the car, but the car does not open.
+ The user call the emergency number written on the car.
+ The operator at the call center verifies the correctness of the reservation
+ and then he/she opens the car with a special command.
 \end_layout
 
 \end_inset
@@ -3681,7 +3756,7 @@ Name
 \begin_inset Text
 
 \begin_layout Plain Layout
-Login.
+Finish the ride.
 \end_layout
 
 \end_inset
@@ -3701,7 +3776,7 @@ Actors
 \begin_inset Text
 
 \begin_layout Plain Layout
-Employee
+Users.
 \end_layout
 
 \end_inset
@@ -3721,7 +3796,7 @@ Entry conditions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
+The user must has opened a car.
 \end_layout
 
 \end_inset
@@ -3741,16 +3816,21 @@ Flow of events
 \begin_inset Text
 
 \begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
+The user parks the car in a safe area;
 \end_layout
 
 \begin_layout Enumerate
-The employee must insert his ID and his password;
+The system enables the option “Finish the ride” on the screen;
 \end_layout
 
 \begin_layout Enumerate
-\noindent
-The employee must click the log-in button.
+The user selects this option tapping on the screen of the car;
+\end_layout
+
+\begin_layout Enumerate
+The system visualizes on the screen the final information of the ride, in
+ particular the final fare (without including eventually discount) and the
+ level of the battery.
 \end_layout
 
 \end_inset
@@ -3770,7 +3850,7 @@ Exit conditions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The website or the app redirects him to his personal page.
+The user receives the bill of the ride through email.
 \end_layout
 
 \end_inset
@@ -3789,11 +3869,18 @@ Exceptions
 <cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
+\begin_layout Itemize
+The user parks the car in an unsafe area.
+ In this case, the system puts the car unavailable and adds it to a list
+ of car of an employee, in order to move it in a safe area.
+ When the employee finishes his/her work the system gives to the user an
+ “unsafe fine”;
+\end_layout
+
+\begin_layout Itemize
+The screen of the car is temporally unavailable.
+ The user is forced to call the emergency number that he can find in the
+ car, asking to the call centre operator to finish his/her ride.
 \end_layout
 
 \end_inset
@@ -4085,7 +4172,7 @@ Name
 \begin_inset Text
 
 \begin_layout Plain Layout
-Login.
+View special parking area.
 \end_layout
 
 \end_inset
@@ -4105,7 +4192,7 @@ Actors
 \begin_inset Text
 
 \begin_layout Plain Layout
-Employee
+User.
 \end_layout
 
 \end_inset
@@ -4125,7 +4212,7 @@ Entry conditions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
+The user must be logged in the system.
 \end_layout
 
 \end_inset
@@ -4145,16 +4232,17 @@ Flow of events
 \begin_inset Text
 
 \begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
+The user must select the specific option on the screen (tapping on the phone
+ or clicking with the mouse);
 \end_layout
 
 \begin_layout Enumerate
-The employee must insert his ID and his password;
+The user can insert his position manually if he/she does not have a GPS
+ connection;
 \end_layout
 
 \begin_layout Enumerate
-\noindent
-The employee must click the log-in button.
+The user click or tap the option to start the research.
 \end_layout
 
 \end_inset
@@ -4174,7 +4262,9 @@ Exit conditions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The website or the app redirects him to his personal page.
+The user correctly visualizes the special parking area near his/her position.
+ The system visualizes only the special parking are which have some free
+ plugs.
 \end_layout
 
 \end_inset
@@ -4193,11 +4283,21 @@ Exceptions
 <cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
+\begin_layout Itemize
+The system does not detect the position through the GPS, so it retries for
+ 30 seconds.
+ If the GPS still undetectable, the system asks to the user to insert manually
+ his position;
+\end_layout
+
+\begin_layout Itemize
+The system detects that the position inserted manually by the user does
+ not exist, so it asks to the user to write an existent location;
+\end_layout
+
+\begin_layout Itemize
+The system is not able to establish the positions of the special parking
+ areas, so it shows an error message asking to try again.
 \end_layout
 
 \end_inset
@@ -4920,7 +5020,7 @@ Name
 \begin_inset Text
 
 \begin_layout Plain Layout
-Login.
+Change availability of the car
 \end_layout
 
 \end_inset
@@ -4959,8 +5059,16 @@ Entry conditions
 <cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
+\begin_layout Itemize
+The employee must be logged in the system;
+\end_layout
+
+\begin_layout Itemize
+The car is in the employee’s list of cars;
+\end_layout
+
+\begin_layout Itemize
+The employee reaches the car.
 \end_layout
 
 \end_inset
@@ -4980,16 +5088,11 @@ Flow of events
 \begin_inset Text
 
 \begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
+The employee puts it in unavailable mode;
 \end_layout
 
 \begin_layout Enumerate
-The employee must insert his ID and his password;
-\end_layout
-
-\begin_layout Enumerate
-\noindent
-The employee must click the log-in button.
+The employee takes care of the car.
 \end_layout
 
 \end_inset
@@ -5009,7 +5112,7 @@ Exit conditions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The website or the app redirects him to his personal page.
+The car is ready and the employee changes its state in available.
 \end_layout
 
 \end_inset
@@ -5029,10 +5132,10 @@ Exceptions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
+The employee cannot put the car available because of serious damages of
+ the car.
+ He calls the headquarters in orders to communicate that he needs to bring
+ the car at the workshop
 \end_layout
 
 \end_inset
@@ -5315,7 +5418,7 @@ Name
 \begin_inset Text
 
 \begin_layout Plain Layout
-Login.
+Know cars that they have to take care.
 \end_layout
 
 \end_inset
@@ -5354,8 +5457,12 @@ Entry conditions
 <cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
+\begin_layout Itemize
+The employee is at work;
+\end_layout
+
+\begin_layout Itemize
+The employee is logged in the system.
 \end_layout
 
 \end_inset
@@ -5375,16 +5482,13 @@ Flow of events
 \begin_inset Text
 
 \begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
+In the headquarter, the system assigns to the employee a list of car that
+ he must take care during the day;
 \end_layout
 
 \begin_layout Enumerate
-The employee must insert his ID and his password;
-\end_layout
-
-\begin_layout Enumerate
-\noindent
-The employee must click the log-in button.
+This list is created in the personal page of the employee.
+ 
 \end_layout
 
 \end_inset
@@ -5404,7 +5508,7 @@ Exit conditions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The website or the app redirects him to his personal page.
+The employee receives correctly the list of car that he must take care.
 \end_layout
 
 \end_inset
@@ -5424,10 +5528,8 @@ Exceptions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
+The employee does not visualize the list in his/her personal page, so he/she
+ is forced to ask it to the general secretary of the headquarter.
 \end_layout
 
 \end_inset
