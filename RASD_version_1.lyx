@@ -562,7 +562,19 @@ Reservation and opening of the car
 \end_layout
 
 \begin_layout Standard
-SCRIVERE IPOTESI
+This sequence diagram represent the scenario with these hypothesis:
+\end_layout
+
+\begin_layout Itemize
+The user reserves a car using the PowerEnjoy application.
+\end_layout
+
+\begin_layout Itemize
+The user wants to visualize the way to reach the car.
+\end_layout
+
+\begin_layout Itemize
+The user open the car tapping on the application.
 \end_layout
 
 \begin_layout Standard
@@ -610,6 +622,7 @@ Change availability of the car
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -716,7 +729,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/diagram_section_svg/Phase of the car state chart diagram.png
+	filename images/diagram_section_svg/Phase of the car state chart diagram.svg
 	scale 50
 
 \end_inset

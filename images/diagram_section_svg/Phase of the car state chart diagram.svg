@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generato da Microsoft Visio, esportazione SVG Phase of the car state chart diagram.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="6.56886in" height="4.84526in"
+		viewBox="0 0 472.958 348.859" xml:space="preserve" color-interpolation-filters="sRGB" class="st11">
+	<v:documentProperties v:langID="1040" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(1):26"/>
+			<v:ud v:nameU="msvSubprocessMaster" v:prompt="" v:val="VT4(Multiple process)"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:url(#grad0-5);stroke:#4f88bb;stroke-width:0.75}
+		.st2 {fill:#4f88bb;font-family:Calibri;font-size:0.666664em}
+		.st3 {font-size:1em}
+		.st4 {marker-end:url(#mrkr4-29);stroke:#5b9bd5;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st5 {fill:#5b9bd5;fill-opacity:1;stroke:#5b9bd5;stroke-opacity:1;stroke-width:0.28409090909091}
+		.st6 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
+		.st7 {fill:#feffff;stroke:#4a80b0;stroke-linecap:butt;stroke-width:1.25}
+		.st8 {fill:#386289;font-family:Calibri;font-size:0.666664em}
+		.st9 {stroke:#4a80b0;stroke-linecap:butt;stroke-width:1.25}
+		.st10 {marker-end:url(#mrkr4-77);stroke:#5b9bd5;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st11 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Patterns_And_Gradients">
+		<linearGradient id="grad0-5" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(60 0.5 0.5)">
+			<stop offset="0" stop-color="#e9eff7" stop-opacity="1"/>
+			<stop offset="0.24" stop-color="#f4f7fb" stop-opacity="1"/>
+			<stop offset="0.54" stop-color="#feffff" stop-opacity="1"/>
+		</linearGradient>
+	</defs>
+	<defs id="Markers">
+		<g id="lend4">
+			<path d="M 2 1 L 0 0 L 2 -1 L 2 1 " style="stroke:none"/>
+		</g>
+		<marker id="mrkr4-29" class="st5" v:arrowType="4" v:arrowSize="2" v:setback="6.68" refX="-6.68" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-3.52,-3.52) "/>
+		</marker>
+		<marker id="mrkr4-77" class="st5" v:arrowType="4" v:arrowSize="2" v:setback="7.04" refX="-7.04" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-3.52,-3.52) "/>
+		</marker>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<v:userDefs>
+			<v:ud v:nameU="msvThemeOrder" v:val="VT0(0):26"/>
+		</v:userDefs>
+		<title>Pagina 1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="Diagramma di flusso" v:index="0"/>
+		<v:layer v:name="Connettore" v:index="1"/>
+		<v:layer v:name="Flusso - Apparecchiatura" v:index="2"/>
+		<g id="group1000-1" transform="translate(49.8971,-18.75)" v:mID="1000" v:groupContext="group">
+			<title>Foglio.1000</title>
+			<g id="shape1-2" v:mID="1" v:groupContext="shape" v:layerMember="0" transform="translate(34.2275,-218.268)">
+				<title>Processo dati</title>
+				<desc>Charge</desc>
+				<v:custProps>
+					<v:cp v:nameU="Cost" v:lbl="Costo" v:type="7" v:format="@" v:langID="1040"/>
+					<v:cp v:nameU="Duration" v:lbl="Durata" v:type="2" v:langID="1040"/>
+					<v:cp v:nameU="Resources" v:lbl="Risorse" v:langID="1040"/>
+				</v:custProps>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(1,1,1,1)" v:tabSpace="42.5197"/>
+				<v:textRect cx="28.3465" cy="320.512" width="56.7" height="56.6929"/>
+				<path d="M0 320.51 A28.3465 28.3465 0 0 1 56.69 320.51 A28.3465 28.3465 0 1 1 0 320.51 Z" class="st1"/>
+				<text x="16.93" y="322.91" class="st2" v:langID="1040"><v:paragraph v:horizAlign="1"/><v:tabList/>Charge</text>			</g>
+			<g id="shape2-7" v:mID="2" v:groupContext="shape" v:layerMember="0" transform="translate(289.346,-218.268)">
+				<title>Processo dati.2</title>
+				<desc>Reserved</desc>
+				<v:custProps>
+					<v:cp v:nameU="Cost" v:lbl="Costo" v:type="7" v:format="@" v:langID="1040"/>
+					<v:cp v:nameU="Duration" v:lbl="Durata" v:type="2" v:langID="1040"/>
+					<v:cp v:nameU="Resources" v:lbl="Risorse" v:langID="1040"/>
+				</v:custProps>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(1,1,1,1)" v:tabSpace="42.5197"/>
+				<v:textRect cx="28.3465" cy="320.512" width="56.7" height="56.6929"/>
+				<path d="M0 320.51 A28.3465 28.3465 0 0 1 56.69 320.51 A28.3465 28.3465 0 1 1 0 320.51 Z" class="st1"/>
+				<text x="13.34" y="322.91" class="st2" v:langID="1040"><v:paragraph v:horizAlign="1"/><v:tabList/>Reserved</text>			</g>
+			<g id="shape3-11" v:mID="3" v:groupContext="shape" v:layerMember="0" transform="translate(24.3062,-90.7087)">
+				<title>Processo dati.3</title>
+				<desc>Used</desc>
+				<v:custProps>
+					<v:cp v:nameU="Cost" v:lbl="Costo" v:type="7" v:format="@" v:langID="1040"/>
+					<v:cp v:nameU="Duration" v:lbl="Durata" v:type="2" v:langID="1040"/>
+					<v:cp v:nameU="Resources" v:lbl="Risorse" v:langID="1040"/>
+				</v:custProps>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(1,1,1,1)" v:tabSpace="42.5197"/>
+				<v:textRect cx="28.3465" cy="320.512" width="56.7" height="56.6929"/>
+				<path d="M0 320.51 A28.3465 28.3465 0 0 1 56.69 320.51 A28.3465 28.3465 0 1 1 0 320.51 Z" class="st1"/>
+				<text x="20.12" y="322.91" class="st2" v:langID="1040"><v:paragraph v:horizAlign="1"/><v:tabList/>Used</text>			</g>
+			<g id="shape4-15" v:mID="4" v:groupContext="shape" v:layerMember="0" transform="translate(289.346,-90.7087)">
+				<title>Processo dati.4</title>
+				<desc>Free</desc>
+				<v:custProps>
+					<v:cp v:nameU="Cost" v:lbl="Costo" v:type="7" v:format="@" v:langID="1040"/>
+					<v:cp v:nameU="Duration" v:lbl="Durata" v:type="2" v:langID="1040"/>
+					<v:cp v:nameU="Resources" v:lbl="Risorse" v:langID="1040"/>
+				</v:custProps>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(1,1,1,1)" v:tabSpace="42.5197"/>
+				<v:textRect cx="28.3465" cy="320.512" width="56.7" height="56.6929"/>
+				<path d="M0 320.51 A28.3465 28.3465 0 0 1 56.69 320.51 A28.3465 28.3465 0 1 1 0 320.51 Z" class="st1"/>
+				<text x="21.13" y="322.91" class="st2" v:langID="1040"><v:paragraph v:horizAlign="1"/><v:tabList/>Free</text>			</g>
+			<g id="shape5-19" v:mID="5" v:groupContext="shape" v:layerMember="0" transform="translate(149.031,5.68434E-14)">
+				<title>Processo dati.5</title>
+				<desc>Park unsafe or charge</desc>
+				<v:custProps>
+					<v:cp v:nameU="Cost" v:lbl="Costo" v:type="7" v:format="@" v:langID="1040"/>
+					<v:cp v:nameU="Duration" v:lbl="Durata" v:type="2" v:langID="1040"/>
+					<v:cp v:nameU="Resources" v:lbl="Risorse" v:langID="1040"/>
+				</v:custProps>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(1,1,1,1)" v:tabSpace="42.5197"/>
+				<v:textRect cx="28.3465" cy="320.512" width="56.7" height="56.6929"/>
+				<path d="M0 320.51 A28.3465 28.3465 0 0 1 56.69 320.51 A28.3465 28.3465 0 1 1 0 320.51 Z" class="st1"/>
+				<text x="4.94" y="318.11" class="st2" v:langID="1040"><v:paragraph v:horizAlign="1"/><v:tabList/>Park unsafe or <tspan
+							x="17.37" dy="1.2em" class="st3">charge</tspan></text>			</g>
+			<g id="shape9-24" v:mID="9" v:groupContext="shape" v:layerMember="1"
+					transform="translate(-2.82038,229.804) rotate(-90)">
+				<title>Connettore linea-curva</title>
+				<desc>reservationDone</desc>
+				<v:userDefs>
+					<v:ud v:nameU="ScaleFactor" v:val="VT0(1):26"/>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="63.7795" cy="375.788" width="64.19" height="17.6036" transform="rotate(90)"/>
+				<path d="M0 348.86 L17.44 361.57 L34.88 370.26 L52.32 374.92 L69.76 375.55 L87.2 372.16 L104.64 364.73 L122.08 353.28
+							 L122.36 353.06" class="st4"/>
+				<rect v:rectContext="textBkgnd" x="348.601" y="-68.5793" width="54.3746" height="9.59985" transform="rotate(90)"
+						class="st6"/>
+				<text x="348.6" y="-61.38" transform="rotate(90)" class="st2" v:langID="1040"><v:paragraph v:horizAlign="1"/><v:tabList/>reservationDone</text>			</g>
+			<g id="shape10-32" v:mID="10" v:groupContext="shape" v:layerMember="1"
+					transform="translate(154.485,-219.493) rotate(-22.7416) scale(-1,1)">
+				<title>Connettore linea-curva.10</title>
+				<desc>carOpened</desc>
+				<v:userDefs>
+					<v:ud v:nameU="ScaleFactor" v:val="VT0(1):26"/>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="125.353" cy="327.729" width="45.69" height="17.6036" transform="rotate(22.7416)"/>
+				<path d="M0 348.86 L34.32 338.73 L69.1 331.87 L104.34 328.3 L140.04 328 L176.21 330.99 L212.83 337.25 L249.92 346.79
+							 L250.26 346.9" class="st4"/>
+				<rect v:rectContext="textBkgnd" x="-29.02" y="345.909" width="35.8706" height="9.59985"
+						transform="rotate(-22.7416)" class="st6"/>
+				<text x="-6.85" y="353.11" transform="rotate(-22.7416) scale(-1,1)" class="st2" v:langID="1040"><v:paragraph
+							v:horizAlign="1"/><v:tabList/>carOpened</text>			</g>
+			<g id="shape11-39" v:mID="11" v:groupContext="shape" v:layerMember="1"
+					transform="translate(372.115,256.856) rotate(-85.5526) scale(1,-1)">
+				<title>Connettore linea-curva.11</title>
+				<desc>rideFinished &#38;&#38; putInCharge</desc>
+				<v:userDefs>
+					<v:ud v:nameU="ScaleFactor" v:val="VT0(1):26"/>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="68.7844" cy="378.376" width="64.22" height="27.2035" transform="rotate(85.5526)"/>
+				<path d="M0 348.86 L17.3 361.27 L34.05 370.32 L50.26 376 L65.91 378.32 L81.02 377.26 L95.57 372.85 L109.58 365.06
+							 L123.04 353.91 L123.29 353.65" class="st4"/>
+				<rect v:rectContext="textBkgnd" x="-398.201" y="88.3179" width="52.5968" height="19.1997"
+						transform="rotate(-85.5526)" class="st6"/>
+				<text x="-398.2" y="-100.32" transform="rotate(-85.5526) scale(1,-1)" class="st2" v:langID="1040"><v:paragraph
+							v:horizAlign="1"/><v:tabList/>rideFinished &#38;&#38; <v:newlineChar/><tspan x="-391.97" dy="1.2em"
+							class="st3">putInCharge</tspan></text>			</g>
+			<g id="shape13-47" v:mID="13" v:groupContext="shape" v:layerMember="1"
+					transform="translate(242.171,-34.7413) rotate(32.9052)">
+				<title>Connettore linea-curva.13</title>
+				<desc>Ride finished With critical battery level</desc>
+				<v:userDefs>
+					<v:ud v:nameU="ScaleFactor" v:val="VT0(1):26"/>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="42.6853" cy="366.742" width="51.82" height="36.8035" transform="rotate(-32.9052)"/>
+				<path d="M0 348.86 L8.8 357.34 L19.82 363.12 L33.06 366.19 L48.53 366.57 L66.22 364.24 L86.13 359.21 L108.26 351.48
+							 L108.6 351.35" class="st4"/>
+				<rect v:rectContext="textBkgnd" x="-184.397" y="316.695" width="42.0032" height="28.7996"
+						transform="rotate(-32.9052)" class="st6"/>
+				<text x="-184.4" y="323.89" transform="rotate(-32.9052)" class="st2" v:langID="1040"><v:paragraph v:horizAlign="1"/><v:tabList/>Ride finished<v:newlineChar/><tspan
+							x="-183" dy="1.2em" class="st3">With critical <v:newlineChar/></tspan><tspan x="-183.82" dy="1.2em"
+							class="st3">battery level</tspan></text>			</g>
+			<g id="group19-56" transform="translate(299.267,-206.929)" v:mID="19" v:groupContext="group" v:layerMember="2">
+				<v:custProps>
+					<v:cp v:nameU="Enum_AD" v:lbl="Controllo" v:type="1" v:format="Non specificato;Controllore;Sensore"
+							v:langID="1040" v:val="VT4(Controllore)"/>
+					<v:cp v:nameU="Enum_Time" v:lbl="Tipo" v:type="1" v:format="Non specificato;Timer manuale;Orologio;Altro"
+							v:langID="1040" v:val="VT4(Timer manuale)"/>
+					<v:cp v:nameU="Enum_Limit" v:lbl="Limite interruttore" v:type="1"
+							v:format="Nessuno;Inferiore;Superiore;Entrambi" v:langID="1040" v:val="VT4(Nessuno)"/>
+					<v:cp v:nameU="Enum_Reset" v:lbl="Ripristino interruttore" v:type="1" v:format="Nessuno;Manuale"
+							v:langID="1040" v:val="VT4(Nessuno)"/>
+					<v:cp v:nameU="BomTag" v:lbl="Contrassegno D.B.M." v:type="0" v:langID="1040" v:val="VT4()"/>
+					<v:cp v:nameU="PartNo" v:lbl="Numero parte" v:type="0" v:langID="1040" v:val="VT4()"/>
+					<v:cp v:nameU="ShapeClass" v:lbl="Classe forma" v:invis="true" v:langID="1040" v:val="VT4(Componente edificio)"/>
+					<v:cp v:nameU="ShapeType" v:lbl="Tipo forma" v:invis="true" v:langID="1040"
+							v:val="VT4(Flusso - Apparecchiatura)"/>
+					<v:cp v:nameU="SubShapeType" v:lbl="Tipo forma secondaria" v:invis="true" v:langID="1040"
+							v:val="VT4(Controlli HVAC)"/>
+					<v:cp v:nameU="BomTag" v:lbl="" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+							v:langID="0" v:cal="0" v:val="VT4(ExpireTime)"/>
+				</v:custProps>
+				<v:userDefs>
+					<v:ud v:nameU="Enum_AD" v:val="VT0(1):26"/>
+					<v:ud v:nameU="Enum_Time" v:val="VT0(1):26"/>
+					<v:ud v:nameU="Enum_Limit" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Enum_Reset" v:val="VT0(0):26"/>
+					<v:ud v:nameU="BomTag" v:val="VT4()"/>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+					<v:ud v:nameU="solsh" v:val="VT4({5D50005D-537C-4738-9C46-130C74335A6D})"/>
+					<v:ud v:nameU="ShapeClass" v:prompt="Componente edificio" v:val="VT0(3):26"/>
+					<v:ud v:nameU="ShapeType" v:prompt="Flusso - Apparecchiatura" v:val="VT0(17):26"/>
+					<v:ud v:nameU="SubShapeType" v:prompt="Controlli HVAC" v:val="VT0(48):26"/>
+					<v:ud v:nameU="BomTag" v:prompt="" v:val="VT4(ExpireTime)"/>
+				</v:userDefs>
+				<title>Timer</title>
+				<g id="shape20-57" v:mID="20" v:groupContext="shape" v:layerMember="2" transform="translate(-8.50394,21.2598)">
+					<title>Foglio.20</title>
+				</g>
+				<g id="shape21-59" v:mID="21" v:groupContext="shape" v:layerMember="2" transform="translate(0,21.2598)">
+					<title>Foglio.21</title>
+					<v:userDefs>
+						<v:ud v:nameU="TextW" v:val="VT0(0.025169782494141):29"/>
+						<v:ud v:nameU="TextW" v:prompt="" v:val="VT0(0.52912180886133):29"/>
+					</v:userDefs>
+					<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+					<v:textRect cx="-4.25197" cy="353.111" width="38.1" height="11.2036"/>
+					<path d="M0 334.69 L0 348.86 L14.17 348.86 L14.17 334.69 L0 334.69 Z" class="st7"/>
+					<text x="-22.39" y="355.91" class="st8" v:langID="1040"><v:paragraph v:spLine="-1.4" v:horizAlign="1"/><v:tabList/>ExpireTime</text>				</g>
+				<g id="shape22-62" v:mID="22" v:groupContext="shape" v:layerMember="2" transform="translate(2.12598,19.1339)">
+					<title>Foglio.22</title>
+					<path d="M4.96 339.65 L4.96 343.9 L9.21 343.9 A4.25225 4.25225 0 0 1 0.71 343.9 A4.25225 4.25225 0 0 1 9.21 343.9"
+							class="st9"/>
+				</g>
+			</g>
+			<g id="shape24-65" v:mID="24" v:groupContext="shape" v:layerMember="1"
+					transform="translate(375.472,625.288) rotate(-29.1161) scale(1,-1)">
+				<title>Connettore linea-curva.24</title>
+				<desc>employeeWorkDone</desc>
+				<v:userDefs>
+					<v:ud v:nameU="ScaleFactor" v:val="VT0(1):26"/>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="80.1024" cy="334.686" width="77.11" height="17.6036" transform="rotate(29.1161)"/>
+				<path d="M0 348.86 L24.13 342.39 L46.05 337.88 L65.76 335.33 L83.27 334.72 L98.57 336.07 L111.66 339.37 L122.54 344.63
+							 L122.82 344.84" class="st4"/>
+				<rect v:rectContext="textBkgnd" x="-126.52" y="326.569" width="67.2962" height="9.59985"
+						transform="rotate(-29.1161)" class="st6"/>
+				<text x="-126.52" y="-328.97" transform="rotate(-29.1161) scale(1,-1)" class="st2" v:langID="1040"><v:paragraph
+							v:horizAlign="1"/><v:tabList/>employeeWorkDone</text>			</g>
+			<g id="shape28-72" v:mID="28" v:groupContext="shape" v:layerMember="1" transform="translate(310.605,-218.268)">
+				<title>Connettore dinamico.28</title>
+				<path d="M7.09 348.86 L7.09 412.69" class="st10"/>
+			</g>
+			<g id="shape31-78" v:mID="31" v:groupContext="shape" v:layerMember="1"
+					transform="translate(317.692,422.757) rotate(180)">
+				<title>Connettore linea-curva.31</title>
+				<desc>reservationDone</desc>
+				<v:userDefs>
+					<v:ud v:nameU="ScaleFactor" v:val="VT0(1):26"/>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="130.394" cy="377.205" width="64.19" height="17.6036" transform="rotate(180)"/>
+				<path d="M0 348.86 L32.26 360.98 L64.19 369.74 L95.78 375.14 L127.04 377.19 L157.96 375.87 L188.54 371.19 L218.79
+							 363.16 L248.7 351.76 L249.03 351.61" class="st4"/>
+				<rect v:rectContext="textBkgnd" x="-157.581" y="-382.005" width="54.3746" height="9.59985" transform="rotate(180)"
+						class="st6"/>
+				<text x="-157.58" y="-374.81" transform="rotate(180)" class="st2" v:langID="1040"><v:paragraph v:horizAlign="1"/><v:tabList/>reservationDone</text>			</g>
+			<g id="shape34-85" v:mID="34" v:groupContext="shape" v:layerMember="1" transform="translate(80.9991,-119.055)">
+				<title>Connettore linea-curva.34</title>
+				<desc>The user finish his/her ride</desc>
+				<v:userDefs>
+					<v:ud v:nameU="ScaleFactor" v:val="VT0(1):26"/>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="100.63" cy="348.859" width="57.27" height="27.2035"/>
+				<path d="M0 348.86 L47.83 348.86 L97.33 348.86 L148.49 348.86 L201.31 348.86 L201.67 348.86" class="st4"/>
+				<rect v:rectContext="textBkgnd" x="76.9056" y="339.259" width="47.4489" height="19.1997" class="st6"/>
+				<text x="76.91" y="346.46" class="st2" v:langID="1040"><v:paragraph v:horizAlign="1"/><v:tabList/>The user finish<v:newlineChar/><tspan
+							x="80.8" dy="1.2em" class="st3"> </tspan>his/her ride</text>			</g>
+		</g>
+	</g>
+</svg>
