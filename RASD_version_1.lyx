@@ -171,7 +171,37 @@ Purpose
 
 \begin_layout Standard
 The aim of the project is to develop a digital system for an electric car-sharin
-g company, called PowerEnjoy.
+g company, that is called PowerEnjoy.
+ There are not previous system so that document will describe the requirements
+ that deal with all the system that the customer wants.
+\end_layout
+
+\begin_layout Standard
+The users of PowerEnjoy system are:
+\end_layout
+
+\begin_layout Itemize
+Client;
+\end_layout
+
+\begin_layout Itemize
+Employee.
+\end_layout
+
+\begin_layout Standard
+Both of these users are going to have unique credentials in order to use
+ the system, so they must be registered.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+The clients will use this system to reserve and use cars of PowerEnjoy company.
+\end_layout
+
+\begin_layout Standard
+\noindent
+The employees will use that system in order to know what cars need help.
 \end_layout
 
 \begin_layout Subsection
