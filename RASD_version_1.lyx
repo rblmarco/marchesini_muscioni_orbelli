@@ -1409,6 +1409,23 @@ It is Sunday and Jack with his family decides to go to the hippodrome.
  the car on site.
 \end_layout
 
+\begin_layout Paragraph
+Scenario 13
+\end_layout
+
+\begin_layout Standard
+Paola goes to work and once she has arrived she logs in the web site using
+ the company’s computer.
+ The system creates a list of electric cars for Paola and her collegue,
+ to make their work more efficient as possible.
+ In actuak fact the list is composed by a set of nearby vehicles.
+ Paola can see, for the rest of the day, both via web site and web application
+ the list of vehicles that she and her collegue have to take care.
+ At this point Paola and her partner take one company’s machine, and start
+ their work, reaching the first car in the list.
+ 
+\end_layout
+
 \begin_layout Subsection
 Constraints
 \end_layout
