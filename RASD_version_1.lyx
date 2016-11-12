@@ -516,334 +516,27 @@ Overall Description
 Product Perspective
 \end_layout
 
-\begin_layout Subsubsection
-Sequence diagrams
-\end_layout
-
-\begin_layout Paragraph
-Login of the user
-\end_layout
-
 \begin_layout Standard
-\begin_inset space \hfill{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/diagram_section_svg/Login sequence diagram.pdf
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sequence Diagrams - Login of the user.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Paragraph
-Reservation and opening of the car
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \hfill{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-This sequence diagram represent the scenario with these hypothesis:
-\end_layout
-
-\begin_layout Itemize
-The user reserves a car using the PowerEnjoy application.
-\end_layout
-
-\begin_layout Itemize
-The user wants to visualize the way to reach the car.
-\end_layout
-
-\begin_layout Itemize
-The user open the car tapping on the application.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/diagram_section_svg/Reservation and reachinf of the car sequence diagram.pdf
-	scale 70
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sequence Diagrams - Reservation and opening of the car (sequence diagrams).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+The software is a stand-alone system that does not extend or takes part
+ in any nowdays software.
+ The access to the sofware can be performed by the Website and the mobile
+ application.
 \end_layout
 
 \begin_layout Subsubsection
-Activity diagrams
-\end_layout
-
-\begin_layout Paragraph
-Change availability of the car
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \hfill{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/diagram_section_svg/Change avaibility of the car bpmn activity.pdf
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Activity Diagrams - Change availability of the car.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Paragraph
-Selection of 
-\begin_inset Quotes eld
-\end_inset
-
-Money saving option
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \hfill{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/diagram_section_svg/Money saving option activity diagram.pdf
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Activity Diagrams - Selection of 
-\begin_inset Quotes eld
-\end_inset
-
-Money saving option
-\begin_inset Quotes erd
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+User interface
 \end_layout
 
 \begin_layout Subsubsection
-State chart diagrams
+Website
 \end_layout
 
-\begin_layout Paragraph
-Phase of the car
+\begin_layout Subsubsection
+Mobile application
 \end_layout
 
-\begin_layout Standard
-\begin_inset space \hfill{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/diagram_section_svg/Phase of the car state chart diagram.pdf
-	scale 65
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-State Chart - Phase of the car.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+\begin_layout Subsubsection
+Screen of the car
 \end_layout
 
 \begin_layout Subsection
@@ -1192,7 +885,7 @@ Non-functional requirements
 \end_layout
 
 \begin_layout Standard
-
+vari requisiti non funzionali, mockup ecc...
 \end_layout
 
 \begin_layout Itemize
@@ -1676,6 +1369,10 @@ Specific requirements
 \end_layout
 
 \begin_layout Subsection
+Use Case diagrams
+\end_layout
+
+\begin_layout Subsubsection
 User
 \end_layout
 
@@ -1684,7 +1381,7 @@ User
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1735,7 +1432,7 @@ Create an account
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -1935,7 +1632,7 @@ Login
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -2129,7 +1826,7 @@ Look for car nearby
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -2327,7 +2024,7 @@ Reserve a car
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -2533,7 +2230,7 @@ Money saving Option
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -2731,7 +2428,7 @@ Open the car
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -2947,7 +2644,7 @@ Finish the ride
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -3146,7 +2843,7 @@ View special parking area
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -3323,7 +3020,7 @@ User, Use Case description - View special parking area.
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Employee
 \end_layout
 
@@ -3332,7 +3029,7 @@ Employee
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3382,7 +3079,7 @@ Login
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -3572,7 +3269,7 @@ Change availability of the car
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -3762,7 +3459,7 @@ Know cars that they have to take care
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -3923,6 +3620,340 @@ Employee, Use Case description - Know cars that they have to take care.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Sequence diagrams
+\end_layout
+
+\begin_layout Paragraph
+Login of the user
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/diagram_section_svg/Login sequence diagram.pdf
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sequence Diagrams - Login of the user.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Paragraph
+Reservation and opening of the car
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This sequence diagram represent the scenario with these hypothesis:
+\end_layout
+
+\begin_layout Itemize
+The user reserves a car using the PowerEnjoy application.
+\end_layout
+
+\begin_layout Itemize
+The user wants to visualize the way to reach the car.
+\end_layout
+
+\begin_layout Itemize
+The user open the car tapping on the application.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/diagram_section_svg/Reservation and reachinf of the car sequence diagram.pdf
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sequence Diagrams - Reservation and opening of the car (sequence diagrams).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Activity diagrams
+\end_layout
+
+\begin_layout Paragraph
+Change availability of the car
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/diagram_section_svg/Change avaibility of the car bpmn activity.pdf
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Activity Diagrams - Change availability of the car.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Selection of 
+\begin_inset Quotes eld
+\end_inset
+
+Money saving option
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/diagram_section_svg/Money saving option activity diagram.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Activity Diagrams - Selection of 
+\begin_inset Quotes eld
+\end_inset
+
+Money saving option
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+State chart diagrams
+\end_layout
+
+\begin_layout Paragraph
+Phase of the car
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/diagram_section_svg/Phase of the car state chart diagram.pdf
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+State Chart - Phase of the car.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Activity diagrams
+\end_layout
+
+\begin_layout Subsection
+State chart diagrams
+\end_layout
+
+\begin_layout Subsection
+User interface
+\end_layout
+
+\begin_layout Subsubsection
+Website
+\end_layout
+
+\begin_layout Subsubsection
+Mobile application
+\end_layout
+
+\begin_layout Subsubsection
+Screen of the car
 \end_layout
 
 \begin_layout Section

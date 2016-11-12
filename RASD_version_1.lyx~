@@ -1192,7 +1192,7 @@ Non-functional requirements
 \end_layout
 
 \begin_layout Standard
-vari requisiti non funzionali, mockup ecc...
+
 \end_layout
 
 \begin_layout Itemize
@@ -1462,8 +1462,123 @@ Paola goes to work and once she has arrived she logs in the web site using
 Constraints
 \end_layout
 
+\begin_layout Subsubsection
+Regulatory policies
+\end_layout
+
 \begin_layout Standard
-Costrizioni dell' user da fare
+The users must accept the 
+\begin_inset Quotes eld
+\end_inset
+
+License agreement terms and conditions
+\begin_inset Quotes erd
+\end_inset
+
+ to use the software that will be develop and to permit to PowerEnjoy company
+ the use of general statistic over these data.
+ The systems must require the authorization in order to treat with the sensible
+ data that users will give in the registration phase.
+ In order to receive the company's newsletter the users must dive an additional
+ permission.
+\end_layout
+
+\begin_layout Subsubsection
+Hardware requirements
+\end_layout
+
+\begin_layout Standard
+The essential use of that system require:
+\end_layout
+
+\begin_layout Itemize
+A computer with an available internet connection;
+\end_layout
+
+\begin_layout Itemize
+A mobile phone with an active number, that is capable to send and receive
+ SMS.
+\end_layout
+
+\begin_layout Standard
+To use the mobile application:
+\end_layout
+
+\begin_layout Itemize
+A smartphone with:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Android: KitKat (4.4) and later;
+\end_layout
+
+\begin_layout Itemize
+iOS: version 6 or later;
+\end_layout
+
+\begin_layout Itemize
+Windows Mobile: version 10 or later;
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+An active number, with a plans that contains internet connection:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+3G;
+\end_layout
+
+\begin_layout Itemize
+4G: not required, but recommended.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+An amount of space in order to install the application.
+\end_layout
+
+\begin_layout Standard
+To use the system on a website:
+\end_layout
+
+\begin_layout Itemize
+An up to date broswer.
+\end_layout
+
+\begin_layout Subsubsection
+Interfacing with other systems
+\end_layout
+
+\begin_layout Itemize
+Interface with PayPal system, following the rules describe in PayPal developer
+ documentations.
+ Fuelled by that requirements analysis, the PayPal service that fit better
+ in that system is 
+\begin_inset Quotes eld
+\end_inset
+
+PayPal Pro
+\begin_inset Quotes erd
+\end_inset
+
+, that gives all set of payment that the customer needs.
+\end_layout
+
+\begin_layout Itemize
+Interface with an SMS gateway, with SMS APIs owned by the SMS provider.
+ That fact in order to send message tothe users of the system.
+\end_layout
+
+\begin_layout Subsubsection
+Parallel operation
+\end_layout
+
+\begin_layout Standard
+The server must support parallel request both from users and employees.
 \end_layout
 
 \begin_layout Subsection
