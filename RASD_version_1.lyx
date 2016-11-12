@@ -516,8 +516,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename images/diagram_section_svg/Login sequence diagram.svg
+	filename images/diagram_section_svg/Login sequence diagram.pdf
 	scale 70
 
 \end_inset
@@ -592,8 +593,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename images/diagram_section_svg/Reservation and reachinf of the car sequence diagram.svg
+	filename images/diagram_section_svg/Reservation and reachinf of the car sequence diagram.pdf
 	scale 70
 
 \end_inset
@@ -651,8 +653,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/diagram_section_svg/Change avaibility of the car bpmn activity.svg
-	scale 50
+	filename images/diagram_section_svg/Change avaibility of the car bpmn activity.pdf
+	scale 70
 
 \end_inset
 
@@ -716,7 +718,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/diagram_section_svg/Money saving option activity diagram.svg
+	filename images/diagram_section_svg/Money saving option activity diagram.pdf
 	scale 50
 
 \end_inset
@@ -785,7 +787,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/diagram_section_svg/Phase of the car state chart diagram.svg
+	filename images/diagram_section_svg/Phase of the car state chart diagram.pdf
 	scale 65
 
 \end_inset
@@ -1540,8 +1542,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename images/use_case/UseCaseUser.svg
+	filename images/use_case/Use case user.pdf
 	scale 70
 	rotateOrigin center
 
@@ -3187,9 +3190,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename images/use_case/Use case employee.svg
-	scale 50
+	filename images/use_case/Use case employee.pdf
+	scale 70
 
 \end_inset
 
