@@ -28,7 +28,16 @@
 \index_command default
 \paperfontsize default
 \spacing single
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize default
 \use_geometry false
 \use_package amsmath 1
@@ -520,7 +529,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sequence Diagrams - Login of the user
+Sequence Diagrams - Login of the user.
 \end_layout
 
 \end_inset
@@ -593,7 +602,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Reservation and opening of the car (sequence diagrams)
+Sequence Diagrams - Reservation and opening of the car (sequence diagrams).
 \end_layout
 
 \end_inset
@@ -640,6 +649,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename images/diagram_section_svg/Change avaibility of the car bpmn activity.svg
 	scale 50
@@ -653,7 +663,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Activity Diagrams - Change availability of the car.
 \end_layout
 
 \end_inset
@@ -704,6 +714,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename images/diagram_section_svg/Money saving option activity diagram.svg
 	scale 50
@@ -717,7 +728,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Activity Diagrams - Selection of 
+\begin_inset Quotes eld
+\end_inset
 
+Money saving option
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -764,9 +783,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename images/diagram_section_svg/Phase of the car state chart diagram.svg
-	scale 70
+	scale 65
 
 \end_inset
 
@@ -777,7 +797,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+State Chart - Phase of the car.
 \end_layout
 
 \end_inset
@@ -1505,7 +1525,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/use_case/UseCaseUser.svg
-	scale 50
+	scale 70
 	rotateOrigin center
 
 \end_inset
@@ -1514,7 +1534,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Use Case - User (and human).
 \end_layout
 
 \end_inset
@@ -1553,14 +1573,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="8cm">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="9cm">
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1580,7 +1599,7 @@ Create an account.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1589,7 +1608,7 @@ Actors
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1600,7 +1619,7 @@ Human.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1620,7 +1639,7 @@ The human has an internet connection.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1649,7 +1668,7 @@ The system verifies the correctness of the credentials inserted.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1669,7 +1688,7 @@ The system sends the password to the mail address of the new user.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1685,13 +1704,13 @@ Exceptions
 The system detects that the email address is wrong or does not exist so
  it does not send the password.
  The system redirects the human on the registration page, asking him to
- write correctly his credentials;
+ write correctly his credentials.
 \end_layout
 
 \begin_layout Itemize
 The PowerEnjoy staff detect that the driving license inserted is not valid,
  so the system sends an email to the new user, asking to take a better picture
- of his/her license;
+ of his/her license.
 \end_layout
 
 \begin_layout Itemize
@@ -1715,6 +1734,11 @@ The system does not successfully withdraw the symbolic amount using the
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+User, Use Case description - Create an account.
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1723,19 +1747,39 @@ The system does not successfully withdraw the symbolic amount using the
 
 \end_layout
 
+\begin_layout Subparagraph
+Login
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="12cm">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="9cm">
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1748,14 +1792,14 @@ Name
 \begin_inset Text
 
 \begin_layout Plain Layout
-Login.
+Login of the user.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1764,18 +1808,18 @@ Actors
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Employee
+User.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1788,14 +1832,14 @@ Entry conditions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
+The user has already registered in the system.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1807,171 +1851,6 @@ Flow of events
 <cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
-\end_layout
-
-\begin_layout Enumerate
-The employee must insert his ID and his password;
-\end_layout
-
-\begin_layout Enumerate
-The employee must click the log-in button.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exit conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The website or the app redirects him to his personal page.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exceptions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Name: Create an account.
-\end_layout
-
-\begin_layout Itemize
-Actors: Human.
-\end_layout
-
-\begin_layout Itemize
-Entry conditions: 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The human has an internet connection.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Flow of events:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The human opens the website or the app and he/she selects the option “Sign
- up”.
-\end_layout
-
-\begin_layout Itemize
-The human inserts all his/her credentials.
-\end_layout
-
-\begin_layout Itemize
-The system verifies the correctness of the credentials inserted.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exit conditions:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The system sends the password to the mail address of the new user.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exceptions:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The system detects that the email address is wrong or does not exist so
- it does not send the password.
- The system redirects the human on the registration page, asking him to
- write correctly his credentials.
-\end_layout
-
-\begin_layout Itemize
-The PowerEnjoy staff detect that the driving license inserted is not valid,
- so the system sends an email to the new user, asking to take a better picture
- of his/her license.
-\end_layout
-
-\begin_layout Itemize
-The system does not successfully withdraw the symbolic amount using the
- payment information inserted.
- The system redirects the human on the registration page, asking to insert
- the payment information correctly.
-\end_layout
-
-\end_deeper
-\begin_layout Subparagraph
-Login
-\end_layout
-
-\begin_layout Itemize
-Name: Login of the user.
-\end_layout
-
-\begin_layout Itemize
-Actors: User.
-\end_layout
-
-\begin_layout Itemize
-Entry conditions: 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The user has already registered in the system.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Flow of events:
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
 The user must open the PowerEnjoy website or the application.
 \end_layout
@@ -1989,29 +1868,79 @@ erself, and his password.
 The user must click/tap on the log button.
 \end_layout
 
-\end_deeper
-\begin_layout Itemize
-Exit conditions:
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exit conditions
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 The system redirects the user to his/her personal page.
 \end_layout
 
-\end_deeper
-\begin_layout Itemize
-Exceptions:
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exceptions
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 The user does not insert the correct login credentials.
  The system does not redirect him/her to his/her personal page but it requests
  to check if he/she has inserted the correct login credentials.
 \end_layout
 
-\end_deeper
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+User, Use Case description - Login of the user.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subparagraph
 Look for car nearby
 \end_layout
@@ -2038,14 +1967,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="8cm">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="9cm">
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2065,7 +1993,7 @@ Look for car nearby.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2074,7 +2002,7 @@ Actors
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2085,7 +2013,7 @@ User.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2105,7 +2033,7 @@ The user must be logged in the application or in the website.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2135,7 +2063,7 @@ The user clicks or taps the option to start the research.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2155,7 +2083,7 @@ The user visualizes correctly the cars nearby him/her position.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2198,7 +2126,7 @@ The system is not able to establish the position of the cars, so it shows
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+User, Use Case description - Look for car nearby.
 \end_layout
 
 \end_inset
@@ -2211,221 +2139,6 @@ The system is not able to establish the position of the cars, so it shows
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="12cm">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Name
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Login.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Actors
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Employee
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Entry conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Flow of events
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
-\end_layout
-
-\begin_layout Enumerate
-The employee must insert his ID and his password;
-\end_layout
-
-\begin_layout Enumerate
-The employee must click the log-in button.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exit conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The website or the app redirects him to his personal page.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exceptions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Name: Look for car nearby.
-\end_layout
-
-\begin_layout Itemize
-Actors: User.
-\end_layout
-
-\begin_layout Itemize
-Entry conditions:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The user must be logged in the application or in the website.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Flow of events:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The user must select the specific option (tapping on the phone or clicking
- with the mouse).
-\end_layout
-
-\begin_layout Itemize
-The user can insert his position manually if he/she does not have a GPS
- connection.
-\end_layout
-
-\begin_layout Itemize
-The user clicks or taps the option to start the research.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exit conditions:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The user visualizes correctly the cars nearby him/her position.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exceptions:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The system does not detect the position through the GPS, so it retries for
- 30 seconds.
- If the GPS connection is still unavailable, the system asks to the user
- to insert manually his/her position.
-\end_layout
-
-\begin_layout Itemize
-The system detects that the positions inserted manually by the user does
- not exist, so it asks to the user to write an existent location.
-\end_layout
-
-\begin_layout Itemize
-The system is not able to establish the position of the cars, so it shows
- an error message asking to try again.
-\end_layout
-
-\end_deeper
 \begin_layout Subparagraph
 Reserve a car
 \end_layout
@@ -2452,14 +2165,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="8cm">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="9cm">
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2479,7 +2191,7 @@ Reserve a car.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2488,7 +2200,7 @@ Actors
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2499,7 +2211,7 @@ User.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2519,7 +2231,7 @@ The user has looked for a car nearby.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2552,7 +2264,7 @@ The user click or tap on the screen the reserve option to officialise it.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2580,7 +2292,7 @@ The user receives the reservation message on his phone number.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2612,7 +2324,7 @@ Another person has reserved the car that the user selected.
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+User, Use Case description - Reserve a car.
 \end_layout
 
 \end_inset
@@ -2625,221 +2337,6 @@ Another person has reserved the car that the user selected.
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="12cm">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Name
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Login.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Actors
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Employee
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Entry conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Flow of events
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
-\end_layout
-
-\begin_layout Enumerate
-The employee must insert his ID and his password;
-\end_layout
-
-\begin_layout Enumerate
-The employee must click the log-in button.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exit conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The website or the app redirects him to his personal page.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exceptions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Name: Reserve a car.
-\end_layout
-
-\begin_layout Itemize
-Actors: User.
-\end_layout
-
-\begin_layout Itemize
-Entry conditions:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-• The user has looked for a car nearby.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Flow of events: 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The user can visualize the state of the car.
-\end_layout
-
-\begin_layout Itemize
-The user selects one of the car near his/her position, tapping on the screen
- or clicking on it.
-\end_layout
-
-\begin_layout Itemize
-The user could decide to visualize the way to reach the car selected.
-\end_layout
-
-\begin_layout Itemize
-The user click or tap on the screen the reserve option to officialise it.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exit conditions:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The system shows to the user the reservation time.
-\end_layout
-
-\begin_layout Itemize
-The system enables the option to delete the reservation.
-\end_layout
-
-\begin_layout Itemize
-The user receives the reservation message on his phone number.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exceptions: 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Another person has reserved the car that the user selected.
- The system shows a message to communicate the fact to the user, asking
- him if he/she wants to select another car.
-\end_layout
-
-\end_deeper
 \begin_layout Subparagraph
 Select the 
 \begin_inset Quotes eld
@@ -2874,14 +2371,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="8cm">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="9cm">
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2901,7 +2397,7 @@ Select the “Money saving option”.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2910,7 +2406,7 @@ Actors
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2921,7 +2417,7 @@ User.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2945,7 +2441,7 @@ The user must get into the car.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2979,7 +2475,7 @@ The user can select a special parking area near his/her destination and
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3000,7 +2496,7 @@ The user confirms his/her choices and the system notifies on the screen
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3034,7 +2530,7 @@ The screen of the car is temporally unavailable.
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+User, Use Case description - Select the “Money saving option”.
 \end_layout
 
 \end_inset
@@ -3047,221 +2543,6 @@ The screen of the car is temporally unavailable.
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="12cm">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Name
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Login.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Actors
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Employee
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Entry conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Flow of events
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
-\end_layout
-
-\begin_layout Enumerate
-The employee must insert his ID and his password;
-\end_layout
-
-\begin_layout Enumerate
-The employee must click the log-in button.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exit conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The website or the app redirects him to his personal page.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exceptions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Name: Select the “Money saving option”.
-\end_layout
-
-\begin_layout Itemize
-Actors: User.
-\end_layout
-
-\begin_layout Itemize
-Entry conditions:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-•The user must have reserve a car.
-\end_layout
-
-\begin_layout Itemize
-The user must get into the car.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Flow of events:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The user visualizes the screen in the car.
-\end_layout
-
-\begin_layout Itemize
-The user selects the “Money saving option” tapping on the screen.
-\end_layout
-
-\begin_layout Itemize
-The user can input the final destination and he/she could visualize the
- way to reach it.
-\end_layout
-
-\begin_layout Itemize
-The user can select a special parking area near his/her destination and
- he/she could visualize the way to reach it.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exit conditions:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The user confirms his/her choices and the system notifies on the screen
- that the “Money saving option” is enabled.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exceptions: 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The screen of the car is temporally unavailable.
- The user is forced to call the emergency number that he/she can find in
- the car, asking to the call center to enable the “Money saving option”
- for his/her ride, telling to the operator his choices about the option
- chosen.
-\end_layout
-
-\end_deeper
 \begin_layout Subparagraph
 Open the car
 \end_layout
@@ -3288,14 +2569,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="8cm">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="9cm">
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3315,7 +2595,7 @@ Open the car.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3324,7 +2604,7 @@ Actors
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3335,7 +2615,7 @@ User.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3359,7 +2639,7 @@ The user must reach the car, and he/she can see it.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3397,7 +2677,7 @@ The user execute the command to open the car, but the car does not open.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3417,7 +2697,7 @@ The system receives correctly the command to open the car and it opens it.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3466,7 +2746,7 @@ The user execute the command to open the car, but the car does not open.
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+User, Use Case description - Open the car.
 \end_layout
 
 \end_inset
@@ -3479,237 +2759,6 @@ The user execute the command to open the car, but the car does not open.
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="12cm">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Name
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Login.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Actors
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Employee
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Entry conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Flow of events
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
-\end_layout
-
-\begin_layout Enumerate
-The employee must insert his ID and his password;
-\end_layout
-
-\begin_layout Enumerate
-The employee must click the log-in button.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exit conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The website or the app redirects him to his personal page.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exceptions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Name: Open the car.
-\end_layout
-
-\begin_layout Itemize
-Actors: User.
-\end_layout
-
-\begin_layout Itemize
-Entry conditions:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The user must have reserved a car.
-\end_layout
-
-\begin_layout Itemize
-The user must reach the car, and he/she can see it.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Flow of events:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The system detects, thanks to the GPS, the position of the user.
-\end_layout
-
-\begin_layout Itemize
-If the system establishes that the user is near the car, it enables the
- button to open the car in the application.
-\end_layout
-
-\begin_layout Itemize
-If the user has reserved the car using the website, he/she could open the
- reservation message sent to him/she by the system when he has done the
- reservation.
-\end_layout
-
-\begin_layout Itemize
-The user taps on the application the option “Open the car” or he answers
- to the message writing the code of the car that he can read.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exit conditions:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The system receives correctly the command to open the car and it opens it.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exceptions:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The user taps the button on the application, but there is no connection.
- In this case, the user is forced to open the message that the system sent
- to him/she when he reserved the car.
- He/she answers to this message, writing the code of the car.
- The system receives the message and it opens the car.
-\end_layout
-
-\begin_layout Itemize
-The user loses the signal of the GPS.
- In this case, the user is forced to open the message that the system sent
- to him/she when he/she reserved the car.
- He/she answers to this message, writing the code of the car.
- The system receives the message and it opens the car.
-\end_layout
-
-\begin_layout Itemize
-The user execute the command to open the car, but the car does not open.
- The user call the emergency number written on the car.
- The operator at the call center verifies the correctness of the reservation
- and then he/she opens the car with a special command.
-\end_layout
-
-\end_deeper
 \begin_layout Subparagraph
 Finish the ride
 \end_layout
@@ -3736,14 +2785,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="8cm">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="9cm">
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3763,7 +2811,7 @@ Finish the ride.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3772,18 +2820,18 @@ Actors
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Users.
+User.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3803,7 +2851,7 @@ The user must has opened a car.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3816,15 +2864,15 @@ Flow of events
 \begin_inset Text
 
 \begin_layout Enumerate
-The user parks the car in a safe area;
+The user parks the car in a safe area.
 \end_layout
 
 \begin_layout Enumerate
-The system enables the option “Finish the ride” on the screen;
+The system enables the option “Finish the ride” on the screen.
 \end_layout
 
 \begin_layout Enumerate
-The user selects this option tapping on the screen of the car;
+The user selects this option tapping on the screen of the car.
 \end_layout
 
 \begin_layout Enumerate
@@ -3837,7 +2885,7 @@ The system visualizes on the screen the final information of the ride, in
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3857,7 +2905,7 @@ The user receives the bill of the ride through email.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3874,7 +2922,7 @@ The user parks the car in an unsafe area.
  In this case, the system puts the car unavailable and adds it to a list
  of car of an employee, in order to move it in a safe area.
  When the employee finishes his/her work the system gives to the user an
- “unsafe fine”;
+ “unsafe fine”.
 \end_layout
 
 \begin_layout Itemize
@@ -3897,7 +2945,7 @@ The screen of the car is temporally unavailable.
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+User, Use Case description - Finish the ride.
 \end_layout
 
 \end_inset
@@ -3910,222 +2958,6 @@ The screen of the car is temporally unavailable.
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="12cm">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Name
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Login.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Actors
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Employee
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Entry conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Flow of events
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
-\end_layout
-
-\begin_layout Enumerate
-The employee must insert his ID and his password;
-\end_layout
-
-\begin_layout Enumerate
-The employee must click the log-in button.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exit conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The website or the app redirects him to his personal page.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exceptions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Name: Finish the ride.
-\end_layout
-
-\begin_layout Itemize
-Actors: Users.
-\end_layout
-
-\begin_layout Itemize
-Entry conditions:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The user must has opened a car.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Flow of events:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The user parks the car in a safe area.
-\end_layout
-
-\begin_layout Itemize
-The system enables the option “Finish the ride” on the screen.
-\end_layout
-
-\begin_layout Itemize
-The user selects this option tapping on the screen of the car.
-\end_layout
-
-\begin_layout Itemize
-The system visualizes on the screen the final information of the ride, in
- particular the final fare (without including eventually discount) and the
- level of the battery.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exit conditions:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The user receives the bill of the ride through email.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exceptions:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The user parks the car in an unsafe area.
- In this case, the system puts the car unavailable and adds it to a list
- of car of an employee, in order to move it in a safe area.
- When the employee finishes his/her work the system gives to the user an
- “unsafe fine”.
-\end_layout
-
-\begin_layout Itemize
-The screen of the car is temporally unavailable.
- The user is forced to call the emergency number that he can find in the
- car, asking to the call centre operator to finish his/her ride.
-\end_layout
-
-\end_deeper
 \begin_layout Subparagraph
 View special parking area
 \end_layout
@@ -4152,14 +2984,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="8cm">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="9cm">
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4179,7 +3010,7 @@ View special parking area.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4188,7 +3019,7 @@ Actors
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4199,7 +3030,7 @@ User.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4219,7 +3050,7 @@ The user must be logged in the system.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4249,7 +3080,7 @@ The user click or tap the option to start the research.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4271,7 +3102,7 @@ The user correctly visualizes the special parking area near his/her position.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4314,7 +3145,7 @@ The system is not able to establish the positions of the special parking
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+User, Use Case description - View special parking area.
 \end_layout
 
 \end_inset
@@ -4327,223 +3158,6 @@ The system is not able to establish the positions of the special parking
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="12cm">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Name
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Login.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Actors
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Employee
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Entry conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Flow of events
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
-\end_layout
-
-\begin_layout Enumerate
-The employee must insert his ID and his password;
-\end_layout
-
-\begin_layout Enumerate
-The employee must click the log-in button.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exit conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The website or the app redirects him to his personal page.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exceptions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Name: View special parking area.
-\end_layout
-
-\begin_layout Itemize
-Actors: User.
-\end_layout
-
-\begin_layout Itemize
-Entry conditions:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The user must be logged in the system.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Flow of events:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The user must select the specific option on the screen (tapping on the phone
- or clicking with the mouse).
-\end_layout
-
-\begin_layout Itemize
-The user can insert his position manually if he/she does not have a GPS
- connection.
-\end_layout
-
-\begin_layout Itemize
-The user click or tap the option to start the research.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exit conditions:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The user correctly visualizes the special parking area near his/her position.
- The system visualizes only the special parking are which have some free
- plugs.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exceptions:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The system does not detect the position through the GPS, so it retries for
- 30 seconds.
- If the GPS still undetectable, the system asks to the user to insert manually
- his position.
-\end_layout
-
-\begin_layout Itemize
-The system detects that the position inserted manually by the user does
- not exist, so it asks to the user to write an existent location.
-\end_layout
-
-\begin_layout Itemize
-The system is not able to establish the positions of the special parking
- areas, so it shows an error message asking to try again.
-\end_layout
-
-\end_deeper
 \begin_layout Subsection
 Employee
 \end_layout
@@ -4566,7 +3180,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Use Case - Employee
 \end_layout
 
 \end_inset
@@ -4605,14 +3219,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="8cm">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="9cm">
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4632,7 +3245,7 @@ Login.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4641,18 +3254,18 @@ Actors
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Employee
+Employee.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4672,7 +3285,7 @@ The employee must work for the PowerEnergy society.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4693,7 +3306,6 @@ The employee must insert his ID and his password;
 \end_layout
 
 \begin_layout Enumerate
-\noindent
 The employee must click the log-in button.
 \end_layout
 
@@ -4701,7 +3313,7 @@ The employee must click the log-in button.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4721,7 +3333,7 @@ The website or the app redirects him to his personal page.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4754,7 +3366,7 @@ The employee does not insert the correct ID or the correct password.
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Employee, Use Case description - Login.
 \end_layout
 
 \end_inset
@@ -4771,209 +3383,6 @@ The employee does not insert the correct ID or the correct password.
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="12cm">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Name
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Login.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Actors
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Employee
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Entry conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Flow of events
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
-\end_layout
-
-\begin_layout Enumerate
-The employee must insert his ID and his password;
-\end_layout
-
-\begin_layout Enumerate
-The employee must click the log-in button.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exit conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The website or the app redirects him to his personal page.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exceptions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Name: Login.
-\end_layout
-
-\begin_layout Itemize
-Actors: Employee.
-\end_layout
-
-\begin_layout Itemize
-Entry conditions: 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The employee must work for the PowerEnergy society.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Flow of events:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The employee must open the PowerEnjoy application or the website;
-\end_layout
-
-\begin_layout Itemize
-The employee must insert his ID and his password;
-\end_layout
-
-\begin_layout Itemize
-The employee must click the log-in button.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exit conditions: 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The website or the app redirects him to his personal page.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exceptions: 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
-\end_layout
-
-\end_deeper
 \begin_layout Subparagraph
 Change availability of the car
 \end_layout
@@ -5000,14 +3409,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="8cm">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="9cm">
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5020,14 +3428,14 @@ Name
 \begin_inset Text
 
 \begin_layout Plain Layout
-Change availability of the car
+Change availability of the car.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5036,18 +3444,18 @@ Actors
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Employee
+Employee.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5075,7 +3483,7 @@ The employee reaches the car.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5099,7 +3507,7 @@ The employee takes care of the car.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5119,7 +3527,7 @@ The car is ready and the employee changes its state in available.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5135,7 +3543,7 @@ Exceptions
 The employee cannot put the car available because of serious damages of
  the car.
  He calls the headquarters in orders to communicate that he needs to bring
- the car at the workshop
+ the car at the workshop.
 \end_layout
 
 \end_inset
@@ -5152,7 +3560,7 @@ The employee cannot put the car available because of serious damages of
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Employee, Use Case description - Change availability of the car.
 \end_layout
 
 \end_inset
@@ -5165,213 +3573,6 @@ The employee cannot put the car available because of serious damages of
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="12cm">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Name
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Login.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Actors
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Employee
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Entry conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Flow of events
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
-\end_layout
-
-\begin_layout Enumerate
-The employee must insert his ID and his password;
-\end_layout
-
-\begin_layout Enumerate
-The employee must click the log-in button.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exit conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The website or the app redirects him to his personal page.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exceptions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Name: Change availability of the car.
-\end_layout
-
-\begin_layout Itemize
-Actors: Employee.
-\end_layout
-
-\begin_layout Itemize
-Entry conditions: 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The employee must be logged in the system.
-\end_layout
-
-\begin_layout Itemize
-The car is in the employee’s list of cars.
-\end_layout
-
-\begin_layout Itemize
-The employee reaches the car.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Flow of events: 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The employee puts it in unavailable mode;
-\end_layout
-
-\begin_layout Itemize
-The employee takes care of the car.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exit conditions: 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The car is ready and the employee changes its state in available.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exception: 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The employee cannot put the car available because of serious damages of
- the car.
- He calls the headquarters in orders to communicate that he needs to bring
- the car at the workshop
-\end_layout
-
-\end_deeper
 \begin_layout Subparagraph
 Know cars that they have to take care
 \end_layout
@@ -5398,14 +3599,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="8cm">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="9cm">
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5425,7 +3625,7 @@ Know cars that they have to take care.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5434,18 +3634,18 @@ Actors
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Employee
+Employee.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5469,7 +3669,7 @@ The employee is logged in the system.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5495,7 +3695,7 @@ This list is created in the personal page of the employee.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5515,7 +3715,7 @@ The employee receives correctly the list of car that he must take care.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5546,7 +3746,7 @@ The employee does not visualize the list in his/her personal page, so he/she
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Employee, Use Case description - Know cars that they have to take care.
 \end_layout
 
 \end_inset
@@ -5559,209 +3759,6 @@ The employee does not visualize the list in his/her personal page, so he/she
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle" tabularwidth="10cm">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="12cm">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Name
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Login.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Actors
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Employee
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Entry conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee must work for the PowerEnergy society.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Flow of events
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Enumerate
-The employee must open the PowerEnjoy application or the website;
-\end_layout
-
-\begin_layout Enumerate
-The employee must insert his ID and his password;
-\end_layout
-
-\begin_layout Enumerate
-The employee must click the log-in button.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exit conditions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The website or the app redirects him to his personal page.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exceptions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The employee does not insert the correct ID or the correct password.
- The system does not redirect him/her to his/her personal space/page but
- it requests to check if he/she has insert the correct ID or the correct
- password.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Name: Know cars that they have to take care.
-\end_layout
-
-\begin_layout Itemize
-Actors: Employee.
-\end_layout
-
-\begin_layout Itemize
-Entry conditions: 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The employee is at work;
-\end_layout
-
-\begin_layout Itemize
-The employee is logged in the system.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Flow of events:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-In the headquarter, the system assigns to the employee a list of car that
- he must take care during the day;
-\end_layout
-
-\begin_layout Itemize
-This list is created in the personal page of the employee.
- 
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exit conditions: 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The employee receives correctly the list of car that he must take care.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Exception: 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The employee does not visualize the list in his/her personal page, so he/she
- is forced to ask it to the general secretary of the headquarter.
-\end_layout
-
-\end_deeper
 \begin_layout Section
 Alloy
 \end_layout
