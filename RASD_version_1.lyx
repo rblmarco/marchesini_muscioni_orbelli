@@ -379,11 +379,31 @@ Critical battery level
 
 \end_deeper
 \begin_layout Subsection
-Intended Audience And Reading Suggestions
+Identifying stakeholders
 \end_layout
 
 \begin_layout Standard
-A chi verrà rivolto il documento
+There is only one main stakeholder, the manager of PowerEnjoy car-sharing
+ company, who wants a system that can beat the competition between the main
+ car-sharing services.
+\end_layout
+
+\begin_layout Subsection
+Actors identifying
+\end_layout
+
+\begin_layout Standard
+These are the actors of our system:
+\end_layout
+
+\begin_layout Itemize
+Employee: he/she is the worker of PowerEnjoy company.
+ The employees have already been registered in the system at the moment
+ of recruitment;
+\end_layout
+
+\begin_layout Itemize
+User: he/she is the client of our system.
 \end_layout
 
 \begin_layout Subsection
@@ -530,8 +550,76 @@ Allow user to view the special parking area in the map.
 References
 \end_layout
 
-\begin_layout Standard
-Documenti di riferimento
+\begin_layout Itemize
+Specification document: Assignments AA 2016-2017;
+\end_layout
+
+\begin_layout Itemize
+IEEE Std 830-1998 IEEE Recommended Practice for Software Requirements Specificat
+ions;
+\end_layout
+
+\begin_layout Itemize
+Examples documents:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+RASD sample from Oct.
+ 20 Lecture.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+PayPal documentation (
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://developer.paypal.com/docs/
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.paypal.com/it/webapps/mpp/merchant
+\end_layout
+
+\end_inset
+
+);
+\end_layout
+
+\begin_layout Itemize
+General documentations about SMS gateway provider (
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.smsglobal.com/business-sms/
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.trendoo.it/invio-sms.html
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Section
@@ -545,7 +633,7 @@ Product Perspective
 \begin_layout Standard
 The software is a stand-alone system that does not extend or takes part
  in any nowdays software.
- The access to the sofware can be performed by the Website and the mobile
+ The access to the sofware can be performed by the website and the mobile
  application.
 \end_layout
 
@@ -1653,8 +1741,8 @@ Scenario 13
 \end_layout
 
 \begin_layout Standard
-Paola goes to work and once she has arrived she logs in the web site using
- the company’s computer.
+Paola, who is a worker of PowerEnjoy com goes to work and once she has arrived
+ she logs in the web site using the company’s computer.
  The system creates a list of electric cars for Paola and her collegue,
  to make their work more efficient as possible.
  In actuak fact the list is composed by a set of nearby vehicles.
@@ -4264,7 +4352,7 @@ Sequence Diagrams - Reservation and opening of the car (sequence diagrams).
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Activity diagrams
 \end_layout
 
@@ -4390,7 +4478,7 @@ Money saving option
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 State chart diagrams
 \end_layout
 
@@ -4447,796 +4535,139 @@ State Chart - Phase of the car.
 
 \end_layout
 
-\begin_layout Subsection
-Activity diagrams
-\end_layout
-
-\begin_layout Subsection
-State chart diagrams
-\end_layout
-
-\begin_layout Subsection
-User interface
-\end_layout
-
-\begin_layout Subsubsection
-Website
-\end_layout
-
-\begin_layout Subsubsection
-Mobile application
-\end_layout
-
-\begin_layout Subsubsection
-Screen of the car
-\end_layout
-
 \begin_layout Section
 Alloy
 \end_layout
 
 \begin_layout Standard
-------------------------------------Position things--------------------
+Here below there is the model and the absumptions created using Alloy Analizer.
 \end_layout
 
-\begin_layout Standard
-sig Position{
-\end_layout
-
-\begin_layout Standard
-latitude: Int,
-\end_layout
-
-\begin_layout Standard
-longitude: Int
-\end_layout
-
-\begin_layout Standard
-}{
-\end_layout
-
-\begin_layout Standard
-latitude >=0
-\end_layout
-
-\begin_layout Standard
-latitude <=3
-\end_layout
-
-\begin_layout Standard
-longitude >=0
-\end_layout
-
-\begin_layout Standard
-longitude <=5
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-//the positions are uniquely determinate by the place
-\end_layout
-
-\begin_layout Standard
-fact differentPosition{
-\end_layout
-
-\begin_layout Standard
-all p1, p2: Position| (p1!=p2)implies(p1.latitude != p2.latitude or p1.longitude
- != p2.longitude)
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-------------------------------------Safe Areathings--------------------
-\end_layout
-
-\begin_layout Standard
-sig SafeArea{
-\end_layout
-
-\begin_layout Standard
-safePositions: some Position,
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-fact differentPositionInDifferentSafeArea{
-\end_layout
-
-\begin_layout Standard
-all s1,s2: SafeArea| all p: s1.safePositions| (s1 !=s2) implies ((p in s1.safePosi
-tions) and (p not in s2.safePositions))
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-//in our world there are always unsafe position
-\end_layout
-
-\begin_layout Standard
-fact positionConstraint{
-\end_layout
-
-\begin_layout Standard
-all s: SafeArea| some p: Position| p not in s.safePositions
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
----------------------------------Special Area things--------------------
-\end_layout
-
-\begin_layout Standard
-sig SpecialArea{
-\end_layout
-
-\begin_layout Standard
-specialPositions: some Position,
-\end_layout
-
-\begin_layout Standard
-plugs: Int,
-\end_layout
-
-\begin_layout Standard
-}{
-\end_layout
-
-\begin_layout Standard
-plugs >=0
-\end_layout
-
-\begin_layout Standard
-plugs <=5
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-fact plugsConstarint{
-\end_layout
-
-\begin_layout Standard
-all s:SpecialArea| #(s.specialPositions) = s.plugs
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-fact specialAreaConstraint{
-\end_layout
-
-\begin_layout Standard
-all p: SpecialArea.specialPositions | (p in SafeArea.safePositions) &&
-\end_layout
-
-\begin_layout Standard
-(#(SpecialArea.specialPositions) < #(SafeArea.safePositions))
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-fact differentPositionInDifferentSecialArea{
-\end_layout
-
-\begin_layout Standard
-all s1,s2: SpecialArea| all p: s1.specialPositions| (s1 !=s2) implies ((p
- in s1.specialPositions) and (p not in s2.specialPositions))
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-----------------------------------------Car things--------------------
-\end_layout
-
-\begin_layout Standard
-//there are no less than two seats 
-\end_layout
-
-\begin_layout Standard
-sig Car{
-\end_layout
-
-\begin_layout Standard
-code: Int,
-\end_layout
-
-\begin_layout Standard
-seats: Int,
-\end_layout
-
-\begin_layout Standard
-state: one State,
-\end_layout
-
-\begin_layout Standard
-}{
-\end_layout
-
-\begin_layout Standard
-code>=0
-\end_layout
-
-\begin_layout Standard
-seats>=2
-\end_layout
-
-\begin_layout Standard
-seats<=5
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-fact indentificationByCode{
-\end_layout
-
-\begin_layout Standard
-all c1, c2: Car | (c1 != c2) implies (c1.code != c2.code)
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-pred Car.isUsed[]{
-\end_layout
-
-\begin_layout Standard
-#(this.state.usedBy)=1
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-pred Car.isInSafe[]{
-\end_layout
-
-\begin_layout Standard
-one s: SafeArea| this.state.statePosition in s.safePositions
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-pred Car.isInSpecial[]{
-\end_layout
-
-\begin_layout Standard
-one s: SpecialArea| this.state.statePosition in s.specialPositions
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-pred Car.isAvailable[]{
-\end_layout
-
-\begin_layout Standard
-!(this.isUsed) and (this.state.batteryLevel >1) and (this.isInSafe)
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-pred Car.isNotAvailable[]{
-\end_layout
-
-\begin_layout Standard
-this.isUsed or this.state.batteryLevel <1 or !(this.isInSafe)
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-pred Car.isInList[l1:List]{
-\end_layout
-
-\begin_layout Standard
-this in l1.cars
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-----------------------------------------State things--------------------
-\end_layout
-
-\begin_layout Standard
-sig State{
-\end_layout
-
-\begin_layout Standard
-batteryLevel: Int,
-\end_layout
-
-\begin_layout Standard
-phase: one Phase,
-\end_layout
-
-\begin_layout Standard
-passengers: Int,
-\end_layout
-
-\begin_layout Standard
-statePosition: one Position,
-\end_layout
-
-\begin_layout Standard
-usedBy: lone User
-\end_layout
-
-\begin_layout Standard
-}{
-\end_layout
-
-\begin_layout Standard
-//per future implementazioni meglio passenges > < seats dell'auto
-\end_layout
-
-\begin_layout Standard
-passengers >=0
-\end_layout
-
-\begin_layout Standard
-batteryLevel >=0
-\end_layout
-
-\begin_layout Standard
-batteryLevel <=3
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-fact numberOfState{
-\end_layout
-
-\begin_layout Standard
-#Car = #State
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-fact passengersConstraint{
-\end_layout
-
-\begin_layout Standard
-all c:Car| ((c.state.phase=used) implies (c.state.passengers<=c.seats)) and((c.state.ph
-ase!=used) implies (c.state.passengers=0))
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-//this means that there are not cars in the same position
-\end_layout
-
-\begin_layout Standard
-fact differentPositionInCar{
-\end_layout
-
-\begin_layout Standard
-all c1,c2 : Car | (c1!=c2) implies (c1.state.statePosition != c2.state.statePosition
-)
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-----------------------------------------Phase things--------------------
-\end_layout
-
-\begin_layout Standard
-//these are the possible internal state of the car
-\end_layout
-
-\begin_layout Standard
-enum Phase {reserved, used, charge, free, parkUnsafeOrCharge}
-\end_layout
-
-\begin_layout Standard
-fact reservedPhase{
-\end_layout
-
-\begin_layout Standard
-all c: Car| (c.state.phase = reserved) iff (c.isInSafe and c.state.batteryLevel>1
- and c.isUsed and (c.state.phase!=used and c.state.phase!=charge and c.state.phase!=fre
-e and c.state.phase!=parkUnsafeOrCharge))// batteryLevel >=1 usata
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-fact usedPhase{
-\end_layout
-
-\begin_layout Standard
-all c: Car| (c.state.phase = used) iff (c.isUsed and c.state.batteryLevel !=
- 0 and (c.state.phase!=reserved and c.state.phase!=charge and c.state.phase!=free
- and c.state.phase!=parkUnsafeOrCharge)) //batteria >0 e deve essere usata
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-fact chargePhase{
-\end_layout
-
-\begin_layout Standard
-all c: Car| (c.state.phase = charge) iff (!(c.isAvailable) and c.isInSpecial
- and (c.state.phase!=reserved and c.state.phase!=used and c.state.phase!=free
- and c.state.phase!=parkUnsafeOrCharge))// position in special e non è usata
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-fact freePhase{
-\end_layout
-
-\begin_layout Standard
-all c: Car| (c.state.phase = free) iff (c.isAvailable and (c.state.phase!=reserved
- and c.state.phase!=used and c.state.phase!=charge and c.state.phase!=parkUnsafeOrChar
-ge))// batteria maggiore di 1 non è usata non è in carica
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-fact parkUnsafePhase{
-\end_layout
-
-\begin_layout Standard
-all c: Car| (c.state.phase = parkUnsafeOrCharge) iff (!(c.isAvailable)and /*(c.isInS
-afe or !(c.isInSafe)) and */ (c.state.phase!=reserved and c.state.phase!=used
- and c.state.phase!=charge and c.state.phase!=free))// posizione è in unsafe
- e non è usata
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-----------------------------------------User things--------------------
-\end_layout
-
-\begin_layout Standard
-sig User {
-\end_layout
-
-\begin_layout Standard
-licenseID: Int, //should be an alphanumeric value in the real world
-\end_layout
-
-\begin_layout Standard
-}{
-\end_layout
-
-\begin_layout Standard
-licenseID > 0
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-//this means that there are not equal users
+\begin_layout Subsection
+Code
 \end_layout
 
 \begin_layout Standard
-fact differentIDUser{
-\end_layout
-
-\begin_layout Standard
-all u1, u2: User | (u1 != u2) implies (u1.licenseID != u2.licenseID)
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-fact differentUserOnCar{
-\end_layout
-
-\begin_layout Standard
-all c1,c2: Car| (c1 != c2) implies (c1.state.usedBy != c2.state.usedBy)
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-----------------------------------------Employee things--------------------
-\end_layout
-
-\begin_layout Standard
-sig Employee {
-\end_layout
-
-\begin_layout Standard
-employeeID: Int,
-\end_layout
-
-\begin_layout Standard
-} {
-\end_layout
-
-\begin_layout Standard
-employeeID > 0
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-fact uniqueEmployee{
-\end_layout
-
-\begin_layout Standard
-all e1,e2: Employee| (e1 != e2) implies (e1.employeeID != e2.
- employeeID)
-\end_layout
-
-\begin_layout Standard
-}
-\end_layout
-
-\begin_layout Standard
-----------------------------------------PairOfWorkers things--------------------
-\end_layout
-
-\begin_layout Standard
-sig PairOfWorkers {
-\end_layout
+\begin_inset External
+	template PDFPages
+	filename alloy_code/Final_Model_GuidoAll.pdf
+	extra LaTeX "pages={1-9}"
 
-\begin_layout Standard
-employees: some Employee
-\end_layout
-
-\begin_layout Standard
-} {
-\end_layout
+\end_inset
 
-\begin_layout Standard
-#employees = 2
-\end_layout
 
-\begin_layout Standard
-}
 \end_layout
 
-\begin_layout Standard
-fact uniquePairOfWorkersForEmployee {
+\begin_layout Subsection
+Execution
 \end_layout
 
 \begin_layout Standard
-all e :Employee| lone p : PairOfWorkers| ((e in p.employees)) 
-\end_layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
-\begin_layout Standard
-}
-\end_layout
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename alloy_code/Alloy_execution.png
+	scale 80
 
-\begin_layout Standard
-fact mapPairOfWorkersOnLists{
-\end_layout
+\end_inset
 
-\begin_layout Standard
-#PairOfWorkers = #List
-\end_layout
 
-\begin_layout Standard
-}
 \end_layout
 
-\begin_layout Standard
-fact differentPairPerList{
-\end_layout
+\begin_layout Plain Layout
+\begin_inset Caption Standard
 
-\begin_layout Standard
-all l1,l2: List| (l1!=l2) implies (l1.pair!=l2.pair)
+\begin_layout Plain Layout
+Alloy execution.
 \end_layout
 
-\begin_layout Standard
-}
-\end_layout
+\end_inset
 
-\begin_layout Standard
-----------------------------------------List things--------------------
-\end_layout
 
-\begin_layout Standard
-sig List{
 \end_layout
 
-\begin_layout Standard
-code: Int,
-\end_layout
+\end_inset
 
-\begin_layout Standard
-cars: some Car,
-\end_layout
 
-\begin_layout Standard
-pair: one PairOfWorkers,
 \end_layout
 
-\begin_layout Standard
-}{
+\begin_layout Subsection
+Meta model
 \end_layout
 
 \begin_layout Standard
-code>0
-\end_layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
-\begin_layout Standard
-#cars>0
-\end_layout
+\begin_layout Plain Layout
+\begin_inset Caption Standard
 
-\begin_layout Standard
-}
+\begin_layout Plain Layout
+Alloy, Meta model.
 \end_layout
 
-\begin_layout Standard
-fact uniqueList{
-\end_layout
+\end_inset
 
-\begin_layout Standard
-all l1,l2: List| (l1!=l2) implies (l1.code!=l2.code)
-\end_layout
 
-\begin_layout Standard
-}
 \end_layout
 
-\begin_layout Standard
-fact phaseOfCarInTheList{
-\end_layout
+\begin_layout Plain Layout
 
-\begin_layout Standard
-all c: List.cars| c.state.phase=parkUnsafeOrCharge
 \end_layout
 
-\begin_layout Standard
-}
-\end_layout
+\end_inset
 
-\begin_layout Standard
-fact phaseOfCarInTheList{
-\end_layout
 
-\begin_layout Standard
-// all c:Car| one l:List| (c.state.phase=parkUnsafeOrCharge) implies (c in
- l.cars)
 \end_layout
 
-\begin_layout Standard
-}
+\begin_layout Subsection
+Model
 \end_layout
 
 \begin_layout Standard
-fact differentList{
-\end_layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
-\begin_layout Standard
-all l1,l2: List| all c: l1.cars| (l1!=l2) implies !(c.isInList[l2])
-\end_layout
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/musci/OneDrive/Progetto_Software_2/RASD/Alloy/alloy_final.pdf
+	scale 50
+	rotateAngle 90
 
-\begin_layout Standard
-}
-\end_layout
+\end_inset
 
-\begin_layout Standard
-fact listConstraints{
-\end_layout
 
-\begin_layout Standard
-all c:Car| (c.state.phase=parkUnsafeOrCharge) implies (c in List.cars)
 \end_layout
 
-\begin_layout Standard
-}
-\end_layout
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
 
-\begin_layout Standard
-pred show(){
+\begin_layout Plain Layout
+Alloy, Complete model without Int.
 \end_layout
 
-\begin_layout Standard
-//some c:Car| c.state.phase=reserved
-\end_layout
+\end_inset
 
-\begin_layout Standard
-//some c:Car| c.state.phase=used
-\end_layout
 
-\begin_layout Standard
-//some c:Car| c.state.phase=charge
 \end_layout
 
-\begin_layout Standard
-//some c:Car| c.state.phase=free
-\end_layout
+\begin_layout Plain Layout
 
-\begin_layout Standard
-//some c:Car| c.state.phase=parkUnsafeOrCharge
 \end_layout
 
-\begin_layout Standard
-// l: List| #(l.cars) =2
-\end_layout
+\end_inset
 
-\begin_layout Standard
-}
-\end_layout
 
-\begin_layout Standard
-run show for 1 but exactly 15 Position, exactly 1 SafeArea, exactly 2 SpecialAre
-a, exactly 7 Car, exactly 7 State, exactly 6 User, exactly 5 Employee, exactly
- 2 PairOfWorkers, exactly 2 List
 \end_layout
 
 \begin_layout Section
