@@ -89,7 +89,7 @@
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -131,7 +131,7 @@ Paola Marchesini (mat.
 
 \begin_layout Date
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -150,7 +150,7 @@ phantom{x}
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -604,7 +604,7 @@ RASD sample from Oct.
 \begin_layout Itemize
 PayPal documentation (
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -615,7 +615,7 @@ https://developer.paypal.com/docs/
 
  and 
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -630,7 +630,7 @@ https://www.paypal.com/it/webapps/mpp/merchant
 \begin_layout Itemize
 General documentations about SMS gateway provider (
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -641,7 +641,7 @@ https://www.smsglobal.com/business-sms/
 
  and 
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -651,6 +651,13 @@ http://www.trendoo.it/invio-sms.html
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -701,7 +708,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename images/mockup/websitehomepage.png
-	scale 20
+	scale 18
 
 \end_inset
 
@@ -717,10 +724,6 @@ Website, Home page
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -766,7 +769,7 @@ Website, Look for car nearby
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -821,7 +824,7 @@ Website, Reserve a car
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -874,6 +877,29 @@ Website, Employee page with list
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{top=1cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Paragraph
 Mobile application
 \end_layout
@@ -893,22 +919,6 @@ Mobile application
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-newgeometry{top=1cm}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -919,7 +929,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename images/mockup/export2.png
-	scale 18
+	scale 16
 
 \end_inset
 
@@ -958,7 +968,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename images/mockup/export.png
-	scale 18
+	scale 16
 
 \end_inset
 
@@ -997,7 +1007,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename images/mockup/export3.png
-	scale 18
+	scale 16
 
 \end_inset
 
@@ -1036,7 +1046,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename images/mockup/export4.png
-	scale 18
+	scale 16
 
 \end_inset
 
@@ -1066,7 +1076,7 @@ Application, Employee page and List
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -2001,6 +2011,13 @@ There is a call center, deals with the emergency situation, localized in
 The employees works in couple, because of safety law.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Specific requirements
 \end_layout
@@ -2018,7 +2035,7 @@ User
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2041,6 +2058,13 @@ Use Case - User (and human).
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -2069,7 +2093,7 @@ Create an account
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2247,6 +2271,13 @@ User, Use Case description - Create an account.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subparagraph
 Login
 \end_layout
@@ -2270,7 +2301,7 @@ Login
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2443,6 +2474,13 @@ User, Use Case description - Login of the user.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subparagraph
 Look for car nearby
 \end_layout
@@ -2466,7 +2504,7 @@ Look for car nearby
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2642,6 +2680,13 @@ User, Use Case description - Look for car nearby.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subparagraph
 Reserve a car
 \end_layout
@@ -2665,7 +2710,7 @@ Reserve a car
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2841,6 +2886,13 @@ User, Use Case description - Reserve a car.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subparagraph
 Select the 
 \begin_inset Quotes eld
@@ -2872,7 +2924,7 @@ Money saving Option
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3048,6 +3100,29 @@ User, Use Case description - Select the “Money saving option”.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{top=2cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subparagraph
 Open the car
 \end_layout
@@ -3079,7 +3154,7 @@ status open
 <lyxtabular version="3" rows="6" columns="2">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
-<column alignment="left" valignment="top" width="9cm">
+<column alignment="left" valignment="top" width="11cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -3265,6 +3340,29 @@ User, Use Case description - Open the car.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subparagraph
 Finish the ride
 \end_layout
@@ -3288,7 +3386,7 @@ Finish the ride
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3465,6 +3563,13 @@ User, Use Case description - Finish the ride.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subparagraph
 View special parking area
 \end_layout
@@ -3488,7 +3593,7 @@ View special parking area
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3674,7 +3779,7 @@ Employee
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3724,7 +3829,7 @@ Login
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3887,6 +3992,13 @@ Employee, Use Case description - Login.
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -4082,6 +4194,13 @@ Employee, Use Case description - Change availability of the car.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subparagraph
 Know cars that they have to take care
 \end_layout
@@ -4105,7 +4224,7 @@ Know cars that they have to take care
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4269,6 +4388,13 @@ Employee, Use Case description - Know cars that they have to take care.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Sequence diagrams
 \end_layout
@@ -4302,7 +4428,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/diagram_section_svg/Login sequence diagram.pdf
-	scale 70
+	scale 80
 
 \end_inset
 
@@ -4327,6 +4453,13 @@ Sequence Diagrams - Login of the user.
 \end_layout
 
 \begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
 
 \end_layout
 
@@ -4375,7 +4508,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/diagram_section_svg/Reservation and reachinf of the car sequence diagram.pdf
-	scale 70
+	scale 80
 
 \end_inset
 
@@ -4389,6 +4522,29 @@ Sequence Diagrams - Reservation and opening of the car (sequence diagrams).
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{top=1.5cm}
 \end_layout
 
 \end_inset
@@ -4429,7 +4585,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/diagram_section_svg/Change avaibility of the car bpmn activity.pdf
-	scale 70
+	scale 55
 
 \end_inset
 
@@ -4446,6 +4602,22 @@ Activity Diagrams - Change availability of the car.
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
 \end_layout
 
 \end_inset
@@ -4490,7 +4662,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/diagram_section_svg/Money saving option activity diagram.pdf
-	scale 50
+	scale 53
 
 \end_inset
 
@@ -4517,6 +4689,13 @@ Money saving option
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -4555,7 +4734,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/diagram_section_svg/Phase of the car state chart diagram.pdf
-	scale 65
+	scale 80
 
 \end_inset
 
@@ -4574,6 +4753,77 @@ State Chart - Phase of the car.
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Class diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/diagram_section_svg/Class diagram.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Class diagrams
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -4639,7 +4889,7 @@ Execution
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4692,7 +4942,7 @@ Meta model
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4721,7 +4971,7 @@ Alloy, Meta model.
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -4741,7 +4991,7 @@ Model
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -4767,7 +5017,7 @@ This is one of the instance found by Alloy Analyzer, for design purpose
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -4800,7 +5050,7 @@ Alloy, Complete model without Int.
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -4816,7 +5066,7 @@ restoregeometry
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -4825,6 +5075,13 @@ status open
 newgeometry{top=1cm}
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -4857,7 +5114,7 @@ Complete alloy model
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -4894,7 +5151,7 @@ Alloy, Complete model with Int.
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -4960,6 +5217,13 @@ GitHub: used to manage the shared building process of that document;
 
 \begin_layout Itemize
 Alloy Analyzer: used to prove the consistency of the model presented above.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
