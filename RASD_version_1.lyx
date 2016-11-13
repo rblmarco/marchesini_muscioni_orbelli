@@ -254,18 +254,18 @@ Login Credentials : these are email and password that the user has to provide
 \end_layout
 
 \begin_layout Itemize
-Check message: is the message that the system sends to the user if he/she
+Check message: it is the message that the system sends to the user if he/she
  fills out the form, during the registration phase, with information that
  are not correct.
 \end_layout
 
 \begin_layout Itemize
-Reservation message: is the message that the system send to the user who
- has just reserved a car.
+Reservation message: it is the message that the system send to the user
+ who has just reserved a car.
 \end_layout
 
 \begin_layout Itemize
-State: is the state of the car which includes the level of battery, position
+State: it is the state of the car which includes the level of battery, position
  and the number of passengers.
  If the vehicle is reserved or used the state will be associated with the
  respective user.
@@ -311,7 +311,7 @@ Expire time fine: fine that the user has to pay if, after an hour from the
 Money saving option: if the user enables the money saving option, he/she
  can input his/her final destination and the system provides information
  about the station where to leave the car to get a discount.
- This station is determined to ensure a uniform distribution of cars in
+ This station is determined to ensure an uniform distribution of cars in
  the city and depends both on the destination of the user and on the availabilit
 y of power plugs at the selected station.
 \end_layout
@@ -324,15 +324,6 @@ Final destination: the destination that the user enters in the navigator
 \begin_layout Itemize
 Symbolic amount: money that the user has to pay once he/she registered,
  the value is of one cent .
-\end_layout
-
-\begin_layout Itemize
-Money saving option: if the user enables the money saving option, he/she
- can input his/her final destination and the system provides information
- about the station where to leave the car to get a discount.
- This station is determined to ensure a uniform distribution of cars in
- the city and depends both on the destination of the user and on the availabilit
-y of power plugs at the selected station.
 \end_layout
 
 \begin_layout Itemize
@@ -419,15 +410,15 @@ Employee
 \end_layout
 
 \begin_layout Itemize
-[G1] Allows the employee to log in in the system, by app or website.
+[G1] Allows the employee to log in the system, by app or website.
 \end_layout
 
 \begin_layout Itemize
-[G2] Allow the employee to put the car in unavailable mode.
+[G2] Allows the employee to put the car in unavailable mode.
 \end_layout
 
 \begin_layout Itemize
-[G3] Allow the employee to know what car he/she has to take care.
+[G3] Allows the employee to know what car he/she has to take care.
 \end_layout
 
 \begin_layout Paragraph
@@ -455,7 +446,7 @@ Allows user to create an account.
 \begin_inset space ~
 \end_inset
 
-Allows user to log in in the system, by application or website.
+Allows user to log in the system, by application or website.
 \end_layout
 
 \begin_layout Itemize
@@ -467,7 +458,7 @@ Allows user to log in in the system, by application or website.
 \begin_inset space ~
 \end_inset
 
-Allow user to modify his/her credentials.
+Allows user to modify his/her credentials.
 \end_layout
 
 \begin_layout Itemize
@@ -503,7 +494,7 @@ Allows user to reserve a car.
 \begin_inset space ~
 \end_inset
 
-Allow user to send a request for opening the car.
+Allows user to send a request for opening the car.
 \end_layout
 
 \begin_layout Itemize
@@ -515,7 +506,7 @@ Allow user to send a request for opening the car.
 \begin_inset space ~
 \end_inset
 
-Allow user to enable the money saving option.
+Allows user to enable the money saving option.
 \end_layout
 
 \begin_layout Itemize
@@ -527,7 +518,8 @@ Allow user to enable the money saving option.
 \begin_inset space ~
 \end_inset
 
- Allow user to finish his/her ride and visualize the information about it.
+ Allows user to finish his/her ride and visualize the information about
+ it.
 \end_layout
 
 \begin_layout Itemize
@@ -539,7 +531,7 @@ Allow user to enable the money saving option.
 \begin_inset space ~
 \end_inset
 
-Allow user to view the special parking area in the map.
+Allows user to view the special parking area in the map.
 \end_layout
 
 \begin_layout Itemize
@@ -631,9 +623,9 @@ Product Perspective
 \end_layout
 
 \begin_layout Standard
-The software is a stand-alone system that does not extend or takes part
- in any nowdays software.
- The access to the sofware can be performed by the website and the mobile
+The software is a stand-alone system that does not extend or take part in
+ any nowdays software.
+ The access to the software can be performed by the website and the mobile
  application.
 \end_layout
 
@@ -1154,7 +1146,7 @@ Employee:
 \end_layout
 
 \begin_layout Itemize
-[G1] Allows the employee to log in in the system, by app or website:
+[G1] Allows the employee to log in the system, by app or website:
 \end_layout
 
 \begin_deeper
@@ -1164,12 +1156,12 @@ The system must be able to check if the credentials provided are correct.
 
 \end_deeper
 \begin_layout Itemize
-[G2] Allow the employee to put the car in unavailable mode.
+[G2] Allows the employee to put the car in unavailable mode.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-The employee must be able to set the state of the car in unavailable mode,
+The employee must be able to set the state of the care in unavailable mode,
  in order to take car of the car.
 \end_layout
 
@@ -1180,12 +1172,12 @@ The employee must be able to release the car, to make it available by all
 
 \end_deeper
 \begin_layout Itemize
-[G3] Allow the employee to know what car he/she has to take care.
+[G3] Allows the employee to know what car he/she has to take care.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-In the headquarters, the employee will receive a list of car which he/she
+In the headquarter, the employee will receive a list of cars which he/she
  has to take care and the daily colleague.
 \end_layout
 
@@ -1232,7 +1224,7 @@ The system must verify the existence of the email account and then sends
 \begin_inset space ~
 \end_inset
 
-Allows user to log in in the system, by application or website.
+Allows user to log in the system, by application or website.
 \end_layout
 
 \begin_deeper
@@ -1250,7 +1242,7 @@ The system must be able to check if the credentials provided are correct.
 \begin_inset space ~
 \end_inset
 
-Allow user to modify his/her credentials.
+Allows user to modify his/her credentials.
 \end_layout
 
 \begin_deeper
@@ -1299,7 +1291,7 @@ The system must be able to send the positions of the cars parked nearby.
 \end_layout
 
 \begin_layout Itemize
-The user must be able to zoom in and zoom out the area which is visualized
+The user must be able to zoom in and zoom out the area, which is visualized
  by the application to look for free cars.
 \end_layout
 
@@ -1331,7 +1323,7 @@ The user must be able to verify if the reservation time expires.
 
 \begin_layout Itemize
 The system must send a message to the phone number of the user.
- This message explaines how to open the car in case of troubles with the
+ This message explains how to open the car in case of troubles with the
  GPS or with the internet connection.
 \end_layout
 
@@ -1362,7 +1354,7 @@ Time expire fine
 \begin_inset space ~
 \end_inset
 
-Allow user to send a request for opening the car.
+Allows user to send a request for opening the car.
 \end_layout
 
 \begin_deeper
@@ -1371,16 +1363,17 @@ The user can open the car with a button in the application.
 \end_layout
 
 \begin_layout Itemize
-The user can open the car answeriing to the message received when he reserved
+The user can open the car answering to the message received when he reserved
  the car.
 \end_layout
 
 \begin_layout Itemize
-The system must verifies if the user is near the car.
+The system must verify if the user is near the car.
 \end_layout
 
 \begin_layout Itemize
-If the conditions are verified, the system send to the car the opening command.
+If the conditions are verified, the system sends to the car the opening
+ command.
 \end_layout
 
 \end_deeper
@@ -1427,7 +1420,8 @@ The user can see the way for the selected location.
 \begin_inset space ~
 \end_inset
 
- Allow user to finish his/her ride and visualize the information about it.
+ Allows user to finish his/her ride and visualize the information about
+ it.
 \end_layout
 
 \begin_deeper
@@ -1451,7 +1445,7 @@ The user must be able to see the final information about the ride, but not
 \begin_inset space ~
 \end_inset
 
-Allow user to view the special parking area in the map.
+Allows user to view the special parking area in the map.
 \end_layout
 
 \begin_deeper
@@ -1505,8 +1499,8 @@ User characterics
 \end_layout
 
 \begin_layout Standard
-These are some usefull scenarios to understan in a better way the needs
- of an user.
+These are some usefull scenarios to understand in a better way the needs
+ of a user.
 \end_layout
 
 \begin_layout Paragraph
