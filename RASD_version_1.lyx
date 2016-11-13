@@ -4610,6 +4610,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename alloy_code/meta_model.jpg
+	scale 30
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -4641,6 +4648,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename alloy_code/alloy_final-1.jpg
+	scale 30
+	rotateAngle 90
+
+\end_inset
+
 
 \end_layout
 
@@ -4654,10 +4668,6 @@ Alloy, Complete model without Int.
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
