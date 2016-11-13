@@ -1768,7 +1768,7 @@ License agreement terms and conditions
  the use of general statistic over these data.
  The systems must require the authorization in order to treat with the sensible
  data that users will give in the registration phase.
- In order to receive the company's newsletter the users must dive an additional
+ In order to receive the company's newsletter the users must give an additional
  permission.
 \end_layout
 
@@ -1859,7 +1859,7 @@ PayPal Pro
 
 \begin_layout Itemize
 Interface with an SMS gateway, with SMS APIs owned by the SMS provider.
- That fact in order to send message tothe users of the system.
+ That fact in order to send message to the users of the system.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1924,7 +1924,7 @@ There are other employees, of our company, that deals with car parked in
 \end_layout
 
 \begin_layout Itemize
-If the user cannot open the car with the standar commands, at the headquarter,
+If the user cannot open the car with the standard commands, at the headquarter,
  the operators have a special command to open cars.
 \end_layout
 
@@ -1977,7 +1977,7 @@ User
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2028,9 +2028,10 @@ Create an account
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
 <features tabularvalignment="middle">
@@ -2228,9 +2229,10 @@ Login
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
 <features tabularvalignment="middle">
@@ -2423,9 +2425,10 @@ Look for car nearby
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
 <features tabularvalignment="middle">
@@ -2621,9 +2624,10 @@ Reserve a car
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
 <features tabularvalignment="middle">
@@ -2827,9 +2831,10 @@ Money saving Option
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
 <features tabularvalignment="middle">
@@ -3025,9 +3030,10 @@ Open the car
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
 <features tabularvalignment="middle">
@@ -3121,7 +3127,7 @@ If the system establishes that the user is near the car, it enables the
 
 \begin_layout Enumerate
 If the user has reserved the car using the website, he/she could open the
- reservation message sent to him/she by the system when he has done the
+ reservation message sent to him/she by the system when he has made the
  reservation;
 \end_layout
 
@@ -3241,9 +3247,10 @@ Finish the ride
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
 <features tabularvalignment="middle">
@@ -3440,9 +3447,10 @@ View special parking area
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
 <features tabularvalignment="middle">
@@ -3527,8 +3535,7 @@ The user must select the specific option on the screen (tapping on the phone
 \end_layout
 
 \begin_layout Enumerate
-The user can insert his position manually if he/she does not have a GPS
- connection;
+The user can insert his position manually if he/she has not a GPS connection;
 \end_layout
 
 \begin_layout Enumerate
@@ -3626,7 +3633,7 @@ Employee
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3676,9 +3683,10 @@ Login
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
 <features tabularvalignment="middle">
@@ -4056,9 +4064,10 @@ Know cars that they have to take care
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
 <features tabularvalignment="middle">
@@ -4168,7 +4177,7 @@ Exit conditions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The employee receives correctly the list of car that he must take care.
+The employee receives correctly the list of cars that he must take care.
 \end_layout
 
 \end_inset
@@ -4246,7 +4255,7 @@ Login of the user
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4299,7 +4308,7 @@ Reservation and opening of the car
 \end_layout
 
 \begin_layout Standard
-This sequence diagram represent the scenario with these hypothesis:
+This sequence diagram represents the scenario with these hypothesis:
 \end_layout
 
 \begin_layout Itemize
@@ -4319,7 +4328,7 @@ The user open the car tapping on the application.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4373,7 +4382,7 @@ Change availability of the car
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4434,7 +4443,7 @@ Money saving option
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4499,7 +4508,7 @@ Phase of the car
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4632,13 +4641,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename C:/Users/musci/OneDrive/Progetto_Software_2/RASD/Alloy/alloy_final.pdf
-	scale 50
-	rotateAngle 90
-
-\end_inset
-
 
 \end_layout
 
