@@ -6109,6 +6109,27 @@ total
 
 \end_layout
 
+\begin_layout Section
+Changelog
+\end_layout
+
+\begin_layout Itemize
+version 1.01:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+fix a direction of an arrow in phase of the car, state chart diagram.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset FloatList figure
 

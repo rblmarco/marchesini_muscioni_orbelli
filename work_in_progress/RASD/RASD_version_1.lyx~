@@ -1930,7 +1930,7 @@ We supposed that these properties hold in the analysed word:
 \end_layout
 
 \begin_layout Itemize
-All the cars are already accessible by the system.
+All the cars are already accessible by the system;
 \end_layout
 
 \begin_layout Itemize
@@ -1947,7 +1947,8 @@ The special parking areas are already defined;
 \end_layout
 
 \begin_layout Itemize
-All cars can park in all the parking available without pay any fine;
+All cars can park in all the parking available without pay any fine, in
+ respect of the law;
 \end_layout
 
 \begin_layout Itemize
@@ -1970,13 +1971,8 @@ There is an external company that deals with accident;
 \end_layout
 
 \begin_layout Itemize
-There are other employees, of our company, that deals with car parked in
- unsafe area;
-\end_layout
-
-\begin_layout Itemize
 If the user cannot open the car with the standard commands, at the headquarter,
- the operators have a special command to open cars.
+ the operators have a special command to open cars;
 \end_layout
 
 \begin_layout Itemize
@@ -1990,7 +1986,8 @@ The fine must be applied only if the initial battery level was more than
 
 \begin_layout Itemize
 Before the ride starts, the system keeps in memory the initial state of
- the car, to verify, at the end, the conditions for a discount;
+ the car, to verify, at the end, the final cost of the ride and the conditions
+ for a discount;
 \end_layout
 
 \begin_layout Itemize
@@ -4027,9 +4024,10 @@ Change availability of the car
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
 <features tabularvalignment="middle">
@@ -4765,6 +4763,22 @@ State Chart - Phase of the car.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{top=1.5cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Class diagram
 \end_layout
@@ -4794,7 +4808,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename images/diagram_section_svg/Class diagram.pdf
-	scale 50
+	scale 45
 
 \end_inset
 
@@ -4823,7 +4837,39 @@ Class diagrams
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{top=1cm}
+\end_layout
+
 \end_inset
 
 
@@ -4856,10 +4902,54 @@ Code
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset External
 	template PDFPages
 	filename alloy_code/Final_Model_GuidoAll.pdf
-	extra LaTeX "pages={1-9}"
+	lyxscale 90
+	extra LaTeX "pages={1}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename alloy_code/Final_Model_GuidoAll.pdf
+	extra LaTeX "pages={2-9}"
 
 \end_inset
 
@@ -4914,6 +5004,13 @@ Alloy execution.
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -5232,7 +5329,7 @@ Hours of work
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="21" columns="4">
+<lyxtabular version="3" rows="20" columns="4">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -5623,44 +5720,6 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-4/11
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 5/11
 \end_layout
 
@@ -5974,7 +6033,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
+3
 \end_layout
 
 \end_inset
@@ -5983,7 +6042,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
+3
 \end_layout
 
 \end_inset
@@ -6012,7 +6071,7 @@ total
 \begin_inset Text
 
 \begin_layout Plain Layout
-56
+58
 \end_layout
 
 \end_inset
@@ -6021,7 +6080,7 @@ total
 \begin_inset Text
 
 \begin_layout Plain Layout
-46.5
+48.5
 \end_layout
 
 \end_inset
@@ -6037,6 +6096,29 @@ total
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
 
 \end_inset
 
