@@ -94,7 +94,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/front_page/Logo_polimi_grande.png
+	filename Images/front_page/Logo_polimi_grande.png
 	scale 40
 
 \end_inset
@@ -155,7 +155,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/Logo.png
+	filename Images/Logo.png
 	scale 60
 
 \end_inset
@@ -280,14 +280,80 @@ The system of PowerEnjoy service is composed by a three layer architecture:
 \end_layout
 
 \begin_layout Itemize
-Presentation layer: is the tier which allows the general user (employee
- and user) of the system to interact with the functionality of PowerEnjoy
- service.
+Presentation layer: it is the layer that deals with presentation logic,
+ in other way the interaction eith the users.
+ So it contains the interfacing and rendering procedures of all system informati
+on.
+ That layer is also known as application front-end;
+\end_layout
+
+\begin_layout Itemize
+Application layer: it is the layer that handles all the system functions.
+ It also queries the database, in order to infer information, needed to
+ build web pages;
+\end_layout
+
+\begin_layout Itemize
+Data layer: it takes care of information management, using a DBMS software.
+\end_layout
+
+\begin_layout Standard
+In order to support that layer division, the system will be develop following
+ a multi-tier architecture based on five tiers.
+\end_layout
+
+\begin_layout Itemize
+Tiers of presentation layer:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Client tier: represented by user's broswer or mobile application;
+\end_layout
+
+\begin_layout Itemize
+Web server tier: That tier will answer to the HTTP request (GET, POST, etc...)
+ from users or PowerEnjoy intranet.
+ So it interacts with the script engine to create dynamic web pages, and
+ with application server to retrieve data required in order to build pages
+ with correct information.
+ It also will grant access to static objects and pages;
+\end_layout
+
+\begin_layout Itemize
+Script engine tier: it takes care of creating dyanamic pages, using JS scripts,
+ in order to generate dynamic HTML code.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Application server (tier of application layer): it is the middle tier of
+ the system.
+ It implements the business logic, following the rules defined by the company.
+ That tier have a direct link to the database server;
+\end_layout
+
+\begin_layout Itemize
+Database server (tier of data layer): it is composed by a DBMS that permit
+ ACID propriety of data, and it allows application server to make SQL queries.
+\end_layout
+
+\begin_layout Itemize
+<TODO: stesso diagramma con DMZ in rosso così si capisce meglio>
+\end_layout
+
+\begin_layout Itemize
+<TODO: server farm con due server per ogni tier tranne il client>
+\end_layout
+
+\begin_layout Standard
+Client tier allows the general user (employee and user) of the system to
+ interact with the functionality of PowerEnjoy service.
  The users can access to the system with a common web broswer, or with the
  mobile application.
  The web server contains the structure of the web pages, and it answers
- to the user's requests, generating the page with the proper data, received
- from the application server.
+ to the user's requests, generating the pages, using script engine, with
+ the proper data, received from the application server.
  There are two ways of interaction between users and system.
  The first one with a modern and up to date web broswer.
  The second one is represetend by the mobile application, which is completely
@@ -298,15 +364,7 @@ Presentation layer: is the tier which allows the general user (employee
  product quality attributes (as maintainability, performance, portability,
  etc...).
  Furthermore, a responsive design will give to the users of PowerEnjoy system
- a service easy to use and always familiar;
-\end_layout
-
-\begin_layout Itemize
-<TODO: stesso diagramma con DMZ in rosso così si capisce meglio>
-\end_layout
-
-\begin_layout Itemize
-<TODO: server farm con due server per ogni tier tranne il client>
+ a service easy to use and always familiar.
 \end_layout
 
 \begin_layout Standard
