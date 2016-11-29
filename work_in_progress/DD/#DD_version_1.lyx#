@@ -230,6 +230,10 @@ Overview
 
 \end_layout
 
+\begin_layout Paragraph
+Logical architecture
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 placement H
@@ -240,7 +244,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Diagrams/Architecture/Architecture.svg
-	scale 27
+	scale 30
 
 \end_inset
 
@@ -248,7 +252,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -309,19 +312,20 @@ Presentation layer: is the tier which allows the general user (employee
 <TODO: server farm con due server per ogni tier tranne il client>
 \end_layout
 
+\begin_layout Paragraph
+Tier architecture
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Diagrams/Architecture/Architecture_firewall.svg
-	scale 30
-	rotateAngle 90
+\begin_inset External
+	template ChessDiagram
+	filename Diagrams/Architecture/Architecture_firewall.pdf
 
 \end_inset
 
