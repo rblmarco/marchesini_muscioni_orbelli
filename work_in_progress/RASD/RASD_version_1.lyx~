@@ -280,6 +280,14 @@ User: he/she is a client of the service.
 \end_layout
 
 \begin_layout Itemize
+Employee: he/she is the employee of POwer Enjoy Company.
+\end_layout
+
+\begin_layout Itemize
+Human: he/she is a generic person that could use the application.
+\end_layout
+
+\begin_layout Itemize
 All Credentials: these are all information about the user that the system
  needs.
  The information contains name, last name, social security number, home
@@ -309,6 +317,15 @@ State: it is the state of the car which includes the level of battery, position
  If the vehicle is reserved or used the state will be associated with the
  respective user.
  
+\end_layout
+
+\begin_layout Itemize
+Availbale mode: in this mode the car can be reserve by an user.
+\end_layout
+
+\begin_layout Itemize
+Unavailbale mode: in this mode the car can not be reserved by an user, because
+ it has a critical battery level or other damages.
 \end_layout
 
 \begin_layout Itemize
@@ -372,12 +389,12 @@ Types of discount:
 \begin_deeper
 \begin_layout Itemize
 If the system detects the user took at least two other passengers onto the
- car, the system applies a discount of 10% on the last ride.
+ car, the system applies a discount of 10% on the last ride;
 \end_layout
 
 \begin_layout Itemize
 If a car is left with no more than 50% of the battery empty, the system
- applies a discount of 20% on the last ride.
+ applies a discount of 20% on the last ride;
 \end_layout
 
 \begin_layout Itemize
@@ -392,19 +409,24 @@ Battery level:
 
 \begin_deeper
 \begin_layout Itemize
-Full battery level
+Full battery level;
 \end_layout
 
 \begin_layout Itemize
-High battery level
+High battery level;
 \end_layout
 
 \begin_layout Itemize
-Low battery level
+Medium battery level;
 \end_layout
 
 \begin_layout Itemize
-Critical battery level
+Low battery level;
+\end_layout
+
+\begin_layout Itemize
+Critical battery level: level of the bettery in whic the car is not available,
+ because it has no enought charge to guarantee a ride.
 \end_layout
 
 \end_deeper
@@ -2032,7 +2054,7 @@ User
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2501,7 +2523,7 @@ Look for car nearby
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2614,7 +2636,9 @@ Exit conditions
 \begin_inset Text
 
 \begin_layout Plain Layout
-The user visualizes correctly the cars nearby him/her position.
+The user visualizes correctly the cars available nearby him/her position.
+ The cars that are not availale (critical batery level or damages) are note
+ visualized.
 \end_layout
 
 \end_inset
@@ -2921,7 +2945,7 @@ Money saving Option
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3143,7 +3167,7 @@ Open the car
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3767,6 +3791,249 @@ User, Use Case description - View special parking area.
 
 \end_layout
 
+\begin_layout Subparagraph
+Modify his/her credentials
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="11cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Modified his/her credential
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Actors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+User.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Entry conditions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+The user has already registered in the system;
+\end_layout
+
+\begin_layout Itemize
+The user must be logged in the application or in the the website.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flow of events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+The user select the command "change credential"
+\end_layout
+
+\begin_layout Enumerate
+Then the user selecet the specific field that he/she wants to update: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+the photo of his/her driving license;
+\end_layout
+
+\begin_layout Enumerate
+his/her phone number;
+\end_layout
+
+\begin_layout Enumerate
+his/her mail address;
+\end_layout
+
+\begin_layout Enumerate
+his/her payment information;
+\end_layout
+
+\begin_layout Enumerate
+his/her password;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+After the change the user has to see the updated information and confirm
+ them if they are right.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exit conditions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The system receives correctly the command to modify the user's credential
+ and he/she sees in the screen his/her new credential.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exceptions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+The system detects that the email address is wrong or does not exist.
+ The system redirects the human on the previous page, asking him to write
+ correctly his/her email.
+\end_layout
+
+\begin_layout Itemize
+The PowerEnjoy staff detect that the driving license inserted is not valid,
+ so the system sends an email to the new user, asking to take a better picture
+ of his/her license.
+\end_layout
+
+\begin_layout Itemize
+The system does not successfully withdraw the symbolic amount using the
+ new payment information inserted.
+ The system redirects the human on the registration page, asking to insert
+ the payment information correctly.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+User, Use Case description - Open the car.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Employee
 \end_layout
@@ -3776,7 +4043,7 @@ Employee
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3790,7 +4057,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Use Case - Employee
+Use Case - Employee (and Human)
 \end_layout
 
 \end_inset
