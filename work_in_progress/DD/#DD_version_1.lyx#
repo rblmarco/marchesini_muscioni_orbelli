@@ -225,10 +225,6 @@ Reference Documents
 \end_layout
 
 \begin_layout Subsection
-Used Tools
-\end_layout
-
-\begin_layout Subsection
 Document Structure
 \end_layout
 
@@ -654,12 +650,8 @@ Ride Controller
 \end_layout
 
 \end_deeper
-\begin_layout Section
-House Of Work
-\end_layout
+\begin_layout Standard
 
-\begin_layout Section
-Changelog
 \end_layout
 
 \end_body
