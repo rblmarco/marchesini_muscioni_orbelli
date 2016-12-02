@@ -346,14 +346,14 @@ Database server (tier of data layer): it is composed by a DBMS that permit
 <TODO: server farm con due server per ogni tier tranne il client>
 \end_layout
 
-\begin_layout Itemize
-is the tier which allows the general user (employee and user) of the system
- to interact with the functionality of PowerEnjoy service.
+\begin_layout Standard
+Client tier allows the general user (employee and user) of the system to
+ interact with the functionality of PowerEnjoy service.
  The users can access to the system with a common web broswer, or with the
  mobile application.
  The web server contains the structure of the web pages, and it answers
- to the user's requests, generating the page with the proper data, received
- from the application server.
+ to the user's requests, generating the pages, using script engine, with
+ the proper data, received from the application server.
  There are two ways of interaction between users and system.
  The first one with a modern and up to date web broswer.
  The second one is represetend by the mobile application, which is completely
@@ -364,7 +364,7 @@ is the tier which allows the general user (employee and user) of the system
  product quality attributes (as maintainability, performance, portability,
  etc...).
  Furthermore, a responsive design will give to the users of PowerEnjoy system
- a service easy to use and always familiar
+ a service easy to use and always familiar.
 \end_layout
 
 \begin_layout Standard

@@ -372,7 +372,7 @@ Client tier allows the general user (employee and user) of the system to
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -398,14 +398,185 @@ Real architecture of
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
+\begin_layout Section
+Requirements traceability 
+\end_layout
+
+\begin_layout Standard
+All the decisions in the design of this project have been taken following
+ functional and non-functional requirements writtend in the RASD.
+ The list under maps the requirements and goals contained in specific sections
+ of the RASD to the components in the Design Document which will assure
+ its fulfillment.
+\end_layout
+
+\begin_layout Itemize
+[E1] Allows the employee to log in the system, by app or website 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Account Controller
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[E2] Allows the employee to put the car in unavailable mode 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Car Controller 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[E3] Allows the employee to know what car he/she has to take care 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+List Controller
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[U1] Allows user to create an account 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Account Controller
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[U2] Allows user to log in the System, by application or website 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Account Controller
+\end_layout
+
+\begin_layout Itemize
+Mobile application and website
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[U3] Allows user to modify his/her credentials
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Account Controller
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[U4] Allows user to look for cars nearby 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Reservation Controller
+\end_layout
+
+\begin_layout Itemize
+List Controller
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[U5] Allows user to reserve a car 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Reservation Controller
+\end_layout
+
+\begin_layout Itemize
+Car Controller
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[U6] Allows user to send a request for opening the car 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Mobile application
+\end_layout
+
+\begin_layout Itemize
+Car Controller
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[U7] Allows user to enable the money saving option 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+TODO
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[U8] Allows user to finish his/her ride and visualize the information about
+ it 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Screen of Car
+\end_layout
+
+\begin_layout Itemize
+Ride Controller
+\end_layout
+
+\begin_layout Itemize
+Car Controller
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[U9] Allows user to view the special parking area in the map 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Screen of car 
+\end_layout
+
+\begin_layout Itemize
+List Controller
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[U10] Allows user to pay for the ride
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Payment Controller
+\end_layout
+
+\begin_layout Itemize
+Ride Controller
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
