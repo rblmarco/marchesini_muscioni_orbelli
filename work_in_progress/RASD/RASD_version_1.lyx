@@ -471,15 +471,15 @@ Employee
 \end_layout
 
 \begin_layout Itemize
-[G1] Allows the employee to log in the system, by app or website.
+[E1] Allows the employee to log in the system, by app or website.
 \end_layout
 
 \begin_layout Itemize
-[G2] Allows the employee to put the car in unavailable mode.
+[E2] Allows the employee to put the car in unavailable mode.
 \end_layout
 
 \begin_layout Itemize
-[G3] Allows the employee to know what car he/she has to take care.
+[E3] Allows the employee to know what car he/she has to take care.
 \end_layout
 
 \begin_layout Paragraph
@@ -487,7 +487,7 @@ User
 \end_layout
 
 \begin_layout Itemize
-[G1] 
+[U1] 
 \begin_inset space ~
 \end_inset
 
@@ -499,7 +499,7 @@ Allows user to create an account.
 \end_layout
 
 \begin_layout Itemize
-[G2] 
+[U2] 
 \begin_inset space ~
 \end_inset
 
@@ -511,7 +511,7 @@ Allows user to log in the system, by application or website.
 \end_layout
 
 \begin_layout Itemize
-[G3] 
+[U3] 
 \begin_inset space ~
 \end_inset
 
@@ -523,7 +523,7 @@ Allows user to modify his/her credentials.
 \end_layout
 
 \begin_layout Itemize
-[G4] 
+[U4] 
 \begin_inset space ~
 \end_inset
 
@@ -535,7 +535,7 @@ Allows user to look for cars nearby.
 \end_layout
 
 \begin_layout Itemize
-[G5] 
+[U5] 
 \begin_inset space ~
 \end_inset
 
@@ -547,7 +547,7 @@ Allows user to reserve a car.
 \end_layout
 
 \begin_layout Itemize
-[G6] 
+[U6] 
 \begin_inset space ~
 \end_inset
 
@@ -559,7 +559,7 @@ Allows user to send a request for opening the car.
 \end_layout
 
 \begin_layout Itemize
-[G7] 
+[U7] 
 \begin_inset space ~
 \end_inset
 
@@ -571,7 +571,7 @@ Allows user to enable the money saving option.
 \end_layout
 
 \begin_layout Itemize
-[G8]
+[U8]
 \begin_inset space ~
 \end_inset
 
@@ -584,7 +584,7 @@ Allows user to enable the money saving option.
 \end_layout
 
 \begin_layout Itemize
-[G9] 
+[U9] 
 \begin_inset space ~
 \end_inset
 
@@ -596,7 +596,7 @@ Allows user to view the special parking area in the map.
 \end_layout
 
 \begin_layout Itemize
-[G10] Allows user to pay for the ride.
+[U10] Allows user to pay for the ride.
 \end_layout
 
 \begin_layout Subsection
@@ -1217,7 +1217,7 @@ Employee:
 \end_layout
 
 \begin_layout Itemize
-[G1] Allows the employee to log in the system, by app or website:
+[E1] Allows the employee to log in the system, by app or website:
 \end_layout
 
 \begin_deeper
@@ -1227,7 +1227,7 @@ The system must be able to check if the credentials provided are correct.
 
 \end_deeper
 \begin_layout Itemize
-[G2] Allows the employee to put the car in unavailable mode.
+[E2] Allows the employee to put the car in unavailable mode.
 \end_layout
 
 \begin_deeper
@@ -1243,7 +1243,7 @@ The employee must be able to release the car, to make it available by all
 
 \end_deeper
 \begin_layout Itemize
-[G3] Allows the employee to know what car he/she has to take care.
+[E3] Allows the employee to know what car he/she has to take care.
 \end_layout
 
 \begin_deeper
@@ -1263,7 +1263,7 @@ User:
 \end_layout
 
 \begin_layout Itemize
-[G1] 
+[U1] 
 \begin_inset space ~
 \end_inset
 
@@ -1287,7 +1287,7 @@ The system must verify the existence of the email account and then sends
 
 \end_deeper
 \begin_layout Itemize
-[G2] 
+[U2] 
 \begin_inset space ~
 \end_inset
 
@@ -1305,7 +1305,7 @@ The system must be able to check if the credentials provided are correct.
 
 \end_deeper
 \begin_layout Itemize
-[G3] 
+[U3] 
 \begin_inset space ~
 \end_inset
 
@@ -1340,7 +1340,7 @@ The user must be able to modify his/her password.
 
 \end_deeper
 \begin_layout Itemize
-[G4] 
+[U4] 
 \begin_inset space ~
 \end_inset
 
@@ -1368,7 +1368,7 @@ The user must be able to zoom in and zoom out the area, which is visualized
 
 \end_deeper
 \begin_layout Itemize
-[G5] 
+[U5] 
 \begin_inset space ~
 \end_inset
 
@@ -1417,7 +1417,7 @@ Time expire fine
 
 \end_deeper
 \begin_layout Itemize
-[G6] 
+[U6] 
 \begin_inset space ~
 \end_inset
 
@@ -1449,7 +1449,7 @@ If the conditions are verified, the system sends to the car the opening
 
 \end_deeper
 \begin_layout Itemize
-[G7] 
+[U7] 
 \begin_inset space ~
 \end_inset
 
@@ -1483,7 +1483,7 @@ The user can see the way for the selected location.
 
 \end_deeper
 \begin_layout Itemize
-[G8]
+[U8]
 \begin_inset space ~
 \end_inset
 
@@ -1508,7 +1508,7 @@ The user must be able to see the final information about the ride, but not
 
 \end_deeper
 \begin_layout Itemize
-[G9] 
+[U9] 
 \begin_inset space ~
 \end_inset
 
@@ -1532,7 +1532,7 @@ The user must be able to select a specific parking area, and see the way
 
 \end_deeper
 \begin_layout Itemize
-[G10] Allows user to pay for the ride.
+[U10] Allows user to pay for the ride.
 \end_layout
 
 \begin_deeper
@@ -6394,6 +6394,44 @@ version 1.01:
 \begin_deeper
 \begin_layout Itemize
 fix a direction of an arrow in phase of the car, state chart diagram.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+version 1.1
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+fix gol acronym, Un for user and En for employee instead Gn;
+\end_layout
+
+\begin_layout Itemize
+fix details on level of battery in glossary and in in 
+\begin_inset Quotes eld
+\end_inset
+
+Look for car nearby
+\begin_inset Quotes erd
+\end_inset
+
+ use case table;
+\end_layout
+
+\begin_layout Itemize
+add description about document conventions;
+\end_layout
+
+\begin_layout Itemize
+add 
+\begin_inset Quotes eld
+\end_inset
+
+Modify his/her credentials
+\begin_inset Quotes erd
+\end_inset
+
+ use case table.
 \end_layout
 
 \end_deeper
