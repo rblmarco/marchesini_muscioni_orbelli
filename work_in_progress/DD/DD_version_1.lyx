@@ -447,12 +447,150 @@ Runtime View
 Start the ride - Sequence diagram
 \end_layout
 
+\begin_layout Standard
+This sequence diagram shows how to an an user (an identified human) could
+ reserve a car.
+ Tapping or selecting the option 
+\begin_inset Quotes eld
+\end_inset
+
+Look for car nearby
+\begin_inset Quotes erd
+\end_inset
+
+, he/she send his position (inserted manually o automatically sent) to the
+ system.
+ Once arrived to the dispacher, the request is send to the right controller
+ (in this case the 
+\begin_inset Quotes eld
+\end_inset
+
+List controller
+\begin_inset Quotes erd
+\end_inset
+
+) which ask to the database a list of car available for reservation.
+ The user can now visualize the states of these car and chose one of these.
+ He/she reserved the car chosen with the suiteted option and, through the
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Reservation controller
+\begin_inset Quotes erd
+\end_inset
+
+ a reservation of this car is created and also, throght the 
+\begin_inset Quotes eld
+\end_inset
+
+Car controller
+\begin_inset Quotes erd
+\end_inset
+
+, the phase of this car is put on 
+\begin_inset Quotes eld
+\end_inset
+
+Reserved
+\begin_inset Quotes erd
+\end_inset
+
+.
+ When the user reachs the car, he/she opens it and the phase of the car
+ is now 
+\begin_inset Quotes eld
+\end_inset
+
+Used
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsubsection
 Finish the ride - Sequence diagram
 \end_layout
 
+\begin_layout Standard
+This sequence diagram show how to an user (an idenified human) finish his/her
+ ride.
+ The user turn off the car and then, on the user terminal (in this case
+ the screen of the car), he/she selects the option 
+\begin_inset Quotes eld
+\end_inset
+
+Finish the ride
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The request arrives to the dispatcher and it forwards the request to the
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Ride controller
+\begin_inset Quotes erd
+\end_inset
+
+ which works on the database to updates tables in order to 
+\begin_inset Quotes eld
+\end_inset
+
+close
+\begin_inset Quotes erd
+\end_inset
+
+ the ride.
+ When the user sees on the user terminal (the screen of the car) that the
+ ride is finished, he/she gets out the car and it's sensor send to the system
+ a request to close the car.
+ The user has one minute to plug the car, after this time expires the applicatio
+n server proceeds to compute the final cost of the ride, eventually applying
+ discounts, accordig to the various options chosen for this ride.
+ The system finaly send a mail with the bill of the ride to the user.
+\end_layout
+
 \begin_layout Subsubsection
 List of car - Sequence diagram
+\end_layout
+
+\begin_layout Standard
+This sequence diagram show the utility of the list of car for an employee.
+ When the employee arrives at work, he/she has to see the list of car which
+ he/she has to take car in the day.
+ He/she sends his request to the system and the dispatcher forwards the
+ request to the 
+\begin_inset Quotes eld
+\end_inset
+
+List controller
+\begin_inset Quotes erd
+\end_inset
+
+, which extracts from the database some cars that need to be checked.
+ He/she takes car of the car and then, according to the problems he/she
+ has detected during his/her works, he/she changes the state of the car,
+ sending the request to the application server.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+Car controller
+\begin_inset Quotes erd
+\end_inset
+
+ changes the state of the car in the database and the 
+\begin_inset Quotes eld
+\end_inset
+
+List of car
+\begin_inset Quotes erd
+\end_inset
+
+ of the employee is updated.
 \end_layout
 
 \begin_layout Subsection
