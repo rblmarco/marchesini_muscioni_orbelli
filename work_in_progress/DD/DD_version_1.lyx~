@@ -110,7 +110,7 @@ status open
 \begin_layout Title
 
 \size huge
-Requirements Analysis and Specifications Document
+Design Document
 \end_layout
 
 \begin_layout Author
@@ -212,8 +212,125 @@ Introduction
 Purpose
 \end_layout
 
+\begin_layout Standard
+This document is written based on RASD document, its aim is to well specify
+ the structure, both hardware and software, of the system previously defined.
+ The reader of that document are developers.
+ They can find in that all the main information needed to the developing
+ phase, as:
+\end_layout
+
+\begin_layout Itemize
+The architecture of the system;
+\end_layout
+
+\begin_layout Itemize
+The general software architecture of the system;
+\end_layout
+
+\begin_layout Itemize
+The most important points about what the system has to provide in runtime
+ environment (Runtime view);
+\end_layout
+
+\begin_layout Itemize
+Some important algorithm the system is based on;
+\end_layout
+
+\begin_layout Itemize
+The design patterns;
+\end_layout
+
+\begin_layout Itemize
+The components and their interfaces.
+\end_layout
+
 \begin_layout Subsection
 Scope
+\end_layout
+
+\begin_layout Standard
+The scope of that system, is defined in the RASD document, than, here there
+ is a copy of the paragraph:
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "70col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+The aim of the project is to develop a digital system for an electric car-sharin
+g company, that is called PowerEnjoy.
+ There are not previous system so that document will describe the requirements
+ that deal with all the system that the customer wants.
+\end_layout
+
+\begin_layout Plain Layout
+
+\shape italic
+The users of PowerEnjoy system are:
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Client;
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Employee.
+\end_layout
+
+\begin_layout Plain Layout
+
+\shape italic
+Both of these users are going to have unique credentials in order to use
+ the system, so they must be registered.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\shape italic
+The clients will use this system to reserve and use cars of PowerEnjoy company.
+\end_layout
+
+\begin_layout Plain Layout
+
+\shape italic
+The employees will use that system in order to know what cars need help.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -259,7 +376,7 @@ Overview
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -396,7 +513,7 @@ Client tier allows the general user (employee and user) of the system to
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -593,14 +710,6 @@ List of car
  of the employee is updated.
 \end_layout
 
-\begin_layout Subsubsection
-Finish the ride - Sequence diagram
-\end_layout
-
-\begin_layout Subsubsection
-List of car - Sequence diagram
-\end_layout
-
 \begin_layout Subsection
 Component Interface
 \end_layout
@@ -613,16 +722,155 @@ diagramma e-r
 Selected Architectural Styles And Patterns
 \end_layout
 
+\begin_layout Subsubsection
+Protocols
+\end_layout
+
+\begin_layout Paragraph
+JDBC with ODBC
+\end_layout
+
+\begin_layout Standard
+This protocolos is used to manage the connection between database and Applicatio
+n server (<TODO> spiegare meglio)
+\end_layout
+
+\begin_layout Paragraph
+RESTful API and JSON 
+\end_layout
+
+\begin_layout Standard
+Use to manage the connection with the application server.
+ because the application server is a JavaEE server, in order to give to
+ that server JSON and REST capabilities Jersey framework will be installed.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Design Patterns
+\end_layout
+
+\begin_layout Paragraph
+MVC with Observable/Observer
+\end_layout
+
+\begin_layout Standard
+This is the main pattern used in PowerEnjoy system.
+ Observable/Observer pattern is used in order to simplify the developing
+ of MVC system, and to improve the maintainability.
+ In actual fact we can add in future more feature, that perhaps requires
+ the same notification that is currently used in the system.
+\end_layout
+
+\begin_layout Paragraph
+Visitor 
+\end_layout
+
+\begin_layout Standard
+This pattern is used to make the ListController very dynamic.
+ Infact thanks to that pattern the addiction of new type of List is easier
+ (go to section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Algorithm-Design"
+
+\end_inset
+
+ to get more specific information about the used of that pattern).
+\end_layout
+
+\begin_layout Paragraph
+State
+\end_layout
+
+\begin_layout Standard
+In order to manage the state of car.
+ <TODO: parliamo, magari qualcuna ci pensa per davvero.>
+\end_layout
+
+\begin_layout Paragraph
+Adapter 
+\end_layout
+
+\begin_layout Standard
+Used in order to make the JavaEE Application server work with Jersey framework
+ and consequently with RESTful and JSON, needed in order to build the mobile
+ application using PhoneGap.
+\end_layout
+
+\begin_layout Standard
+<TODO: insomma dovremmo fare un po' di ricerche per capire queste cose,
+ poi le servlet e JPA e JDBC boh io ci ho provato.>
+\end_layout
+
+\begin_layout Paragraph
+Client-Server
+\end_layout
+
+\begin_layout Standard
+Le solite cazzate
+\end_layout
+
 \begin_layout Subsection
 Other Design Decision
 \end_layout
 
+\begin_layout Standard
+Bootstrap 3 is the framework that allows to develop a responsive website
+ without create new script function needed to make webpages dinamically
+ change based on the dimension and resolution of the screen.
+\end_layout
+
+\begin_layout Standard
+\noindent
+GoogleMap API location will be used in order to integrate the system with
+ a map service.
+\end_layout
+
+\begin_layout Standard
+<TODO:GPS API?????????????>
+\end_layout
+
 \begin_layout Section
 Algorithm Design
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Algorithm-Design"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 User Interface Design
+\end_layout
+
+\begin_layout Subsection
+UX diagrams
+\end_layout
+
+\begin_layout Standard
+In that part of the document is shown what the user interface has to provide
+ in PowerEnjoy system.
+ There are four diagrams, one for each part of the interaction between general
+ users and the system.
+\end_layout
+
+\begin_layout Subsection
+BCE diagrams
+\end_layout
+
+\begin_layout Standard
+Here there are four BCE diagrams that are extreamly connected to the UX
+ diagrams mentioned before.
+ In actual fact, in the diagram are also defined the correspondence between
+ boundary and screen.
+ Due to the large use of MVC pattern, BCE diagrams is needed in order to
+ show how the system's components have to communicate and work together.
+ In actual fact, all control tables in the diagrams will become a real controlle
+r class of PoweEnjoy system, and all method defined in the entity tables
+ must be provided by application server.
 \end_layout
 
 \begin_layout Section
