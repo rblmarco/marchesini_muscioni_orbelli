@@ -552,6 +552,148 @@ Hight Level Component View
 Component View
 \end_layout
 
+\begin_layout Paragraph
+Dispatcher
+\end_layout
+
+\begin_layout Standard
+The dispatcher is a component devoted to forward requests received from
+ the user to the right controller.
+ It is built such an intelligence that understands what the request has
+ to do.
+ It does not do anything excepts forwarding, for this reason it can be considere
+d a mediator between the 
+\begin_inset Quotes eld
+\end_inset
+
+smarter
+\begin_inset Quotes erd
+\end_inset
+
+ part of the application server and humans.
+ It comunicates with the dispatcher.
+\end_layout
+
+\begin_layout Paragraph
+Payment controller
+\end_layout
+
+\begin_layout Standard
+This controller computes requests about payment.
+ The dispatcher sends to it requests when the user has to pay the ride or
+ other services providede by Power Enjoy.
+ This controller comunicates with the external safe system payments (in
+ our case PayPal).
+ It comunicates with the dispatcher.
+\end_layout
+
+\begin_layout Paragraph
+Car controller
+\end_layout
+
+\begin_layout Standard
+This controller receives requests that need to be satisfied working on the
+ phisic car system.
+ It manage reqeusts about open or close the car or, at the same time, it
+ sends information if sensors on the car releaved something to be analyzed.
+ It comunicates with the dispatcher.
+\end_layout
+
+\begin_layout Paragraph
+Ride controller
+\end_layout
+
+\begin_layout Standard
+This controller manages requests about the ride.
+ It can creates a ride, finisches it or computes the final price.
+ It comunicates with the dispatcher.
+\end_layout
+
+\begin_layout Paragraph
+Account contoller
+\end_layout
+
+\begin_layout Standard
+This controller manage requests about accounts registered in the system
+ (both user and employee).
+ Through this controller an authenticated human could modify his/her credentials
+ or simply visualizes them.
+ It comunicates with the dispatcher.
+\end_layout
+
+\begin_layout Paragraph
+List controller
+\end_layout
+
+\begin_layout Standard
+This controller is used when an autenticated human ask for a set or, in
+ general, a list of car for every reason.
+ It is used to create the list of available car or the list of cars which
+ needs attention.
+ It comunicates with the dispatcher.
+\end_layout
+
+\begin_layout Paragraph
+Reservation controller 
+\end_layout
+
+\begin_layout Standard
+This controller manage the reservation of cars.
+ It is 
+\begin_inset Quotes eld
+\end_inset
+
+called
+\begin_inset Quotes erd
+\end_inset
+
+ by the dispatcher when the user wants to reserve a car and, one reserved,
+ to set the 
+\begin_inset Quotes eld
+\end_inset
+
+Expire time
+\begin_inset Quotes erd
+\end_inset
+
+ and close the reservation.
+ It comunicates with the dispatcher.
+\end_layout
+
+\begin_layout Paragraph
+Model (package)
+\end_layout
+
+\begin_layout Standard
+This package contains all the main classes which are modified by the controller.
+ Their connection with the database is not represented in the component
+ viw.
+\end_layout
+
+\begin_layout Paragraph
+Notification dispatcher
+\end_layout
+
+\begin_layout Standard
+This dispacher forwarding the requests about notification to the right gateway.
+\end_layout
+
+\begin_layout Paragraph
+Mail gateway
+\end_layout
+
+\begin_layout Standard
+This gateway manages the mail entering and leaving the application server.
+\end_layout
+
+\begin_layout Paragraph
+Sms gateway
+\end_layout
+
+\begin_layout Standard
+This gateway manages the sms entering and leaving the application server.
+\end_layout
+
 \begin_layout Subsection
 Deployment View
 \end_layout
