@@ -70,7 +70,7 @@
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
-\paragraph_indentation default
+\paragraph_indentation 0bp
 \quotes_language english
 \papercolumns 1
 \papersides 1
@@ -250,7 +250,7 @@ Scope
 \end_layout
 
 \begin_layout Standard
-The scope of that system, is defined in the RASD document, than, here there
+The scope of that system, is defined in the RASD document, then, here there
  is a copy of the paragraph:
 \end_layout
 
@@ -334,19 +334,534 @@ The employees will use that system in order to know what cars need help.
 \end_layout
 
 \begin_layout Subsection
-Definitions, Acronyms, Abbreviations
+Definitions, Acronyms, Abbreviations 
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+RASD
+\series default
+: requirements analysis and specifications document;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+DD
+\series default
+: design document;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+SMS
+\series default
+: short message service; it is a notification sent to a mobile phone, an
+ SMS gateway is needed to use it;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+SMS GATEWAY
+\series default
+: it is a service which allows to send SMS via standard API;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+API
+\series default
+: application programming interface; it is a common way to communicate with
+ another system;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+RDBMS
+\series default
+: Relational Data Base Management System;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+DB
+\series default
+: the database laye, r, handled by a RDBMS;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+UI:
+\series default
+ User Interface;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+APPLICATION SERVER:
+\series default
+ the layer which provides the application logic and interacts with the DB
+ and with the front-ends;;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+BACK-END:
+\series default
+ term used to identify the Application server;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+FRONT-END:
+\series default
+ the components which use the application server services,namely the web
+ front-end and the mobile applications;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+WEB SERVER:
+\series default
+ the component that implements the web-based front-end.
+ It interacts with the application server and with the users’ browsers;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+SOA:
+\series default
+ Service-oriented Architecture;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+JDBC:
+\series default
+ Java DataBase Connectivity;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+JPA:
+\series default
+ Java Persistence API;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+EJB: 
+\series default
+Enterprise JavaBean;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+ACID:
+\series default
+ Atomicity, Consistency, Integrity and Durability;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+MVC:
+\series default
+ model view controller;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+URL:
+\series default
+ uniform resource locator;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+UX: 
+\series default
+user experience design;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\series bold
+BCE:
+\series default
+ business controller entity;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+CSS3
+\series default
+: Cascading Style Sheets (CSS) is used to define the style of web pages
+ written in html;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+PHP
+\series default
+: Hypertext preprocessor is a scripting language, designed for the developing
+ of dynamic web pages;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+SQL
+\series default
+: Structured Query Language is a language used to query a SQL DBMS;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+MySQL
+\series default
+: is a relational database management system RDBMS with SQL as query language;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+JS
+\series default
+: JavaScript is the programming language of HTML and the Web;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+HTML
+\series default
+: is a computer language devised to allow website creation;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+HTTP
+\series default
+: Hyper Text Transfer Protocol is the comunication protocol with the net;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+HTTPs
+\series default
+: is a protocol for secure communication over the network;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+JSON
+\series default
+: JavaScript Object Notation is a way to store information in an organized
+ and easy to access manner;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+REST
+\series default
+ or
+\series bold
+ RESTful
+\series default
+: REpresentational State Transfer is an architectural style and an approach
+ to communications (often used in the development of Web services);
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+InnoDB
+\series default
+: is a storage engine for MySQL, that can manage the foreign keys;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+JAX-RS
+\series default
+: Java API for RESTful Web Services is a Java programming language API that
+ provides support in creating web services according to the Representationl
+ Satte Transfer (REST) architectural patter;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+OS
+\series default
+: Operating System;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+DMZ
+\series default
+: in computer security, a DeMilitarized Zone, is a physical or logical subnetwor
+k delimitated by firewall;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RACS
+\series default
+: Reliable Array of Cloned Services;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+ODBC
+\series default
+: Open DataBase Connectivity is a standard application programming interface
+ (API) for accessing database management systems (DBMS).
 \end_layout
 
 \begin_layout Subsection
 Reference Documents
 \end_layout
 
-\begin_layout Subsection
-Used Tools
+\begin_layout Itemize
+Specification document: Assignments AA 2016-2017;
+\end_layout
+
+\begin_layout Itemize
+Examples documents:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Sample-Design-Deliverable-Discussed-on-Nov.-2.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+PayPal documentation (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://developer.paypal.com/docs/
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.paypal.com/it/webapps/mpp/merchant
+\end_layout
+
+\end_inset
+
+);
+\end_layout
+
+\begin_layout Itemize
+General documentations about SMS gateway provider (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.smsglobal.com/business-sms/
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.trendoo.it/invio-sms.html
+\end_layout
+
+\end_inset
+
+);
+\end_layout
+
+\begin_layout Itemize
+Jersey framework documentation (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://jersey.java.net/documentation/latest/user-guide.html
+\end_layout
+
+\end_inset
+
+);
+\end_layout
+
+\begin_layout Itemize
+PhoneGap documentation (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://docs.phonegap.com/
+\end_layout
+
+\end_inset
+
+);
+\end_layout
+
+\begin_layout Itemize
+W3School website (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.w3schools.com/
+\end_layout
+
+\end_inset
+
+);
+\end_layout
+
+\begin_layout Itemize
+Amazon clod services documentation (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://aws.amazon.com/it/
+\end_layout
+
+\end_inset
+
+);
+\end_layout
+
+\begin_layout Itemize
+General API documention of mobile OS.
 \end_layout
 
 \begin_layout Subsection
 Document Structure
+\end_layout
+
+\begin_layout Paragraph
+Section 1: Introduction
+\end_layout
+
+\begin_layout Standard
+This section provides general informations about design, including acronymus
+ or abbreviation used in the document, documents used to develop it and
+ tools used to help us.
+\end_layout
+
+\begin_layout Paragraph
+Section 2: Architectural design
+\end_layout
+
+\begin_layout Standard
+This section shows the main architectural choices about physical organization
+ of the system, software components used and their relationship.
+ This section will also focuses on design choices, styles and pattern used.
+\end_layout
+
+\begin_layout Paragraph
+Section 3: Algorithm design
+\end_layout
+
+\begin_layout Standard
+This section will presents and points out in detail the main algorithms
+ of our project, designed to implement in the best way the functionalities
+ proposed.
+\end_layout
+
+\begin_layout Paragraph
+Section 4: User interface design
+\end_layout
+
+\begin_layout Standard
+This section shows how the most imporant user interfaces will look, underlining
+ what the users or the employees could do, through UX and BCE diagrams.
+\end_layout
+
+\begin_layout Paragraph
+Section 5: Requirements traceability
+\end_layout
+
+\begin_layout Standard
+This section shows how the requirements in the RASD are satisfied by the
+ design choices of the DD.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -355,6 +870,13 @@ Architectural design
 
 \begin_layout Subsection
 Overview
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:layer section"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -418,34 +940,50 @@ Overview architecture.
 \end_layout
 
 \begin_layout Standard
-The system of PowerEnjoy service is composed by a three layer architecture:
+The system of PowerEnjoy service is composed by a three layers architecture:
 \end_layout
 
 \begin_layout Itemize
-Presentation layer: it is the layer that deals with presentation logic,
- in other way the interaction eith the users.
+
+\series bold
+Presentation layer
+\series default
+: it is the layer that deals with presentation logic, in other way the interacti
+on with the users.
  So it contains the interfacing and rendering procedures of all system informati
 on.
  That layer is also known as application front-end;
 \end_layout
 
 \begin_layout Itemize
-Application layer: it is the layer that handles all the system functions.
+
+\series bold
+Application layer
+\series default
+: it is the layer that handles all the system functions.
  It also queries the database, in order to infer information, needed to
  build web pages;
 \end_layout
 
 \begin_layout Itemize
-Data layer: it takes care of information management, using a DBMS software.
+
+\series bold
+Data layer
+\series default
+: it takes care of information management, using a DBMS software.
 \end_layout
 
 \begin_layout Standard
 In order to support that layer division, the system will be develop following
- a multi-tier architecture based on five tiers.
+ a multi-tier architecture based on four tiers.
 \end_layout
 
 \begin_layout Itemize
-Tiers of presentation layer:
+
+\series bold
+Tiers of presentation layer
+\series default
+:
 \end_layout
 
 \begin_deeper
@@ -456,36 +994,30 @@ Client tier: represented by user's broswer or mobile application;
 \begin_layout Itemize
 Web server tier: That tier will answer to the HTTP request (GET, POST, etc...)
  from users or PowerEnjoy intranet.
- So it interacts with the script engine to create dynamic web pages, and
- with application server to retrieve data required in order to build pages
- with correct information.
- It also will grant access to static objects and pages;
-\end_layout
-
-\begin_layout Itemize
-Script engine tier: it takes care of creating dyanamic pages, using JS scripts,
- in order to generate dynamic HTML code.
+ So it interacts with the script engine (JS, etc...) to create dynamic web
+ pages, and with application server to retrieve data required in order to
+ build pages with correct information.
+ It also will grant access to static objects and pages.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Application server (tier of application layer): it is the middle tier of
- the system.
+
+\series bold
+Application server
+\series default
+ (tier of application layer): it is the middle tier of the system.
  It implements the business logic, following the rules defined by the company.
  That tier have a direct link to the database server;
 \end_layout
 
 \begin_layout Itemize
-Database server (tier of data layer): it is composed by a DBMS that permit
- ACID propriety of data, and it allows application server to make SQL queries.
-\end_layout
 
-\begin_layout Itemize
-<TODO: stesso diagramma con DMZ in rosso così si capisce meglio>
-\end_layout
-
-\begin_layout Itemize
-<TODO: server farm con due server per ogni tier tranne il client>
+\series bold
+Database server
+\series default
+ (tier of data layer): it is composed by a DBMS that permit ACID propriety
+ of data, and it allows application server to make SQL queries.
 \end_layout
 
 \begin_layout Standard
@@ -539,6 +1071,13 @@ Physical architecture of the system.
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "physical architecture"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -546,12 +1085,154 @@ Physical architecture of the system.
 
 \end_layout
 
-\begin_layout Subsection
-Hight Level Component View
+\begin_layout Standard
+In figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "physical architecture"
+
+\end_inset
+
+ is represented the physical structure of the system.
+ The Web Server is organized int two different physical devices as the Applicati
+on server.
+ That structure is called 
+\begin_inset Quotes eld
+\end_inset
+
+Server Farm
+\begin_inset Quotes erd
+\end_inset
+
+, that is a typical distributed architecture, that improves the management
+ of difficult works and, in particular, the availability qualities.
+ In actual fact, a load balancing system will be used to split the works
+ in these two physical servers.
+ The two server farms in that architecture follow the design principles
+ of 
+\begin_inset Quotes eld
+\end_inset
+
+Cloning
+\begin_inset Quotes erd
+\end_inset
+
+, so they used the RACS policy.
+ With that, the two servers of each farm can manage the same set of functions
+ required by the system.
+ In conclusion, if a server goes down, the other server can mantain the
+ service active.
+ In figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "availability analysis"
+
+\end_inset
+
+ there is a general analysis of the value of availability of the system,
+ using that architectural pattern.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "physical architecture"
+
+\end_inset
+
+ points out also that system architecture deals with a cloud service; in
+ actual fact periodically, the application server will do a backup in order
+ to retrieve data if something bad happen to the database server.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Diagrams/Availability/diagram_availability.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Availability analysis.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "availability analysis"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Supposing that 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ is the availability of one of system's servers.
+ The total avilability, using that architectural pattern, is express by
+ that formula:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size larger
+\begin_inset Formula 
+\[
+A=1-\stackrel[i=1]{n}{\prod}(1-A_{i})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So 
+\begin_inset Formula $A$
+\end_inset
+
+ is reduced when the servers are incremented.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-Component View
+Hight Level Component View
 \end_layout
 
 \begin_layout Standard
@@ -573,12 +1254,89 @@ Component View
 placement H
 wide false
 sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Diagrams/Component_Deployement/high_level_compoinents.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+High level component diagram.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This diagrams shows the interaction between the main component of the system.
+ The client could starts the comunication with the system using a mobile
+ application or the webpage, the employee is conneted with the system of
+ the headquarter through the mobile application.
+ The headquarter contains the core of the system and the database with the
+ most important informations of the clients of Power Enjoy.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+
+
+\backslash
+newgeometry{bottom=2cm, top=1cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Component View
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Diagrams/Component_Deployement/component_diagram.pdf
-	scale 45
+	scale 34
+	rotateAngle 90
 
 \end_inset
 
@@ -599,6 +1357,22 @@ Component view diagram.
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
 \end_layout
 
 \end_inset
@@ -779,7 +1553,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename Diagrams/Component_Deployement/deployement_diagram.pdf
-	scale 68
+	scale 65
 
 \end_inset
 
@@ -822,6 +1596,40 @@ restoregeometry
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+In that diagram is described the physical allocation of the layer described
+ in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:layer section"
+
+\end_inset
+
+.
+ Four tier is needed in order to build the system, althought a different
+ physical architecture could merge the Web Server tier and the Application
+ Server tier in a single tier.
+ 
+\end_layout
+
+\begin_layout Standard
+Four tier architecture improves the security of the system, in actual fact
+ with four physical devices is possible to place between these a firewall
+ that considerably improves the security.
+\end_layout
+
+\begin_layout Standard
+The devices allocated for the Web Server and the Application Server are
+ in the reality two, the reason of that choice is exposed in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:layer section"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -911,6 +1719,7 @@ restoregeometry
 \end_layout
 
 \begin_layout Standard
+\noindent
 This sequence diagram shows how to an an user (an identified human) could
  reserve a car.
  Tapping or selecting the option 
@@ -1052,6 +1861,7 @@ restoregeometry
 \end_layout
 
 \begin_layout Standard
+\noindent
 This sequence diagram show how to an user (an idenified human) finish his/her
  ride.
  The user turn off the car and then, on the user terminal (in this case
@@ -1091,6 +1901,22 @@ n server proceeds to compute the final cost of the ride, eventually applying
  The system finaly send a mail with the bill of the ride to the user.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{bottom=3cm, top=3cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 List of car - Sequence diagram
 \end_layout
@@ -1108,6 +1934,22 @@ placement H
 wide false
 sideways false
 status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-0.5cm}{-2cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -1133,12 +1975,45 @@ List of car - Employee (Sequence Diagram).
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
 This sequence diagram show the utility of the list of car for an employee.
  When the employee arrives at work, he/she has to see the list of car which
  he/she has to take car in the day.
@@ -1174,6 +2049,22 @@ List of car
  of the employee is updated.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{bottom=3cm, top=2cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Component Interface
 \end_layout
@@ -1187,9 +2078,37 @@ Component Interface
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-2cm}{-2cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Diagrams/Data_model/Data_model.pdf
+	scale 53
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1204,12 +2123,192 @@ Entity-Relationship diagram (with UML notation).
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Entities and relationships of interest for the application on the basis
+ of the diagram of classes present in the RASD have been identified.
+ The conceptual design of the database is illustrated by the E-R diagram
+ in figure below.
+ Foreign key constraints and triggers are not used: the dynamic behaviour
+ of the data is handled entirely by the Java Persistence API in the Business
+ Application tier.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+The entities and relationships are:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Reservation
+\series default
+;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+User
+\series default
+;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Ride
+\series default
+: entity identified by a unique ID auto-increment, and has the attribute
+ startingLongitude and startingLatitude (for the initial position) and the
+ finalLongitude and finalLatitude (for the final position) and lastly the
+ numberOfPassengers.
+ With this information from the ride the system can compute the final price
+ and the related discounts, of course only the higher discount among those
+ available will be applied;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Payment Information
+\series default
+: this entity related with the corresponding user (through the “InformationForPa
+ymet” relation) allow the user to have multiple payment information instead
+ of only one;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Car
+\series default
+;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Phase
+\series default
+: every car, with the “phaseOfCar” relation, is associated exactly to one
+ phase.
+ A phase represent the state of the car so if, in the future, the system
+ need to specify a new state it can simply add a new id with its type;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Historical Work
+\series default
+: entity identified by a unique ID auto-increment which represents a single
+ work done by a pair of worker on one car.
+ So using a GROUP BY on a employee or on one car the system will return
+ respectively the entire works done by an employee or the all work done
+ on one car;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+List
+\series default
+;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Special Area
+\series default
+: is identified uniquely by its latitudine and its longitudine (that is
+ its center ).
+ The system with the “radius” attribute can verify if a position is in that
+ special area or not.
+ Lastly the attribute plugs which is an integer that detrmine the number
+ of plugs in the special area.
+ When the system need to know the number of free plugs in a specific special
+ area (in order to compute the available special area for the “money saving
+ option”) a simple inspection of the relationship between the cars and the
+ special area is needed;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Safe Area External Point
+\series default
+: every entity has a latitudine and longitudine which determine a unique
+ position that is a vertex of the polygon.
+ Moreover each entity has a “order” attribute which is an integer that represent
+ the order of the vertices.
+ See the algorithm in the section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Algorithm-Design"
+
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Employee
+\series default
+;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Phone
+\series default
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1278,8 +2377,10 @@ State
 \end_layout
 
 \begin_layout Standard
-In order to manage the state of car.
- <TODO: parliamo, magari qualcuna ci pensa per davvero.>
+Used in order to manage the phase of cars.
+ In actual fact it is easier to extend the possible phases of a car, and
+ also modify the possible behaviour of it.
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -1302,7 +2403,13 @@ Client-Server
 \end_layout
 
 \begin_layout Standard
-Le solite cazzate
+The Client-Server pattern is strogly used in our system.
+ It is based on thin clients, represented by the mobile application used
+ by users and employees, and the client's web browser.
+ The client sends requests to the application server in the headquarter.
+ This pattern has been chosen because is scalable (the application can interact
+ with an hight number of clients) and fast because different asymmetric
+ protocol are use to answer to the clients.
 \end_layout
 
 \begin_layout Subsection
@@ -1317,12 +2424,15 @@ Bootstrap 3 is the framework that allows to develop a responsive website
 
 \begin_layout Standard
 \noindent
-GoogleMap API location will be used in order to integrate the system with
- a map service.
+GoogleMap API location service will be used in order to integrate the system
+ with a map service.
 \end_layout
 
 \begin_layout Standard
-<TODO:GPS API?????????????>
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1336,22 +2446,14 @@ name "sec:Algorithm-Design"
 
 \end_layout
 
+\begin_layout Standard
+In this section there are the prototypes of some critical algorithms of
+ the system.
+ 
+\end_layout
+
 \begin_layout Subsection
 ListController implementation
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \hfill{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \thinspace{}
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1364,22 +2466,20 @@ ListController implementation
 
 \end_layout
 
+\begin_layout Standard
+The ListController is used to create all the lists of the system in a dynamic
+ way.
+ It is implemented with a visitor pattern because, in this way, new lists
+ could be added without modifying the system but only adding another implementat
+ion of the ListCreator visitable object.
+ Once the controller received a request, the right class is called and the
+ list is generated according to the implementation of the methods of the
+ visitor interface.
+ 
+\end_layout
+
 \begin_layout Subsection
 Safe Position implementation
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \hfill{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \thinspace{}
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1392,22 +2492,41 @@ Safe Position implementation
 
 \end_layout
 
+\begin_layout Standard
+\noindent
+This algorithm checks whether a point belongs to a polygon.
+ So it is used to check whether a given point (uniquely determined by its
+ latitude and its longitude) belongs for example to a safe area.
+ 
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Fisrt step: tracing a halfline from the starting point from p;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Second step: calculate how many sides of the polygon intersect this half-line.
+ The “result” variable contains the number of intersections;
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Third step: if the number of intersections is even the point is outside
+ the polygon otherwise (if odd) is internal.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Modify user account implementation
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \hfill{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \thinspace{}
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1415,6 +2534,19 @@ Modify user account implementation
 \begin_inset Graphics
 	filename Algorithms/modify/AccountController.java.pdf
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The AccountController is realized with the overloading of methods: different
+ methods have different signatures and, according to the parameters that
+ has received, they have different instructions to execute.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -1520,6 +2652,29 @@ end{adjustwidth}
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{top=3cm, bottom=3cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Interface of the user
 \end_layout
@@ -1542,7 +2697,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename Diagrams/UX/home_lookFor_user.pdf
-	scale 40
+	scale 46
 
 \end_inset
 
@@ -1561,6 +2716,29 @@ User navigation - UX.
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -1588,7 +2766,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename Diagrams/UX/home_list_employee.pdf
-	scale 40
+	scale 60
 
 \end_inset
 
@@ -1607,6 +2785,13 @@ Employee navigation - UX.
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -1634,7 +2819,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename Diagrams/UX/scree_of_car.pdf
-	scale 40
+	scale 50
 
 \end_inset
 
@@ -1651,6 +2836,29 @@ Screen of car navigation - UX.
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{top=3cm, bottom=3cm}
 \end_layout
 
 \end_inset
@@ -1729,7 +2937,30 @@ status collapsed
 
 
 \backslash
-newgeometry{top=2cm, bottom=2cm}
+restoregeometry
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{top=3cm, bottom=3cm}
 \end_layout
 
 \end_inset
@@ -1784,6 +3015,13 @@ User - BCE.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Employee BCE
 \end_layout
@@ -1831,6 +3069,13 @@ Screen of car navigation - UX.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Screen of car BCE
 \end_layout
@@ -1853,7 +3098,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename Diagrams/BCE/BCE_screen_of_car.pdf
-	scale 40
+	scale 43
 	rotateAngle 90
 
 \end_inset
@@ -1873,6 +3118,13 @@ Screen of car - BCE.
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -2057,12 +3309,689 @@ Ride Controller
 \end_layout
 
 \end_deeper
-\begin_layout Section
-House Of Work
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Changelog
+Appendices
+\end_layout
+
+\begin_layout Subsection
+Used Tools
+\end_layout
+
+\begin_layout Itemize
+Microsoft Visio 2016: for all the diagrams in that document (as UX, Component,
+ etc...);
+\end_layout
+
+\begin_layout Itemize
+Lyx document processor: to write all the document;
+\end_layout
+
+\begin_layout Itemize
+Notepad ++: to write the prototypes of the algorithms;
+\end_layout
+
+\begin_layout Itemize
+SourceTree: used as GitHub manager;
+\end_layout
+
+\begin_layout Itemize
+GitHub: used to manage the shared building process of that document.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Hours Of Work
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="16" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Day
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Guido Muscioni
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Marco Orbelli
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Paola Marchesini
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28/11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29/11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30/11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1/12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2/12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3/12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4/12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5/12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6/12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7/12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8/12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9/12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10/12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11/12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+38
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+36
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+37
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
 \end_layout
 
 \end_body
