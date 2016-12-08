@@ -1257,6 +1257,7 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Diagrams/Component_Deployement/high_level_compoinents.pdf
 	scale 50
@@ -2324,7 +2325,7 @@ JDBC with ODBC
 
 \begin_layout Standard
 This protocolos is used to manage the connection between database and Applicatio
-n server (<TODO> spiegare meglio)
+n server.
 \end_layout
 
 \begin_layout Paragraph
@@ -2390,11 +2391,6 @@ Adapter
 Used in order to make the JavaEE Application server work with Jersey framework
  and consequently with RESTful and JSON, needed in order to build the mobile
  application using PhoneGap.
-\end_layout
-
-\begin_layout Standard
-<TODO: insomma dovremmo fare un po' di ricerche per capire queste cose,
- poi le servlet e JPA e JDBC boh io ci ho provato.>
 \end_layout
 
 \begin_layout Paragraph
@@ -2517,22 +2513,15 @@ Third step: if the number of intersections is even the point is outside
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Modify user account implementation
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \hfill{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \thinspace{}
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard

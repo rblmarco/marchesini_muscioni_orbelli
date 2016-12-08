@@ -1,0 +1,1816 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="http://www.nongnu.org/elyxer/">
+<meta name="create-date" content="2016-12-08">
+<link rel="stylesheet" href="http://elyxer.nongnu.org/lyx.css" type="text/css" media="all">
+<title>Design Document</title>
+</head>
+<body>
+<div id="globalWrapper">
+<div class="Unindented">
+<div class="float">
+<div class="figure">
+<div class="center">
+<img class="embedded" src="Images/front_page/Logo_polimi_grande.png" alt="figure Images/front_page/Logo_polimi_grande.png">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<h1 class="title">
+<span class="huge">Design Document</span>
+</h1>
+<h2 class="author">
+Guido Muscioni (mat. 876151)<br>
+Marco Orbelli (mat. 876649)<br>
+Paola Marchesini (mat. 876541)
+</h2>
+<h2 class="Date">
+<span class="phantom">x</span>
+</h2>
+<div class="Unindented">
+<div class="float">
+<a class="Label" name="Figure-2"> </a><div class="figure">
+<div class="center">
+<img class="embedded" src="Images/Logo.png" alt="figure Images/Logo.png">
+
+</div>
+<div class="caption">
+Figure 2 New brand logo.
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+<p><br>
+</p>
+
+</div>
+<div class="Indented">
+<div class="fulltoc">
+<div class="tocheader">
+Table of Contents
+</div>
+<div class="tocindent">
+<div class="toc">
+<a class="Link" href="#toc-Section-1">Section 1: Introduction</a>
+</div>
+<div class="tocindent">
+<div class="toc">
+<a class="Link" href="#toc-Subsection-1.1">Subsection 1.1: Purpose</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsection-1.2">Subsection 1.2: Scope</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsection-1.3">Subsection 1.3: Definitions, Acronyms, Abbreviations </a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsection-1.4">Subsection 1.4: Reference Documents</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsection-1.5">Subsection 1.5: Document Structure</a>
+</div>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Section-2">Section 2: Architectural design</a>
+</div>
+<div class="tocindent">
+<div class="toc">
+<a class="Link" href="#toc-Subsection-2.1">Subsection 2.1: Overview</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsection-2.2">Subsection 2.2: Hight Level Component View</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsection-2.3">Subsection 2.3: Component View</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsection-2.4">Subsection 2.4: Deployment View</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsection-2.5">Subsection 2.5: Runtime View</a>
+</div>
+<div class="tocindent">
+<div class="toc">
+<a class="Link" href="#toc-Subsubsection-2.5.1">Subsubsection 2.5.1: Start the ride - Sequence diagram</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsubsection-2.5.2">Subsubsection 2.5.2: Finish the ride - Sequence diagram</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsubsection-2.5.3">Subsubsection 2.5.3: List of car - Sequence diagram</a>
+</div>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsection-2.6">Subsection 2.6: Component Interface</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsection-2.7">Subsection 2.7: Selected Architectural Styles And Patterns</a>
+</div>
+<div class="tocindent">
+<div class="toc">
+<a class="Link" href="#toc-Subsubsection-2.7.1">Subsubsection 2.7.1: Protocols</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsubsection-2.7.2">Subsubsection 2.7.2: Design Patterns</a>
+</div>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsection-2.8">Subsection 2.8: Other Design Decision</a>
+</div>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Section-3">Section 3: Algorithm Design</a>
+</div>
+<div class="tocindent">
+<div class="toc">
+<a class="Link" href="#toc-Subsection-3.1">Subsection 3.1: ListController implementation</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsection-3.2">Subsection 3.2: Safe Position implementation</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsection-3.3">Subsection 3.3: Modify user account implementation</a>
+</div>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Section-4">Section 4: User Interface Design</a>
+</div>
+<div class="tocindent">
+<div class="toc">
+<a class="Link" href="#toc-Subsection-4.1">Subsection 4.1: UX diagrams</a>
+</div>
+<div class="tocindent">
+<div class="toc">
+<a class="Link" href="#toc-Subsubsection-4.1.1">Subsubsection 4.1.1: Home page interface</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsubsection-4.1.2">Subsubsection 4.1.2: Interface of the user</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsubsection-4.1.3">Subsubsection 4.1.3: Interface of the employee</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsubsection-4.1.4">Subsubsection 4.1.4: Screen of car interface</a>
+</div>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsection-4.2">Subsection 4.2: BCE diagrams</a>
+</div>
+<div class="tocindent">
+<div class="toc">
+<a class="Link" href="#toc-Subsubsection-4.2.1">Subsubsection 4.2.1: Home BCE</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsubsection-4.2.2">Subsubsection 4.2.2: User BCE</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsubsection-4.2.3">Subsubsection 4.2.3: Employee BCE</a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Subsubsection-4.2.4">Subsubsection 4.2.4: Screen of car BCE</a>
+</div>
+</div>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Section-5">Section 5: Requirements traceability </a>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Section-6">Section 6: Appendices</a>
+</div>
+<div class="tocindent">
+<div class="toc">
+<a class="Link" href="#toc-Subsection-6.1">Subsection 6.1: Used Tools</a>
+</div>
+</div>
+<div class="toc">
+<a class="Link" href="#toc-Section-7">Section 7: Hours Of Work</a>
+</div>
+</div>
+
+</div>
+<p><br>
+</p>
+
+</div>
+<h1 class="Section">
+<a class="toc" name="toc-Section-1">1</a> Introduction
+</h1>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-1.1">1.1</a> Purpose
+</h2>
+<div class="Unindented">
+This document is written based on RASD document, its aim is to well specify the structure, both hardware and software, of the system previously defined. The reader of that document are developers. They can find in that all the main information needed to the developing phase, as:
+</div>
+<ul>
+<li>
+The architecture of the system;
+</li>
+<li>
+The general software architecture of the system;
+</li>
+<li>
+The most important points about what the system has to provide in runtime environment (Runtime view);
+</li>
+<li>
+Some important algorithm the system is based on;
+</li>
+<li>
+The design patterns;
+</li>
+<li>
+The components and their interfaces.
+</li>
+
+</ul>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-1.2">1.2</a> Scope
+</h2>
+<div class="Unindented">
+The scope of that system, is defined in the RASD document, then, here there is a copy of the paragraph:
+</div>
+<div class="Indented">
+<span class="hfill"> </span>
+</div>
+<div class="Indented">
+<div class="center">
+<div class="Boxed" style="width: 70%;">
+<i>The aim of the project is to develop a digital system for an electric car-sharing company, that is called PowerEnjoy. There are not previous system so that document will describe the requirements that deal with all the system that the customer wants.</i><i>The users of PowerEnjoy system are:</i><ul>
+<li>
+<i>Client;</i>
+</li>
+<li>
+<i>Employee.</i>
+</li>
+
+</ul>
+<i>Both of these users are going to have unique credentials in order to use the system, so they must be registered. </i><i>The clients will use this system to reserve and use cars of PowerEnjoy company.</i><i>The employees will use that system in order to know what cars need help.</i>
+</div>
+
+</div>
+
+</div>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-1.3">1.3</a> Definitions, Acronyms, Abbreviations 
+</h2>
+<ul>
+<li>
+<b>RASD</b>: requirements analysis and specifications document;
+</li>
+<li>
+<b>DD</b>: design document;
+</li>
+<li>
+<b>SMS</b>: short message service; it is a notification sent to a mobile phone, an SMS gateway is needed to use it;
+</li>
+<li>
+<b>SMS GATEWAY</b>: it is a service which allows to send SMS via standard API;
+</li>
+<li>
+<b>API</b>: application programming interface; it is a common way to communicate with another system;
+</li>
+<li>
+<b>RDBMS</b>: Relational Data Base Management System;
+</li>
+<li>
+<b>DB</b>: the database laye, r, handled by a RDBMS;
+</li>
+<li>
+<b>UI:</b> User Interface;
+</li>
+<li>
+<b>APPLICATION SERVER:</b> the layer which provides the application logic and interacts with the DB and with the front-ends;;
+</li>
+<li>
+<b>BACK-END:</b> term used to identify the Application server;
+</li>
+<li>
+<b>FRONT-END:</b> the components which use the application server services,namely the web front-end and the mobile applications;
+</li>
+<li>
+<b>WEB SERVER:</b> the component that implements the web-based front-end. It interacts with the application server and with the users’ browsers;
+</li>
+<li>
+<b>SOA:</b> Service-oriented Architecture;
+</li>
+<li>
+<b>JDBC:</b> Java DataBase Connectivity;
+</li>
+<li>
+<b>JPA:</b> Java Persistence API;
+</li>
+<li>
+<b>EJB: </b>Enterprise JavaBean;
+</li>
+<li>
+<b>ACID:</b> Atomicity, Consistency, Integrity and Durability;
+</li>
+<li>
+<b>MVC:</b> model view controller;
+</li>
+<li>
+<b>URL:</b> uniform resource locator;
+</li>
+<li>
+<b>UX: </b>user experience design;
+</li>
+<li>
+<b>BCE:</b> business controller entity;
+</li>
+<li>
+<b>CSS3</b>: Cascading Style Sheets (CSS) is used to define the style of web pages written in html;
+</li>
+<li>
+<b>PHP</b>: Hypertext preprocessor is a scripting language, designed for the developing of dynamic web pages;
+</li>
+<li>
+<b>SQL</b>: Structured Query Language is a language used to query a SQL DBMS;
+</li>
+<li>
+<b>MySQL</b>: is a relational database management system RDBMS with SQL as query language;
+</li>
+<li>
+<b>JS</b>: JavaScript is the programming language of HTML and the Web;
+</li>
+<li>
+<b>HTML</b>: is a computer language devised to allow website creation;
+</li>
+<li>
+<b>HTTP</b>: Hyper Text Transfer Protocol is the comunication protocol with the net;
+</li>
+<li>
+<b>HTTPs</b>: is a protocol for secure communication over the network;
+</li>
+<li>
+<b>JSON</b>: JavaScript Object Notation is a way to store information in an organized and easy to access manner;
+</li>
+<li>
+<b>REST</b> or<b> RESTful</b>: REpresentational State Transfer is an architectural style and an approach to communications (often used in the development of Web services);
+</li>
+<li>
+<b>InnoDB</b>: is a storage engine for MySQL, that can manage the foreign keys;
+</li>
+<li>
+<b>JAX-RS</b>: Java API for RESTful Web Services is a Java programming language API that provides support in creating web services according to the Representationl Satte Transfer (REST) architectural patter;
+</li>
+<li>
+<b>OS</b>: Operating System;
+</li>
+<li>
+<b>DMZ</b>: in computer security, a DeMilitarized Zone, is a physical or logical subnetwork delimitated by firewall;
+</li>
+<li>
+<b>RACS</b>: Reliable Array of Cloned Services;
+</li>
+<li>
+<b>ODBC</b>: Open DataBase Connectivity is a standard application programming interface (API) for accessing database management systems (DBMS).
+</li>
+
+</ul>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-1.4">1.4</a> Reference Documents
+</h2>
+<ul>
+<li>
+Specification document: Assignments AA 2016-2017;
+</li>
+<li>
+Examples documents:<ul>
+<li>
+Sample-Design-Deliverable-Discussed-on-Nov.-2.
+</li>
+
+</ul>
+
+</li>
+<li>
+PayPal documentation (<a class="FlexURL" href="https://developer.paypal.com/docs/">https://developer.paypal.com/docs/</a> and <a class="FlexURL" href="https://www.paypal.com/it/webapps/mpp/merchant">https://www.paypal.com/it/webapps/mpp/merchant</a>);
+</li>
+<li>
+General documentations about SMS gateway provider (<a class="FlexURL" href="https://www.smsglobal.com/business-sms/">https://www.smsglobal.com/business-sms/</a> and <a class="FlexURL" href="http://www.trendoo.it/invio-sms.html">http://www.trendoo.it/invio-sms.html</a>);
+</li>
+<li>
+Jersey framework documentation (<a class="FlexURL" href="https://jersey.java.net/documentation/latest/user-guide.html">https://jersey.java.net/documentation/latest/user-guide.html</a>);
+</li>
+<li>
+PhoneGap documentation (<a class="FlexURL" href="http://docs.phonegap.com/">http://docs.phonegap.com/</a>);
+</li>
+<li>
+W3School website (<a class="FlexURL" href="http://www.w3schools.com/">http://www.w3schools.com/</a>);
+</li>
+<li>
+Amazon clod services documentation (<a class="FlexURL" href="https://aws.amazon.com/it/">https://aws.amazon.com/it/</a>);
+</li>
+<li>
+General API documention of mobile OS.
+</li>
+
+</ul>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-1.5">1.5</a> Document Structure
+</h2>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-1"></a>Section 1: Introduction
+</div>
+<div class="Unindented">
+This section provides general informations about design, including acronymus or abbreviation used in the document, documents used to develop it and tools used to help us.
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-2"></a>Section 2: Architectural design
+</div>
+<div class="Unindented">
+This section shows the main architectural choices about physical organization of the system, software components used and their relationship. This section will also focuses on design choices, styles and pattern used.
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-3"></a>Section 3: Algorithm design
+</div>
+<div class="Unindented">
+This section will presents and points out in detail the main algorithms of our project, designed to implement in the best way the functionalities proposed.
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-4"></a>Section 4: User interface design
+</div>
+<div class="Unindented">
+This section shows how the most imporant user interfaces will look, underlining what the users or the employees could do, through UX and BCE diagrams.
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-5"></a>Section 5: Requirements traceability
+</div>
+<div class="Unindented">
+This section shows how the requirements in the RASD are satisfied by the design choices of the DD.
+</div>
+<div class="Indented">
+<p><br>
+</p>
+
+</div>
+<h1 class="Section">
+<a class="toc" name="toc-Section-2">2</a> Architectural design
+</h1>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-2.1">2.1</a> Overview<a class="Label" name="subsec:layer section"> </a>
+</h2>
+<div class="Unindented">
+<span class="hfill"> </span>
+</div>
+<div class="Indented">
+ 
+</div>
+<div class="Indented">
+<div class="float">
+<a class="Label" name="Figure-3"> </a><div class="figure">
+<div class="PlainVisible">
+<div class="center">
+<img class="embedded" src="Diagrams/Architecture/Architecture.png" alt="figure Diagrams/Architecture/Architecture.png">
+
+</div>
+<br>
+<div class="center">
+<div class="caption">
+Figure 3 Overview architecture.
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+&lt;TODO: parlare dell’implementazione di un quarto tier adibito alla business logic. CLOUD?&gt;
+</div>
+<div class="Indented">
+The system of PowerEnjoy service is composed by a three layers architecture:
+</div>
+<ul>
+<li>
+<b>Presentation layer</b>: it is the layer that deals with presentation logic, in other way the interaction with the users. So it contains the interfacing and rendering procedures of all system information. That layer is also known as application front-end;
+</li>
+<li>
+<b>Application layer</b>: it is the layer that handles all the system functions. It also queries the database, in order to infer information, needed to build web pages;
+</li>
+<li>
+<b>Data layer</b>: it takes care of information management, using a DBMS software.
+</li>
+
+</ul>
+<div class="Unindented">
+In order to support that layer division, the system will be develop following a multi-tier architecture based on four tiers.
+</div>
+<ul>
+<li>
+<b>Tiers of presentation layer</b>:<ul>
+<li>
+Client tier: represented by user’s broswer or mobile application;
+</li>
+<li>
+Web server tier: That tier will answer to the HTTP request (GET, POST, etc...) from users or PowerEnjoy intranet. So it interacts with the script engine (JS, etc...) to create dynamic web pages, and with application server to retrieve data required in order to build pages with correct information. It also will grant access to static objects and pages.
+</li>
+
+</ul>
+
+</li>
+<li>
+<b>Application server</b> (tier of application layer): it is the middle tier of the system. It implements the business logic, following the rules defined by the company. That tier have a direct link to the database server;
+</li>
+<li>
+<b>Database server</b> (tier of data layer): it is composed by a DBMS that permit ACID propriety of data, and it allows application server to make SQL queries.
+</li>
+
+</ul>
+<div class="Unindented">
+Client tier allows the general user (employee and user) of the system to interact with the functionality of PowerEnjoy service. The users can access to the system with a common web broswer, or with the mobile application. The web server contains the structure of the web pages, and it answers to the user’s requests, generating the pages, using script engine, with the proper data, received from the application server. There are two ways of interaction between users and system. The first one with a modern and up to date web broswer. The second one is represetend by the mobile application, which is completely derivated from the website, using Phonegap service to transform it in an executable file for all the mobile OS nowdays available. Due to that, the website will be developed following the principles of responsive pages, in order to reduce the amount of code, and increase the product quality attributes (as maintainability, performance, portability, etc...). Furthermore, a responsive design will give to the users of PowerEnjoy system a service easy to use and always familiar.
+</div>
+<div class="Indented">
+<div class="float">
+<a class="Label" name="Figure-4"> </a><div class="figure">
+<div class="center">
+<img class="embedded" src="Diagrams/Architecture/Architecture_firewall.png" alt="figure Diagrams/Architecture/Architecture_firewall.png">
+
+</div>
+<div class="caption">
+Figure 4 Physical architecture of the system. 
+</div>
+<a class="Label" name="physical architecture"> </a>
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+In figure <a class="Reference" href="#physical architecture">4↑</a> is represented the physical structure of the system. The Web Server is organized int two different physical devices as the Application server. That structure is called &ldquo;Server Farm&rdquo;, that is a typical distributed architecture, that improves the management of difficult works and, in particular, the availability qualities. In actual fact, a load balancing system will be used to split the works in these two physical servers. The two server farms in that architecture follow the design principles of &ldquo;Cloning&rdquo;, so they used the RACS policy. With that, the two servers of each farm can manage the same set of functions required by the system. In conclusion, if a server goes down, the other server can mantain the service active. In figure <a class="Reference" href="#availability analysis">5↓</a> there is a general analysis of the value of availability of the system, using that architectural pattern.
+</div>
+<div class="Indented">
+Figure <a class="Reference" href="#physical architecture">4↑</a> points out also that system architecture deals with a cloud service; in actual fact periodically, the application server will do a backup in order to retrieve data if something bad happen to the database server.
+</div>
+<div class="Indented">
+<div class="float">
+<a class="Label" name="Figure-5"> </a><div class="figure">
+<div class="center">
+<img class="embedded" src="Diagrams/Availability/diagram_availability.png" alt="figure Diagrams/Availability/diagram_availability.png">
+
+</div>
+<div class="caption">
+Figure 5 Availability analysis.
+</div>
+<a class="Label" name="availability analysis"> </a>
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+Supposing that <span class="formula"><i>A</i><sub><i>i</i></sub></span> is the availability of one of system’s servers. The total avilability, using that architectural pattern, is express by that formula:
+</div>
+<div class="Indented">
+<b><span class="larger"><div class="formula">
+<i>A</i> = 1 − <span class="stackrel"><span class="upstackrel">[</span><span class="downstackrel"><i>i</i></span></span> = 1]<i>n</i><span class="limits"><span class="limit">∏</span></span>(1 − <i>A</i><sub><i>i</i></sub>)
+</div>
+</span></b>
+</div>
+<div class="Indented">
+So <span class="formula"><i>A</i></span> is reduced when the servers are incremented.
+</div>
+<div class="Indented">
+<p><br>
+</p>
+
+</div>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-2.2">2.2</a> Hight Level Component View
+</h2>
+<div class="Unindented">
+<span class="hfill"> </span>
+</div>
+<div class="Indented">
+ 
+</div>
+<div class="Indented">
+<div class="float">
+<a class="Label" name="Figure-6"> </a><div class="figure">
+<div class="center">
+<img class="embedded" src="Diagrams/Component_Deployement/high_level_compoinents.png" alt="figure Diagrams/Component_Deployement/high_level_compoinents.png">
+
+</div>
+<div class="caption">
+Figure 6 High level component diagram.
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+This diagrams shows the interaction between the main component of the system. The client could starts the comunication with the system using a mobile application or the webpage, the employee is conneted with the system of the headquarter through the mobile application. The headquarter contains the core of the system and the database with the most important informations of the clients of Power Enjoy.
+</div>
+<div class="Indented">
+<span class="unknown">\newgeometry</span>bottom=2cm, top=1cm
+</div>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-2.3">2.3</a> Component View
+</h2>
+<div class="Unindented">
+<span class="hfill"> </span>
+</div>
+<div class="Indented">
+<div class="float">
+<a class="Label" name="Figure-7"> </a><div class="figure">
+<div class="center">
+<img class="embedded" src="Diagrams/Component_Deployement/component_diagram.png" alt="figure Diagrams/Component_Deployement/component_diagram.png">
+
+</div>
+<div class="caption">
+Figure 7 Component view diagram.
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+<span class="unknown">\restoregeometry</span>
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-6"></a>Dispatcher
+</div>
+<div class="Unindented">
+The dispatcher is a component devoted to forward requests received from the user to the right controller. It is built such an intelligence that understands what the request has to do. It does not do anything excepts forwarding, for this reason it can be considered a mediator between the &ldquo;smarter&rdquo; part of the application server and humans. It comunicates with the dispatcher.
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-7"></a>Payment controller
+</div>
+<div class="Unindented">
+This controller computes requests about payment. The dispatcher sends to it requests when the user has to pay the ride or other services providede by Power Enjoy. This controller comunicates with the external safe system payments (in our case PayPal). It comunicates with the dispatcher.
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-8"></a>Car controller
+</div>
+<div class="Unindented">
+This controller receives requests that need to be satisfied working on the phisic car system. It manage reqeusts about open or close the car or, at the same time, it sends information if sensors on the car releaved something to be analyzed. It comunicates with the dispatcher.
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-9"></a>Ride controller
+</div>
+<div class="Unindented">
+This controller manages requests about the ride. It can creates a ride, finisches it or computes the final price. It comunicates with the dispatcher.
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-10"></a>Account contoller
+</div>
+<div class="Unindented">
+This controller manage requests about accounts registered in the system (both user and employee). Through this controller an authenticated human could modify his/her credentials or simply visualizes them. It comunicates with the dispatcher.
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-11"></a>List controller
+</div>
+<div class="Unindented">
+This controller is used when an autenticated human ask for a set or, in general, a list of car for every reason. It is used to create the list of available car or the list of cars which needs attention. It comunicates with the dispatcher.
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-12"></a>Reservation controller 
+</div>
+<div class="Unindented">
+This controller manage the reservation of cars. It is &ldquo;called&rdquo; by the dispatcher when the user wants to reserve a car and, one reserved, to set the &ldquo;Expire time&rdquo; and close the reservation. It comunicates with the dispatcher.
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-13"></a>Model (package)
+</div>
+<div class="Unindented">
+This package contains all the main classes which are modified by the controller. Their connection with the database is not represented in the component viw.
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-14"></a>Notification dispatcher
+</div>
+<div class="Unindented">
+This dispacher forwarding the requests about notification to the right gateway.
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-15"></a>Mail gateway
+</div>
+<div class="Unindented">
+This gateway manages the mail entering and leaving the application server.
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-16"></a>Sms gateway
+</div>
+<div class="Unindented">
+This gateway manages the sms entering and leaving the application server.
+</div>
+<div class="Indented">
+<span class="unknown">\newgeometry</span>top=2cm, bottom=2cm
+</div>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-2.4">2.4</a> Deployment View
+</h2>
+<div class="Unindented">
+<div class="float">
+<a class="Label" name="Figure-8"> </a><div class="figure">
+<div class="center">
+<img class="embedded" src="Diagrams/Component_Deployement/deployement_diagram.png" alt="figure Diagrams/Component_Deployement/deployement_diagram.png">
+
+</div>
+<div class="caption">
+Figure 8 Deployment diagram of the system. 
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+<span class="unknown">\restoregeometry</span>
+</div>
+<div class="Indented">
+In that diagram is described the physical allocation of the layer described in section <a class="Reference" href="#subsec:layer section">2.1↑</a>. Four tier is needed in order to build the system, althought a different physical architecture could merge the Web Server tier and the Application Server tier in a single tier. 
+</div>
+<div class="Indented">
+Four tier architecture improves the security of the system, in actual fact with four physical devices is possible to place between these a firewall that considerably improves the security.
+</div>
+<div class="Indented">
+The devices allocated for the Web Server and the Application Server are in the reality two, the reason of that choice is exposed in section <a class="Reference" href="#subsec:layer section">2.1↑</a>.
+</div>
+<div class="Indented">
+<span class="unknown">\newgeometry</span>left=1cm, right=1cm, top=1cm, bottom=2cm
+</div>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-2.5">2.5</a> Runtime View
+</h2>
+<h3 class="Subsubsection">
+<a class="toc" name="toc-Subsubsection-2.5.1">2.5.1</a> Start the ride - Sequence diagram
+</h3>
+<div class="Unindented">
+<span class="hfill"> </span>
+</div>
+<div class="Indented">
+<div class="float">
+<a class="Label" name="Figure-9"> </a><div class="figure">
+<img class="embedded" src="Diagrams/Sequence/start_the_ride_sequence_diagram_nowebserver.png" alt="figure Diagrams/Sequence/start_the_ride_sequence_diagram_nowebserver.png">
+<div class="caption">
+Figure 9 Start the ride (Sequence Diagram).
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+<span class="unknown">\restoregeometry</span>
+</div>
+<div class="Indented">
+This sequence diagram shows how to an an user (an identified human) could reserve a car. Tapping or selecting the option &ldquo;Look for car nearby&rdquo;, he/she send his position (inserted manually o automatically sent) to the system. Once arrived to the dispacher, the request is send to the right controller (in this case the &ldquo;List controller&rdquo;) which ask to the database a list of car available for reservation. The user can now visualize the states of these car and chose one of these. He/she reserved the car chosen with the suiteted option and, through the &ldquo;Reservation controller&rdquo; a reservation of this car is created and also, throght the &ldquo;Car controller&rdquo;, the phase of this car is put on &ldquo;Reserved&rdquo;. When the user reachs the car, he/she opens it and the phase of the car is now &ldquo;Used&rdquo;.
+</div>
+<div class="Indented">
+<span class="unknown">\newgeometry</span>left=1cm, right=1cm, top=1.5cm, bottom=2cm
+</div>
+<h3 class="Subsubsection">
+<a class="toc" name="toc-Subsubsection-2.5.2">2.5.2</a> Finish the ride - Sequence diagram
+</h3>
+<div class="Unindented">
+<span class="hfill"> </span>
+</div>
+<div class="Indented">
+<div class="float">
+<a class="Label" name="Figure-10"> </a><div class="figure">
+<div class="center">
+<img class="embedded" src="Diagrams/Sequence/finish_the_ride_sequence_diagram_nowebserver.png" alt="figure Diagrams/Sequence/finish_the_ride_sequence_diagram_nowebserver.png">
+
+</div>
+<div class="caption">
+Figure 10 Finish the ride (Sequence Diagram).
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+<span class="unknown">\restoregeometry</span>
+</div>
+<div class="Indented">
+This sequence diagram show how to an user (an idenified human) finish his/her ride. The user turn off the car and then, on the user terminal (in this case the screen of the car), he/she selects the option &ldquo;Finish the ride&rdquo;. The request arrives to the dispatcher and it forwards the request to the &ldquo;Ride controller&rdquo; which works on the database to updates tables in order to &ldquo;close&rdquo; the ride. When the user sees on the user terminal (the screen of the car) that the ride is finished, he/she gets out the car and it’s sensor send to the system a request to close the car. The user has one minute to plug the car, after this time expires the application server proceeds to compute the final cost of the ride, eventually applying discounts, accordig to the various options chosen for this ride. The system finaly send a mail with the bill of the ride to the user.
+</div>
+<div class="Indented">
+<span class="unknown">\newgeometry</span>bottom=3cm, top=3cm
+</div>
+<h3 class="Subsubsection">
+<a class="toc" name="toc-Subsubsection-2.5.3">2.5.3</a> List of car - Sequence diagram
+</h3>
+<div class="Unindented">
+<span class="hfill"> </span>
+</div>
+<div class="Indented">
+<div class="float">
+<a class="Label" name="Figure-11"> </a><div class="figure">
+<span class="environment"><span class="arrayrow">
+<span class="arraycell align-l">
+ − 0.5cm − 2cm
+</span>
+
+</span>
+</span><div class="center">
+<img class="embedded" src="Diagrams/Sequence/list_of_the_car_sequence_diagram_nowebserver.png" alt="figure Diagrams/Sequence/list_of_the_car_sequence_diagram_nowebserver.png">
+
+</div>
+<div class="caption">
+Figure 11 List of car - Employee (Sequence Diagram).
+</div>
+<span class="unknown">\end</span>adjustwidth
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+<span class="unknown">\restoregeometry</span>
+</div>
+<div class="Indented">
+This sequence diagram show the utility of the list of car for an employee. When the employee arrives at work, he/she has to see the list of car which he/she has to take car in the day. He/she sends his request to the system and the dispatcher forwards the request to the &ldquo;List controller&rdquo;, which extracts from the database some cars that need to be checked. He/she takes car of the car and then, according to the problems he/she has detected during his/her works, he/she changes the state of the car, sending the request to the application server. The &ldquo;Car controller&rdquo; changes the state of the car in the database and the &ldquo;List of car&rdquo; of the employee is updated.
+</div>
+<div class="Indented">
+<span class="unknown">\newgeometry</span>bottom=3cm, top=2cm
+</div>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-2.6">2.6</a> Component Interface
+</h2>
+<div class="Unindented">
+<span class="hfill"> </span>
+</div>
+<div class="Indented">
+<div class="float">
+<a class="Label" name="Figure-12"> </a><div class="figure">
+<span class="environment"><span class="arrayrow">
+<span class="arraycell align-l">
+ − 2cm − 2cm
+</span>
+
+</span>
+</span><div class="center">
+<img class="embedded" src="Diagrams/Data_model/Data_model.png" alt="figure Diagrams/Data_model/Data_model.png">
+
+</div>
+<div class="caption">
+Figure 12 Entity-Relationship diagram (with UML notation).
+</div>
+<span class="unknown">\end</span>adjustwidth
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+<span class="unknown">\restoregeometry</span>
+</div>
+<div class="Indented">
+Entities and relationships of interest for the application on the basis of the diagram of classes present in the RASD have been identified. The conceptual design of the database is illustrated by the E-R diagram in figure below. Foreign key constraints and triggers are not used: the dynamic behaviour of the data is handled entirely by the Java Persistence API in the Business Application tier. 
+</div>
+<div class="Indented">
+The entities and relationships are:
+</div>
+<ul>
+<li>
+<b>Reservation</b>;
+</li>
+<li>
+<b>User</b>;
+</li>
+<li>
+<b>Ride</b>: entity identified by a unique ID auto-increment, and has the attribute startingLongitude and startingLatitude (for the initial position) and the finalLongitude and finalLatitude (for the final position) and lastly the numberOfPassengers. With this information from the ride the system can compute the final price and the related discounts, of course only the higher discount among those available will be applied;
+</li>
+<li>
+<b>Payment Information</b>: this entity related with the corresponding user (through the “InformationForPaymet” relation) allow the user to have multiple payment information instead of only one;
+</li>
+<li>
+<b>Car</b>;
+</li>
+<li>
+<b>Phase</b>: every car, with the “phaseOfCar” relation, is associated exactly to one phase. A phase represent the state of the car so if, in the future, the system need to specify a new state it can simply add a new id with its type;
+</li>
+<li>
+<b>Historical Work</b>: entity identified by a unique ID auto-increment which represents a single work done by a pair of worker on one car. So using a GROUP BY on a employee or on one car the system will return respectively the entire works done by an employee or the all work done on one car;
+</li>
+<li>
+<b>List</b>;
+</li>
+<li>
+<b>Special Area</b>: is identified uniquely by its latitudine and its longitudine (that is its center ). The system with the “radius” attribute can verify if a position is in that special area or not. Lastly the attribute plugs which is an integer that detrmine the number of plugs in the special area. When the system need to know the number of free plugs in a specific special area (in order to compute the available special area for the “money saving option”) a simple inspection of the relationship between the cars and the special area is needed;
+</li>
+<li>
+<b>Safe Area External Point</b>: every entity has a latitudine and longitudine which determine a unique position that is a vertex of the polygon. Moreover each entity has a “order” attribute which is an integer that represent the order of the vertices. See the algorithm in the section <a class="Reference" href="#sec:Algorithm-Design">3↓</a>;
+</li>
+<li>
+<b>Employee</b>;
+</li>
+<li>
+<b>Phone</b>.
+</li>
+
+</ul>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-2.7">2.7</a> Selected Architectural Styles And Patterns
+</h2>
+<h3 class="Subsubsection">
+<a class="toc" name="toc-Subsubsection-2.7.1">2.7.1</a> Protocols
+</h3>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-17"></a>JDBC with ODBC
+</div>
+<div class="Unindented">
+This protocolos is used to manage the connection between database and Application server.
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-18"></a>RESTful API and JSON 
+</div>
+<div class="Unindented">
+Use to manage the connection with the application server. because the application server is a JavaEE server, in order to give to that server JSON and REST capabilities Jersey framework will be installed. 
+</div>
+<h3 class="Subsubsection">
+<a class="toc" name="toc-Subsubsection-2.7.2">2.7.2</a> Design Patterns
+</h3>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-19"></a>MVC with Observable/Observer
+</div>
+<div class="Unindented">
+This is the main pattern used in PowerEnjoy system. Observable/Observer pattern is used in order to simplify the developing of MVC system, and to improve the maintainability. In actual fact we can add in future more feature, that perhaps requires the same notification that is currently used in the system.
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-20"></a>Visitor 
+</div>
+<div class="Unindented">
+This pattern is used to make the ListController very dynamic. Infact thanks to that pattern the addiction of new type of List is easier (go to section <a class="Reference" href="#sec:Algorithm-Design">3↓</a> to get more specific information about the used of that pattern).
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-21"></a>State
+</div>
+<div class="Unindented">
+Used in order to manage the phase of cars. In actual fact it is easier to extend the possible phases of a car, and also modify the possible behaviour of it. 
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-22"></a>Adapter 
+</div>
+<div class="Unindented">
+Used in order to make the JavaEE Application server work with Jersey framework and consequently with RESTful and JSON, needed in order to build the mobile application using PhoneGap.
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-23"></a>Client-Server
+</div>
+<div class="Unindented">
+The Client-Server pattern is strogly used in our system. It is based on thin clients, represented by the mobile application used by users and employees, and the client’s web browser. The client sends requests to the application server in the headquarter. This pattern has been chosen because is scalable (the application can interact with an hight number of clients) and fast because different asymmetric protocol are use to answer to the clients.
+</div>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-2.8">2.8</a> Other Design Decision
+</h2>
+<div class="Unindented">
+Bootstrap 3 is the framework that allows to develop a responsive website without create new script function needed to make webpages dinamically change based on the dimension and resolution of the screen.
+</div>
+<div class="Indented">
+GoogleMap API location service will be used in order to integrate the system with a map service.
+</div>
+<div class="Indented">
+<p><br>
+</p>
+
+</div>
+<h1 class="Section">
+<a class="toc" name="toc-Section-3">3</a> Algorithm Design<a class="Label" name="sec:Algorithm-Design"> </a>
+</h1>
+<div class="Unindented">
+In this section there are the prototypes of some critical algorithms of the system. 
+</div>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-3.1">3.1</a> ListController implementation
+</h2>
+<div class="Unindented">
+<div class="center">
+<img class="embedded" src="Algorithms/Visitor/all.java.png" alt="figure Algorithms/Visitor/all.java.png">
+
+</div>
+
+</div>
+<div class="Indented">
+The ListController is used to create all the lists of the system in a dynamic way. It is implemented with a visitor pattern because, in this way, new lists could be added without modifying the system but only adding another implementation of the ListCreator visitable object. Once the controller received a request, the right class is called and the list is generated according to the implementation of the methods of the visitor interface. 
+</div>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-3.2">3.2</a> Safe Position implementation
+</h2>
+<div class="Unindented">
+<div class="center">
+<img class="embedded" src="Algorithms/position/new 1.png" alt="figure Algorithms/position/new 1.png">
+
+</div>
+
+</div>
+<div class="Indented">
+This algorithm checks whether a point belongs to a polygon. So it is used to check whether a given point (uniquely determined by its latitude and its longitude) belongs for example to a safe area. 
+</div>
+<ul>
+<li>
+Fisrt step: tracing a halfline from the starting point from p;
+</li>
+<li>
+Second step: calculate how many sides of the polygon intersect this half-line. The “result” variable contains the number of intersections;
+</li>
+<li>
+Third step: if the number of intersections is even the point is outside the polygon otherwise (if odd) is internal. 
+</li>
+
+</ul>
+<div class="Unindented">
+<p><br>
+</p>
+
+</div>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-3.3">3.3</a> Modify user account implementation
+</h2>
+<div class="Unindented">
+<div class="center">
+<img class="embedded" src="Algorithms/modify/AccountController.java.png" alt="figure Algorithms/modify/AccountController.java.png">
+
+</div>
+
+</div>
+<div class="Indented">
+The AccountController is realized with the overloading of methods: different methods have different signatures and, according to the parameters that has received, they have different instructions to execute.
+</div>
+<div class="Indented">
+<p><br>
+</p>
+
+</div>
+<h1 class="Section">
+<a class="toc" name="toc-Section-4">4</a> User Interface Design
+</h1>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-4.1">4.1</a> UX diagrams
+</h2>
+<div class="Unindented">
+In that part of the document is shown what the user interface has to provide in PowerEnjoy system. There are four diagrams, one for each part of the interaction between general users and the system. To see how the graphical interfaces should be in the real application go to the mockups section of previous RASD document, in actual fact that diagrams are a complete trasposition of that interface examples.
+</div>
+<h3 class="Subsubsection">
+<a class="toc" name="toc-Subsubsection-4.1.1">4.1.1</a> Home page interface
+</h3>
+<div class="Unindented">
+<span class="hfill"> </span>
+</div>
+<div class="Indented">
+<div class="float">
+<a class="Label" name="Figure-13"> </a><div class="figure">
+<span class="environment"><span class="arrayrow">
+<span class="arraycell align-l">
+ − 2.2cm
+</span>
+
+</span>
+</span><img class="embedded" src="Diagrams/UX/home_signUp_signIn_Discover.png" alt="figure Diagrams/UX/home_signUp_signIn_Discover.png">
+<div class="caption">
+Figure 13 Home navigation - UX.
+</div>
+<span class="unknown">\end</span>adjustwidth
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+<p><br>
+</p>
+
+</div>
+<div class="Indented">
+<span class="unknown">\newgeometry</span>top=3cm, bottom=3cm
+</div>
+<h3 class="Subsubsection">
+<a class="toc" name="toc-Subsubsection-4.1.2">4.1.2</a> Interface of the user
+</h3>
+<div class="Unindented">
+<span class="hfill"> </span>
+</div>
+<div class="Indented">
+<div class="float">
+<a class="Label" name="Figure-14"> </a><div class="figure">
+<div class="center">
+<img class="embedded" src="Diagrams/UX/home_lookFor_user.png" alt="figure Diagrams/UX/home_lookFor_user.png">
+
+</div>
+<div class="caption">
+Figure 14 User navigation - UX.
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+<span class="unknown">\restoregeometry</span>
+</div>
+<div class="Indented">
+<p><br>
+</p>
+
+</div>
+<h3 class="Subsubsection">
+<a class="toc" name="toc-Subsubsection-4.1.3">4.1.3</a> Interface of the employee
+</h3>
+<div class="Unindented">
+<span class="hfill"> </span>
+</div>
+<div class="Indented">
+<div class="float">
+<a class="Label" name="Figure-15"> </a><div class="figure">
+<div class="center">
+<img class="embedded" src="Diagrams/UX/home_list_employee.png" alt="figure Diagrams/UX/home_list_employee.png">
+
+</div>
+<div class="caption">
+Figure 15 Employee navigation - UX.
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+<p><br>
+</p>
+
+</div>
+<h3 class="Subsubsection">
+<a class="toc" name="toc-Subsubsection-4.1.4">4.1.4</a> Screen of car interface
+</h3>
+<div class="Unindented">
+<span class="hfill"> </span>
+</div>
+<div class="Indented">
+<div class="float">
+<a class="Label" name="Figure-16"> </a><div class="figure">
+<div class="center">
+<img class="embedded" src="Diagrams/UX/scree_of_car.png" alt="figure Diagrams/UX/scree_of_car.png">
+
+</div>
+<div class="caption">
+Figure 16 Screen of car navigation - UX.
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+<p><br>
+</p>
+
+</div>
+<div class="Indented">
+<span class="unknown">\newgeometry</span>top=3cm, bottom=3cm
+</div>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-4.2">4.2</a> BCE diagrams
+</h2>
+<div class="Unindented">
+Here there are four BCE diagrams that are extreamly connected to the UX diagrams mentioned before. In actual fact, in the diagram are also defined the correspondence between boundary and screen. Due to the large use of MVC pattern, BCE diagrams is needed in order to show how the system’s components have to communicate and work together. In actual fact, all control tables in the diagrams will become a real controller class of PoweEnjoy system, and all method defined in the entity tables must be provided by application server.
+</div>
+<h3 class="Subsubsection">
+<a class="toc" name="toc-Subsubsection-4.2.1">4.2.1</a> Home BCE
+</h3>
+<div class="Unindented">
+<span class="hfill"> </span>
+</div>
+<div class="Indented">
+<div class="float">
+<a class="Label" name="Figure-17"> </a><div class="figure">
+<div class="center">
+<img class="embedded" src="Diagrams/BCE/BCE_first_page.png" alt="figure Diagrams/BCE/BCE_first_page.png">
+
+</div>
+<div class="caption">
+Figure 17 Home - BCE.
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+<span class="unknown">\restoregeometry</span>
+</div>
+<div class="Indented">
+<p><br>
+</p>
+
+</div>
+<div class="Indented">
+<span class="unknown">\newgeometry</span>top=3cm, bottom=3cm
+</div>
+<h3 class="Subsubsection">
+<a class="toc" name="toc-Subsubsection-4.2.2">4.2.2</a> User BCE
+</h3>
+<div class="Unindented">
+<span class="hfill"> </span>
+</div>
+<div class="Indented">
+<div class="float">
+<a class="Label" name="Figure-18"> </a><div class="figure">
+<div class="center">
+<img class="embedded" src="Diagrams/BCE/BCE_user.png" alt="figure Diagrams/BCE/BCE_user.png">
+
+</div>
+<div class="caption">
+Figure 18 User - BCE.
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+<p><br>
+</p>
+
+</div>
+<h3 class="Subsubsection">
+<a class="toc" name="toc-Subsubsection-4.2.3">4.2.3</a> Employee BCE
+</h3>
+<div class="Unindented">
+<span class="hfill"> </span>
+</div>
+<div class="Indented">
+<div class="float">
+<a class="Label" name="Figure-19"> </a><div class="figure">
+<div class="center">
+<img class="embedded" src="Diagrams/BCE/BCE_employee.png" alt="figure Diagrams/BCE/BCE_employee.png">
+
+</div>
+<div class="caption">
+Figure 19 Screen of car navigation - UX.
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+<p><br>
+</p>
+
+</div>
+<h3 class="Subsubsection">
+<a class="toc" name="toc-Subsubsection-4.2.4">4.2.4</a> Screen of car BCE
+</h3>
+<div class="Unindented">
+<span class="hfill"> </span>
+</div>
+<div class="Indented">
+<div class="float">
+<a class="Label" name="Figure-20"> </a><div class="figure">
+<div class="center">
+<img class="embedded" src="Diagrams/BCE/BCE_screen_of_car.png" alt="figure Diagrams/BCE/BCE_screen_of_car.png">
+
+</div>
+<div class="caption">
+Figure 20 Screen of car - BCE.
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="Indented">
+<p><br>
+</p>
+
+</div>
+<h1 class="Section">
+<a class="toc" name="toc-Section-5">5</a> Requirements traceability 
+</h1>
+<div class="Unindented">
+All the decisions in the design of this project have been taken following functional and non-functional requirements writtend in the RASD. The list under maps the requirements and goals contained in specific sections of the RASD to the components in the Design Document which will assure its fulfillment.
+</div>
+<ul>
+<li>
+[E1] Allows the employee to log in the system, by app or website <ul>
+<li>
+Account Controller
+</li>
+
+</ul>
+
+</li>
+<li>
+[E2] Allows the employee to put the car in unavailable mode <ul>
+<li>
+Car Controller 
+</li>
+
+</ul>
+
+</li>
+<li>
+[E3] Allows the employee to know what car he/she has to take care <ul>
+<li>
+List Controller
+</li>
+
+</ul>
+
+</li>
+<li>
+[U1] Allows user to create an account <ul>
+<li>
+Account Controller
+</li>
+
+</ul>
+
+</li>
+<li>
+[U2] Allows user to log in the System, by application or website <ul>
+<li>
+Account Controller
+</li>
+<li>
+Mobile application and website
+</li>
+
+</ul>
+
+</li>
+<li>
+[U3] Allows user to modify his/her credentials<ul>
+<li>
+Account Controller
+</li>
+
+</ul>
+
+</li>
+<li>
+[U4] Allows user to look for cars nearby <ul>
+<li>
+Reservation Controller
+</li>
+<li>
+List Controller
+</li>
+
+</ul>
+
+</li>
+<li>
+[U5] Allows user to reserve a car <ul>
+<li>
+Reservation Controller
+</li>
+<li>
+Car Controller
+</li>
+
+</ul>
+
+</li>
+<li>
+[U6] Allows user to send a request for opening the car <ul>
+<li>
+Mobile application
+</li>
+<li>
+Car Controller
+</li>
+
+</ul>
+
+</li>
+<li>
+[U7] Allows user to enable the money saving option <ul>
+<li>
+Ride controller
+</li>
+<li>
+List controller
+</li>
+
+</ul>
+
+</li>
+<li>
+[U8] Allows user to finish his/her ride and visualize the information about it <ul>
+<li>
+Screen of Car
+</li>
+<li>
+Ride Controller
+</li>
+<li>
+Car Controller
+</li>
+
+</ul>
+
+</li>
+<li>
+[U9] Allows user to view the special parking area in the map <ul>
+<li>
+Screen of car 
+</li>
+<li>
+List Controller
+</li>
+
+</ul>
+
+</li>
+<li>
+[U10] Allows user to pay for the ride<ul>
+<li>
+Payment Controller
+</li>
+<li>
+Ride Controller
+</li>
+
+</ul>
+
+</li>
+
+</ul>
+<div class="Unindented">
+<p><br>
+</p>
+
+</div>
+<h1 class="Section">
+<a class="toc" name="toc-Section-6">6</a> Appendices
+</h1>
+<h2 class="Subsection">
+<a class="toc" name="toc-Subsection-6.1">6.1</a> Used Tools
+</h2>
+<ul>
+<li>
+Microsoft Visio 2016: for all the diagrams in that document (as UX, Component, etc...);
+</li>
+<li>
+Lyx document processor: to write all the document;
+</li>
+<li>
+Notepad ++: to write the prototypes of the algorithms;
+</li>
+<li>
+SourceTree: used as GitHub manager;
+</li>
+<li>
+GitHub: used to manage the shared building process of that document.
+</li>
+
+</ul>
+<div class="Unindented">
+<p><br>
+</p>
+
+</div>
+<h1 class="Section">
+<a class="toc" name="toc-Section-7">7</a> Hours Of Work
+</h1>
+<div class="Unindented">
+<table>
+<tr>
+<td align="center" valign="top">
+Day
+</td>
+<td align="center" valign="top">
+Guido Muscioni
+</td>
+<td align="center" valign="top">
+Marco Orbelli
+</td>
+<td align="center" valign="top">
+Paola Marchesini
+</td>
+
+</tr>
+<tr>
+<td align="center" valign="top">
+28/11
+</td>
+<td align="center" valign="top">
+4.5
+</td>
+<td align="center" valign="top">
+2.5
+</td>
+<td align="center" valign="top">
+2.5
+</td>
+
+</tr>
+<tr>
+<td align="center" valign="top">
+29/11
+</td>
+<td align="center" valign="top">
+4
+</td>
+<td align="center" valign="top">
+4
+</td>
+<td align="center" valign="top">
+4
+</td>
+
+</tr>
+<tr>
+<td align="center" valign="top">
+30/11
+</td>
+<td align="center" valign="top">
+1
+</td>
+<td align="center" valign="top">
+1
+</td>
+<td align="center" valign="top">
+2
+</td>
+
+</tr>
+<tr>
+<td align="center" valign="top">
+1/12
+</td>
+<td align="center" valign="top">
+4
+</td>
+<td align="center" valign="top">
+4
+</td>
+<td align="center" valign="top">
+4.5
+</td>
+
+</tr>
+<tr>
+<td align="center" valign="top">
+2/12
+</td>
+<td align="center" valign="top">
+3
+</td>
+<td align="center" valign="top">
+3.5
+</td>
+<td align="center" valign="top">
+3
+</td>
+
+</tr>
+<tr>
+<td align="center" valign="top">
+3/12
+</td>
+<td align="center" valign="top">
+3
+</td>
+<td align="center" valign="top">
+3
+</td>
+<td align="center" valign="top">
+3
+</td>
+
+</tr>
+<tr>
+<td align="center" valign="top">
+4/12
+</td>
+<td align="center" valign="top">
+6.5
+</td>
+<td align="center" valign="top">
+6
+</td>
+<td align="center" valign="top">
+6
+</td>
+
+</tr>
+<tr>
+<td align="center" valign="top">
+5/12
+</td>
+<td align="center" valign="top">
+7
+</td>
+<td align="center" valign="top">
+7
+</td>
+<td align="center" valign="top">
+7
+</td>
+
+</tr>
+<tr>
+<td align="center" valign="top">
+6/12
+</td>
+<td align="center" valign="top">
+5
+</td>
+<td align="center" valign="top">
+5
+</td>
+<td align="center" valign="top">
+5
+</td>
+
+</tr>
+<tr>
+<td align="center" valign="top">
+7/12
+</td>
+<td align="center" valign="top">
+
+</td>
+<td align="center" valign="top">
+
+</td>
+<td align="center" valign="top">
+
+</td>
+
+</tr>
+<tr>
+<td align="center" valign="top">
+8/12
+</td>
+<td align="center" valign="top">
+
+</td>
+<td align="center" valign="top">
+
+</td>
+<td align="center" valign="top">
+
+</td>
+
+</tr>
+<tr>
+<td align="center" valign="top">
+9/12
+</td>
+<td align="center" valign="top">
+
+</td>
+<td align="center" valign="top">
+
+</td>
+<td align="center" valign="top">
+
+</td>
+
+</tr>
+<tr>
+<td align="center" valign="top">
+10/12
+</td>
+<td align="center" valign="top">
+
+</td>
+<td align="center" valign="top">
+
+</td>
+<td align="center" valign="top">
+
+</td>
+
+</tr>
+<tr>
+<td align="center" valign="top">
+11/12
+</td>
+<td align="center" valign="top">
+
+</td>
+<td align="center" valign="top">
+
+</td>
+<td align="center" valign="top">
+
+</td>
+
+</tr>
+<tr>
+<td align="center" valign="top">
+total
+</td>
+<td align="center" valign="top">
+38
+</td>
+<td align="center" valign="top">
+36
+</td>
+<td align="center" valign="top">
+37
+</td>
+
+</tr>
+
+</table>
+
+</div>
+<div class="Indented">
+<p><br>
+</p>
+
+</div>
+<div class="fulltoc">
+<div class="tocheader">
+List of Figures
+</div>
+<div class="toc">
+<a class="Link" href="#Figure 1">Figure 1</a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-2">Figure 2: New brand logo.</a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-3">Figure 3: Overview architecture.</a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-4">Figure 4: Physical architecture of the system. </a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-5">Figure 5: Availability analysis.</a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-6">Figure 6: High level component diagram.</a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-7">Figure 7: Component view diagram.</a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-8">Figure 8: Deployment diagram of the system. </a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-9">Figure 9: Start the ride (Sequence Diagram).</a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-10">Figure 10: Finish the ride (Sequence Diagram).</a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-11">Figure 11: List of car - Employee (Sequence Diagram).</a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-12">Figure 12: Entity-Relationship diagram (with UML notation).</a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-13">Figure 13: Home navigation - UX.</a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-14">Figure 14: User navigation - UX.</a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-15">Figure 15: Employee navigation - UX.</a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-16">Figure 16: Screen of car navigation - UX.</a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-17">Figure 17: Home - BCE.</a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-18">Figure 18: User - BCE.</a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-19">Figure 19: Screen of car navigation - UX.</a>
+</div>
+<div class="toc">
+<a class="Link" href="#Figure-20">Figure 20: Screen of car - BCE.</a>
+</div>
+
+</div>
+
+</div>
+</body>
+</html>
