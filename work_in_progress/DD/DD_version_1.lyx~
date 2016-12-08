@@ -934,12 +934,6 @@ Overview architecture.
 \end_layout
 
 \begin_layout Standard
-<TODO: parlare dell'implementazione di un quarto tier adibito alla business
- logic.
- CLOUD?>
-\end_layout
-
-\begin_layout Standard
 The system of PowerEnjoy service is composed by a three layers architecture:
 \end_layout
 

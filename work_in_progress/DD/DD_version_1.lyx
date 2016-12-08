@@ -802,7 +802,7 @@ https://aws.amazon.com/it/
 \end_layout
 
 \begin_layout Itemize
-General API documention of mobile OS.
+General API documentation of mobile OS.
 \end_layout
 
 \begin_layout Subsection
@@ -1215,7 +1215,7 @@ So
 \begin_inset Formula $A$
 \end_inset
 
- is reduced when the servers are incremented.
+ is incremented when the servers are incremented.
 \end_layout
 
 \begin_layout Standard
