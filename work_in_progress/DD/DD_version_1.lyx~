@@ -802,7 +802,7 @@ https://aws.amazon.com/it/
 \end_layout
 
 \begin_layout Itemize
-General API documention of mobile OS.
+General API documentation of mobile OS.
 \end_layout
 
 \begin_layout Subsection
@@ -1215,7 +1215,7 @@ So
 \begin_inset Formula $A$
 \end_inset
 
- is reduced when the servers are incremented.
+ is incremented when the servers are incremented.
 \end_layout
 
 \begin_layout Standard
@@ -1284,7 +1284,7 @@ High level component diagram.
 
 \begin_layout Standard
 This diagrams shows the interaction between the main component of the system.
- The client could starts the comunication with the system using a mobile
+ The client could starts the comunication with the system using the mobile
  application or the webpage, the employee is conneted with the system of
  the headquarter through the mobile application.
  The headquarter contains the core of the system and the database with the
@@ -1381,8 +1381,8 @@ Dispatcher
 \begin_layout Standard
 The dispatcher is a component devoted to forward requests received from
  the user to the right controller.
- It is built such an intelligence that understands what the request has
- to do.
+ It is capable to understand what it has to do, according to informations
+ it received.
  It does not do anything excepts forwarding, for this reason it can be considere
 d a mediator between the 
 \begin_inset Quotes eld
@@ -1393,7 +1393,6 @@ smarter
 \end_inset
 
  part of the application server and humans.
- It comunicates with the dispatcher.
 \end_layout
 
 \begin_layout Paragraph
@@ -1402,8 +1401,8 @@ Payment controller
 
 \begin_layout Standard
 This controller computes requests about payment.
- The dispatcher sends to it requests when the user has to pay the ride or
- other services providede by Power Enjoy.
+ The dispatcher sends to it requests about payments of the rides or other
+ services provided by Power Enjoy.
  This controller comunicates with the external safe system payments (in
  our case PayPal).
  It comunicates with the dispatcher.
@@ -1415,8 +1414,8 @@ Car controller
 
 \begin_layout Standard
 This controller receives requests that need to be satisfied working on the
- phisic car system.
- It manage reqeusts about open or close the car or, at the same time, it
+ physical car system.
+ It manages reqeusts about open or close the car or, at the same time, it
  sends information if sensors on the car releaved something to be analyzed.
  It comunicates with the dispatcher.
 \end_layout
@@ -3823,7 +3822,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -3832,7 +3831,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -3841,7 +3840,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -3899,7 +3898,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -3908,7 +3907,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -3917,7 +3916,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -3937,7 +3936,7 @@ total
 \begin_inset Text
 
 \begin_layout Plain Layout
-38
+40
 \end_layout
 
 \end_inset
@@ -3946,7 +3945,7 @@ total
 \begin_inset Text
 
 \begin_layout Plain Layout
-36
+38
 \end_layout
 
 \end_inset
@@ -3955,7 +3954,7 @@ total
 \begin_inset Text
 
 \begin_layout Plain Layout
-37
+39
 \end_layout
 
 \end_inset
