@@ -479,6 +479,27 @@ Program Stubs and Test Data Required
 Appendices
 \end_layout
 
+\begin_layout Subsection
+Used Tools
+\end_layout
+
+\begin_layout Itemize
+Microsoft Visio 2016: for all the diagrams in that document (as Testing
+ Diagrams, etc ...);
+\end_layout
+
+\begin_layout Itemize
+Lyx document processor: to write all the document;
+\end_layout
+
+\begin_layout Itemize
+SourceTree: used as GitHub manager;
+\end_layout
+
+\begin_layout Itemize
+GitHub: used to manage the shared building process of that document.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
