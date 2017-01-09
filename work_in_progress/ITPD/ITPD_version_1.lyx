@@ -547,12 +547,116 @@ In the integration phase, the tests of commercial components, that have
 Sequence of Component/Function Integration
 \end_layout
 
+\begin_layout Standard
+In this section it is described how the different components of our system
+ has been integrated.
+ As a notation, it is used an arrow, which mean that a component X (starting
+ point) needs a component Y (head of the arrow).
+\end_layout
+
 \begin_layout Subsubsection
 Software Integration Sequence
 \end_layout
 
+\begin_layout Standard
+Following, it is explained in details how the bottom-up approch is applied
+ to the Power Enjoy system developed.
+ In particular, further the basic approch mentioned before, the components
+ of the system are also been grouped according to the functionalities they
+ provide and finally integrated together.
+\end_layout
+
+\begin_layout Paragraph
+Data Access Interface
+\end_layout
+
+\begin_layout Standard
+The first elements that have to be integrated are the DataBase Source and
+ the Data Acces Interface.
+ The DataBase, as mentioned before in 
+\begin_inset CommandInset label
+LatexCommand label
+name "ref:subsec-Definitions"
+
+\end_inset
+
+, is complete, in order to test the other components of the system using
+ real data to perform queries and to manage a complex system as close as
+ possible to reality.
+\end_layout
+
+\begin_layout Paragraph
+System Controller
+\end_layout
+
+\begin_layout Standard
+Once made the DB accessible, it is necessary to integrate external Payment
+ Gateway with the Payment Controller.
+ In this way, when the next component will be integrated with the Payment
+ component, we can test early their interaction.
+\end_layout
+
+\begin_layout Standard
+>>IMMAGINE DEI DUE MODULI PAYMENT<<
+\end_layout
+
+\begin_layout Standard
+The other integration, according to the functionalities criterion, involved
+ two important component of the Power Enjoy system: the Car Controller and
+ the Ride Controller.
+ With the integration of this three internal component, the system can manage
+ a ride.
+\end_layout
+
+\begin_layout Standard
+>>IMMAGINE DEI 3 COMPONENTI INSIEME<<
+\end_layout
+
+\begin_layout Standard
+The third phase involved one of the most imposrtant component of the Power
+ Enjoy System: the List Controller.
+ This particular component manages the employees' list of car, keeping updated
+ which cars need attention.
+ This component is integrateded with the Car Controller: in this way it
+ is guaranteed the maintenance of cars and the employees' management.
+\end_layout
+
+\begin_layout Standard
+>>IMMAGINE DEI DUE COMPONENTI<<
+\end_layout
+
+\begin_layout Standard
+In the fourth phase the Sms Gateway and the Mail Gateway are integrated
+ with the Notification Dispatcher.
+ After the integration of the notification components, the Notification
+ Dispatcher is integrated with the Reservation Controller.
+ This phase guarantees the integrations of the subcomponents involved in
+ the reservation of cars and in the comunications of the neccessary informations
+ to the client.
+ 
+\end_layout
+
+\begin_layout Standard
+>>IMMAGINE DEI 4 COMPONENTI INTEGRATI<<
+\end_layout
+
+\begin_layout Standard
+Finally the Reservation Controller is integrated with the List Controller
+ and with the Car Controller, and all of the components mentioned before
+ plus the Account Controller are integrated With the dispatcher.
+\end_layout
+
+\begin_layout Standard
+>>IMMAGINE SOLO DI TUTTI I CONTROLLER E DEL DISPATCHER<<
+\end_layout
+
 \begin_layout Subsubsection
 Subsystem Integration Sequence
+\end_layout
+
+\begin_layout Standard
+>>SEZIONE PER NOI INUTILE IN QUANTO NON ABBIAMO MAI DETTO DI AVERE SOTTOSISTEMI,
+ LA TOGLIEREI E METTEREI LA SITUA FINALE NELLA SEZIONE PRECEDENTE<<
 \end_layout
 
 \begin_layout Standard
