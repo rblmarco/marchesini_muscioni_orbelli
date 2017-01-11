@@ -1,0 +1,6 @@
+DD:
+nel primo bce c'è un cretaeUser()
+nel sequence finish the ride, mettere a posto i prametri carId e sistemare la frecciasenza testo
+pagina 19 disastro, un po di s e idenified
+in list of car modificare le lettere maiuscole di ListCreator in listCreator
+nel sequence start modificare openTheCar con parametro carId per coerenza con il close, stessa cosa per il changePhaseOfCar
