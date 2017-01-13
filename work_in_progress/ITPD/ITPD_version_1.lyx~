@@ -332,6 +332,69 @@ name "subsec:Definitions"
 
 \end_layout
 
+\begin_layout Itemize
+SDD: Software Design Description.
+ 
+\end_layout
+
+\begin_layout Itemize
+DD: Design Document.
+ 
+\end_layout
+
+\begin_layout Itemize
+ITP: Integration Test Plan.
+ 
+\end_layout
+
+\begin_layout Itemize
+ITPD: Integration Test Plan Document.
+ 
+\end_layout
+
+\begin_layout Itemize
+DBMS: Database Management System.
+ 
+\end_layout
+
+\begin_layout Itemize
+ER: Entity-Relationship diagram.
+\end_layout
+
+\begin_layout Itemize
+API: Application Programming Interface.
+ 
+\end_layout
+
+\begin_layout Itemize
+RASD: Requirement Analysis and Specification Document.
+ 
+\end_layout
+
+\begin_layout Itemize
+SDK: Software Development Kit.
+ 
+\end_layout
+
+\begin_layout Itemize
+PhoneGap: mobile cross-platform development framework.
+\end_layout
+
+\begin_layout Itemize
+DISPATCHER: a dispatcher acts like a server and manages the distribution
+ of jobs over the ???????????
+\end_layout
+
+\begin_layout Itemize
+Req as for Requirement.
+ 
+\end_layout
+
+\begin_layout Itemize
+WebApp as for Web Application.
+ 
+\end_layout
+
 \begin_layout Standard
 <TODO:Completezza, definizioni delle percentuali fra scrittura del codice
  e Junit test su quel codice.>
@@ -2864,6 +2927,133 @@ name "subsec:drivers"
 
 \end_layout
 
+\begin_layout Subsection
+Test Data
+\end_layout
+
+\begin_layout Itemize
+A list of both valid and invalid set of user’s parameters to test the 
+\series bold
+Account Controller
+\series default
+ component.
+ The set should contain instances exhibiting the following problems: -
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Null parameter;
+\end_layout
+
+\begin_layout Itemize
+Some incomplete login credentials;
+\end_layout
+
+\begin_layout Itemize
+Some wrong login credentials (example error in payment information, when
+ they are used in order to withdraw the symbolic payment amount);
+\end_layout
+
+\begin_layout Itemize
+Unique credentials already exist in the database (the primary key -drivingLicens
+e- and the record email of the User table in the database must be unique).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+A list of both valid and invalid candidate car to test the 
+\series bold
+Car Controller
+\series default
+.
+ The set should contain instances exhibiting the following problems: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+An invalid parameter ( example not existing carId); 
+\end_layout
+
+\begin_layout Itemize
+Not valid cardId for an operation.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+A list of both valid and invalid set of parameters to test the 
+\series bold
+List Controller.
+
+\series default
+ The set should contain instances exhibiting the following problems: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Null element in the list;
+\end_layout
+
+\begin_layout Itemize
+Null object;
+\end_layout
+
+\begin_layout Itemize
+A tuple returned from the database has the IdList record not null.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+A list of both valid and invalid of parameter to test the 
+\series bold
+Reservation Controller
+\series default
+.
+ The set should contain instances exhibiting the following problems: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Null parameter; 
+\end_layout
+
+\begin_layout Itemize
+Null object;
+\end_layout
+
+\begin_layout Itemize
+An invalid parameter (example not existing reservationId).
+\end_layout
+
+\begin_layout Itemize
+<TODO: VERIFICARE CHE UNO USER NON POSSA PRENOTARE UNA RESERVATION SE HA
+ Già UNA RESERVATION >
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+A list of both valid and invalid of parameter to test the 
+\series bold
+Ride Controller
+\series default
+.
+ The set should contain instances exhibiting the following problems: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Null parameter; 
+\end_layout
+
+\begin_layout Itemize
+Null object; 
+\end_layout
+
+\begin_layout Itemize
+An invalid parameter (example not existing rideId).
+ 
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
