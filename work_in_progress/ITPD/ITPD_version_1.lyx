@@ -562,20 +562,17 @@ Classification of dependencies
 \begin_layout Standard
 \align center
 \begin_inset Float table
+placement H
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="1">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="12cm">
+<column alignment="center" valignment="middle" width="12cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -605,7 +602,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-AccountController.createUser(allCredentials) call with notify(User):
+AccountController.createUser(allCredentials) calls with notify(User):
 \end_layout
 
 \begin_layout Itemize
@@ -626,7 +623,7 @@ NotificationDispatcher.sendEmail(User).
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-AccountController_NotificationDispatcher dependencies.
+AccountController_NotificationDispatcher dependencie.
 \end_layout
 
 \end_inset
@@ -646,6 +643,7 @@ AccountController_NotificationDispatcher dependencies.
 \begin_layout Standard
 \align center
 \begin_inset Float table
+placement H
 wide false
 sideways false
 status open
@@ -685,11 +683,11 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-AccountController.createUser(allCredentials) call with notify(User):
+CarController.openTheCar(carId) calls with notifyNewRide(carId):
 \end_layout
 
 \begin_layout Itemize
-NotificationDispatcher.sendEmail(User).
+RideController.startTheRide(carId).
 \end_layout
 
 \end_inset
@@ -706,7 +704,315 @@ NotificationDispatcher.sendEmail(User).
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-AccountController_NotificationDispatcher dependencies.
+CarController_RideController dependencie.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="12cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Diagrams/PDF/List_Car.pdf
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+ListController.removeCar(carId) calls with notify(carId):
+\end_layout
+
+\begin_layout Itemize
+CarController.changePhaseOfCar(carId).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ListController_CarController dependencie.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="12cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Diagrams/PDF/Payment_PaymentG.pdf
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+PaymentController.sendPayment(Payment) calls with noitfy(Payment):
+\end_layout
+
+\begin_layout Itemize
+PaymentGateway.performPayment(Payment).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PaymentController_PaymentGateway dependencie.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="12cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Diagrams/PDF/Reservation_Car.pdf
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+ReservationController.sendPayment(Payment) calls with noitfy(carId):
+\end_layout
+
+\begin_layout Itemize
+CarController.changePhaseOfCar(carId).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ReservationController_CarController dependencie.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="12cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Diagrams/PDF/Reservation_Map.pdf
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+ReservationController.generatePath(positionOfTheUser, positionOfTheCar) calls:
+\end_layout
+
+\begin_layout Itemize
+MapGateway.requestPath(positionOfTheUser, positionOfTheCar).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ReservationController_CarController dependencie.
 \end_layout
 
 \end_inset

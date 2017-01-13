@@ -555,6 +555,170 @@ reference "subsec:Definitions"
 Elements to be Integrated
 \end_layout
 
+\begin_layout Subsubsection
+Classification of dependencies
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="12cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Diagrams/PDF/Account_Notification.pdf
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+AccountController.createUser(allCredentials) call with notify(User):
+\end_layout
+
+\begin_layout Itemize
+NotificationDispatcher.sendEmail(User).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+AccountController_NotificationDispatcher dependencies.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="12cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Diagrams/PDF/Car_Ride.pdf
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+AccountController.createUser(allCredentials) call with notify(User):
+\end_layout
+
+\begin_layout Itemize
+NotificationDispatcher.sendEmail(User).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+AccountController_NotificationDispatcher dependencies.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Integration Testing Strategy
 \end_layout
@@ -2889,6 +3053,343 @@ payTheRide test.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Performance Analysis
+\end_layout
+
+\begin_layout Standard
+During the integration test phase there must be present also a performance
+ analysis phase, in order to satisfy the non-functional requirements defined
+ in the RASD document.
+ The main analysis mus be done on the waiting time that the future users
+ of the system, both employees and normal users, have to wait in order to
+ complete their request.
+ In the textbox reported below there are all the requirements mentioned
+ before.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "70col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Paragraph
+
+\shape italic
+Non-functional requirements
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+When the user finishes his/her ride, he/she has 1 minute to plug the car;
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+The system closes the car 20 seconds after the user came out from the vehicle;
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+The system must answer to the user's requests within 10 seconds;
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+The system must be available 24h/7d.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The availability of the system must also be tested.
+ The two servers contained in both the server farms, definend in DD document,
+ must be able to keep the system online also if one goes offline due to
+ possible errors or informatic attacks.
+ <TODO:verify> In case of updates of the system, they must be done separately
+ on each server, so one of the test cases has to check the availability
+ of the system during upgrades.
+ 
+\end_layout
+
+\begin_layout Standard
+To support the tests for the mobile application, thank to the use of PhoneGap,
+ the application can be tested only on one operating mobile system.
+ In actual fact the same scenarios of tests can be executed on different
+ platforms.
+ In section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Tools"
+
+\end_inset
+
+ there are the software that can be used in order to test an application
+ builded with PhoneGap.
+\end_layout
+
+\begin_layout Standard
+In the RASD document are mentioned the minimum software requirements that
+ the mobile phone has to provide in order to run correctly the PowerEnjoy
+ application.
+ That requirements are mapped into harware requirements for each mobile
+ OS, so the application must be done in order to be executed with resonable
+ time based on that hardware specification.
+ In the textbox there is a quick view of what we have just mentioned.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "70col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+To use the mobile application:
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+A smartphone with:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\shape italic
+Android: KitKat (4.4) and later;
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+iOS: version 6 or later;
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Windows Mobile: version 10 or later;
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\shape italic
+An active number, with a plans that contains internet connection:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\shape italic
+3G;
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+4G: not required, but recommended.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\shape italic
+An amount of space in order to install the application.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To view the harware specification follow the link reported in table.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="7cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+OS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Link to harware requirements
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Windows 10 Mobile
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://msdn.microsoft.com/en-us/windows/hardware/commercialize/design/minimum/min
+imum-hardware-requirements-overview
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Android KitKat
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://static.googleusercontent.com/media/source.android.com/it//compatibility/4.4/a
+ndroid-4.4-cdd.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IOS 6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+see the specification of the Iphone 4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The dimension of the final package of the application must theoretically
+ not exceed 50 MB.
+\end_layout
+
+\begin_layout Standard
+Based on that specification, and on what is mentioned in this section, the
+ final mobile application must not exceed 100 MB of RAM on every devices
+ and the medium value of RAM occupied by the application has to be about
+ 80 MB.
 \end_layout
 
 \begin_layout Standard
