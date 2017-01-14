@@ -1,0 +1,1 @@
+Collegare i dispatcher i gateway e tutto al sistema generale col subsystem

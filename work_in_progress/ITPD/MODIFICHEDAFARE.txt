@@ -6,3 +6,4 @@ in list of car modificare le lettere maiuscole di ListCreator in listCreator
 nel sequence start modificare openTheCar con parametro carId per coerenza con il close, stessa cosa per il changePhaseOfCar
 aggiungere il payment controller nel BCE compite final pricee
 inoltre vedere se modificare il finish the ride sequence
+modificare sendReservationMessage(driving con user, Reservation)
