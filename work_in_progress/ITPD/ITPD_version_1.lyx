@@ -602,7 +602,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-AccountController.createUser(allCredentials) calls with notify(User):
+AccountController.createUser(AllCredentials) calls with notify(User):
 \end_layout
 
 \begin_layout Itemize
@@ -837,11 +837,19 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-PaymentController.sendPayment(Payment) calls with noitfy(Payment):
+PaymentController.sendPayment(Payment) calls:
 \end_layout
 
 \begin_layout Itemize
 PaymentGateway.performPayment(Payment).
+\end_layout
+
+\begin_layout Plain Layout
+PaymentController.sendRefound(Refound) calls:
+\end_layout
+
+\begin_layout Itemize
+PaymentGateway.performRefound(Refound).
 \end_layout
 
 \end_inset
@@ -1150,6 +1158,83 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+RideController.finishTheRide(rideId) calls with notify(carId):
+\end_layout
+
+\begin_layout Itemize
+CarController.changePhaseOfCar(carId).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+RideController_NotificationDispatcher dependency.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="12cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Diagrams/PDF/Ride_Notification.pdf
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 RideController.computeFinalPrice(rideId) calls with notify(Message):
 \end_layout
 
@@ -1308,13 +1393,361 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-Dispatcher.<TODO>:
+Dispatcher.requestToCreateUser(AllCredentials) calls:
+\end_layout
+
+\begin_layout Itemize
+AccountController.createUser(AllCredentials).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dispatcher_AccountController dependency.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="12cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Diagrams/PDF/Dispatcher_Car.pdf
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Dispatcher.requestToOpenTheCar(carId) calls:
+\end_layout
+
+\begin_layout Itemize
+CarController.openTheCar(carId).
+\end_layout
+
+\begin_layout Plain Layout
+Dispatcher.requestToCloseTheCar(carId) calls:
+\end_layout
+
+\begin_layout Itemize
+CarController.closeTheCar(carId).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dispatcher_CarController dependency.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="12cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Diagrams/PDF/Dispatcher_Car.pdf
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Dispatcher.requestToOpenTheCar(carId) calls:
+\end_layout
+
+\begin_layout Itemize
+CarController.openTheCar(carId).
+\end_layout
+
+\begin_layout Plain Layout
+Dispatcher.requestToCloseTheCar(carId) calls:
+\end_layout
+
+\begin_layout Itemize
+CarController.closeTheCar(carId).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dispatcher_CarController dependency.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="12cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Diagrams/PDF/Dispatcher_List.pdf
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Dispatcher.requestCarAvailable(Position) calls:
+\end_layout
+
+\begin_layout Itemize
+ListController.createTypedListOfCar(ListCreator).
+\end_layout
+
+\begin_layout Plain Layout
+Dispatcher.requestToLookForMyList(employeeId) calls:
+\end_layout
+
+\begin_layout Itemize
+ListController.createTypedListOfCar(ListCreator).
+\end_layout
+
+\begin_layout Plain Layout
+Dispatcher.requestToRemoveACar(carId) calls:
+\end_layout
+
+\begin_layout Itemize
+ListController.removeCar(carId).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dispatcher_ListController dependency.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="12cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Diagrams/PDF/Dispatcher_Payment.pdf
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Dispatcher.requestExceptionalPayment(Payment) calls:
 \end_layout
 
 \begin_layout Itemize
 PaymentController.sendPayment(Payment).
 \end_layout
 
+\begin_layout Plain Layout
+Dispatcher.requestExceptionalRefound(Refound) calls:
+\end_layout
+
+\begin_layout Itemize
+PaymentController.sendRefound(Refound).
+\end_layout
+
 \end_inset
 </cell>
 </row>
@@ -1329,7 +1762,7 @@ PaymentController.sendPayment(Payment).
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Dispatcher_AccountController dependency.
+Dispatcher_PaymentController dependency.
 \end_layout
 
 \end_inset
@@ -1362,7 +1795,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Diagrams/PDF/Dispatcher_List.pdf
+	filename Diagrams/PDF/Dispatcher_Reservation.pdf
 	scale 90
 
 \end_inset
@@ -1385,11 +1818,11 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-Dispatcher.requestCarAvailable(Position) calls:
+Dispatcher.requestSelectedCar(carId) calls:
 \end_layout
 
 \begin_layout Itemize
-ListController.createTypedListOfCar(ListCreator).
+ReservationController.createReservation(carId).
 \end_layout
 
 \end_inset
@@ -1406,7 +1839,7 @@ ListController.createTypedListOfCar(ListCreator).
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Dispatcher_AccountController dependency.
+Dispatcher_ReservationController dependency.
 \end_layout
 
 \end_inset
@@ -1439,7 +1872,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Diagrams/PDF/Dispatcher_List.pdf
+	filename Diagrams/PDF/Dispatcher_Ride.pdf
 	scale 90
 
 \end_inset
@@ -1462,11 +1895,11 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-Dispatcher.requestCarAvailable(Position) calls:
+Dispatcher.requestFinishTheRide(rideId) calls:
 \end_layout
 
 \begin_layout Itemize
-ListController.createTypedListOfCar(ListCreator).
+RideController.finishTheRide(rideId).
 \end_layout
 
 \end_inset
@@ -1483,7 +1916,157 @@ ListController.createTypedListOfCar(ListCreator).
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Dispatcher_AccountController dependency.
+Dispatcher_ReservationController dependency.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="12cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Diagrams/PDF/Notification_Email.pdf
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+NotificationDispatcher.sendEmail(User) calls:
+\end_layout
+
+\begin_layout Itemize
+EmailGateway.dispatchMail(User).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+NotificationDispatcher_EmailGateway dependency.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="12cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Diagrams/PDF/Notification_SMS.pdf
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+NotificationDispatcher.sendSMS(User) calls:
+\end_layout
+
+\begin_layout Itemize
+SMSGateway.dispatchSMS(User).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+NotificationDispatcher_EmailGateway dependency.
 \end_layout
 
 \end_inset
@@ -1672,6 +2255,154 @@ Subsystem Integration Sequence
 
 \begin_layout Section
 Indivual Steps and Test Description
+\end_layout
+
+\begin_layout Subsection
+D1 - Data Integration Test 1
+\end_layout
+
+\begin_layout Subsubsection
+Account Controller, Data Access Interface
+\end_layout
+
+\begin_layout Subsection
+D2 - Data Integration Test 2
+\end_layout
+
+\begin_layout Subsubsection
+Car Controller, Data Acces Interface 
+\end_layout
+
+\begin_layout Subsection
+D3 - Data Integration Test 3
+\end_layout
+
+\begin_layout Subsubsection
+List Controller, Data Access Interface 
+\end_layout
+
+\begin_layout Subsection
+D4 - Data Integration Test 4
+\end_layout
+
+\begin_layout Subsubsection
+Payment Controller, Data Access Interface
+\end_layout
+
+\begin_layout Subsection
+D5 - Data Integration Test 5
+\end_layout
+
+\begin_layout Subsubsection
+Reservation Controller, Data Access Interface
+\end_layout
+
+\begin_layout Subsection
+D6 - Data Integration Test 6
+\end_layout
+
+\begin_layout Subsubsection
+Ride Controller, Data Access Interface
+\end_layout
+
+\begin_layout Subsection
+I1 - Integration Test 1
+\end_layout
+
+\begin_layout Subsubsection
+Payment Controller, Payment Gateway
+\end_layout
+
+\begin_layout Subsection
+I2 - Integration Test 2
+\end_layout
+
+\begin_layout Subsubsection
+Reservation Controller, Map Gateway
+\end_layout
+
+\begin_layout Subsection
+I3 - Integration Test 3
+\end_layout
+
+\begin_layout Subsubsection
+Notification Dispatcher, Email Gateway
+\end_layout
+
+\begin_layout Subsubsection
+Notification Dispatcher, SMS Gateway
+\end_layout
+
+\begin_layout Subsection
+I4 - Integration Test 4
+\end_layout
+
+\begin_layout Subsubsection
+Ride Controller, Notification Dispatcher
+\end_layout
+
+\begin_layout Subsubsection
+Ride Controller, Payment Controller
+\end_layout
+
+\begin_layout Subsubsection
+Car Controller, Ride Controller
+\end_layout
+
+\begin_layout Subsection
+I5 - Integration Test 5
+\end_layout
+
+\begin_layout Subsubsection
+List Controller, Car Controller
+\end_layout
+
+\begin_layout Subsection
+I6 - Integration Test 6
+\end_layout
+
+\begin_layout Subsubsection
+Reservation Controller, Notification Dispatcher
+\end_layout
+
+\begin_layout Subsubsection
+Reservation Controller, Car Controller
+\end_layout
+
+\begin_layout Subsection
+I7 - Integration Test 7
+\end_layout
+
+\begin_layout Subsection
+I8 - Integration Test 8
+\end_layout
+
+\begin_layout Subsection
+Dispatcher, System Controller
+\end_layout
+
+\begin_layout Subsubsection
+Dispatcher, Account Controller
+\end_layout
+
+\begin_layout Subsubsection
+Dispatcher, Car Controller
+\end_layout
+
+\begin_layout Subsubsection
+Dispatcher, List Controller
+\end_layout
+
+\begin_layout Subsubsection
+Dispatcher, Payment Controller
+\end_layout
+
+\begin_layout Subsubsection
+Dispatcher, Reservation Controller
+\end_layout
+
+\begin_layout Subsubsection
+Dispatcher, Ride Controller
 \end_layout
 
 \begin_layout Standard

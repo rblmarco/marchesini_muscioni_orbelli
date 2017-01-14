@@ -1,3 +1,4 @@
 Collegare i dispatcher i gateway e tutto al sistema generale col subsystem
 start the ride controllare 3.2
 finish the ride aggiungere l'appunto sul quaderno
+nel sequence finish the ride bisogna mettere sempre request nei metodi del dispatcher
