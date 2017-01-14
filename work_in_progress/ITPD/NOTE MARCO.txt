@@ -1,1 +1,3 @@
 Collegare i dispatcher i gateway e tutto al sistema generale col subsystem
+start the ride controllare 3.2
+finish the ride aggiungere l'appunto sul quaderno
