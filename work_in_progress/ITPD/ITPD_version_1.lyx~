@@ -735,17 +735,80 @@ Elements to be Integrated
 \begin_layout Standard
 In that section are mentioned all the elements of the system that will be
  integrated together.
- In order to indentify all the component that will be part of the integration
+ In order to indentify all the components that will be part of the integration
  tests here below there is a quick view on the component diagram designed
  in the DD document.
 \end_layout
 
 \begin_layout Standard
-<TODO: put the component diagram>
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-2.4cm}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Diagrams/PDF/integration_component/general_integration.pdf
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+General component integration.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-All the gateway that are defined in figure <TODO> will be clearly integrated
+All the gateways that are defined in figure <TODO> will be clearly integrated
  with the external system that takes part in PowerEnjoy system.
  That integration is performed by the 
 \begin_inset Quotes eld
@@ -757,7 +820,7 @@ integration
 
  of all gateway class with the correct API required in order to use that
  external system.
- Here is a list that show what API and Gateway must be in relation:
+ Here is a list that show the relationships between API and Gateway:
 \end_layout
 
 \begin_layout Itemize
@@ -2270,7 +2333,7 @@ Using bottom-up pattern, the test will be make on the real components that
  Futhermore, the bugs and the errors will be find as soon as possible in
  order to reduce their propagation in the system.
  However, at the same time, the top-down approach used in design phase make
- the result of the system nicer than take into consideration only a general
+ the result of the system better than take into consideration only a general
  bottom-up approach, which it will be result in a bit rough outcome.
 \end_layout
 
@@ -2288,7 +2351,7 @@ Sequence of Component/Function Integration
 
 \begin_layout Standard
 In this section it is described how the different components of our system
- has been integrated.
+ have been integrated.
  As a notation, it is used an arrow, which mean that a component X (starting
  point) needs a component Y (head of the arrow).
 \end_layout
@@ -2298,11 +2361,11 @@ Software Integration Sequence
 \end_layout
 
 \begin_layout Standard
-Following, it is explained in details how the bottom-up approch is applied
- to the Power Enjoy system developed.
- In particular, further the basic approch mentioned before, the components
- of the system are also been grouped according to the functionalities they
- provide and finally integrated together.
+This section explains, with more details, how the bottom-up approch is applied
+ to the PowerEnjoy system developed.
+ In particular, in addition to the basic approch mentioned before, the component
+s of the system are also been grouped according to the functionalities they
+ provide and they are finally integrated together.
  
 \end_layout
 
@@ -2976,17 +3039,18 @@ Data Access Interface
 \begin_layout Standard
 \noindent
 The first elements that have to be integrated are the DataBase Source and
- the Data Acces Interface.
- The DataBase, as mentioned before in 
-\begin_inset CommandInset label
-LatexCommand label
-name "ref:subsec-Definitions"
+ the Data Access Interface.
+ The DataBase source, according to section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:completeness"
 
 \end_inset
 
-, is complete, in order to test the other components of the system using
- real data to perform queries and to manage a complex system as close as
- possible to reality.
+, must be complete, in order to test the other components of the system
+ using real datas.
+ That allows a very real analysis on performing queries and managing the
+ system.
 \end_layout
 
 \begin_layout Standard
@@ -3198,14 +3262,14 @@ Ride management
 \end_layout
 
 \begin_layout Standard
-The other integration, according to the functionalities criterion, involved
- two important component of the Power Enjoy system: the Car Controller and
+The other integration, according to the functionalities criteria, involved
+ two important components of the PowerEnjoy system: the Car Controller and
  the Ride Controller.
  First each component is integrated with the Data Access Interface and then
  the two components are integrated with the Payment Controller and with
  the Notification Dispatcher.
- The integration of this three internal component ensures the correct management
- of a ride.
+ The integration of these three internal components ensures the correct
+ management of a ride.
 \end_layout
 
 \begin_layout Standard
@@ -3313,7 +3377,7 @@ Reservation management
 \begin_layout Standard
 This phase the Reservation Controller is integrated with the Data Acces
  Interface, the Notification Dispatcher and the Car Controller.
- This phase ensure the managemente of a reservation, included also the notificat
+ This phase ensures the management of a reservation, also included the notificat
 ion to the user who decided to reserve a car.
 \end_layout
 
@@ -3366,8 +3430,8 @@ Account management
 \begin_layout Standard
 This phase the Account Controller is integrated with the Notification Dispatcher
  and with the Data Access Interface.
- In this way the system can manage all the activities linked with creation,
- deletion or modification of the informations contained in an account.
+ In this phase the system can manage all the activities linked with creation,
+ deletion or modification of the information contained in an account.
 \end_layout
 
 \begin_layout Standard
@@ -3496,8 +3560,8 @@ Subsystem Integration Sequence
 In that section there is a complete view of the integration testing plan,
  based on all the sub-functionalities descriptions mentioned before.
  In the figure <TODO> there are different groups, that can be identified
- by the different color in the diagram, that are clearly connected to the
- management sub-functionality.
+ by different colors in the diagram, that are clearly connected to the managemen
+t sub-functionality.
 \end_layout
 
 \begin_layout Standard
@@ -9783,13 +9847,13 @@ name "sec:Tools"
 To reduce the amount of time needed for the integration test phase in that
  section there are all the possible tools that can test all the part of
  PowerEnjoy system.
- All of that test frameworks have an automated test execution and analysis,
+ All of these test frameworks have an automated test execution and analysis,
  thus lead a more effective and efficient test phase.
 \end_layout
 
 \begin_layout Standard
-In the tables below are reported all the tools generally described before,
- with more complete description and a link to their main documentation.
+In the tables below are reported all the tools, with a complete description
+ and a link to their main documentation.
 \end_layout
 
 \begin_layout Standard
@@ -9917,7 +9981,7 @@ https://docs.sonarqube.org/display/SONAR/Documentation
 
 \begin_layout Plain Layout
 SonarQube is a code analyzer that will grant, if their principles are followed,
- better performance and also a well readable and maintanable code.
+ better performance and also a more readable and maintanable code.
  In actual fact with a simple, but efficient analysis, it allows developers
  to see if some code of a class is duplicated or missed.
 \end_layout
@@ -9990,8 +10054,8 @@ http://arquillian.org/guides/
 
 \begin_layout Plain Layout
 Arquillian is a test framework used in roder to test JaveEE application.
- In that specific cases of test, it will be used to test te correct fucntion
- call of the system controllers.
+ In that specific cases of test, it will be used to test the correct fucntion
+ calsl of the system controllers.
  It will be also used to test the JPA for the 
 \begin_inset Quotes eld
 \end_inset
@@ -10078,8 +10142,8 @@ As it is already mentioned in the DD document and in some section before,
  Thank to that tools it is possible to write only one test for all the mobile
  system supported by PhoneGap Builder.
  Furthermore that tool is already implemented with all the SDK so it offers
- also a lot of debug utility that must be used in order to perform the performac
-e test described in section 
+ also a lot of debug utility that must be used in order to execute the performan
+ce tests described in section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:performance"
@@ -10157,14 +10221,14 @@ https://jersey.java.net/documentation/latest/test-framework.html
 \begin_inset Text
 
 \begin_layout Plain Layout
-Jersey Test Framework is use in order to test the RESTful API capabilities
- of PowerEnjoy.
- It is base on JUnit and it make possible to integrate step by step all
- the functionality needed by the servers of the system.
+Jersey Test Framework is used in order to test the RESTful API capabilities
+ of PowerEnjoy system.
+ It is base on JUnit and it makes possible to integrate step by step all
+ the functionalities needed by the servers of the system.
  It will also grant a full view of the web traffic that the servers have
  to deal with.
- So that it can be used to configure with the best values the load balance
- system of the two server farms mentioned in DD document.
+ So it can be used to configure with the best values the load balance system
+ of the two server farms mentioned in DD document.
 \end_layout
 
 \end_inset
@@ -10274,9 +10338,9 @@ name "subsec:drivers"
 \begin_layout Standard
 The integration test strategy adopted a bottom-up approch to realize the
  system.
- In order to realize this strategy, drivers are need to intialize all the
- parameters of the modules which is going to be tested or to perform the
- methods invocation.
+ In order to realize this strategy, drivers are needed to intialize all
+ the parameters of the modules which are going to be tested and to perform
+ the method invocations.
 \end_layout
 
 \begin_layout Standard
@@ -10289,7 +10353,7 @@ These are the drivers used during the integration test:
 Data Access Interface Driver
 \series default
 : this testing module will invoke the methods exposed by the DataBase Source
- in order to test the interaction of this modules with the DBMS.
+ in order to test the interaction of this modules with the DBMS;
 \end_layout
 
 \begin_layout Itemize
@@ -10299,9 +10363,8 @@ Payment Management Driver
 \series default
 : this testing modules will invoke the methods which are necessary for the
  integration of the Payment Gateway, the Payment Controller and the Data
- Access Interface,in order to ensure the correct behavour of the payment
- functionality.
- 
+ Access Interface,in order to ensure the correct behaviour of the Payment
+ functionality;
 \end_layout
 
 \begin_layout Itemize
@@ -10313,9 +10376,8 @@ Ride Management Driver
  integration of the Car Controller, the Ride Controller, the Payment Controller,
  the Notification Disapatcher and the Data Access Interface.
  With the test of this integrated components, it is ensured the correct
- system behaviour of a ride management (from is creation to his end with
- the payment).
- 
+ system behaviour of a ride management (followinf the flow that end with
+ the payment);
 \end_layout
 
 \begin_layout Itemize
@@ -10326,7 +10388,7 @@ Map Management
 : this testing module will invoke the methos which are necessary for the
  integration of the Reservation Controller and the Map Gateway.
  Ths test ensures the correct behaviour of the map service that the system
- offers.
+ offers;
 \end_layout
 
 \begin_layout Itemize
@@ -10338,7 +10400,7 @@ List Management Driver
  integration of the List Controller, the Car Controller and the Data Access
  Interface.
  Thank to this test it is ensured the correct system behaviuor about the
- management of a list (upload, deletion...) and the car maintenance functionality.
+ management of a list (upload, deletion...) and the car maintenance functionality;
 \end_layout
 
 \begin_layout Itemize
@@ -10349,7 +10411,7 @@ Notification Management Driver
 : this testing module will invokes the methods which are necessary for the
  integration of the Notfication Dispatcher, the SMS Gateway and the Mail
  gateway.
- Thanks to this test it is ensured the correct magement of notification.
+ Thanks to this test it is ensured the correct magement of notification;
 \end_layout
 
 \begin_layout Itemize
@@ -10360,8 +10422,8 @@ Reservation Management Driver
 : this testing module will invoke the methods which are necessary fot the
  integration of the Reservation Controller, the Car Controller, the Data
  Access Interface, and the Notification Dispatcher.
- Thank to this test it is ensured the correct system behaviuor about the
- management of reservation.
+ Thanks to this test it is ensured the correct system behaviuor about the
+ management of reservation;
 \end_layout
 
 \begin_layout Itemize
@@ -10371,10 +10433,8 @@ Account Management Driver
 \series default
 : this testing module will invoke the methods which are necessary fot the
  integration of the Account Controller, the Notification Dispatcher and
- The Data Access Inteface.
- Thanks to this test it is ensured the correct management of an account,
- both of an employee or an user.
- 
+ the Data Access Inteface.
+ Thanks to this test it is ensured the correct management of a general account;
 \end_layout
 
 \begin_layout Itemize
@@ -10386,21 +10446,21 @@ System Controller Driver
 \series bold
  
 \series default
-this testing modules invokes the methods exposed by the Dispatcher in order
- to verify its role of forwarding of request, exentially for the system
+this testing modules will invoke the methods exposed by the Dispatcher in
+ order to verify its role of forwarding of request, exentially for the system
  developed.
- This driver also test the interaction with all the controllers of the system
- (Payment Controller, Account Controller, Ride Controller, Reservatio Controller
-, List Controller, Car Controller).
+ This driver will also test the interaction with all the controllers of
+ the system (Payment Controller, Account Controller, Ride Controller, Reservatio
+ Controller, List Controller, Car Controller).
 \end_layout
 
 \begin_layout Standard
 The intergation testing proceeds using a driver to test a single component,
  calling methods which are free to be used from other components.
- Every sinle methods was before tested with a JUnit framework.
- Once tested the drivers which provide a particular funcionalitiy, the component
- involved are tested together with the driver of the functionality mentioned
- before.
+ Every single method was before tested with JUnit framework.
+ Once tested the set of drivers which provide a particular funcionality,
+ the components involved in that, are tested together using the correct
+ management driver.
 \end_layout
 
 \begin_layout Subsection

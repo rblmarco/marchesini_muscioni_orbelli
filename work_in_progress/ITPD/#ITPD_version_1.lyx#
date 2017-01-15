@@ -225,9 +225,8 @@ This document is written based on DD document, its aim is to define the
 \begin_layout Standard
 All the developers that take part in the testing and integration testing
  phases have to read and keep in mind the contents of that document.
- <TODO: verificare la correttezza di quest,ultima frase.> The reading of
- that document is also suggested to all the developers of the systems, as
- they can focus on the critical system components.
+ The reading of that document is also suggested to all the developers of
+ the systems, as they can focus on the critical system components.
 \end_layout
 
 \begin_layout Subsubsection
@@ -337,8 +336,9 @@ Percentage definition
 \end_layout
 
 \begin_layout Standard
-In this document we have different percentages for each class.
- Since this peculiarity can be unclear below we will explain it better.
+The percentages that will appear in this document represent the level of
+ class completeness.
+ Since this property can be unclear, below there is an explanation.
 \end_layout
 
 \begin_layout Standard
@@ -349,19 +349,20 @@ The percentages used are calculated both on the level of coverage and the
 
 \begin_layout Standard
 First of all a class completely written has a percentage of cover equal
- to 60% then this percentage will increase proportionally with increasing
- coverage (Junit test).
+ to 60% then this percentage will increase proportionally with the value
+ of coverage (based on JUnit test).
  
 \end_layout
 
 \begin_layout Standard
-For example, a class has a 80 % when has 60% of coverage.
+For example, a class is complete at 80 % when has 60% of coverage and 10o%
+ of code.
  
 \end_layout
 
 \begin_layout Standard
-A class is full to 90% when once completed its code it has a coverage of
- test 80%.
+A class is full to 90% when its code is complete and it has a coverage of
+ test at 80%.
 \end_layout
 
 \begin_layout Subsubsection
@@ -572,15 +573,6 @@ WebApp
  
 \end_layout
 
-\begin_layout Standard
-<TODO:Completezza, definizioni delle percentuali fra scrittura del codice
- e Junit test su quel codice.>
-\end_layout
-
-\begin_layout Standard
-<TODO: general system controller>
-\end_layout
-
 \begin_layout Subsection
 List of Reference Document
 \end_layout
@@ -778,6 +770,12 @@ begin{adjustwidth}{-2.4cm}{}
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:General-component-integration.generalcomponent"
+
+\end_inset
+
 General component integration.
 \end_layout
 
@@ -808,8 +806,15 @@ end{adjustwidth}
 \end_layout
 
 \begin_layout Standard
-All the gateways that are defined in figure <TODO> will be clearly integrated
- with the external system that takes part in PowerEnjoy system.
+All the gateways that are defined in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:General-component-integration.generalcomponent"
+
+\end_inset
+
+ will be clearly integrated with the external system that takes part in
+ PowerEnjoy system.
  That integration is performed by the 
 \begin_inset Quotes eld
 \end_inset
@@ -840,8 +845,7 @@ PaymentGateway with PayPal API.
 \end_layout
 
 \begin_layout Standard
-<TODO: dire che non dobbiamo testare queste cose perchè sono gia testati
- da quelli bravi.>
+The API mentioned before are already tested by the respective company.
 \end_layout
 
 \begin_layout Subsubsection
