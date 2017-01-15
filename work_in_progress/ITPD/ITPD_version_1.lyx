@@ -332,66 +332,158 @@ name "subsec:Definitions"
 
 \end_layout
 
+\begin_layout Subsubsection
+Percentage definition
+\end_layout
+
+\begin_layout Standard
+In this document we have different percentages for each class.
+ Since this peculiarity can be unclear below we will explain it better.
+\end_layout
+
+\begin_layout Standard
+The percentages used are calculated both on the level of coverage and the
+ completeness of the class.
+ 
+\end_layout
+
+\begin_layout Standard
+First of all a class completely written has a percentage of cover equal
+ to 60% then this percentage will increase proportionally with increasing
+ coverage (Junit test).
+ 
+\end_layout
+
+\begin_layout Standard
+For example, a class has a 80 % when has 60% of coverage.
+ 
+\end_layout
+
+\begin_layout Standard
+A class is full to 90% when once completed its code it has a coverage of
+ test 80%.
+\end_layout
+
+\begin_layout Subsubsection
+Other definitions and abbreviations
+\end_layout
+
 \begin_layout Itemize
-SDD: Software Design Description.
+
+\series bold
+SDD
+\series default
+: Software Design Description.
  
 \end_layout
 
 \begin_layout Itemize
-DD: Design Document.
+
+\series bold
+DD
+\series default
+: Design Document.
  
 \end_layout
 
 \begin_layout Itemize
-ITP: Integration Test Plan.
+
+\series bold
+ITP
+\series default
+: Integration Test Plan.
  
 \end_layout
 
 \begin_layout Itemize
-ITPD: Integration Test Plan Document.
+
+\series bold
+ITPD
+\series default
+: Integration Test Plan Document.
  
 \end_layout
 
 \begin_layout Itemize
-DBMS: Database Management System.
+
+\series bold
+DBMS
+\series default
+: Database Management System.
  
 \end_layout
 
 \begin_layout Itemize
-ER: Entity-Relationship diagram.
+
+\series bold
+ER
+\series default
+: Entity-Relationship diagram.
 \end_layout
 
 \begin_layout Itemize
-API: Application Programming Interface.
+
+\series bold
+API
+\series default
+: Application Programming Interface.
  
 \end_layout
 
 \begin_layout Itemize
-RASD: Requirement Analysis and Specification Document.
+
+\series bold
+RASD
+\series default
+: Requirement Analysis and Specification Document.
  
 \end_layout
 
 \begin_layout Itemize
-SDK: Software Development Kit.
+
+\series bold
+SDK
+\series default
+: Software Development Kit.
  
 \end_layout
 
 \begin_layout Itemize
-PhoneGap: mobile cross-platform development framework.
+
+\series bold
+PhoneGap
+\series default
+: mobile cross-platform development framework.
 \end_layout
 
 \begin_layout Itemize
-DISPATCHER: a dispatcher acts like a server and manages the distribution
- of jobs over the ???????????
+
+\series bold
+Dispatcher
+\series default
+: The dispatcher is a component devoted to forward requests received from
+ the user terminal to the right controller.
+ It is capable to understand what it has to do, according to informations
+ it received.
+ It does not do anything excepts forwarding, for this reason it can be considere
+d a mediator between the smarter part of the application server and humans.
 \end_layout
 
 \begin_layout Itemize
-Req as for Requirement.
+
+\series bold
+Req
+\series default
+ as for Requirement.
  
 \end_layout
 
 \begin_layout Itemize
-WebApp as for Web Application.
+
+\series bold
+WebApp
+\series default
+ as for Web Application.
  
 \end_layout
 
@@ -2239,6 +2331,20 @@ Account Controller, Data Access Interface
 
 \begin_layout Paragraph
 createUser(AllCredentials)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \thinspace{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6282,7 +6388,7 @@ I8 - Integration Test 8
 \end_layout
 
 \begin_layout Subsubsection
-Dispatcher, Account Controller
+I8.1 Dispatcher, Account Controller
 \end_layout
 
 \begin_layout Paragraph
@@ -6399,7 +6505,7 @@ That method calls the AccountController with the selected request.
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-requestToCreateUser test.
+I8 requestToCreateUser test.
 \end_layout
 
 \end_inset
@@ -6413,7 +6519,7 @@ requestToCreateUser test.
 \end_layout
 
 \begin_layout Subsubsection
-Dispatcher, Car Controller
+I8.2 Dispatcher, Car Controller
 \end_layout
 
 \begin_layout Paragraph
@@ -6530,7 +6636,7 @@ That method calls the CarController with the selected request.
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
- createReservation test.
+I8 requestToOpenTheCar test.
 \end_layout
 
 \end_inset
@@ -6657,7 +6763,7 @@ That method calls the CarController with the selected request.
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
- createReservation test.
+I8 requestToCloseTheCar test.
 \end_layout
 
 \end_inset
@@ -6671,7 +6777,7 @@ That method calls the CarController with the selected request.
 \end_layout
 
 \begin_layout Subsubsection
-Dispatcher, List Controller
+I8.3 Dispatcher, List Controller
 \end_layout
 
 \begin_layout Paragraph
@@ -6788,7 +6894,7 @@ That method calls the ListController with the selected request.
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-requestCarAvailable test.
+I8 requestCarAvailable test.
 \end_layout
 
 \end_inset
@@ -6919,7 +7025,7 @@ That method calls the ListController with the selected request.
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
- createReservation test.
+I8 requestToRemoveACar test.
 \end_layout
 
 \end_inset
@@ -6933,7 +7039,7 @@ That method calls the ListController with the selected request.
 \end_layout
 
 \begin_layout Subsubsection
-Dispatcher, Payment Controller
+I8.4 Dispatcher, Payment Controller
 \end_layout
 
 \begin_layout Paragraph
@@ -7050,7 +7156,7 @@ That method calls the PaymentController with the selected request.
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-requestExecptionalPayment test.
+I8 requestExecptionalPayment test.
 \end_layout
 
 \end_inset
@@ -7177,7 +7283,7 @@ That method calls the PaymentController with the selected request.
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-requestExecptionalRefound test.
+I8 requestExecptionalRefound test.
 \end_layout
 
 \end_inset
@@ -7191,7 +7297,7 @@ requestExecptionalRefound test.
 \end_layout
 
 \begin_layout Subsubsection
-Dispatcher, Reservation Controller
+I8.5 Dispatcher, Reservation Controller
 \end_layout
 
 \begin_layout Paragraph
@@ -7308,7 +7414,7 @@ That method calls the ReservationController with the selected request.
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
- createReservation test.
+I8 requestSelectedCar test.
 \end_layout
 
 \end_inset
@@ -7322,7 +7428,7 @@ That method calls the ReservationController with the selected request.
 \end_layout
 
 \begin_layout Subsubsection
-Dispatcher, Ride Controller
+I8.6 Dispatcher, Ride Controller
 \end_layout
 
 \begin_layout Paragraph
@@ -7439,7 +7545,7 @@ That method calls the RideController with the selected request.
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
- createReservation test.
+I8 requestToFinishTheRide test.
 \end_layout
 
 \end_inset
@@ -8442,7 +8548,11 @@ Account Controller
 
 \begin_deeper
 \begin_layout Itemize
-Null parameter;
+Null object;
+\end_layout
+
+\begin_layout Itemize
+An invalid object;
 \end_layout
 
 \begin_layout Itemize
@@ -8450,8 +8560,11 @@ Some incomplete login credentials;
 \end_layout
 
 \begin_layout Itemize
-Some wrong login credentials (example error in payment information, when
- they are used in order to withdraw the symbolic payment amount);
+Some wrong login credentials;
+\end_layout
+
+\begin_layout Itemize
+Null parameter;
 \end_layout
 
 \begin_layout Itemize
@@ -8465,11 +8578,15 @@ A list of both valid and invalid candidate car to test the
 \series bold
 Car Controller
 \series default
-.
+ component.
  The set should contain instances exhibiting the following problems: 
 \end_layout
 
 \begin_deeper
+\begin_layout Itemize
+Null parameter;
+\end_layout
+
 \begin_layout Itemize
 An invalid parameter ( example not existing carId); 
 \end_layout
@@ -8482,19 +8599,23 @@ Not valid cardId for an operation.
 \begin_layout Itemize
 A list of both valid and invalid set of parameters to test the 
 \series bold
-List Controller.
-
+List Controller 
 \series default
+component.
  The set should contain instances exhibiting the following problems: 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Null element in the list;
+Null object;
 \end_layout
 
 \begin_layout Itemize
-Null object;
+Null parameter;
+\end_layout
+
+\begin_layout Itemize
+An invalid parameter (example carId or listId);
 \end_layout
 
 \begin_layout Itemize
@@ -8503,12 +8624,31 @@ A tuple returned from the database has the IdList record not null.
 
 \end_deeper
 \begin_layout Itemize
+A list of both valid and invalid set of user’s parameters to test the 
+\series bold
+Payment Controller
+\series default
+ component.
+ The set should contain instances exhibiting the following problems: -
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Null object;
+\end_layout
+
+\begin_layout Itemize
+An invalid object.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
 A list of both valid and invalid of parameter to test the 
 \series bold
 Reservation Controller
 \series default
-.
- The set should contain instances exhibiting the following problems: 
+ component The set should contain instances exhibiting the following problems:
+ 
 \end_layout
 
 \begin_deeper
@@ -8517,11 +8657,15 @@ Null parameter;
 \end_layout
 
 \begin_layout Itemize
+An invalid parametr (example not existing reservationId or carId);
+\end_layout
+
+\begin_layout Itemize
 Null object;
 \end_layout
 
 \begin_layout Itemize
-An invalid parameter (example not existing reservationId).
+An invalid object.
 \end_layout
 
 \begin_layout Itemize
@@ -8535,7 +8679,7 @@ A list of both valid and invalid of parameter to test the
 \series bold
 Ride Controller
 \series default
-.
+ component.
  The set should contain instances exhibiting the following problems: 
 \end_layout
 
@@ -8545,12 +8689,53 @@ Null parameter;
 \end_layout
 
 \begin_layout Itemize
-Null object; 
+An invalid parametr (example not existing rideId);
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+A list of both valid and invalid of parameter to test the 
+\series bold
+Notification Dispatcher
+\series default
+ component.
+ The set should contain instances exhibiting the following problems: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Null object;
 \end_layout
 
 \begin_layout Itemize
-An invalid parameter (example not existing rideId).
- 
+An invalid object;
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+A list of both valid and invalid of parameter to test the
+\series bold
+ Dispatcher
+\series default
+ component.
+ The set should contain instances exhibiting the following problems:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Null object;
+\end_layout
+
+\begin_layout Itemize
+An invalid object;
+\end_layout
+
+\begin_layout Itemize
+Null parameter;
+\end_layout
+
+\begin_layout Itemize
+An invalid parametr (example carId or rideId).
 \end_layout
 
 \end_deeper
