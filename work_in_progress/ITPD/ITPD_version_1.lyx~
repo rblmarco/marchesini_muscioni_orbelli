@@ -424,15 +424,6 @@ ER
 \begin_layout Itemize
 
 \series bold
-API
-\series default
-: Application Programming Interface.
- 
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
 RASD
 \series default
 : Requirement Analysis and Specification Document.
@@ -467,6 +458,100 @@ Dispatcher
  it received.
  It does not do anything excepts forwarding, for this reason it can be considere
 d a mediator between the smarter part of the application server and humans.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Framework
+\series default
+: it is a set of functions that support the developers during developing
+ and integration phase.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+OS
+\series default
+: Operating System.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Id
+\series default
+: An identifier is a name that identifies a unique element.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RAM
+\series default
+: Random Access Memory is a form of computer data storage which stores frequentl
+y used program instructions to increase the general speed of a system.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+MB
+\series default
+: Megabyte (10e6)
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Type of test
+\series default
+: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+D: test with Data Access Interface
+\end_layout
+
+\begin_layout Itemize
+I: integration test between controllers
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+JPA
+\series default
+: Java Persistence API.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+JavaEE
+\series default
+: Java Enterprise Edition.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RESTful 
+\series default
+: REpresentational State Transfer is an architectural style and an ap- proach
+ to communications (often used in the development of Web services);
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+API
+\series default
+: Application Programming Interface.
+ 
 \end_layout
 
 \begin_layout Itemize
