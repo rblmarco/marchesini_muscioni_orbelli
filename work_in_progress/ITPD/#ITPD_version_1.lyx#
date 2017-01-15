@@ -580,28 +580,7 @@ integration
 
  of all gateway class with the correct API required in order to use that
  external system.
- Here is a list that show what API and Gateway must be in relation:
-\end_layout
-
-\begin_layout Itemize
-MapGateway with Google Map API;
-\end_layout
-
-\begin_layout Itemize
-SMSGateway with SMS service API;
-\end_layout
-
-\begin_layout Itemize
-EmailGateway with Email forwarding API;
-\end_layout
-
-\begin_layout Itemize
-PaymentGateway with PayPal API.
-\end_layout
-
-\begin_layout Standard
-<TODO: dire che non dobbiamo testare queste cose perchè sono gia testati
- da quelli bravi.>
+ Here is 
 \end_layout
 
 \begin_layout Subsubsection
@@ -9113,7 +9092,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-3
+
 \end_layout
 
 \end_inset
@@ -9191,14 +9170,6 @@ total
 
 \begin_layout Standard
 \begin_inset FloatList figure
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FloatList table
 
 \end_inset
 

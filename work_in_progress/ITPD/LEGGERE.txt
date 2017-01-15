@@ -1,3 +1,0 @@
-dispatcher parliamone e pensiamo al metodo che permette di fare il filtro, ovvero di propagare
-le richieste
-aggiungere a tutte le tabelle il null parameter

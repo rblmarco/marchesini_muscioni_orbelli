@@ -1,10 +1,5 @@
 DD:
-nel primo bce c'è un cretaeUser() Guido
-nel sequence finish the ride ver4ificare i metodi Guido
 pagina 19 un po di s e idenified Marco
-in list of car modificare le lettere maiuscole di ListCreator in listCreator Guido
-nel sequence start modificare openTheCar con parametro carId per coerenza con il close, stessa cosa per il changePhaseOfCar Guido
-aggiungere il payment controller nel BCE compite final pricee Guido
-modificare sendReservationMessage(driving con user, Reservation)
-
-LEVARE LA FRECCIA LISTCONTROLLER RESERVATIONCONTROLLER DAL COLORATO E DAL BCE il 6.3 diventa il 6.2
+nel sequence start modificare openTheCar con parametro carId per coerenza con il close, stessa cosa per il changePhaseOfCar Guidodov'è
+modificare sendReservationMessage(driving con user, Reservation) nello start
+aggiungere un attributo nell'entity iniziale livello di batteria Paola
