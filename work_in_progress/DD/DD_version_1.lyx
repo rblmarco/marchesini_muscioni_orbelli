@@ -1661,7 +1661,7 @@ Start the ride - Sequence diagram
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1675,6 +1675,7 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1697,7 +1698,7 @@ Start the ride (Sequence Diagram).
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1772,6 +1773,7 @@ Used
 \end_inset
 
 .
+ This sequence diagram does not show the ride creation.
 \end_layout
 
 \begin_layout Standard
@@ -3865,7 +3867,7 @@ Changelog
 \end_layout
 
 \begin_layout Itemize
-version 2.1
+version 2.1 (update 15/01/2017)
 \end_layout
 
 \begin_deeper
@@ -3874,10 +3876,22 @@ fix component diagram, Map Gateway added;
 \end_layout
 
 \begin_layout Itemize
-fix Finish the ride sequence diagram.
+fix methods parameters in the sequence diagrams, following what we have
+ done in ITDP document;
+\end_layout
+
+\begin_layout Itemize
+fix BCE diagrams;
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset FloatList figure
 
