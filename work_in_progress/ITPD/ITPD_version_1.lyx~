@@ -2319,7 +2319,7 @@ reference "datatest"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2366,7 +2366,10 @@ tutte le tabelle con D, I7, I8
 
 \begin_layout Paragraph
 Data Access Interface
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
 \end_inset
 
 
@@ -2393,7 +2396,7 @@ name "ref:subsec-Definitions"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2425,7 +2428,10 @@ Components involved in data management.
 
 \begin_layout Paragraph
 Payment Management
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
 \end_inset
 
 
@@ -2443,7 +2449,7 @@ Once made the DB accessible, it is necessary to integrate external Payment
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2479,7 +2485,10 @@ Components involved in payment management.
 
 \begin_layout Paragraph
 Map management
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
 \end_inset
 
 
@@ -2496,7 +2505,7 @@ This phase the Reservation Controller and the map gateway are integrated.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2528,7 +2537,10 @@ Components involved in map management.
 
 \begin_layout Paragraph
 Notification management 
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
 \end_inset
 
 
@@ -2546,7 +2558,7 @@ This phase the Sms Gateway and the Mail Gateway are integrated with the
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2578,7 +2590,10 @@ Components involved in notification management.
 
 \begin_layout Paragraph
 Ride management
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
 \end_inset
 
 
@@ -2600,7 +2615,7 @@ The other integration, according to the functionalities criterion, involved
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2632,7 +2647,10 @@ Components involved in ride management.
 
 \begin_layout Paragraph
 List management 
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
 \end_inset
 
 
@@ -2653,7 +2671,7 @@ This phase involved one of the most important component of the Power Enjoy
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2685,7 +2703,10 @@ Components involved in list management.
 
 \begin_layout Paragraph
 Reservation management
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
 \end_inset
 
 
@@ -2703,7 +2724,7 @@ ion to the user who decided to reserve a car.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2735,7 +2756,10 @@ Components involved in reservation management.
 
 \begin_layout Paragraph
 Account management 
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
 \end_inset
 
 
@@ -2753,7 +2777,7 @@ This phase the Account Controller is integrated with the Notification Dispatcher
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2785,7 +2809,10 @@ Components involved in account management.
 
 \begin_layout Paragraph
 System controller 
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
 \end_inset
 
 
@@ -2801,7 +2828,7 @@ The Dispatcher is now integrated with the all the sub-funcionalities mentioned
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2844,15 +2871,27 @@ In that section there is a complete view of the integration testing plan,
 \end_layout
 
 \begin_layout Standard
-<TODO>
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status open
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-3.1cm}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -2877,13 +2916,207 @@ Components involved in data management.
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Table con sequence parallel 
+In table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "parallel phases"
+
+\end_inset
+
+ are expressed the test that can be done in parallel.
+ As it is mentioned before the tests expressed in the table, the integration
+ between Data Access Interface and the DataBase Source must be done.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="9cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Order
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parallel integration tests
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D1, D2, D3, D4, D5, D6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+II
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I1, I2, I3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+III
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I4, I5, I7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Parallel test phases.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "parallel phases"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2910,14 +3143,7 @@ createUser(AllCredentials)
 \end_layout
 
 \begin_layout Standard
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
 \end_inset
 
 
@@ -3048,6 +3274,13 @@ D1-createUser test.
 
 \begin_layout Subsubsection*
 checkLoginCredentials(LoginCredentials)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3198,6 +3431,13 @@ retrieveAccountInformation(User)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -3302,6 +3542,13 @@ D1-retrieveAccountInformation test.
 
 \begin_layout Subsubsection*
 modify(User, parameter)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3460,6 +3707,13 @@ changePhaseOfCar(carId)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -3603,6 +3857,13 @@ D2-changePhaseOfCar test.
 
 \begin_layout Subsubsection*
 closeTheCar(carId)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3776,6 +4037,13 @@ createTypedListOfCar(ListCreator)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -3880,6 +4148,13 @@ D3-createTypedListOfCar test.
 
 \begin_layout Paragraph
 addCar(carId, listId)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4029,6 +4304,13 @@ removeCar(carId)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -4163,6 +4445,13 @@ sendPayment(Payment)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -4274,6 +4563,13 @@ Reservation Controller, Data Access Interface
 
 \begin_layout Subsubsection*
 createReservation(carId, User)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4423,6 +4719,13 @@ deleteReservation(reservationId)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -4547,6 +4850,13 @@ D5-deleteReservation test.
 
 \begin_layout Subsubsection*
 getRemainigTime(reservationId)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4686,6 +4996,13 @@ finishTheRide(rideId)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -4809,6 +5126,13 @@ D6-finishTheRide test.
 
 \begin_layout Subsubsection*
 computeFinalPrice(rideId)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4937,6 +5261,13 @@ D6-computeFinalPrice test.
 
 \begin_layout Subsubsection*
 payTheRide(rideId)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5074,6 +5405,13 @@ sendPayment(Payment)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -5200,6 +5538,13 @@ That method returns true if the Payment is seccesfully executed, whereas
 
 \begin_layout Paragraph
 sendRefound(Refound)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5337,6 +5682,13 @@ I2.1 Reservation Controller, Map Gateway
 
 \begin_layout Paragraph
 generatePath(positionOfTheUser, positionOfTheCar)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5495,6 +5847,13 @@ sendSMS(User)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -5623,6 +5982,13 @@ I3.2 Notification Dispatcher, Email Gateway
 
 \begin_layout Paragraph
 sendEmail(User)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5761,6 +6127,13 @@ computeFinalPrice(rideId)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -5890,6 +6263,13 @@ I4.2 Ride Controller, Payment Controller
 
 \begin_layout Subsubsection*
 payTheRide(rideId)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6024,6 +6404,13 @@ finishTheRide(rideId)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -6152,6 +6539,13 @@ I4.1.1 Car Controller, Ride Controller
 
 \begin_layout Paragraph
 openTheCar(carId)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6303,6 +6697,13 @@ removeCar(carId)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -6439,6 +6840,13 @@ sendReservationMessage(User, Reservation)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -6571,6 +6979,13 @@ createReservation(carId)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -6696,6 +7111,13 @@ That method notify, with carId, the CarController in order to change the
 
 \begin_layout Paragraph
 deleteReservation(carId)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6832,6 +7254,13 @@ I7.1 AccountController, Notification Dispatcher
 
 \begin_layout Paragraph
 createUser(AllCredentials)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6972,6 +7401,13 @@ requestToCreateUser(AllCredentials)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -7103,6 +7539,13 @@ requesteToOpenTheCar(carId)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -7227,6 +7670,13 @@ I8-requestToOpenTheCar test.
 
 \begin_layout Paragraph
 requesteToCloseTheCar(carId)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7361,6 +7811,13 @@ requestCarAvailable(Position)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -7489,6 +7946,13 @@ requestToLookForMyList(employeeId)
 
 \begin_layout Paragraph
 requestToRemoveACar(carId)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7623,6 +8087,13 @@ requestExecptionalPayment(Payment)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -7747,6 +8218,13 @@ I8-requestExecptionalPayment test.
 
 \begin_layout Paragraph
 requestExecptionalRefound(Refound)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7881,6 +8359,13 @@ requestSelectedCar(carId)
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -8009,6 +8494,13 @@ I8.6 Dispatcher, Ride Controller
 
 \begin_layout Paragraph
 requestToFinishTheRide(rideId)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
