@@ -2366,17 +2366,13 @@ tutte le tabelle con D, I7, I8
 
 \begin_layout Paragraph
 Data Access Interface
-\end_layout
-
-\begin_layout Standard
-\begin_inset space ~
+\begin_inset Newline newline
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\noindent
 The first elements that have to be integrated are the DataBase Source and
  the Data Acces Interface.
  The DataBase, as mentioned before in 
@@ -2428,10 +2424,7 @@ Components involved in data management.
 
 \begin_layout Paragraph
 Payment Management
-\end_layout
-
-\begin_layout Standard
-\begin_inset space ~
+\begin_inset Newline newline
 \end_inset
 
 
@@ -2485,10 +2478,7 @@ Components involved in payment management.
 
 \begin_layout Paragraph
 Map management
-\end_layout
-
-\begin_layout Standard
-\begin_inset space ~
+\begin_inset Newline newline
 \end_inset
 
 
@@ -2540,13 +2530,6 @@ Notification management
 \end_layout
 
 \begin_layout Standard
-\begin_inset space ~
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 This phase the Sms Gateway and the Mail Gateway are integrated with the
  Notification Dispatcher.
  This phase guarantees the management of the the two different types of
@@ -2590,13 +2573,6 @@ Components involved in notification management.
 
 \begin_layout Paragraph
 Ride management
-\end_layout
-
-\begin_layout Standard
-\begin_inset space ~
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2650,13 +2626,6 @@ List management
 \end_layout
 
 \begin_layout Standard
-\begin_inset space ~
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 This phase involved one of the most important component of the Power Enjoy
  System: the List Controller.
  This particular component manages the employees' list of car, keeping updated
@@ -2706,13 +2675,6 @@ Reservation management
 \end_layout
 
 \begin_layout Standard
-\begin_inset space ~
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 This phase the Reservation Controller is integrated with the Data Acces
  Interface, the Notification Dispatcher and the Car Controller.
  This phase ensure the managemente of a reservation, included also the notificat
@@ -2759,13 +2721,6 @@ Account management
 \end_layout
 
 \begin_layout Standard
-\begin_inset space ~
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 This phase the Account Controller is integrated with the Notification Dispatcher
  and with the Data Access Interface.
  In this way the system can manage all the activities linked with creation,
@@ -2809,13 +2764,6 @@ Components involved in account management.
 
 \begin_layout Paragraph
 System controller 
-\end_layout
-
-\begin_layout Standard
-\begin_inset space ~
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
