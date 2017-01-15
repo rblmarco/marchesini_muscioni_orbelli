@@ -858,7 +858,7 @@ Classification of dependencies
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -888,7 +888,23 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{0.7cm}{}
+\end_layout
+
 \end_inset
 
 
@@ -900,6 +916,22 @@ AccountController.createUser(AllCredentials) calls with notify(User):
 
 \begin_layout Itemize
 NotificationDispatcher.sendEmail(User).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -939,7 +971,7 @@ AccountController_NotificationDispatcher dependency.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -969,7 +1001,23 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{0.7cm}{}
+\end_layout
+
 \end_inset
 
 
@@ -981,6 +1029,22 @@ CarController.openTheCar(carId) calls with notifyNewRide(carId):
 
 \begin_layout Itemize
 RideController.startTheRide(carId).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1016,7 +1080,7 @@ CarController_RideController dependency.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1046,7 +1110,23 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{0.7cm}{}
+\end_layout
+
 \end_inset
 
 
@@ -1058,6 +1138,22 @@ ListController.removeCar(carId) calls with notify(carId):
 
 \begin_layout Itemize
 CarController.changePhaseOfCar(carId).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1093,7 +1189,7 @@ ListController_CarController dependency.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1123,7 +1219,23 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{0.7cm}{}
+\end_layout
+
 \end_inset
 
 
@@ -1143,6 +1255,22 @@ PaymentController.sendRefound(Refound) calls:
 
 \begin_layout Itemize
 PaymentGateway.performRefound(Refound).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1178,7 +1306,7 @@ PaymentController_PaymentGateway dependency.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1208,7 +1336,23 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{0.7cm}{}
+\end_layout
+
 \end_inset
 
 
@@ -1228,6 +1372,22 @@ ReservationController.deleteReservation(reservationId) calls with noitfy(carId):
 
 \begin_layout Itemize
 CarController.changePhaseOfCar(carId).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1263,7 +1423,7 @@ ReservationController_CarController dependency.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1293,7 +1453,23 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{0.7cm}{}
+\end_layout
+
 \end_inset
 
 
@@ -1305,6 +1481,22 @@ ReservationController.generatePath(positionOfTheUser, positionOfTheCar) calls:
 
 \begin_layout Itemize
 MapGateway.requestPath(positionOfTheUser, positionOfTheCar).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1340,7 +1532,7 @@ ReservationController_MapGateway dependency.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1370,7 +1562,23 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{0.7cm}{}
+\end_layout
+
 \end_inset
 
 
@@ -1387,6 +1595,22 @@ NotificationDispatcher.sendEmail(Message);
 
 \begin_layout Itemize
 NotificationDispatcher.sendSMS(Message).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1422,7 +1646,7 @@ ReservationController_NotificationDispatcher dependency.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1452,7 +1676,23 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{0.7cm}{}
+\end_layout
+
 \end_inset
 
 
@@ -1464,6 +1704,22 @@ RideController.finishTheRide(rideId) calls with notify(carId):
 
 \begin_layout Itemize
 CarController.changePhaseOfCar(carId).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1499,7 +1755,7 @@ RideController_CarController dependency.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1529,7 +1785,23 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{0.7cm}{}
+\end_layout
+
 \end_inset
 
 
@@ -1545,6 +1817,22 @@ NotificationDispatcher.sendEmail(Message);
 
 \begin_layout Itemize
 NotificationDispatcher.sendSMS(Message).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1580,7 +1868,7 @@ RideController_NotificationDispatcher dependency.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1610,7 +1898,23 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{0.7cm}{}
+\end_layout
+
 \end_inset
 
 
@@ -1622,6 +1926,22 @@ RideController.payTheRide(rideId) calls with notify(Payment):
 
 \begin_layout Itemize
 PaymentController.sendPayment(Payment).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1657,7 +1977,7 @@ RideController_PaymentController dependency.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1687,7 +2007,23 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{0.7cm}{}
+\end_layout
+
 \end_inset
 
 
@@ -1699,6 +2035,22 @@ Dispatcher.requestToCreateUser(AllCredentials) calls:
 
 \begin_layout Itemize
 AccountController.createUser(AllCredentials).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1734,7 +2086,7 @@ Dispatcher_AccountController dependency.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1764,7 +2116,23 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{0.7cm}{}
+\end_layout
+
 \end_inset
 
 
@@ -1784,6 +2152,22 @@ Dispatcher.requestToCloseTheCar(carId) calls:
 
 \begin_layout Itemize
 CarController.closeTheCar(carId).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1819,7 +2203,7 @@ Dispatcher_CarController dependency.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1849,7 +2233,23 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{0.7cm}{}
+\end_layout
+
 \end_inset
 
 
@@ -1877,6 +2277,22 @@ Dispatcher.requestToRemoveACar(carId) calls:
 
 \begin_layout Itemize
 ListController.removeCar(carId).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1912,7 +2328,7 @@ Dispatcher_ListController dependency.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1942,7 +2358,23 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{0.7cm}{}
+\end_layout
+
 \end_inset
 
 
@@ -1962,6 +2394,22 @@ Dispatcher.requestExceptionalRefound(Refound) calls:
 
 \begin_layout Itemize
 PaymentController.sendRefound(Refound).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1997,7 +2445,7 @@ Dispatcher_PaymentController dependency.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2027,7 +2475,23 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{0.7cm}{}
+\end_layout
+
 \end_inset
 
 
@@ -2039,6 +2503,22 @@ Dispatcher.requestSelectedCar(carId) calls:
 
 \begin_layout Itemize
 ReservationController.createReservation(carId).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2074,7 +2554,7 @@ Dispatcher_ReservationController dependency.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2104,7 +2584,23 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{0.7cm}{}
+\end_layout
+
 \end_inset
 
 
@@ -2116,6 +2612,22 @@ Dispatcher.requestFinishTheRide(rideId) calls:
 
 \begin_layout Itemize
 RideController.finishTheRide(rideId).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2147,7 +2659,7 @@ Dispatcher_ReservationController dependency.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2177,7 +2689,23 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{0.7cm}{}
+\end_layout
+
 \end_inset
 
 
@@ -2189,6 +2717,22 @@ NotificationDispatcher.sendEmail(User) calls:
 
 \begin_layout Itemize
 EmailGateway.dispatchMail(User).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2224,7 +2768,7 @@ NotificationDispatcher_EmailGateway dependency.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2254,7 +2798,23 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \thinspace{}
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{0.7cm}{}
+\end_layout
+
 \end_inset
 
 
@@ -2266,6 +2826,22 @@ NotificationDispatcher.sendSMS(User) calls:
 
 \begin_layout Itemize
 SMSGateway.dispatchSMS(User).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
