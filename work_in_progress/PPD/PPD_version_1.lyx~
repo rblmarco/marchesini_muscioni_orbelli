@@ -1,0 +1,998 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{changepage}
+\usepackage{geometry}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/front_page/Logo_polimi_grande.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+
+\size huge
+Project Plan Document
+\end_layout
+
+\begin_layout Author
+\noindent
+Guido Muscioni (mat.
+ 876151)
+\begin_inset Newline newline
+\end_inset
+
+Marco Orbelli (mat.
+ 876649)
+\begin_inset Newline newline
+\end_inset
+
+Paola Marchesini (mat.
+ 876541)
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantom{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Logo.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+New brand logo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Purpose
+\end_layout
+
+\begin_layout Standard
+<TODO: Guido>
+\end_layout
+
+\begin_layout Subsubsection
+Scope
+\end_layout
+
+\begin_layout Standard
+The scope of that system, is defined in the RASD document, then, here there
+ is a copy of the paragraph:
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "70col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+
+\shape italic
+The aim of the project is to develop a digital system for an electric car-sharin
+g company, that is called PowerEnjoy.
+ There are not previous system so that document will describe the requirements
+ that deal with all the system that the customer wants.
+\end_layout
+
+\begin_layout Plain Layout
+
+\shape italic
+The users of PowerEnjoy system are:
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Client;
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Employee.
+\end_layout
+
+\begin_layout Plain Layout
+
+\shape italic
+Both of these users are going to have unique credentials in order to use
+ the system, so they must be registered.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\shape italic
+The clients will use this system to reserve and use cars of PowerEnjoy company.
+\end_layout
+
+\begin_layout Plain Layout
+
+\shape italic
+The employees will use that system in order to know what cars need help.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+List of Definitions and Abbreviations
+\end_layout
+
+\begin_layout Subsubsection
+Definitions and abbreviations
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+SDD
+\series default
+: Software Design Description.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+DD
+\series default
+: Design Document.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+ITP
+\series default
+: Integration Test Plan.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+ITPD
+\series default
+: Integration Test Plan Document.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+DBMS
+\series default
+: Database Management System.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+ER
+\series default
+: Entity-Relationship diagram.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RASD
+\series default
+: Requirement Analysis and Specification Document.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+SDK
+\series default
+: Software Development Kit.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+PhoneGap
+\series default
+: mobile cross-platform development framework.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dispatcher
+\series default
+: The dispatcher is a component devoted to forward requests received from
+ the user terminal to the right controller.
+ It is capable to understand what it has to do, according to informations
+ it received.
+ It does not do anything excepts forwarding, for this reason it can be considere
+d a mediator between the smarter part of the application server and humans.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Framework
+\series default
+: it is a set of functions that support the developers during developing
+ and integration phase.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+OS
+\series default
+: Operating System.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Id
+\series default
+: An identifier is a name that identifies a unique element.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RAM
+\series default
+: Random Access Memory is a form of computer data storage which stores frequentl
+y used program instructions to increase the general speed of a system.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+MB
+\series default
+: Megabyte (10e6)
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Type of test
+\series default
+: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+D: test with Data Access Interface
+\end_layout
+
+\begin_layout Itemize
+I: integration test between controllers
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+JPA
+\series default
+: Java Persistence API.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+JavaEE
+\series default
+: Java Enterprise Edition.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RESTful 
+\series default
+: REpresentational State Transfer is an architectural style and an ap- proach
+ to communications (often used in the development of Web services);
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+API
+\series default
+: Application Programming Interface.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Req
+\series default
+ as for Requirement.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+WebApp
+\series default
+ as for Web Application.
+ 
+\end_layout
+
+\begin_layout Subsection
+List of Reference Document
+\end_layout
+
+\begin_layout Itemize
+Specification document: Assignments AA 2016-2017;
+\end_layout
+
+\begin_layout Itemize
+Examples documents:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Sample Integration Test Plan Document.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Project Size, Cost and Effort Estimation
+\end_layout
+
+\begin_layout Standard
+<TODO: function point approach and COCOMO>
+\end_layout
+
+\begin_layout Subsection
+Size estimation: Function Point
+\end_layout
+
+\begin_layout Subsubsection
+Internal Logic Files
+\end_layout
+
+\begin_layout Standard
+<TODO: strutture dati, informazioni presenti nel database.>
+\end_layout
+
+\begin_layout Subsubsection
+External Logic Files
+\end_layout
+
+\begin_layout Standard
+<TODO: mappe, pagamento, notifiche: sms e email>
+\end_layout
+
+\begin_layout Subsubsection
+External Inputs 
+\end_layout
+
+\begin_layout Standard
+<TODO: tutte le operazioni che possono fare gli user, sono i metodi dei
+ diagrammi UX>
+\end_layout
+
+\begin_layout Subsubsection
+External Inquiries
+\end_layout
+
+\begin_layout Standard
+<TODO: sono le richieste degli utenti rivolte all'ottenimento di dati.>
+\end_layout
+
+\begin_layout Subsubsection
+External Outputs
+\end_layout
+
+\begin_layout Standard
+<TODO: all the notification, tutti i metodi che si interfacciano al notification
+ dispatcher.>
+\end_layout
+
+\begin_layout Subsubsection
+Overall Estimation
+\end_layout
+
+\begin_layout Standard
+<TODO: all together.>
+\end_layout
+
+\begin_layout Subsection
+Cost and Effort Estimation: COCOMO II
+\end_layout
+
+\begin_layout Standard
+<TODO: PAOLA che non è handicappata e GUIDO>
+\end_layout
+
+\begin_layout Section
+Schedule
+\end_layout
+
+\begin_layout Section
+Resource Allocation
+\end_layout
+
+\begin_layout Section
+Risk Management
+\end_layout
+
+\begin_layout Section
+Appendices
+\end_layout
+
+\begin_layout Subsection
+Used Tools
+\end_layout
+
+\begin_layout Itemize
+Microsoft Visio 2016: for all the diagrams in that document (as Testing
+ Diagrams, etc ...);
+\end_layout
+
+\begin_layout Itemize
+Lyx document processor: to write all the document;
+\end_layout
+
+\begin_layout Itemize
+SourceTree: used as GitHub manager;
+\end_layout
+
+\begin_layout Itemize
+GitHub: used to manage the shared building process of that document.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Hours of Work
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Day
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Guido Muscioni
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Marco Orbelli
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Paola Marchesini
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17/01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18/01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19/01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20/01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21/01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22/01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
