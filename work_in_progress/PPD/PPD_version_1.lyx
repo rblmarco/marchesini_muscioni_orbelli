@@ -516,6 +516,14 @@ WebApp
  
 \end_layout
 
+\begin_layout Itemize
+COCOMO II
+\end_layout
+
+\begin_layout Itemize
+COCOMO II document
+\end_layout
+
 \begin_layout Subsection
 List of Reference Document
 \end_layout
@@ -2999,6 +3007,16 @@ Analyst Capability (ACAP)
 \end_layout
 
 \begin_layout Standard
+As it can be seen from the previous document, we have conducted a complete
+ and clear analysis of the scenarios in which PowerEnjoy system and the
+ users can be involved.
+ Moreover we have tried to considered as much critical cases as possible,
+ in order to design some solutions, as the two server farms and the two
+ different way of opening a car.
+ Thus leads us to set the levl of ACAP to high.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -3083,6 +3101,8 @@ Descriptors:
 
 \begin_layout Plain Layout
 
+\series bold
+75th percentile
 \end_layout
 
 \end_inset
@@ -3149,6 +3169,8 @@ Nominal
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 High
 \end_layout
 
@@ -3217,6 +3239,8 @@ Effort Multipliers
 
 \begin_layout Plain Layout
 
+\series bold
+0.85
 \end_layout
 
 \end_inset
@@ -3285,6 +3309,32 @@ Programmer Capability (PCAP)
 \end_layout
 
 \begin_layout Standard
+Following the rules defined by COCOMO II document, the level of that driver
+ must be related to the 
+\begin_inset Quotes eld
+\end_inset
+
+
+\shape italic
+capabilities of the programmer as a team
+\shape default
+.
+ 
+\shape italic
+[...] ability, efficiency and thoroughness, and the ability to communicate
+ and cooperate
+\shape default
+.
+\begin_inset Quotes erd
+\end_inset
+
+ With respect to that description the PCAP is set to high, because as a
+ team we are able to work and cooperate in a very good way.
+ Obviously that is only a prediction, in actual fact we are not going to
+ implement that project.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -3312,13 +3362,13 @@ begin{adjustwidth}{-1.5cm}{}
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="7">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -3369,6 +3419,8 @@ Descriptors:
 
 \begin_layout Plain Layout
 
+\series bold
+75th percentile
 \end_layout
 
 \end_inset
@@ -3435,6 +3487,8 @@ Nominal
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 High
 \end_layout
 
@@ -3503,6 +3557,8 @@ Effort Multipliers
 
 \begin_layout Plain Layout
 
+\series bold
+0.88
 \end_layout
 
 \end_inset
@@ -3571,6 +3627,23 @@ Personnel Continuity (PCON)
 \end_layout
 
 \begin_layout Standard
+We do not have unlimited time to use for the developing of that project
+ so we are going to set the level to low, according to the 
+\begin_inset Quotes eld
+\end_inset
+
+
+\shape italic
+Hours of work
+\shape default
+
+\begin_inset Quotes erd
+\end_inset
+
+ reported in all previous documents.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -3598,13 +3671,13 @@ begin{adjustwidth}{-1.5cm}{}
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="7">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -3637,6 +3710,8 @@ Descriptors:
 
 \begin_layout Plain Layout
 
+\series bold
+24%/year
 \end_layout
 
 \end_inset
@@ -3703,6 +3778,8 @@ Very Low
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Low
 \end_layout
 
@@ -3771,6 +3848,8 @@ Effort Multipliers
 
 \begin_layout Plain Layout
 
+\series bold
+1.12
 \end_layout
 
 \end_inset
@@ -3857,6 +3936,12 @@ Applications Experience (APEX)
 \end_layout
 
 \begin_layout Standard
+We do not have a lot of experience in J2EE and also with the managing of
+ the API that we have mentioned in the DD document, so that, the level of
+ APEX is set to low.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -3884,13 +3969,13 @@ begin{adjustwidth}{-1.5cm}{}
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="7">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -3923,6 +4008,8 @@ Descriptors:
 
 \begin_layout Plain Layout
 
+\series bold
+6 months
 \end_layout
 
 \end_inset
@@ -3989,6 +4076,8 @@ Very Low
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Low
 \end_layout
 
@@ -4057,6 +4146,8 @@ Effort Multipliers
 
 \begin_layout Plain Layout
 
+\series bold
+1.10
 \end_layout
 
 \end_inset
@@ -4143,6 +4234,14 @@ Platform Experience (PLEX)
 \end_layout
 
 \begin_layout Standard
+We know something of all the platform that we have considered in order to
+ simplify the building of that project.
+ However our knowledge are set to a scholl level because we have used that
+ platforms only during some university projects.
+ According to that we decided to set PLEX to nominal.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -4170,13 +4269,13 @@ begin{adjustwidth}{-1.5cm}{}
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="7">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -4217,7 +4316,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1 year
 \end_layout
 
 \end_inset
@@ -4351,7 +4450,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.00
 \end_layout
 
 \end_inset
@@ -4429,6 +4528,12 @@ Language and Tool Experience (LTEX)
 \end_layout
 
 \begin_layout Standard
+What we have mention in PLEX and APEX paragraph is valid also for that driver.
+ Not all the members of the team know how to write a PhoneGap application
+ and the same for a real world databse; so the level is set to low.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -4456,13 +4561,13 @@ begin{adjustwidth}{-1.5cm}{}
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="7">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -4495,6 +4600,8 @@ Descriptors:
 
 \begin_layout Plain Layout
 
+\series bold
+6 months
 \end_layout
 
 \end_inset
@@ -4561,6 +4668,8 @@ Very Low
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Low
 \end_layout
 
@@ -4629,6 +4738,8 @@ Effort Multipliers
 
 \begin_layout Plain Layout
 
+\series bold
+1.09
 \end_layout
 
 \end_inset
@@ -4719,6 +4830,15 @@ Use of Software Tools (TOOL)
 \end_layout
 
 \begin_layout Standard
+We have done the design of the project using some pretty software tools
+ that can simplify and improve the developing of the project.
+ Some examples are PhoneGap, in order to build a cross-platform application,
+ and jersey framework, in order to easily integrate our J2EE architecture
+ with the RESTful API.
+ According to that facts the level of that driver is set to very high.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -4746,13 +4866,13 @@ begin{adjustwidth}{-1.5cm}{}
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="7">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -4812,6 +4932,9 @@ Descriptors:
 
 \begin_layout Plain Layout
 
+\series bold
+strong, mature, proactive life-cycle tools, well integrated with processes,
+ methods, reuse
 \end_layout
 
 \end_inset
@@ -4878,6 +5001,8 @@ High
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Very High
 \end_layout
 
@@ -4946,6 +5071,8 @@ Effort Multipliers
 
 \begin_layout Plain Layout
 
+\series bold
+0.78
 \end_layout
 
 \end_inset
@@ -5005,6 +5132,14 @@ Multisite Development (SITE)
 \end_layout
 
 \begin_layout Standard
+Even though we live in different cities, we are placed in Milan in order
+ to follow our courses in the university.
+ Moreover we have always worked together in order to have always a complete
+ view of the project progress.
+ So we decided to set that level to extra high.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -5032,13 +5167,13 @@ begin{adjustwidth}{-1.5cm}{}
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="7">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -5107,6 +5242,8 @@ Descriptors:
 
 \begin_layout Plain Layout
 
+\series bold
+Fully located
 \end_layout
 
 \end_inset
@@ -5173,6 +5310,8 @@ Very High
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Extra High
 \end_layout
 
@@ -5241,6 +5380,8 @@ Effort Multipliers
 
 \begin_layout Plain Layout
 
+\series bold
+0.80
 \end_layout
 
 \end_inset
@@ -5295,6 +5436,24 @@ Required Development Schedule (SCED)
 \end_layout
 
 \begin_layout Standard
+According to 
+\begin_inset Quotes eld
+\end_inset
+
+
+\shape italic
+Hours of work
+\shape default
+
+\begin_inset Quotes erd
+\end_inset
+
+ reported in all previous documents and the general effort that we are spending
+ in the building of all documents, the SCED level is set to very high.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -5322,13 +5481,13 @@ begin{adjustwidth}{-1.5cm}{}
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="7">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="middle" width="2cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -5388,6 +5547,8 @@ Descriptors:
 
 \begin_layout Plain Layout
 
+\series bold
+160% of nominal
 \end_layout
 
 \end_inset
@@ -5454,6 +5615,8 @@ High
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Very High
 \end_layout
 
@@ -5522,6 +5685,8 @@ Effort Multipliers
 
 \begin_layout Plain Layout
 
+\series bold
+1.00
 \end_layout
 
 \end_inset
@@ -5577,7 +5742,642 @@ end{adjustwidth}
 \end_layout
 
 \begin_layout Standard
+<TODO: vedere cosa cambia se mettiamo high in SCED anche se il paramentro
+ è sempre uguale.>
+\end_layout
+
+\begin_layout Standard
 <TODO: PAOLA che non è handicappata e GUIDO>
+\end_layout
+
+\begin_layout Paragraph
+Final result
+\end_layout
+
+\begin_layout Standard
+<TODO: controllare l'ordine, mettere i parametri>
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-0.6cm}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="19" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="9cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cost Driver
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Factor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Value
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(RELY)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(DATA)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(CPLX)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(RUSE)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(DOCU)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(TIME)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(STOR)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(PVOL)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(ACAP)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(PCAP)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(PCON)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(APEX)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(PLEX)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(LTEX)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(TOOL)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(SITE)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(SCED)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Final result of drivers evaluation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
