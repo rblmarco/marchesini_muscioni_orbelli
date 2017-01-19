@@ -730,10 +730,9 @@ User verified:
 \end_layout
 
 \begin_layout Itemize
-Look for car nearby: this operations has an hight complexity because it
- is a query on the DB, searching for the car nearby the position detected
+Look for car nearby: this operations has an average (????) complexity because
+ it is a query on the DB, searching for the car nearby the position detected
  or inserted by te user.
- It also upload all the information about the cars returned.
  It yelds...
 \end_layout
 
@@ -744,17 +743,11 @@ Insert postition: this is a simple operation, the user insert manually his
 \end_layout
 
 \begin_layout Itemize
-Select the car: given that the upload of the car informations it was already
- done, this operation simply visualize the information of the car selected.
- It yelds...
+Select the car:
 \end_layout
 
 \begin_layout Itemize
-Reserve that car: this operation has an hight complexity because it involves
- a lot of component which have to communicate and to query the DB uploading
- it.
- It also involves the notification to the users.
- yelds...
+Reserve that car:
 \end_layout
 
 \begin_layout Itemize
