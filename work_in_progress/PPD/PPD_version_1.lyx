@@ -569,6 +569,127 @@ Internal Logic Files
 <TODO: strutture dati, informazioni presenti nel database.>
 \end_layout
 
+\begin_layout Standard
+The PowerEnjoy system needs to store in its DataBase some informations about
+ its users and in general about the service it provides, in order to ensure
+ a good service.
+ In this section, there are a detailed analysis about the Internal logic
+ files (ILFs) needed to the functionalities of the system.
+ 
+\end_layout
+
+\begin_layout Itemize
+User data: first the system has to know the informations about its user
+ (clients who use the PowerEnjoy application).
+ The DB has a table in which are stored the data required at the registration
+ phase: name, surname, password, driving license, email and finally the
+ telephone number.
+ The system must acquire to the payment information at the 
+\begin_inset Quotes eld
+\end_inset
+
+sign up
+\begin_inset Quotes erd
+\end_inset
+
+ , due to guarantee the functionality of automatic payment of the ride.
+ This last information are stored in a different table from the one, explained
+ before, in which are stored only general data about the users.
+ 
+\end_layout
+
+\begin_layout Itemize
+Employee data: the employee data are stored in two different table.
+ The first table contains the general information of an employee, like the
+ SSN number, name, surname, email address and the password of his/her account.
+ The second table.
+ Instead, the second tables contains information about the phone provided
+ by the company, in particular the IMEI code (International Mobile Equipment
+ Identity) to identify the physical device and the telephone number associated
+ to it.
+ It has been chosen to store the phone information in a different table,
+ because the company may not provide a phone for every employee, so it is
+ necessary to underline that these devices only could be used by an employee
+ and, at the same time the company must find all the free devices.
+\end_layout
+
+\begin_layout Itemize
+Hystorical work data: the data about the 
+\begin_inset Quotes eld
+\end_inset
+
+story
+\begin_inset Quotes erd
+\end_inset
+
+ of employees' work are stored in a single table with a key ID, where it
+ can be found detailed information of a work: date, time, car involved,
+ couple of employee that have done the work, a brief description and a flag
+ due to understand if the phase of the car involved is changed.
+ The reason of that choice (use of a flag) is that an employee could remove
+ a car from his/her list due to force majeur, left the work undone.
+\end_layout
+
+\begin_layout Itemize
+List data: the list data are an important part of our system.
+ In this table are stored the necessary information in order to identify
+ a list of a car: id of the list, and the two employees whose take care
+ of the current list.
+ The cars that are included in the list are stored in another table so the
+ sysem has to execute a query on the id of the list, which a car also has,
+ to found all the members of the list.
+\end_layout
+
+\begin_layout Itemize
+Car data: this internal files contains all the information about the car
+ which are managed by the PowerEnjoy system: code (key of the table) used
+ by users to open/close the car, license plate, battery level, number of
+ seats used and the information to identify the position of the car (longitude
+ and latitude).
+ The information about the phase of the car (so the state in which it is)
+ are stored in a differnte table, containing the id of the car and its actual
+ phase.
+ The use of two table in justified by a simpler management of the queries
+ which are intereste only in the phase of the car.
+\end_layout
+
+\begin_layout Itemize
+Reservation data: the information about a reservation are store in a tbale
+ containing the id of the reservation, the date, the initial time and the
+ final time.
+ To obtain details about the user who have done the reservation or the ride
+ connected to ita, it is necessary to execute queries that involved other
+ data structures.
+ 
+\end_layout
+
+\begin_layout Itemize
+Ride data: the ride data structure uses a two-level structure.
+ In the first tbale there are the generale information to identify a ride:
+ id, starting and final longitude and latitude and the number of passengers.
+ The second table of this data structure contains the information about
+ the payment of the ride (id, time, price, type of discount, quantity of
+ discount).
+\end_layout
+
+\begin_layout Itemize
+Area data: this data structure contains two tables in order to distinguish
+ thw differtn area that are managed by the PowerEnjoy system.
+ The first table contains information about the speacial areas, so latitude
+ and longitude to identify the center of the area, the radius and the plugs
+ which are available in this zone.
+ The second table contains information about the safe area external point:
+ <TODO paola + guido : dire i campi (latitude, longitude, order) e spiegare
+ a cosa si riferiscono e cosa significano>.
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+ (Note: this section is extremely connected with the entity-relationship
+ diagram, that is contained in the DD document.)
+\end_layout
+
 \begin_layout Subsubsection
 External Logic Files
 \end_layout
@@ -1002,6 +1123,18 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
+Testing DB bytes/Pgm SLOC < 10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $10\leq\frac{D}{P}<100$
+\end_inset
+
 
 \end_layout
 
@@ -1011,6 +1144,9 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $100\leq\frac{D}{P}<100$
+\end_inset
+
 
 \end_layout
 
@@ -1020,15 +1156,9 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset Formula $\frac{D}{P}\geq1000$
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1127,7 +1257,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+n/a
 \end_layout
 
 \end_inset
@@ -1136,7 +1266,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.90
 \end_layout
 
 \end_inset
@@ -1145,7 +1275,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.00
 \end_layout
 
 \end_inset
@@ -1154,7 +1284,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.14
 \end_layout
 
 \end_inset
@@ -1163,7 +1293,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.28
 \end_layout
 
 \end_inset
@@ -1172,7 +1302,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+n/a
 \end_layout
 
 \end_inset
@@ -1577,7 +1707,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+None
 \end_layout
 
 \end_inset
@@ -1603,7 +1733,7 @@ project
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Across program
 \end_layout
 
 \end_inset
@@ -1612,7 +1742,7 @@ project
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Across product line
 \end_layout
 
 \end_inset
@@ -1621,7 +1751,7 @@ project
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Across multiple product lines
 \end_layout
 
 \end_inset
@@ -1712,7 +1842,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+n/a
 \end_layout
 
 \end_inset
@@ -1721,7 +1851,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.95
 \end_layout
 
 \end_inset
@@ -1741,7 +1871,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.07
 \end_layout
 
 \end_inset
@@ -1750,7 +1880,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.15
 \end_layout
 
 \end_inset
@@ -1759,7 +1889,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.24
 \end_layout
 
 \end_inset
@@ -1872,7 +2002,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Many life-cycle needs uncovered
 \end_layout
 
 \end_inset
@@ -1881,7 +2011,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Some life-cycle needs uncovered
 \end_layout
 
 \end_inset
@@ -1901,7 +2031,7 @@ Right-sized to life-cycle needs
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Excessive for life-cycle needs
 \end_layout
 
 \end_inset
@@ -1910,7 +2040,7 @@ Right-sized to life-cycle needs
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Very excessive for life-cycle needs
 \end_layout
 
 \end_inset
@@ -2010,7 +2140,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.81
 \end_layout
 
 \end_inset
@@ -2019,7 +2149,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.91
 \end_layout
 
 \end_inset
@@ -2039,7 +2169,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.11
 \end_layout
 
 \end_inset
@@ -2048,7 +2178,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.23
 \end_layout
 
 \end_inset
@@ -2057,7 +2187,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+n/a
 \end_layout
 
 \end_inset
@@ -2193,7 +2323,10 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $<50\%$
+\end_inset
 
+ use of available execution time 
 \end_layout
 
 \end_inset
@@ -2202,6 +2335,8 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 70% use of available execution time
 \end_layout
 
@@ -2211,7 +2346,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+85% use of available execution time
 \end_layout
 
 \end_inset
@@ -2220,7 +2355,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+95% use of available execution time
 \end_layout
 
 \end_inset
@@ -2269,6 +2404,8 @@ Nominal
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 High
 \end_layout
 
@@ -2309,7 +2446,25 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
+n/a
+\end_layout
 
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+n/a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.00
 \end_layout
 
 \end_inset
@@ -2319,23 +2474,7 @@ Effort Multipliers
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
+\series bold
 1.11
 \end_layout
 
@@ -2345,7 +2484,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.29
 \end_layout
 
 \end_inset
@@ -2354,7 +2493,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.63
 \end_layout
 
 \end_inset
@@ -2485,7 +2624,10 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $<50\%$
+\end_inset
 
+ use of available storage
 \end_layout
 
 \end_inset
@@ -2505,7 +2647,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+85% use of available storage
 \end_layout
 
 \end_inset
@@ -2514,7 +2656,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+95% use of available storage
 \end_layout
 
 \end_inset
@@ -2605,7 +2747,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+n/a
 \end_layout
 
 \end_inset
@@ -2614,7 +2756,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+n/a
 \end_layout
 
 \end_inset
@@ -2623,7 +2765,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.00
 \end_layout
 
 \end_inset
@@ -2643,7 +2785,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.17
 \end_layout
 
 \end_inset
@@ -2652,7 +2794,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.46
 \end_layout
 
 \end_inset
@@ -2787,7 +2929,7 @@ Major change every 12 months.
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Major: 6 months; Minor: 2 weeks
 \end_layout
 
 \end_inset
@@ -2796,7 +2938,7 @@ Major change every 12 months.
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Major: 2 months; Minor: 1 week
 \end_layout
 
 \end_inset
@@ -2805,7 +2947,7 @@ Major change every 12 months.
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Major: 2 weeks; Minor: 2 days
 \end_layout
 
 \end_inset
@@ -2905,7 +3047,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+n/a
 \end_layout
 
 \end_inset
@@ -2925,7 +3067,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.00
 \end_layout
 
 \end_inset
@@ -2934,7 +3076,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.15
 \end_layout
 
 \end_inset
@@ -2943,7 +3085,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.30
 \end_layout
 
 \end_inset
@@ -2952,7 +3094,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+n/a
 \end_layout
 
 \end_inset
@@ -3073,7 +3215,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+15th percentile
 \end_layout
 
 \end_inset
@@ -3082,7 +3224,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+35th percentile
 \end_layout
 
 \end_inset
@@ -3091,7 +3233,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+55th percentile
 \end_layout
 
 \end_inset
@@ -3111,7 +3253,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+90th percentile
 \end_layout
 
 \end_inset
@@ -3211,7 +3353,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.42
 \end_layout
 
 \end_inset
@@ -3220,7 +3362,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.19
 \end_layout
 
 \end_inset
@@ -3229,7 +3371,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.00
 \end_layout
 
 \end_inset
@@ -3249,7 +3391,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.71
 \end_layout
 
 \end_inset
@@ -3258,7 +3400,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+n/a
 \end_layout
 
 \end_inset
@@ -3391,7 +3533,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+15th percentile
 \end_layout
 
 \end_inset
@@ -3400,7 +3542,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+35th percentile
 \end_layout
 
 \end_inset
@@ -3409,7 +3551,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+55th percentile
 \end_layout
 
 \end_inset
@@ -3429,7 +3571,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+90th percentile
 \end_layout
 
 \end_inset
@@ -3529,7 +3671,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.34
 \end_layout
 
 \end_inset
@@ -3538,7 +3680,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.15
 \end_layout
 
 \end_inset
@@ -3547,7 +3689,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.00
 \end_layout
 
 \end_inset
@@ -3567,7 +3709,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.76
 \end_layout
 
 \end_inset
@@ -3576,7 +3718,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+n/a
 \end_layout
 
 \end_inset
@@ -3700,7 +3842,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+48% year
 \end_layout
 
 \end_inset
@@ -3720,7 +3862,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+12% year
 \end_layout
 
 \end_inset
@@ -3729,7 +3871,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6% year
 \end_layout
 
 \end_inset
@@ -3738,7 +3880,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3% year
 \end_layout
 
 \end_inset
@@ -3838,7 +3980,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.29
 \end_layout
 
 \end_inset
@@ -3858,7 +4000,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.00
 \end_layout
 
 \end_inset
@@ -3867,7 +4009,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.90
 \end_layout
 
 \end_inset
@@ -3876,7 +4018,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.81
 \end_layout
 
 \end_inset
@@ -3998,7 +4140,10 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\leq2$
+\end_inset
 
+ months
 \end_layout
 
 \end_inset
@@ -4018,7 +4163,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1 year
 \end_layout
 
 \end_inset
@@ -4027,7 +4172,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3 years
 \end_layout
 
 \end_inset
@@ -4036,7 +4181,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6 years
 \end_layout
 
 \end_inset
@@ -4136,7 +4281,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.22
 \end_layout
 
 \end_inset
@@ -4156,7 +4301,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.00
 \end_layout
 
 \end_inset
@@ -4165,7 +4310,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.88
 \end_layout
 
 \end_inset
@@ -4174,7 +4319,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.81
 \end_layout
 
 \end_inset
@@ -4183,7 +4328,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+n/a
 \end_layout
 
 \end_inset
@@ -4298,7 +4443,19 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\leq2$
+\end_inset
 
+ months
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6 months
 \end_layout
 
 \end_inset
@@ -4308,14 +4465,7 @@ Descriptors:
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
+\series bold
 1 year
 \end_layout
 
@@ -4325,7 +4475,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3 years
 \end_layout
 
 \end_inset
@@ -4334,7 +4484,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6 year
 \end_layout
 
 \end_inset
@@ -4383,6 +4533,8 @@ Low
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Nominal
 \end_layout
 
@@ -4432,7 +4584,16 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
+1.19
+\end_layout
 
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.09
 \end_layout
 
 \end_inset
@@ -4442,14 +4603,7 @@ Effort Multipliers
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
+\series bold
 1.00
 \end_layout
 
@@ -4459,7 +4613,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.91
 \end_layout
 
 \end_inset
@@ -4468,7 +4622,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.85
 \end_layout
 
 \end_inset
@@ -4477,7 +4631,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+n/a
 \end_layout
 
 \end_inset
@@ -4590,7 +4744,10 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\leq2$
+\end_inset
 
+ months
 \end_layout
 
 \end_inset
@@ -4610,7 +4767,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1 year
 \end_layout
 
 \end_inset
@@ -4619,7 +4776,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3 years
 \end_layout
 
 \end_inset
@@ -4628,7 +4785,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6 year
 \end_layout
 
 \end_inset
@@ -4728,7 +4885,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.20
 \end_layout
 
 \end_inset
@@ -4748,7 +4905,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.00
 \end_layout
 
 \end_inset
@@ -4757,7 +4914,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.91
 \end_layout
 
 \end_inset
@@ -4766,7 +4923,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.84
 \end_layout
 
 \end_inset
@@ -4895,7 +5052,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+edit, code, debug
 \end_layout
 
 \end_inset
@@ -4904,7 +5061,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+simple, fronted, backend CASE, little integration
 \end_layout
 
 \end_inset
@@ -4913,7 +5070,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+basic life-cycle tools, moderately integrated
 \end_layout
 
 \end_inset
@@ -4922,7 +5079,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+strong, mature life-cycle tools, moderately integrated
 \end_layout
 
 \end_inset
@@ -5034,7 +5191,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.17
 \end_layout
 
 \end_inset
@@ -5043,7 +5200,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.09
 \end_layout
 
 \end_inset
@@ -5052,7 +5209,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.00
 \end_layout
 
 \end_inset
@@ -5061,7 +5218,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.90
 \end_layout
 
 \end_inset
@@ -5081,7 +5238,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+n/a
 \end_layout
 
 \end_inset
@@ -5165,7 +5322,7 @@ begin{adjustwidth}{-1.5cm}{}
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="7">
+<lyxtabular version="3" rows="4" columns="7">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="middle" width="3cm">
 <column alignment="center" valignment="middle" width="2cm">
@@ -5187,6 +5344,12 @@ SITE
 \begin_layout Plain Layout
 
 \series bold
+Collocation
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
 Descriptors:
 \end_layout
 
@@ -5196,7 +5359,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Inter-national
 \end_layout
 
 \end_inset
@@ -5205,7 +5368,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Multi-city and Multi-company
 \end_layout
 
 \end_inset
@@ -5214,7 +5377,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Multi-city or Multi-company
 \end_layout
 
 \end_inset
@@ -5223,7 +5386,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Same city or metropolitan area
 \end_layout
 
 \end_inset
@@ -5232,7 +5395,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Same building or complex 
 \end_layout
 
 \end_inset
@@ -5244,6 +5407,88 @@ Descriptors:
 
 \series bold
 Fully located
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+SITE
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Communications
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Descriptors:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Some phone, mail
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Individual phone, FAX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Narrow band email
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wideband electronic communication
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wideband elect.
+ comm., occasional video conf
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Interactive multimedi
 \end_layout
 
 \end_inset
@@ -5334,7 +5579,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.22
 \end_layout
 
 \end_inset
@@ -5343,7 +5588,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.09
 \end_layout
 
 \end_inset
@@ -5352,7 +5597,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.00
 \end_layout
 
 \end_inset
@@ -5361,7 +5606,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.93
 \end_layout
 
 \end_inset
@@ -5370,7 +5615,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.86
 \end_layout
 
 \end_inset
@@ -5510,7 +5755,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+75% of nominal
 \end_layout
 
 \end_inset
@@ -5519,7 +5764,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+85% of nominal
 \end_layout
 
 \end_inset
@@ -5528,7 +5773,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+100% of nominal
 \end_layout
 
 \end_inset
@@ -5537,7 +5782,7 @@ Descriptors:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+130% of nominal
 \end_layout
 
 \end_inset
@@ -5648,7 +5893,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.43
 \end_layout
 
 \end_inset
@@ -5657,7 +5902,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.14
 \end_layout
 
 \end_inset
@@ -5666,7 +5911,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.00
 \end_layout
 
 \end_inset
@@ -5675,7 +5920,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.00
 \end_layout
 
 \end_inset
@@ -5695,7 +5940,7 @@ Effort Multipliers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+n/a
 \end_layout
 
 \end_inset
@@ -5823,7 +6068,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-(RELY)
+Required Software Reliability (RELY) 
 \end_layout
 
 \end_inset
@@ -5832,7 +6077,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+High
 \end_layout
 
 \end_inset
@@ -5841,7 +6086,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.10
 \end_layout
 
 \end_inset
@@ -5852,7 +6097,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-(DATA)
+Data Base Size (DATA) 
 \end_layout
 
 \end_inset
@@ -5861,7 +6106,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Very High
 \end_layout
 
 \end_inset
@@ -5870,7 +6115,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.28
 \end_layout
 
 \end_inset
@@ -5881,7 +6126,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-(CPLX)
+Product Complexity (CPLX) 
 \end_layout
 
 \end_inset
@@ -5890,7 +6135,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+High
 \end_layout
 
 \end_inset
@@ -5899,7 +6144,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.17
 \end_layout
 
 \end_inset
@@ -5910,7 +6155,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-(RUSE)
+Developed for Reusability (RUSE)
 \end_layout
 
 \end_inset
@@ -5919,7 +6164,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Nominal
 \end_layout
 
 \end_inset
@@ -5928,7 +6173,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.00
 \end_layout
 
 \end_inset
@@ -5939,7 +6184,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-(DOCU)
+Documentation Match to Life-Cycle Needs (DOCU) 
 \end_layout
 
 \end_inset
@@ -5948,7 +6193,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Nominal
 \end_layout
 
 \end_inset
@@ -5957,7 +6202,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.00
 \end_layout
 
 \end_inset
@@ -5968,7 +6213,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-(TIME)
+Execution Time Constraint (TIME)
 \end_layout
 
 \end_inset
@@ -5977,7 +6222,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+High
 \end_layout
 
 \end_inset
@@ -5986,7 +6231,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.11
 \end_layout
 
 \end_inset
@@ -5997,7 +6242,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-(STOR)
+Main Storge Constraint (STOR)
 \end_layout
 
 \end_inset
@@ -6006,7 +6251,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+High
 \end_layout
 
 \end_inset
@@ -6015,7 +6260,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.05
 \end_layout
 
 \end_inset
@@ -6026,7 +6271,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-(PVOL)
+Platform Volatility (PVOL)
 \end_layout
 
 \end_inset
@@ -6035,7 +6280,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Low
 \end_layout
 
 \end_inset
@@ -6044,7 +6289,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.87
 \end_layout
 
 \end_inset
@@ -6055,7 +6300,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-(ACAP)
+Analyst Capability (ACAP)
 \end_layout
 
 \end_inset
@@ -6064,7 +6309,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+High
 \end_layout
 
 \end_inset
@@ -6073,7 +6318,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.85
 \end_layout
 
 \end_inset
@@ -6084,7 +6329,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-(PCAP)
+Programmer Capability (PCAP)
 \end_layout
 
 \end_inset
@@ -6093,7 +6338,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+High
 \end_layout
 
 \end_inset
@@ -6102,7 +6347,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.88
 \end_layout
 
 \end_inset
@@ -6113,7 +6358,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-(PCON)
+Personnel Continuity(PCON)
 \end_layout
 
 \end_inset
@@ -6122,7 +6367,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Low
 \end_layout
 
 \end_inset
@@ -6131,7 +6376,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.12
 \end_layout
 
 \end_inset
@@ -6142,7 +6387,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-(APEX)
+Applications Experience (APEX)
 \end_layout
 
 \end_inset
@@ -6151,7 +6396,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Low 
 \end_layout
 
 \end_inset
@@ -6160,7 +6405,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.10
 \end_layout
 
 \end_inset
@@ -6171,7 +6416,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-(PLEX)
+Pltform Experience (PLEX)
 \end_layout
 
 \end_inset
@@ -6180,7 +6425,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Nominal
 \end_layout
 
 \end_inset
@@ -6189,7 +6434,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.00
 \end_layout
 
 \end_inset
@@ -6200,7 +6445,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-(LTEX)
+Language and Tool Experience (LTEX)
 \end_layout
 
 \end_inset
@@ -6209,7 +6454,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Low
 \end_layout
 
 \end_inset
@@ -6218,7 +6463,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.09
 \end_layout
 
 \end_inset
@@ -6229,7 +6474,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-(TOOL)
+Use of Software Tools(TOOL)
 \end_layout
 
 \end_inset
@@ -6238,7 +6483,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Very High
 \end_layout
 
 \end_inset
@@ -6247,7 +6492,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.78
 \end_layout
 
 \end_inset
@@ -6258,7 +6503,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-(SITE)
+Multisite Development (SITE)
 \end_layout
 
 \end_inset
@@ -6267,7 +6512,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Extra High
 \end_layout
 
 \end_inset
@@ -6276,7 +6521,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.80
 \end_layout
 
 \end_inset
@@ -6287,7 +6532,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-(SCED)
+Required Development Schedule (SCED)
 \end_layout
 
 \end_inset
@@ -6296,7 +6541,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Very High
 \end_layout
 
 \end_inset
@@ -6305,7 +6550,7 @@ Value
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.00
 \end_layout
 
 \end_inset
