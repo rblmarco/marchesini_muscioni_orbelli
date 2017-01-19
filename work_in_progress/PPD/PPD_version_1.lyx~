@@ -5760,6 +5760,7 @@ Final result
 
 \begin_layout Standard
 \begin_inset Float table
+placement H
 wide false
 sideways false
 status open
@@ -5772,7 +5773,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-1.5cm}{}
+begin{adjustwidth}{-0.6cm}{}
 \end_layout
 
 \end_inset
