@@ -562,13 +562,14 @@ Size estimation: Function Points
 \end_layout
 
 \begin_layout Standard
-This section is built using the Function Point approach to evalute the complexit
-y and the quality of the developed software.
+This section is built using the Function Points approach to evalute the
+ complexity and the quality of the developed software.
  This approach provides a dimensionless parameter to evaluate the functionalitie
-s provided by the software.
- The Function Point reduces the abstraction of the product, giving concrete
- datas to evalute the prooject.
- The tables below...
+s of the software.
+ The Function Points reduces the abstraction of the product, giving concrete
+ datas to evalute the project.
+ The tables below represents the Function Points value that are used in
+ order to assign complexity held to our files and other parts of the project.
 \end_layout
 
 \begin_layout Subsubsection
@@ -577,20 +578,20 @@ Internal Logic Files
 
 \begin_layout Standard
 The PowerEnjoy system needs to store in its DataBase some informations about
- its users and in general about the service it provides, in order to ensure
+ its users and in general about the service it provides in order to ensure
  a good service.
- In this section, there are a detailed analysis about the Internal logic
+ In this section, there is a detailed analysis about the Internal logic
  files (ILFs) needed to the functionalities of the system.
  
 \end_layout
 
 \begin_layout Itemize
-User data: first the system has to know the informations about its user
+User data: first the system has to know the information about its users
  (clients who use the PowerEnjoy application).
  The DB has a table in which are stored the data required at the registration
- phase: name, surname, password, driving license, email and finally the
- telephone number.
- The system must acquire to the payment information at the 
+ phase: name, surname, password, driving license, email and the telephone
+ number.
+ The system must acquire the payment information at the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -598,25 +599,24 @@ sign up
 \begin_inset Quotes erd
 \end_inset
 
- , due to guarantee the functionality of automatic payment of the ride.
- This last information are stored in a different table from the one, explained
+ , in order to guarantee the functionality of automatic payment of the ride.
+ This last information is stored in a different table from the one explained
  before, in which are stored only general data about the users.
  
 \end_layout
 
 \begin_layout Itemize
-Employee data: the employee data are stored in two different table.
+Employee data: the employee data are stored in two different tables.
  The first table contains the general information of an employee, like the
  SSN number, name, surname, email address and the password of his/her account.
- The second table.
- Instead, the second tables contains information about the phone provided
+ Instead, the second table contains the information about the phone provided
  by the company, in particular the IMEI code (International Mobile Equipment
  Identity) to identify the physical device and the telephone number associated
  to it.
  It has been chosen to store the phone information in a different table,
- because the company may not provide a phone for every employee, so it is
- necessary to underline that these devices only could be used by an employee
- and, at the same time the company must find all the free devices.
+ because the company may not provide all its phones for the employees, so
+ it is necessary to underline that these devices only could be used by an
+ employee and, at the same time the company must find all the free devices.
 \end_layout
 
 \begin_layout Itemize
@@ -628,65 +628,72 @@ story
 \begin_inset Quotes erd
 \end_inset
 
- of employees' work are stored in a single table with a key ID, where it
- can be found detailed information of a work: date, time, car involved,
- couple of employee that have done the work, a brief description and a flag
- due to understand if the phase of the car involved is changed.
- The reason of that choice (use of a flag) is that an employee could remove
- a car from his/her list due to force majeur, left the work undone.
+ of employees' works are stored in a single table with an ID as primary
+ key, where it can be found detailed information of a work: date, time,
+ car involved,the couple of employees that have done the work, a brief descripti
+on and a flag in order to understand if the phase of the car involved is
+ changed.
+ That (use of a flag) because an employee could remove a car from his/her
+ list due to force majeur, leaving the work undone.
 \end_layout
 
 \begin_layout Itemize
-List data: the list data are an important part of our system.
+List data: the list data are very important for the system.
  In this table are stored the necessary information in order to identify
- a list of a car: id of the list, and the two employees whose take care
- of the current list.
+ a list of a cars: id of the list and the two employees who has to take
+ care of the current list.
  The cars that are included in the list are stored in another table so the
- sysem has to execute a query on the id of the list, which a car also has,
- to found all the members of the list.
+ sysem has to execute a query on the id of the list to found all the members
+ of the list (the specifications of that type of query can be found in the
+ DD document).
 \end_layout
 
 \begin_layout Itemize
-Car data: this internal files contains all the information about the car
- which are managed by the PowerEnjoy system: code (key of the table) used
- by users to open/close the car, license plate, battery level, number of
- seats used and the information to identify the position of the car (longitude
+Car data: this internal files contain all the information about the cars
+ which are managed by the PowerEnjoy system: code (primary key) used by
+ the users to open/close the cars, license plate, battery level, number
+ of seats and the information to identify the position of the cars (longitude
  and latitude).
- The information about the phase of the car (so the state in which it is)
- are stored in a differnte table, containing the id of the car and its actual
+ The information about the phase of the cars (that determinate the car state)
+ are stored in a different table, containing the id of the car and its actual
  phase.
- The use of two table in justified by a simpler management of the queries
- which are intereste only in the phase of the car.
+ The use of two tables simplify the management of the queries that only
+ deal with the phase of the car.
+ What is mentioined in this bullet lead us to set the complexity level to
+ low;
 \end_layout
 
 \begin_layout Itemize
-Reservation data: the information about a reservation are store in a tbale
+Reservation data: the information about a reservation are stored in a table
  containing the id of the reservation, the date, the initial time and the
  final time.
- To obtain details about the user who have done the reservation or the ride
- connected to ita, it is necessary to execute queries that involved other
- data structures.
- 
+ To obtain details about the users who have done the reservation or the
+ ride , it is necessary to execute queries that involved other data structures.
+ So that the level is set to hight;
 \end_layout
 
 \begin_layout Itemize
-Ride data: the ride data structure uses a two-level structure.
- In the first tbale there are the generale information to identify a ride:
- id, starting and final longitude and latitude and the number of passengers.
+Ride data: the ride data is build with on a two-level structure.
+ In the first table there is the general information to identify a ride:
+ id, starting longitude, latitude, final longitude, latitude and the number
+ of passengers.
  The second table of this data structure contains the information about
  the payment of the ride (id, time, price, type of discount, quantity of
  discount).
+ The level of complexity is low;
 \end_layout
 
 \begin_layout Itemize
 Area data: this data structure contains two tables in order to distinguish
- thw differtn area that are managed by the PowerEnjoy system.
- The first table contains information about the speacial areas, so latitude
- and longitude to identify the center of the area, the radius and the plugs
- which are available in this zone.
+ the different aresa that are managed by the PowerEnjoy system.
+ The special areas table contains the followings attribute: latitude, longitude,
+ both uniquely identified the center, the radius and the number of plugs
+ available.
  The second table contains information about the safe area external point:
- <TODO paola + guido : dire i campi (latitude, longitude, order) e spiegare
- a cosa si riferiscono e cosa significano>.
+ longitude, latitude and an order attribute, needed for the intepolation
+ algorithm.
+ The complexity of that files is set to low, in actual facts the difficult
+ problem is the interpolation algorithms.
 \end_layout
 
 \begin_layout Standard
@@ -732,6 +739,13 @@ Google Map service
 \end_layout
 
 \begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The system will be integrated with Google Map trough Google Map API.
  The data returned from Google are GeoJSON vectors, a format used to save
  and exchange geospatial data over the internet.
@@ -754,6 +768,13 @@ Our system will use GeoJSON Google implementation in order to treat that
 
 \begin_layout Paragraph*
 SMS service
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -785,6 +806,13 @@ We have never used that kind of APIs, but, reading the documentation, we
 
 \begin_layout Paragraph*
 Payment service
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -823,10 +851,10 @@ External Inputs
 \end_layout
 
 \begin_layout Standard
-The PowerEnjoy system provides a great number of functionalities which supports
- interactions with people who use the application or the web site.
- In this section the various interactions are explained and grouped by type
- of user:
+The PowerEnjoy system provides a great number of functionalities which support
+ interactions between people, the application or the web site.
+ In this section the various interactions are explained and grouped by types
+ of users:
 \end_layout
 
 \begin_layout Paragraph*
@@ -835,15 +863,15 @@ General user:
 
 \begin_layout Itemize
 Sign in: this operation is simple because it involved only the account manager,
- which has to verify the credential used to sign in.
- It yelds...
+ which has to verify the login credentials used to sign in.
+ It yelds 3 FPs.
 \end_layout
 
 \begin_layout Itemize
 Sign up: this operation has an average complexity because the system has
- to verify all the credentials inserted by the user and especially the payments
- information (with a symbolic withdraw).
- It yelds...
+ to verify all the credentials inserted by the user and especially the payment
+ information.
+ It yelds 4 FPs.
 \end_layout
 
 \begin_layout Paragraph*
@@ -851,50 +879,53 @@ User verified:
 \end_layout
 
 \begin_layout Itemize
-Look for car nearby: this operations has an hight complexity because it
- is a query on the DB, searching for the car nearby the position detected
- or inserted by te user.
- It also upload all the information about the cars returned.
- It yelds...
+Look for car nearby: this operation has an hight level of complexity.
+ It is based on an algorithm that queries the DB, asking for nearby car,
+ using the position of the user as a parameter.
+ It also has to managed a great number o attributes for all the cars.
+ It yelds 6 FPs.
 \end_layout
 
 \begin_layout Itemize
-Insert postition: this is a simple operation, the user insert manually his
- position.
- It yelds...
+Insert postition: this is a simple operation, the user inserts manually
+ his/her position.
+ It yelds 3 FPs.
 \end_layout
 
 \begin_layout Itemize
-Select the car: given that the upload of the car informations it was already
- done, this operation simply visualize the information of the car selected.
- It yelds...
+Select the car: thanks to the look for car nearby operation, the user has
+ already all the information needed to select a car.
+ It yelds 3 FPs.
 \end_layout
 
 \begin_layout Itemize
-Reserve that car: this operation has an hight complexity because it involves
- a lot of component which have to communicate and to query the DB uploading
- it.
- It also involves the notification to the users.
- yelds...
+Reserve that car: this operation has a hight complexity.
+ It involves a lot of components which have to communicate, to query and
+ to update the DB.
+ It also sends notifications to the users.
+ It yelds 6 FPs.
 \end_layout
 
 \begin_layout Itemize
-Cancel the reservation: this is an operation of average complexity because
- it calls a controller which update the DB, and then, with a notify to the
- car controller, the table of cars are also updated.
- It yelds...
+Cancel the reservation: this is an operation of an average complexity.
+ It calls a controller which has to update the DB, and then, with a notify
+ to the car controller, the table of cars are also updated.
+ It yelds 4 FPs.
 \end_layout
 
 \begin_layout Itemize
-See the way to the car: this operation has an avergae complexity because
- it requires the interaction with the map gateway to compute the best way
- to reach the car and also the elaboration of data send to the system from
- the gateway.
- It yelds...
+See the way to the car: this operation has an hight complexity.
+ It requires the interaction with the map gateway to generate the path to
+ the car.
+ The information returned from the gateway need also a medium computation.
+ It yelds 6 FPs.
 \end_layout
 
 \begin_layout Itemize
-Open the car:
+Open the car: this operation has a high level of complexity.
+ That assertion is based on the possible problems that this operation can
+ create, as a malfunctioning in the car sensor.
+ So we decided to give 6 FPs;
 \end_layout
 
 \begin_layout Itemize
@@ -908,7 +939,7 @@ Sign up
 
  operation) because the system has to verify the new credentials inserted
  by the user.
- It yelds...
+ It yelds 4 FPs.
 \end_layout
 
 \begin_layout Paragraph*
@@ -916,36 +947,31 @@ Employee:
 \end_layout
 
 \begin_layout Itemize
-Look for my list: this operation has an hight complexity: it necessary to
- do a complex query on the db, lookinh for the car that needs attention.
- The list contains also all the informazione It yelds...
+Look for my list: this operation has a hight complexity: it needs a complex
+ query on the DB, looking for the cars that require attention.
+ The list contains also all the cars information It yelds 6 FPs;
 \end_layout
 
 \begin_layout Itemize
-See the state of the car: given that the upload of the car informations
- it was already done in 
-\begin_inset Quotes eld
-\end_inset
-
-Look for my list
-\begin_inset Quotes erd
-\end_inset
-
-, this operation simply visualize the information of the car selected.
- It yelds...
+See the state of the car: thanks to the look for my list operation, the
+ employee has already all the information needed to select a car.
+ It yelds 3 FPs;
 \end_layout
 
 \begin_layout Itemize
-See car in a map: 
+See car in a map: this operation has a high level of complexity.
+ It has to call the map gateway in order to draw the map with the car placed
+ in their current positions.
+ It yelds 6 FPs;
 \end_layout
 
 \begin_layout Itemize
 Change state of car: this operation has an hight complexity.
- When an employee ends its work, it has to change the phase of the car.
+ When a work is finisched, the employee has to change the phase of the car.
  This functionality includes both queries on the DB and interactions between
- the controllers, in order to change the phase and also to remove the car,
- updating the tables involved.
- It yelds...
+ the controllers.
+ It also requires to remove the car and consequently updates the DB.
+ It yelds 6 FPs.
 \end_layout
 
 \begin_layout Paragraph*
@@ -956,29 +982,31 @@ Car driver:
 Skip that page: this operation is simple, it only redirects the user to
  another page, without particular query or interaction with the components
  of the system.
- It yelds...
+ It yelds 3 FPs.
 \end_layout
 
 \begin_layout Itemize
-Activate money saving option: this operation has an hight complexity because
- it requeires queries on the DB to show the Safe Area nearby the destination
- of the user and also to compute the plug free.
- It also update the discount that must to be applied at the end of the ride.
- It yelds...
+Activate money saving option: this operation has an hight complexity.
+ It requires queries on the DB to show the Special Area nearby the destination
+ of the user.
+ It also include the computation of the free plugs.
+ Finally that operation has to update the discount that must to be applied
+ at the end of the ride.
+ It yelds 6 FPs.
 \end_layout
 
 \begin_layout Itemize
 Call / Terminate the call: this is a straighforward operation, it simply
- call the service center thanks to the mobile device included in the car
+ calls the service center, thanks to the mobile device included in the car
  system.
- It yelds...
+ It yelds 3 FPs.
 \end_layout
 
 \begin_layout Itemize
-Finish the ride: this operation is a strightforwar operation, in actual
- fact this functionality update only a table of the DB setting the state
- of the ride.
- It yelds...
+Finish the ride: this operation is an average operation.
+ In actual fact this functionality updates only a table of the DB, modifying
+ the state of the ride.
+ It yelds 4 FPs.
 \end_layout
 
 \begin_layout Subsubsection
@@ -986,7 +1014,8 @@ External Inquiries
 \end_layout
 
 \begin_layout Standard
-<TODO: sono le richieste degli utenti rivolte all'ottenimento di dati.>
+<TODO: GUIDO sono le richieste degli utenti rivolte all'ottenimento di dati.
+ Otenere le prorie info dell'account>
 \end_layout
 
 \begin_layout Subsubsection
@@ -994,20 +1023,24 @@ External Outputs
 \end_layout
 
 \begin_layout Standard
-The PowerEnjoy system needs also to intercat directly with the user, send
- him/her mail to upload the state of his/her activities:
+The PowerEnjoy system needs also to interact directly with the user, sending
+ him/her a mail or a SMS in order to upload the state of his/her activities:
 \end_layout
 
 \begin_layout Itemize
-Notification to the user to send his/her credentials.
+Notification to the user to send his/her credentials;
 \end_layout
 
 \begin_layout Itemize
-Mail to the user to send the bill of his/her ride.
+Mail to the user to send the bill of his/her ride;
 \end_layout
 
 \begin_layout Itemize
-Notification send to the user with the reservation message.
+Notification sent to the user through the reservation message.
+\end_layout
+
+\begin_layout Standard
+<TODO: tabella con tutti low>
 \end_layout
 
 \begin_layout Subsubsection
