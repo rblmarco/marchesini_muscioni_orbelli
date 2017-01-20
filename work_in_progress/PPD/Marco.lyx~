@@ -717,12 +717,14 @@ General user:
 \begin_layout Itemize
 Sign in: this operation is simple because it involved only the account manager,
  which has to verify the credential used to sign in.
+ It yelds...
 \end_layout
 
 \begin_layout Itemize
-Sign up: this operation has an hight complexity because the system has to
- verify all the credentials inserted by the user and especially the payments
+Sign up: this operation has an average complexity because the system has
+ to verify all the credentials inserted by the user and especially the payments
  information (with a symbolic withdraw).
+ It yelds...
 \end_layout
 
 \begin_layout Paragraph*
@@ -730,9 +732,10 @@ User verified:
 \end_layout
 
 \begin_layout Itemize
-Look for car nearby: this operations has an average (????) complexity because
- it is a query on the DB, searching for the car nearby the position detected
+Look for car nearby: this operations has an hight complexity because it
+ is a query on the DB, searching for the car nearby the position detected
  or inserted by te user.
+ It also upload all the information about the cars returned.
  It yelds...
 \end_layout
 
@@ -743,19 +746,32 @@ Insert postition: this is a simple operation, the user insert manually his
 \end_layout
 
 \begin_layout Itemize
-Select the car:
+Select the car: given that the upload of the car informations it was already
+ done, this operation simply visualize the information of the car selected.
+ It yelds...
 \end_layout
 
 \begin_layout Itemize
-Reserve that car:
+Reserve that car: this operation has an hight complexity because it involves
+ a lot of component which have to communicate and to query the DB uploading
+ it.
+ It also involves the notification to the users.
+ yelds...
 \end_layout
 
 \begin_layout Itemize
-Cancel the reservation:
+Cancel the reservation: this is an operation of average complexity because
+ it calls a controller which update the DB, and then, with a notify to the
+ car controller, the table of cars are also updated.
+ It yelds...
 \end_layout
 
 \begin_layout Itemize
-See the way to the car:
+See the way to the car: this operation has an avergae complexity because
+ it requires the interaction with the map gateway to compute the best way
+ to reach the car and also the elaboration of data send to the system from
+ the gateway.
+ It yelds...
 \end_layout
 
 \begin_layout Itemize
@@ -763,7 +779,17 @@ Open the car:
 \end_layout
 
 \begin_layout Itemize
-Modify:
+Modify: this operation has an aveage complexity (according to the 
+\begin_inset Quotes eld
+\end_inset
+
+Sign up
+\begin_inset Quotes erd
+\end_inset
+
+ operation) because the system has to verify the new credentials inserted
+ by the user.
+ It yelds...
 \end_layout
 
 \begin_layout Paragraph*
@@ -771,19 +797,36 @@ Employee:
 \end_layout
 
 \begin_layout Itemize
-Look for my list:
+Look for my list: this operation has an hight complexity: it necessary to
+ do a complex query on the db, lookinh for the car that needs attention.
+ The list contains also all the informazione It yelds...
 \end_layout
 
 \begin_layout Itemize
-See the state of the car:
+See the state of the car: given that the upload of the car informations
+ it was already done in 
+\begin_inset Quotes eld
+\end_inset
+
+Look for my list
+\begin_inset Quotes erd
+\end_inset
+
+, this operation simply visualize the information of the car selected.
+ It yelds...
 \end_layout
 
 \begin_layout Itemize
-See car in a map:
+See car in a map: 
 \end_layout
 
 \begin_layout Itemize
-Change state of car:
+Change state of car: this operation has an hight complexity.
+ When an employee ends its work, it has to change the phase of the car.
+ This functionality includes both queries on the DB and interactions between
+ the controllers, in order to change the phase and also to remove the car,
+ updating the tables involved.
+ It yelds...
 \end_layout
 
 \begin_layout Paragraph*
@@ -791,19 +834,32 @@ Car driver:
 \end_layout
 
 \begin_layout Itemize
-Skip that page:
+Skip that page: this operation is simple, it only redirects the user to
+ another page, without particular query or interaction with the components
+ of the system.
+ It yelds...
 \end_layout
 
 \begin_layout Itemize
-Activate money saving option:
+Activate money saving option: this operation has an hight complexity because
+ it requeires queries on the DB to show the Safe Area nearby the destination
+ of the user and also to compute the plug free.
+ It also update the discount that must to be applied at the end of the ride.
+ It yelds...
 \end_layout
 
 \begin_layout Itemize
-Call / Terminate the call:
+Call / Terminate the call: this is a straighforward operation, it simply
+ call the service center thanks to the mobile device included in the car
+ system.
+ It yelds...
 \end_layout
 
 \begin_layout Itemize
-Finish the ride:
+Finish the ride: this operation is a strightforwar operation, in actual
+ fact this functionality update only a table of the DB setting the state
+ of the ride.
+ It yelds...
 \end_layout
 
 \begin_layout Subsubsection
