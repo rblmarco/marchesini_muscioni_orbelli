@@ -562,13 +562,14 @@ Size estimation: Function Points
 \end_layout
 
 \begin_layout Standard
-This section is built using the Function Point approach to evalute the complexit
-y and the quality of the developed software.
+This section is built using the Function Points approach to evalute the
+ complexity and the quality of the developed software.
  This approach provides a dimensionless parameter to evaluate the functionalitie
-s provided by the software.
- The Function Point reduces the abstraction of the product, giving concrete
- datas to evalute the prooject.
- The tables below...
+s of the software.
+ The Function Points reduces the abstraction of the product, giving concrete
+ datas to evalute the project.
+ The tables below represents the Function Points value that are used in
+ order to assign complexity held to our files and other parts of the project.
 \end_layout
 
 \begin_layout Subsubsection
@@ -577,20 +578,20 @@ Internal Logic Files
 
 \begin_layout Standard
 The PowerEnjoy system needs to store in its DataBase some informations about
- its users and in general about the service it provides, in order to ensure
+ its users and in general about the service it provides in order to ensure
  a good service.
- In this section, there are a detailed analysis about the Internal logic
+ In this section, there is a detailed analysis about the Internal logic
  files (ILFs) needed to the functionalities of the system.
  
 \end_layout
 
 \begin_layout Itemize
-User data: first the system has to know the informations about its user
+User data: first the system has to know the information about its users
  (clients who use the PowerEnjoy application).
  The DB has a table in which are stored the data required at the registration
- phase: name, surname, password, driving license, email and finally the
- telephone number.
- The system must acquire to the payment information at the 
+ phase: name, surname, password, driving license, email and the telephone
+ number.
+ The system must acquire the payment information at the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -598,8 +599,8 @@ sign up
 \begin_inset Quotes erd
 \end_inset
 
- , due to guarantee the functionality of automatic payment of the ride.
- This last information are stored in a different table from the one, explained
+ , in order to guarantee the functionality of automatic payment of the ride.
+ This last information is stored in a different table from the one explained
  before, in which are stored only general data about the users.
  
 \end_layout
