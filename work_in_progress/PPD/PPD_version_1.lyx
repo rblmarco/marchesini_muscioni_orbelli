@@ -701,7 +701,116 @@ External Logic Files
 \end_layout
 
 \begin_layout Standard
-<TODO: mappe, pagamento, notifiche: sms e email>
+In this section all the external sources that are used by the system will
+ be analyzed with respect to the function points approach.
+ According to the previous documents the external sources are:
+\end_layout
+
+\begin_layout Itemize
+Google Map service;
+\end_layout
+
+\begin_layout Itemize
+SMS service;
+\end_layout
+
+\begin_layout Itemize
+Mail service;
+\end_layout
+
+\begin_layout Itemize
+Payment service (through PayPal).
+\end_layout
+
+\begin_layout Standard
+However the Mail service does not need any kind of files, in actual fact
+ the system sends directly the mail with an automated text.
+\end_layout
+
+\begin_layout Paragraph*
+Google Map service
+\end_layout
+
+\begin_layout Standard
+The system will be integrated with Google Map trough Google Map API.
+ The data returned from Google are GeoJSON vectors, a format used to save
+ and exchange geospatial data over the internet.
+ That service is used for:
+\end_layout
+
+\begin_layout Itemize
+Build the path that connect the position of a car to the position of an
+ user;
+\end_layout
+
+\begin_layout Itemize
+Create the map in which the car are visualized at the moment of the reservation.
+\end_layout
+
+\begin_layout Standard
+Our system will use GeoJSON Google implementation in order to treat that
+ data, and the complexity level is set to an average level.
+\end_layout
+
+\begin_layout Paragraph*
+SMS service
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "par:SMS service"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The system is also integrated with an SMS service in order to perform the
+ notifications and the commands defined in the first part of the project.
+ SMS general API will be used in order to perform the integration with the
+ SMS provider.
+ The system will treat with XML SMS type files in order to:
+\end_layout
+
+\begin_layout Itemize
+Receive an SMS and use that to do action on the car.
+\end_layout
+
+\begin_layout Standard
+We have never used that kind of APIs, but, reading the documentation, we
+ decide to give a medium value of complexity to that part of the system.
+\end_layout
+
+\begin_layout Paragraph*
+Payment service
+\end_layout
+
+\begin_layout Standard
+Following the PayPal API documentation the system will be integrated with
+ that service with a built-in document file defined by PayPal: PDT (Payment
+ Data Transfer).
+ The action of the system that treat that type of documents a quite complex,
+ beacuse the algorithms must be very secure and optimized.
+ The PDT document will be used in order to:
+\end_layout
+
+\begin_layout Itemize
+Save the payment of a ride;
+\end_layout
+
+\begin_layout Itemize
+Take the aknowledge of the symbolic withdraw at the registration phase.
+\end_layout
+
+\begin_layout Standard
+According to what is mentioned in that paragraph the level of complexity
+ is set to high.
+\end_layout
+
+\begin_layout Standard
+<TODO: mettere quei cazzo di function points.>
 \end_layout
 
 \begin_layout Subsubsection
