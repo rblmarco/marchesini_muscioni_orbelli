@@ -572,6 +572,11 @@ s of the software.
  order to assign complexity held to our files and other parts of the project.
 \end_layout
 
+\begin_layout Standard
+<TODO: GUIDO tabella con le cose generali con record e data element e con
+ FPS finali per ogni file>
+\end_layout
+
 \begin_layout Subsubsection
 Internal Logic Files
 \end_layout
@@ -601,8 +606,7 @@ sign up
 
  , in order to guarantee the functionality of automatic payment of the ride.
  This last information is stored in a different table from the one explained
- before, in which are stored only general data about the users.
- 
+ before, in which are stored only general data about the users;
 \end_layout
 
 \begin_layout Itemize
@@ -616,7 +620,7 @@ Employee data: the employee data are stored in two different tables.
  It has been chosen to store the phone information in a different table,
  because the company may not provide all its phones for the employees, so
  it is necessary to underline that these devices only could be used by an
- employee and, at the same time the company must find all the free devices.
+ employee and, at the same time the company must find all the free devices;
 \end_layout
 
 \begin_layout Itemize
@@ -634,7 +638,7 @@ story
 on and a flag in order to understand if the phase of the car involved is
  changed.
  That (use of a flag) because an employee could remove a car from his/her
- list due to force majeur, leaving the work undone.
+ list due to force majeur, leaving the work undone;
 \end_layout
 
 \begin_layout Itemize
@@ -645,7 +649,7 @@ List data: the list data are very important for the system.
  The cars that are included in the list are stored in another table so the
  sysem has to execute a query on the id of the list to found all the members
  of the list (the specifications of that type of query can be found in the
- DD document).
+ DD document);
 \end_layout
 
 \begin_layout Itemize
@@ -699,8 +703,12 @@ Area data: this data structure contains two tables in order to distinguish
 \begin_layout Standard
 
 \shape italic
- (Note: this section is extremely connected with the entity-relationship
+(Note: this section is extremely connected with the entity-relationship
  diagram, that is contained in the DD document.)
+\end_layout
+
+\begin_layout Standard
+<TODO: GUIDO tabella con tutte le funzioni con coloenne complessita e FPS>
 \end_layout
 
 \begin_layout Subsubsection
@@ -841,6 +849,10 @@ According to what is mentioned in that paragraph the level of complexity
 <TODO: mettere quei cazzo di function points.>
 \end_layout
 
+\begin_layout Standard
+<TODO: GUIDO tabella con tutte le funzioni con coloenne complessita e FPS>
+\end_layout
+
 \begin_layout Subsubsection
 External Inputs 
 \end_layout
@@ -864,7 +876,7 @@ General user:
 \begin_layout Itemize
 Sign in: this operation is simple because it involved only the account manager,
  which has to verify the login credentials used to sign in.
- It yelds 3 FPs.
+ It yelds 3 FPs;
 \end_layout
 
 \begin_layout Itemize
@@ -883,19 +895,19 @@ Look for car nearby: this operation has an hight level of complexity.
  It is based on an algorithm that queries the DB, asking for nearby car,
  using the position of the user as a parameter.
  It also has to managed a great number o attributes for all the cars.
- It yelds 6 FPs.
+ It yelds 6 FPs;
 \end_layout
 
 \begin_layout Itemize
 Insert postition: this is a simple operation, the user inserts manually
  his/her position.
- It yelds 3 FPs.
+ It yelds 3 FPs;
 \end_layout
 
 \begin_layout Itemize
 Select the car: thanks to the look for car nearby operation, the user has
  already all the information needed to select a car.
- It yelds 3 FPs.
+ It yelds 3 FPs;
 \end_layout
 
 \begin_layout Itemize
@@ -903,14 +915,14 @@ Reserve that car: this operation has a hight complexity.
  It involves a lot of components which have to communicate, to query and
  to update the DB.
  It also sends notifications to the users.
- It yelds 6 FPs.
+ It yelds 6 FPs;
 \end_layout
 
 \begin_layout Itemize
 Cancel the reservation: this is an operation of an average complexity.
  It calls a controller which has to update the DB, and then, with a notify
  to the car controller, the table of cars are also updated.
- It yelds 4 FPs.
+ It yelds 4 FPs;
 \end_layout
 
 \begin_layout Itemize
@@ -918,7 +930,7 @@ See the way to the car: this operation has an hight complexity.
  It requires the interaction with the map gateway to generate the path to
  the car.
  The information returned from the gateway need also a medium computation.
- It yelds 6 FPs.
+ It yelds 6 FPs;
 \end_layout
 
 \begin_layout Itemize
@@ -982,7 +994,7 @@ Car driver:
 Skip that page: this operation is simple, it only redirects the user to
  another page, without particular query or interaction with the components
  of the system.
- It yelds 3 FPs.
+ It yelds 3 FPs;
 \end_layout
 
 \begin_layout Itemize
@@ -992,14 +1004,14 @@ Activate money saving option: this operation has an hight complexity.
  It also include the computation of the free plugs.
  Finally that operation has to update the discount that must to be applied
  at the end of the ride.
- It yelds 6 FPs.
+ It yelds 6 FPs;
 \end_layout
 
 \begin_layout Itemize
 Call / Terminate the call: this is a straighforward operation, it simply
  calls the service center, thanks to the mobile device included in the car
  system.
- It yelds 3 FPs.
+ It yelds 3 FPs;
 \end_layout
 
 \begin_layout Itemize
@@ -1009,6 +1021,10 @@ Finish the ride: this operation is an average operation.
  It yelds 4 FPs.
 \end_layout
 
+\begin_layout Standard
+<TODO: GUIDO tabella con tutte le funzioni con coloenne complessita e FPS>
+\end_layout
+
 \begin_layout Subsubsection
 External Inquiries
 \end_layout
@@ -1016,6 +1032,10 @@ External Inquiries
 \begin_layout Standard
 <TODO: GUIDO sono le richieste degli utenti rivolte all'ottenimento di dati.
  Otenere le prorie info dell'account>
+\end_layout
+
+\begin_layout Standard
+<TODO: GUIDO tabella con tutte le funzioni con coloenne complessita e FPS>
 \end_layout
 
 \begin_layout Subsubsection
@@ -1053,6 +1073,196 @@ Overall Estimation
 
 \begin_layout Standard
 The following table show the results of our extimation:
+\end_layout
+
+\begin_layout Standard
+<TODO: GUIDO tabella i file e loro FPS>
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Function Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Value
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Internal Logic Files
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+External Logic Files
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+External Inputs
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+85
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+External Inqueries
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+External output
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Estimation in FPs.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
