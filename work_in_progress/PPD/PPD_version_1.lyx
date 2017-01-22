@@ -568,6 +568,29 @@ WebApp
 \end_layout
 
 \begin_layout Itemize
+
+\series bold
+GeoJSON 
+\series default
+is a format for encoding a variety of geographic data structures use by
+ Google Map API.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Payment Data Transfer
+\series default
+ (
+\series bold
+PDT
+\series default
+) is a notification service that, once activated, can send transaction-related
+ information immediately to merchants who are using PayPal (PayPal Payments
+ Standard).
+\end_layout
+
+\begin_layout Itemize
 COCOMO II
 \end_layout
 
@@ -3505,7 +3528,11 @@ unprecedented
 \begin_inset Text
 
 \begin_layout Plain Layout
+Largely unprecedented
+\end_layout
 
+\begin_layout Plain Layout
+4.96
 \end_layout
 
 \end_inset
@@ -3514,7 +3541,11 @@ unprecedented
 \begin_inset Text
 
 \begin_layout Plain Layout
+Somewhat unprecedented
+\end_layout
 
+\begin_layout Plain Layout
+3.72
 \end_layout
 
 \end_inset
@@ -3523,7 +3554,11 @@ unprecedented
 \begin_inset Text
 
 \begin_layout Plain Layout
+Generally familiar
+\end_layout
 
+\begin_layout Plain Layout
+2.48
 \end_layout
 
 \end_inset
@@ -3532,7 +3567,15 @@ unprecedented
 \begin_inset Text
 
 \begin_layout Plain Layout
+Largely
+\end_layout
 
+\begin_layout Plain Layout
+familiar
+\end_layout
+
+\begin_layout Plain Layout
+1.24
 \end_layout
 
 \end_inset
@@ -3541,7 +3584,15 @@ unprecedented
 \begin_inset Text
 
 \begin_layout Plain Layout
+Thoroughly
+\end_layout
 
+\begin_layout Plain Layout
+familiar
+\end_layout
+
+\begin_layout Plain Layout
+0.00
 \end_layout
 
 \end_inset
@@ -3587,7 +3638,11 @@ Rigorous
 \begin_inset Text
 
 \begin_layout Plain Layout
+Occasional relaxation
+\end_layout
 
+\begin_layout Plain Layout
+4.05
 \end_layout
 
 \end_inset
@@ -3596,7 +3651,11 @@ Rigorous
 \begin_inset Text
 
 \begin_layout Plain Layout
+Some relaxation
+\end_layout
 
+\begin_layout Plain Layout
+3.04
 \end_layout
 
 \end_inset
@@ -3605,7 +3664,11 @@ Rigorous
 \begin_inset Text
 
 \begin_layout Plain Layout
+General conformity
+\end_layout
 
+\begin_layout Plain Layout
+2.03
 \end_layout
 
 \end_inset
@@ -3614,7 +3677,15 @@ Rigorous
 \begin_inset Text
 
 \begin_layout Plain Layout
+Some
+\end_layout
 
+\begin_layout Plain Layout
+conformity
+\end_layout
+
+\begin_layout Plain Layout
+1.01
 \end_layout
 
 \end_inset
@@ -3623,7 +3694,11 @@ Rigorous
 \begin_inset Text
 
 \begin_layout Plain Layout
+General goals
+\end_layout
 
+\begin_layout Plain Layout
+0.00
 \end_layout
 
 \end_inset
@@ -3652,7 +3727,11 @@ RESL
 \begin_inset Text
 
 \begin_layout Plain Layout
+Little (20%)
+\end_layout
 
+\begin_layout Plain Layout
+7.07
 \end_layout
 
 \end_inset
@@ -3661,7 +3740,11 @@ RESL
 \begin_inset Text
 
 \begin_layout Plain Layout
+Some (40%)
+\end_layout
 
+\begin_layout Plain Layout
+5.65
 \end_layout
 
 \end_inset
@@ -3670,7 +3753,11 @@ RESL
 \begin_inset Text
 
 \begin_layout Plain Layout
+Often (60%)
+\end_layout
 
+\begin_layout Plain Layout
+4.24
 \end_layout
 
 \end_inset
@@ -3679,7 +3766,11 @@ RESL
 \begin_inset Text
 
 \begin_layout Plain Layout
+Generally (75%)
+\end_layout
 
+\begin_layout Plain Layout
+2.83
 \end_layout
 
 \end_inset
@@ -3705,7 +3796,11 @@ Mostly (90%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+Full (100%)
+\end_layout
 
+\begin_layout Plain Layout
+0.00
 \end_layout
 
 \end_inset
@@ -3734,7 +3829,11 @@ TEAM
 \begin_inset Text
 
 \begin_layout Plain Layout
+Very difficult interactions
+\end_layout
 
+\begin_layout Plain Layout
+5.84
 \end_layout
 
 \end_inset
@@ -3743,7 +3842,11 @@ TEAM
 \begin_inset Text
 
 \begin_layout Plain Layout
+Some difficult interactions
+\end_layout
 
+\begin_layout Plain Layout
+4.38
 \end_layout
 
 \end_inset
@@ -3752,7 +3855,11 @@ TEAM
 \begin_inset Text
 
 \begin_layout Plain Layout
+Basically cooperative interactions
+\end_layout
 
+\begin_layout Plain Layout
+3.29
 \end_layout
 
 \end_inset
@@ -3761,7 +3868,11 @@ TEAM
 \begin_inset Text
 
 \begin_layout Plain Layout
+Largely cooperative
+\end_layout
 
+\begin_layout Plain Layout
+2.19
 \end_layout
 
 \end_inset
@@ -3770,7 +3881,15 @@ TEAM
 \begin_inset Text
 
 \begin_layout Plain Layout
+Highly
+\end_layout
 
+\begin_layout Plain Layout
+cooperative
+\end_layout
+
+\begin_layout Plain Layout
+1.10
 \end_layout
 
 \end_inset
@@ -3877,7 +3996,19 @@ The Estimated Equivalent Process Maturity Level (EPML) or
 \begin_inset Text
 
 \begin_layout Plain Layout
+SW-CMM
+\end_layout
 
+\begin_layout Plain Layout
+Level 1
+\end_layout
+
+\begin_layout Plain Layout
+Lower
+\end_layout
+
+\begin_layout Plain Layout
+7.80
 \end_layout
 
 \end_inset
@@ -3886,7 +4017,19 @@ The Estimated Equivalent Process Maturity Level (EPML) or
 \begin_inset Text
 
 \begin_layout Plain Layout
+SW-CMM
+\end_layout
 
+\begin_layout Plain Layout
+Level 1
+\end_layout
+
+\begin_layout Plain Layout
+Upper
+\end_layout
+
+\begin_layout Plain Layout
+6.24
 \end_layout
 
 \end_inset
@@ -3906,13 +4049,10 @@ SW-CME
 Level 2
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
 
+\series bold
+4.68
 \end_layout
 
 \end_inset
@@ -3921,7 +4061,32 @@ Level 2
 \begin_inset Text
 
 \begin_layout Plain Layout
+SW-CMM
+\end_layout
 
+\begin_layout Plain Layout
+Level 3
+\end_layout
+
+\begin_layout Plain Layout
+3.12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SW-CMM
+\end_layout
+
+\begin_layout Plain Layout
+Level 4
+\end_layout
+
+\begin_layout Plain Layout
+1.56
 \end_layout
 
 \end_inset
@@ -3930,7 +4095,15 @@ Level 2
 \begin_inset Text
 
 \begin_layout Plain Layout
+SW-CMM
+\end_layout
 
+\begin_layout Plain Layout
+Level 5
+\end_layout
+
+\begin_layout Plain Layout
+0.00
 \end_layout
 
 \end_inset
@@ -3947,7 +4120,7 @@ Level 2
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-TIME cost driver.
+TIME scale factors diagram.
 \end_layout
 
 \end_inset
@@ -9898,6 +10071,30 @@ name "sec:schedule"
 \end_layout
 
 \begin_layout Standard
+The project schedule management plan is a component of the project plan
+ document that establishes the activities for developing, monitoring, and
+ controlling the project
+\end_layout
+
+\begin_layout Standard
+So in this section we’re going to provide a general, high-level schedule
+ giving information about the development progress of the system.
+ The aim of this part is to establish a general baseline of the project
+ line up.
+ More refined schedules will be defined during the course of the project,
+ in order to manage the internal organization of the single development
+ phases.
+ The diagrams reported below are not completely realistic; in actual fact
+ we are not going to develop the project.
+ So that is only an ipothetical view of the time schedule of the development
+ phases.
+ However, according to the previous analysis that we have made in that document
+ we have tried to do these schedule as more realistica s possible.
+ We have hypothesized that the whole realization of the project covering
+ a period from TODO September to TODO … 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -9919,6 +10116,27 @@ name "sec:resource allocation"
 \end_layout
 
 \begin_layout Standard
+The project resource allocation management plan is a component of the project
+ plan document that establishes which activities are carried out by the
+ PowerEnjoy developer.
+\end_layout
+
+\begin_layout Standard
+So in this section we’re going to provide a general overview of how the
+ tasks defined by the schedule in the previous section will be fulflill
+ between the three members of the PowerEnjoy development team.
+ More refined schedules will be defined during the project in order to manage
+ the internal organization of the single development phases.
+ As we already mentioned in the previous section the diagrams reported below
+ are not completely realistic, in fact we have also included activities
+ in the requirement analysis, design phases that won’t actually take place,
+ like the stakeholders meetings, as well as the full implementation phase.
+ This has been done to have achieve a more realistic depiction of how the
+ development process could go.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -9936,6 +10154,10 @@ name "risk"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 

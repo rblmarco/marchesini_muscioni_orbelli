@@ -568,6 +568,29 @@ WebApp
 \end_layout
 
 \begin_layout Itemize
+
+\series bold
+GeoJSON 
+\series default
+is a format for encoding a variety of geographic data structures use by
+ Google Map API.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Payment Data Transfer
+\series default
+ (
+\series bold
+PDT
+\series default
+) is a notification service that, once activated, can send transaction-related
+ information immediately to merchants who are using PayPal (PayPal Payments
+ Standard).
+\end_layout
+
+\begin_layout Itemize
 COCOMO II
 \end_layout
 
@@ -3373,7 +3396,7 @@ begin{adjustwidth}{-1.5cm}{}
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="7">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="middle" width="3cm">
 <column alignment="center" valignment="middle" width="2cm">
 <column alignment="center" valignment="middle" width="2cm">
 <column alignment="center" valignment="middle" width="2cm">
@@ -3482,14 +3505,20 @@ PREC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Thoroughtly
 \end_layout
 
 \begin_layout Plain Layout
+
+\series bold
 unprecedented
 \end_layout
 
 \begin_layout Plain Layout
+
+\series bold
 6.20
 \end_layout
 
@@ -3499,7 +3528,11 @@ unprecedented
 \begin_inset Text
 
 \begin_layout Plain Layout
+Largely unprecedented
+\end_layout
 
+\begin_layout Plain Layout
+4.96
 \end_layout
 
 \end_inset
@@ -3508,7 +3541,11 @@ unprecedented
 \begin_inset Text
 
 \begin_layout Plain Layout
+Somewhat unprecedented
+\end_layout
 
+\begin_layout Plain Layout
+3.72
 \end_layout
 
 \end_inset
@@ -3517,7 +3554,11 @@ unprecedented
 \begin_inset Text
 
 \begin_layout Plain Layout
+Generally familiar
+\end_layout
 
+\begin_layout Plain Layout
+2.48
 \end_layout
 
 \end_inset
@@ -3526,7 +3567,15 @@ unprecedented
 \begin_inset Text
 
 \begin_layout Plain Layout
+Largely
+\end_layout
 
+\begin_layout Plain Layout
+familiar
+\end_layout
+
+\begin_layout Plain Layout
+1.24
 \end_layout
 
 \end_inset
@@ -3535,7 +3584,15 @@ unprecedented
 \begin_inset Text
 
 \begin_layout Plain Layout
+Thoroughly
+\end_layout
 
+\begin_layout Plain Layout
+familiar
+\end_layout
+
+\begin_layout Plain Layout
+0.00
 \end_layout
 
 \end_inset
@@ -3564,10 +3621,14 @@ FLEX
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Rigorous
 \end_layout
 
 \begin_layout Plain Layout
+
+\series bold
 5.07
 \end_layout
 
@@ -3577,7 +3638,11 @@ Rigorous
 \begin_inset Text
 
 \begin_layout Plain Layout
+Occasional relaxation
+\end_layout
 
+\begin_layout Plain Layout
+4.05
 \end_layout
 
 \end_inset
@@ -3586,7 +3651,11 @@ Rigorous
 \begin_inset Text
 
 \begin_layout Plain Layout
+Some relaxation
+\end_layout
 
+\begin_layout Plain Layout
+3.04
 \end_layout
 
 \end_inset
@@ -3595,7 +3664,11 @@ Rigorous
 \begin_inset Text
 
 \begin_layout Plain Layout
+General conformity
+\end_layout
 
+\begin_layout Plain Layout
+2.03
 \end_layout
 
 \end_inset
@@ -3604,7 +3677,15 @@ Rigorous
 \begin_inset Text
 
 \begin_layout Plain Layout
+Some
+\end_layout
 
+\begin_layout Plain Layout
+conformity
+\end_layout
+
+\begin_layout Plain Layout
+1.01
 \end_layout
 
 \end_inset
@@ -3613,7 +3694,11 @@ Rigorous
 \begin_inset Text
 
 \begin_layout Plain Layout
+General goals
+\end_layout
 
+\begin_layout Plain Layout
+0.00
 \end_layout
 
 \end_inset
@@ -3642,7 +3727,50 @@ RESL
 \begin_inset Text
 
 \begin_layout Plain Layout
+Little (20%)
+\end_layout
 
+\begin_layout Plain Layout
+7.07
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Some (40%)
+\end_layout
+
+\begin_layout Plain Layout
+5.65
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Often (60%)
+\end_layout
+
+\begin_layout Plain Layout
+4.24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Generally (75%)
+\end_layout
+
+\begin_layout Plain Layout
+2.83
 \end_layout
 
 \end_inset
@@ -3652,36 +3780,13 @@ RESL
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
+\series bold
 Mostly (90%)
 \end_layout
 
 \begin_layout Plain Layout
+
+\series bold
 1.41
 \end_layout
 
@@ -3691,7 +3796,11 @@ Mostly (90%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+Full (100%)
+\end_layout
 
+\begin_layout Plain Layout
+0.00
 \end_layout
 
 \end_inset
@@ -3720,7 +3829,11 @@ TEAM
 \begin_inset Text
 
 \begin_layout Plain Layout
+Very difficult interactions
+\end_layout
 
+\begin_layout Plain Layout
+5.84
 \end_layout
 
 \end_inset
@@ -3729,7 +3842,11 @@ TEAM
 \begin_inset Text
 
 \begin_layout Plain Layout
+Some difficult interactions
+\end_layout
 
+\begin_layout Plain Layout
+4.38
 \end_layout
 
 \end_inset
@@ -3738,7 +3855,11 @@ TEAM
 \begin_inset Text
 
 \begin_layout Plain Layout
+Basically cooperative interactions
+\end_layout
 
+\begin_layout Plain Layout
+3.29
 \end_layout
 
 \end_inset
@@ -3747,7 +3868,11 @@ TEAM
 \begin_inset Text
 
 \begin_layout Plain Layout
+Largely cooperative
+\end_layout
 
+\begin_layout Plain Layout
+2.19
 \end_layout
 
 \end_inset
@@ -3756,7 +3881,15 @@ TEAM
 \begin_inset Text
 
 \begin_layout Plain Layout
+Highly
+\end_layout
 
+\begin_layout Plain Layout
+cooperative
+\end_layout
+
+\begin_layout Plain Layout
+1.10
 \end_layout
 
 \end_inset
@@ -3765,10 +3898,14 @@ TEAM
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Seamless interaction
 \end_layout
 
 \begin_layout Plain Layout
+
+\series bold
 0.00
 \end_layout
 
@@ -3776,7 +3913,27 @@ Seamless interaction
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+PMAT
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The Estimated Equivalent Process Maturity Level (EPML) or
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3785,7 +3942,7 @@ Seamless interaction
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3794,7 +3951,7 @@ Seamless interaction
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3803,7 +3960,7 @@ Seamless interaction
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3812,25 +3969,7 @@ Seamless interaction
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3845,12 +3984,6 @@ Seamless interaction
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
-PMAT
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Formula $\mathbf{SF_{j}}$
 \end_inset
 
@@ -3863,7 +3996,40 @@ PMAT
 \begin_inset Text
 
 \begin_layout Plain Layout
+SW-CMM
+\end_layout
 
+\begin_layout Plain Layout
+Level 1
+\end_layout
+
+\begin_layout Plain Layout
+Lower
+\end_layout
+
+\begin_layout Plain Layout
+7.80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SW-CMM
+\end_layout
+
+\begin_layout Plain Layout
+Level 1
+\end_layout
+
+\begin_layout Plain Layout
+Upper
+\end_layout
+
+\begin_layout Plain Layout
+6.24
 \end_layout
 
 \end_inset
@@ -3873,6 +4039,20 @@ PMAT
 
 \begin_layout Plain Layout
 
+\series bold
+SW-CME
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Level 2
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+4.68
 \end_layout
 
 \end_inset
@@ -3881,7 +4061,15 @@ PMAT
 \begin_inset Text
 
 \begin_layout Plain Layout
+SW-CMM
+\end_layout
 
+\begin_layout Plain Layout
+Level 3
+\end_layout
+
+\begin_layout Plain Layout
+3.12
 \end_layout
 
 \end_inset
@@ -3890,16 +4078,15 @@ PMAT
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+SW-CMM
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
+\begin_layout Plain Layout
+Level 4
+\end_layout
 
 \begin_layout Plain Layout
-
+1.56
 \end_layout
 
 \end_inset
@@ -3908,7 +4095,15 @@ PMAT
 \begin_inset Text
 
 \begin_layout Plain Layout
+SW-CMM
+\end_layout
 
+\begin_layout Plain Layout
+Level 5
+\end_layout
+
+\begin_layout Plain Layout
+0.00
 \end_layout
 
 \end_inset
@@ -3925,7 +4120,7 @@ PMAT
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-TIME cost driver.
+TIME scale factors diagram.
 \end_layout
 
 \end_inset
@@ -9876,6 +10071,30 @@ name "sec:schedule"
 \end_layout
 
 \begin_layout Standard
+The project schedule management plan is a component of the project plan
+ document that establishes the activities for developing, monitoring, and
+ controlling the project
+\end_layout
+
+\begin_layout Standard
+So in this section we’re going to provide a general, high-level schedule
+ giving information about the development progress of the system.
+ The aim of this part is to establish a general baseline of the project
+ line up.
+ More refined schedules will be defined during the course of the project,
+ in order to manage the internal organization of the single development
+ phases.
+ The diagrams reported below are not completely realistic; in actual fact
+ we are not going to develop the project.
+ So that is only an ipothetical view of the time schedule of the development
+ phases.
+ However, according to the previous analysis that we have made in that document
+ we have tried to do these schedule as more realistica s possible.
+ We have hypothesized that the whole realization of the project covering
+ a period from TODO September to TODO … 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -9894,6 +10113,27 @@ name "sec:resource allocation"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The project resource allocation management plan is a component of the project
+ plan document that establishes which activities are carried out by the
+ PowerEnjoy developer.
+\end_layout
+
+\begin_layout Standard
+So in this section we’re going to provide a general overview of how the
+ tasks defined by the schedule in the previous section will be fulflill
+ between the three members of the PowerEnjoy development team.
+ More refined schedules will be defined during the project in order to manage
+ the internal organization of the single development phases.
+ As we already mentioned in the previous section the diagrams reported below
+ are not completely realistic, in fact we have also included activities
+ in the requirement analysis, design phases that won’t actually take place,
+ like the stakeholders meetings, as well as the full implementation phase.
+ This has been done to have achieve a more realistic depiction of how the
+ development process could go.
+ 
 \end_layout
 
 \begin_layout Standard
