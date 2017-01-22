@@ -3373,7 +3373,7 @@ begin{adjustwidth}{-1.5cm}{}
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="7">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
 <column alignment="center" valignment="middle" width="2cm">
 <column alignment="center" valignment="middle" width="2cm">
 <column alignment="center" valignment="middle" width="2cm">
@@ -3482,20 +3482,14 @@ PREC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
 Thoroughtly
 \end_layout
 
 \begin_layout Plain Layout
-
-\series bold
 unprecedented
 \end_layout
 
 \begin_layout Plain Layout
-
-\series bold
 6.20
 \end_layout
 
@@ -3570,14 +3564,10 @@ FLEX
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
 Rigorous
 \end_layout
 
 \begin_layout Plain Layout
-
-\series bold
 5.07
 \end_layout
 
@@ -3688,14 +3678,10 @@ RESL
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
 Mostly (90%)
 \end_layout
 
 \begin_layout Plain Layout
-
-\series bold
 1.41
 \end_layout
 
@@ -3779,14 +3765,10 @@ TEAM
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
 Seamless interaction
 \end_layout
 
 \begin_layout Plain Layout
-
-\series bold
 0.00
 \end_layout
 
@@ -3794,7 +3776,7 @@ Seamless interaction
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3895,14 +3877,10 @@ The Estimated Equivalent Process Maturity Level (EPML) or
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
 SW-CME
 \end_layout
 
 \begin_layout Plain Layout
-
-\series bold
 Level 2
 \end_layout
 
