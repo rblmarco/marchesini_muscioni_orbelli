@@ -1710,8 +1710,12 @@ The PowerEnjoy system needs to store in its DataBase some informations about
 \end_layout
 
 \begin_layout Itemize
-User data: first the system has to know the information about its users
- (clients who use the PowerEnjoy application).
+
+\series bold
+User data
+\series default
+: first the system has to know the information about its users (clients
+ who use the PowerEnjoy application).
  The DB has a table in which are stored the data required at the registration
  phase: name, surname, password, driving license, email and the telephone
  number.
@@ -1731,7 +1735,11 @@ sign up
 \end_layout
 
 \begin_layout Itemize
-Employee data: the employee data are stored in two different tables.
+
+\series bold
+Employee data
+\series default
+: the employee data are stored in two different tables.
  The first table contains the general information of an employee, like the
  SSN number, name, surname, email address and the password of his/her account.
  Instead, the second table contains the information about the phone provided
@@ -1746,7 +1754,11 @@ Employee data: the employee data are stored in two different tables.
 \end_layout
 
 \begin_layout Itemize
-Historical work data: the data about the 
+
+\series bold
+Historical work data
+\series default
+: the data about the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1765,7 +1777,11 @@ on and a flag in order to understand if the phase of the car involved is
 \end_layout
 
 \begin_layout Itemize
-List data: the list data are very important for the system.
+
+\series bold
+List data
+\series default
+: the list data are very important for the system.
  In this table are stored the necessary information in order to identify
  a list of a cars: id of the list and the two employees who has to take
  care of the current list.
@@ -1778,11 +1794,14 @@ List data: the list data are very important for the system.
 \end_layout
 
 \begin_layout Itemize
-Car data: this internal files contain all the information about the cars
- which are managed by the PowerEnjoy system: code (primary key) used by
- the users to open/close the cars, license plate, battery level, number
- of seats and the information to identify the position of the cars (longitude
- and latitude).
+
+\series bold
+Car data
+\series default
+: this internal files contain all the information about the cars which are
+ managed by the PowerEnjoy system: code (primary key) used by the users
+ to open/close the cars, license plate, battery level, number of seats and
+ the information to identify the position of the cars (longitude and latitude).
  The information about the phase of the cars (that determinate the car state)
  are stored in a different table, containing the id of the car and its actual
  phase.
@@ -1793,16 +1812,23 @@ Car data: this internal files contain all the information about the cars
 \end_layout
 
 \begin_layout Itemize
-Reservation data: the information about a reservation are stored in a table
- containing the id of the reservation, the date, the initial time and the
- final time.
+
+\series bold
+Reservation data
+\series default
+: the information about a reservation are stored in a table containing the
+ id of the reservation, the date, the initial time and the final time.
  To obtain details about the users who have done the reservation or the
  ride , it is necessary to execute queries that involved other data structures.
  So that the level is set to hight;
 \end_layout
 
 \begin_layout Itemize
-Ride data: the ride data is build with on a two-level structure.
+
+\series bold
+Ride data
+\series default
+: the ride data is build with on a two-level structure.
  In the first table there is the general information to identify a ride:
  id, starting longitude, latitude, final longitude, latitude and the number
  of passengers.
@@ -1813,8 +1839,12 @@ Ride data: the ride data is build with on a two-level structure.
 \end_layout
 
 \begin_layout Itemize
-Area data: this data structure contains two tables in order to distinguish
- the different aresa that are managed by the PowerEnjoy system.
+
+\series bold
+Area data
+\series default
+: this data structure contains two tables in order to distinguish the different
+ aresa that are managed by the PowerEnjoy system.
  The special areas table contains the followings attribute: latitude, longitude,
  both uniquely identified the center, the radius and the number of plugs
  available.
@@ -2662,15 +2692,22 @@ General user:
 \end_layout
 
 \begin_layout Itemize
-Sign in: this operation is simple because it involved only the account manager,
+
+\series bold
+Sign in
+\series default
+: this operation is simple because it involved only the account manager,
  which has to verify the login credentials used to sign in.
  It yelds 3 FPs;
 \end_layout
 
 \begin_layout Itemize
-Sign up: this operation has an average complexity because the system has
- to verify all the credentials inserted by the user and especially the payment
- information.
+
+\series bold
+Sign up
+\series default
+: this operation has an average complexity because the system has to verify
+ all the credentials inserted by the user and especially the payment information.
  It yelds 4 FPs.
 \end_layout
 
@@ -2679,7 +2716,11 @@ User verified:
 \end_layout
 
 \begin_layout Itemize
-Look for car nearby: this operation has an hight level of complexity.
+
+\series bold
+Look for car nearby
+\series default
+: this operation has an hight level of complexity.
  It is based on an algorithm that queries the DB, asking for nearby car,
  using the position of the user as a parameter.
  It also has to managed a great number o attributes for all the cars.
@@ -2687,19 +2728,30 @@ Look for car nearby: this operation has an hight level of complexity.
 \end_layout
 
 \begin_layout Itemize
-Insert postition: this is a simple operation, the user inserts manually
- his/her position.
+
+\series bold
+Insert postition
+\series default
+: this is a simple operation, the user inserts manually his/her position.
  It yelds 3 FPs;
 \end_layout
 
 \begin_layout Itemize
-Select the car: thanks to the look for car nearby operation, the user has
- already all the information needed to select a car.
+
+\series bold
+Select the car
+\series default
+: thanks to the look for car nearby operation, the user has already all
+ the information needed to select a car.
  It yelds 3 FPs;
 \end_layout
 
 \begin_layout Itemize
-Reserve that car: this operation has a hight complexity.
+
+\series bold
+Reserve that car
+\series default
+: this operation has a hight complexity.
  It involves a lot of components which have to communicate, to query and
  to update the DB.
  It also sends notifications to the users.
@@ -2707,14 +2759,22 @@ Reserve that car: this operation has a hight complexity.
 \end_layout
 
 \begin_layout Itemize
-Cancel the reservation: this is an operation of an average complexity.
+
+\series bold
+Cancel the reservation
+\series default
+: this is an operation of an average complexity.
  It calls a controller which has to update the DB, and then, with a notify
  to the car controller, the table of cars are also updated.
  It yelds 4 FPs;
 \end_layout
 
 \begin_layout Itemize
-See the way to the car: this operation has an hight complexity.
+
+\series bold
+See the way to the car
+\series default
+: this operation has an hight complexity.
  It requires the interaction with the map gateway to generate the path to
  the car.
  The information returned from the gateway need also a medium computation.
@@ -2722,14 +2782,22 @@ See the way to the car: this operation has an hight complexity.
 \end_layout
 
 \begin_layout Itemize
-Open the car: this operation has a high level of complexity.
+
+\series bold
+Open the car
+\series default
+: this operation has a high level of complexity.
  That assertion is based on the possible problems that this operation can
  create, as a malfunctioning in the car sensor.
  So we decided to give 6 FPs;
 \end_layout
 
 \begin_layout Itemize
-Modify: this operation has an aveage complexity (according to the 
+
+\series bold
+Modify
+\series default
+: this operation has an aveage complexity (according to the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2747,26 +2815,42 @@ Employee:
 \end_layout
 
 \begin_layout Itemize
-Look for my list: this operation has a hight complexity: it needs a complex
- query on the DB, looking for the cars that require attention.
+
+\series bold
+Look for my list
+\series default
+: this operation has a hight complexity: it needs a complex query on the
+ DB, looking for the cars that require attention.
  The list contains also all the cars information It yelds 6 FPs;
 \end_layout
 
 \begin_layout Itemize
-See the state of the car: thanks to the look for my list operation, the
- employee has already all the information needed to select a car.
+
+\series bold
+See the state of the car
+\series default
+: thanks to the look for my list operation, the employee has already all
+ the information needed to select a car.
  It yelds 3 FPs;
 \end_layout
 
 \begin_layout Itemize
-See car in a map: this operation has a high level of complexity.
+
+\series bold
+See car in a map
+\series default
+: this operation has a high level of complexity.
  It has to call the map gateway in order to draw the map with the car placed
  in their current positions.
  It yelds 6 FPs;
 \end_layout
 
 \begin_layout Itemize
-Change state of car: this operation has an hight complexity.
+
+\series bold
+Change state of car
+\series default
+: this operation has an hight complexity.
  When a work is finisched, the employee has to change the phase of the car.
  This functionality includes both queries on the DB and interactions between
  the controllers.
@@ -2779,14 +2863,21 @@ Car driver:
 \end_layout
 
 \begin_layout Itemize
-Skip that page: this operation is simple, it only redirects the user to
- another page, without particular query or interaction with the components
- of the system.
+
+\series bold
+Skip that page
+\series default
+: this operation is simple, it only redirects the user to another page,
+ without particular query or interaction with the components of the system.
  It yelds 3 FPs;
 \end_layout
 
 \begin_layout Itemize
-Activate money saving option: this operation has an hight complexity.
+
+\series bold
+Activate money saving option
+\series default
+: this operation has an hight complexity.
  It requires queries on the DB to show the Special Area nearby the destination
  of the user.
  It also include the computation of the free plugs.
@@ -2796,14 +2887,21 @@ Activate money saving option: this operation has an hight complexity.
 \end_layout
 
 \begin_layout Itemize
-Call / Terminate the call: this is a straighforward operation, it simply
- calls the service center, thanks to the mobile device included in the car
- system.
+
+\series bold
+Call / Terminate the call
+\series default
+: this is a straighforward operation, it simply calls the service center,
+ thanks to the mobile device included in the car system.
  It yelds 3 FPs;
 \end_layout
 
 \begin_layout Itemize
-Finish the ride: this operation is an average operation.
+
+\series bold
+Finish the ride
+\series default
+: this operation is an average operation.
  In actual fact this functionality updates only a table of the DB, modifying
  the state of the ride.
  It yelds 4 FPs.
@@ -3577,7 +3675,11 @@ User:
 \end_layout
 
 \begin_layout Itemize
-Retrieve account information: this is a simple operation.
+
+\series bold
+Retrieve account information
+\series default
+: this is a simple operation.
  In actual fact the user request all his/her information.
  It yelds 3 FPs;
 \end_layout
@@ -3587,9 +3689,12 @@ Employee:
 \end_layout
 
 \begin_layout Itemize
-See the list of car: that operation is made by the employee in order to
- see the list of the car that he/she has to take care, once the list has
- been generated.
+
+\series bold
+See the list of car
+\series default
+: that operation is made by the employee in order to see the list of the
+ car that he/she has to take care, once the list has been generated.
  It yelds 3 FPs;
 \end_layout
 

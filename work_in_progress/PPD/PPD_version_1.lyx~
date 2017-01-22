@@ -2651,11 +2651,6 @@ External Inputs
 \end_layout
 
 \begin_layout Standard
-<TODO: tutte le operazioni che possono fare gli user, sono i metodi dei
- diagrammi UX>
-\end_layout
-
-\begin_layout Standard
 The PowerEnjoy system provides a great number of functionalities which support
  interactions between people, the application or the web site.
  In this section the various interactions are explained and grouped by types
@@ -4316,11 +4311,70 @@ Scale Factors
 \end_layout
 
 \begin_layout Standard
+According to the model definition manual of COCOMO II these values are used
+ in order to determined the effect of economies or diseconomies of scale.
+ The result of that analysis give to us a parameter that represents the
+ relation between the productivity and the product size.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+PREC
+\series default
+: we have never implemented a project with that size, so the value is set
+ to very low;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+FLEX
+\series default
+: we have to fulfill al the requirements gives to use from the stakeholders,
+ so the level is set to rigorous;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RESL
+\series default
+: according to section 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "risk"
+
+\end_inset
+
+ we think that we have covered as many risks as possible.
+ So the level is set to mostly;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+TEAM
+\series default
+: we are very cooperative ans cohesive, so the level is set to seamless
+ interaction;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+PMAT
+\series default
+: according to the description in COCOMO II manual, the level is set to
+ nomina.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -11824,6 +11878,10 @@ Microsoft Visio 2016: for all the diagrams in that document (as Testing
 \end_layout
 
 \begin_layout Itemize
+Microsoft Excel 2016: for the Gantt defined;
+\end_layout
+
+\begin_layout Itemize
 Lyx document processor: to write all the document;
 \end_layout
 
@@ -11944,7 +12002,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4
 \end_layout
 
 \end_inset
@@ -11953,7 +12011,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2
 \end_layout
 
 \end_inset
@@ -11962,7 +12020,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2
 \end_layout
 
 \end_inset
@@ -11982,7 +12040,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2
 \end_layout
 
 \end_inset
@@ -11991,7 +12049,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3
 \end_layout
 
 \end_inset
@@ -12000,7 +12058,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3
 \end_layout
 
 \end_inset
@@ -12020,7 +12078,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4
 \end_layout
 
 \end_inset
@@ -12029,7 +12087,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4
 \end_layout
 
 \end_inset
@@ -12038,7 +12096,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2
 \end_layout
 
 \end_inset
@@ -12058,7 +12116,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3
 \end_layout
 
 \end_inset
@@ -12067,7 +12125,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3
 \end_layout
 
 \end_inset
@@ -12076,7 +12134,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3
 \end_layout
 
 \end_inset
@@ -12096,7 +12154,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+5
 \end_layout
 
 \end_inset
@@ -12105,7 +12163,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+5
 \end_layout
 
 \end_inset
@@ -12114,7 +12172,7 @@ Paola Marchesini
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+5
 \end_layout
 
 \end_inset
@@ -12134,7 +12192,7 @@ total
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+19.5
 \end_layout
 
 \end_inset
@@ -12143,7 +12201,7 @@ total
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+18.5
 \end_layout
 
 \end_inset
@@ -12152,7 +12210,7 @@ total
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+16.5
 \end_layout
 
 \end_inset
