@@ -544,10 +544,6 @@ mondomatica.it/function.html
 
 \end_layout
 
-\begin_layout Itemize
-altroboh?
-\end_layout
-
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
@@ -585,8 +581,8 @@ reference "subsec:size"
 
  discloses the size estimation of the project.
  We have decided to base that analysis on the Function Points approach.
- <TODO: check non so boh, intendo la frase seguente>That estimation does
- not take into account the user interface and the web tier developing.
+ That estimation does not take into account the user interface and the web
+ tier developing.
  In actual fact an analysis of these two last things will be to rough, due
  to the variety of language used and the connection with the personal style
  of the developers.
@@ -631,17 +627,11 @@ s of the software.
 \end_layout
 
 \begin_layout Standard
-<TODO: GUIDO tabella con le cose generali con record e data element e con
- FPS finali per ogni file>
-\end_layout
-
-\begin_layout Standard
-+
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1385,7 +1375,7 @@ ILF/ELF values table.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1840,7 +1830,7 @@ Area data: this data structure contains two tables in order to distinguish
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2181,10 +2171,6 @@ Overall FPs for ILFs section.
  diagram, that is contained in the DD document.)
 \end_layout
 
-\begin_layout Standard
-<TODO: GUIDO tabella con tutte le funzioni con coloenne complessita e FPS>
-\end_layout
-
 \begin_layout Subsubsection
 External Logic Files
 \end_layout
@@ -2320,19 +2306,11 @@ According to what is mentioned in that paragraph the level of complexity
 \end_layout
 
 \begin_layout Standard
-<TODO: mettere quei cazzo di function points.>
-\end_layout
-
-\begin_layout Standard
-<TODO: GUIDO tabella con tutte le funzioni con coloenne complessita e FPS>
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3589,21 +3567,8 @@ Overall FPs for EI section.
 
 \end_layout
 
-\begin_layout Standard
-<TODO: GUIDO tabella con tutte le funzioni con coloenne complessita e FPS>
-\end_layout
-
 \begin_layout Subsubsection
 External Inquiries
-\end_layout
-
-\begin_layout Standard
-<TODO: scrivere degli sviluppi futuri LC>
-\end_layout
-
-\begin_layout Standard
-<TODO: GUIDO sono le richieste degli utenti rivolte all'ottenimento di dati.
- Otenere le prorie info dell'account>
 \end_layout
 
 \begin_layout Standard
@@ -3856,10 +3821,6 @@ Overall FPs for EQ section.
 
 \end_layout
 
-\begin_layout Standard
-<TODO: GUIDO tabella con tutte le funzioni con coloenne complessita e FPS>
-\end_layout
-
 \begin_layout Subsubsection
 External Outputs
 \end_layout
@@ -3886,7 +3847,7 @@ Notification sent to the user through the reservation message.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4071,16 +4032,8 @@ Overall FPs for EO section.
 
 \end_layout
 
-\begin_layout Standard
-<TODO: tabella con tutti low>
-\end_layout
-
 \begin_layout Subsubsection
 Overall Estimation
-\end_layout
-
-\begin_layout Standard
-<TODO: all together.>
 \end_layout
 
 \begin_layout Standard
@@ -4088,14 +4041,10 @@ The following table show the results of our extimation:
 \end_layout
 
 \begin_layout Standard
-<TODO: GUIDO tabella i file e loro FPS>
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -10408,21 +10357,8 @@ end{adjustwidth}
 
 \end_layout
 
-\begin_layout Standard
-<TODO: vedere cosa cambia se mettiamo high in SCED anche se il paramentro
- è sempre uguale.>
-\end_layout
-
-\begin_layout Standard
-<TODO: PAOLA che non è handicappata e GUIDO>
-\end_layout
-
 \begin_layout Paragraph
 Final result
-\end_layout
-
-\begin_layout Standard
-<TODO: controllare l'ordine, mettere i parametri>
 \end_layout
 
 \begin_layout Standard
