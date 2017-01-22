@@ -366,15 +366,6 @@ Definitions and abbreviations
 \begin_layout Itemize
 
 \series bold
-SDD
-\series default
-: Software Design Description.
- 
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
 DD
 \series default
 : Design Document.
@@ -402,18 +393,10 @@ ITPD
 \begin_layout Itemize
 
 \series bold
-DBMS
+DB
 \series default
-: Database Management System.
+: Database.
  
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-ER
-\series default
-: Entity-Relationship diagram.
 \end_layout
 
 \begin_layout Itemize
@@ -445,87 +428,6 @@ PhoneGap
 \begin_layout Itemize
 
 \series bold
-Dispatcher
-\series default
-: The dispatcher is a component devoted to forward requests received from
- the user terminal to the right controller.
- It is capable to understand what it has to do, according to informations
- it received.
- It does not do anything excepts forwarding, for this reason it can be considere
-d a mediator between the smarter part of the application server and humans.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Framework
-\series default
-: it is a set of functions that support the developers during developing
- and integration phase.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-OS
-\series default
-: Operating System.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Id
-\series default
-: An identifier is a name that identifies a unique element.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-RAM
-\series default
-: Random Access Memory is a form of computer data storage which stores frequentl
-y used program instructions to increase the general speed of a system.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-MB
-\series default
-: Megabyte (10e6)
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Type of test
-\series default
-: 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-D: test with Data Access Interface
-\end_layout
-
-\begin_layout Itemize
-I: integration test between controllers
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-JPA
-\series default
-: Java Persistence API.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
 JavaEE
 \series default
 : Java Enterprise Edition.
@@ -552,25 +454,7 @@ API
 \begin_layout Itemize
 
 \series bold
-Req
-\series default
- as for Requirement.
- 
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-WebApp
-\series default
- as for Web Application.
- 
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-GeoJSON 
+GeoJSON: 
 \series default
 is a format for encoding a variety of geographic data structures use by
  Google Map API.
@@ -585,17 +469,33 @@ Payment Data Transfer
 \series bold
 PDT
 \series default
-) is a notification service that, once activated, can send transaction-related
+): is a notification service that, once activated, can send transaction-related
  information immediately to merchants who are using PayPal (PayPal Payments
  Standard).
 \end_layout
 
 \begin_layout Itemize
+
+\series bold
 COCOMO II
+\series default
+: is a mathematical model build in order to give an estimation of the cost
+ and the effort needed to develop the entire system;
 \end_layout
 
 \begin_layout Itemize
+
+\series bold
 COCOMO II document
+\series default
+: is a reference to the model definition manual, that is reported in section
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:documents"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -622,20 +522,26 @@ Examples documents:
 
 \begin_deeper
 \begin_layout Itemize
-Sample Integration Test Plan Document.
+Project planning example document.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Cocomo
+Model Definition Manual by COCOMO II;
 \end_layout
 
 \begin_layout Itemize
-Valori FPs
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+mondomatica.it/function.html
 \end_layout
 
-\begin_layout Itemize
-tesi
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -735,7 +641,7 @@ s of the software.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -983,7 +889,7 @@ EI values table.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1231,7 +1137,7 @@ EO/EQ values table.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1479,7 +1385,7 @@ ILF/ELF values table.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1712,7 +1618,7 @@ External Inquiries
 \begin_inset Text
 
 \begin_layout Plain Layout
-4
+3
 \end_layout
 
 \end_inset
@@ -1721,7 +1627,7 @@ External Inquiries
 \begin_inset Text
 
 \begin_layout Plain Layout
-5
+4
 \end_layout
 
 \end_inset
@@ -1730,7 +1636,7 @@ External Inquiries
 \begin_inset Text
 
 \begin_layout Plain Layout
-7
+6
 \end_layout
 
 \end_inset
@@ -1752,7 +1658,7 @@ External Outputs
 \begin_inset Text
 
 \begin_layout Plain Layout
-3
+4
 \end_layout
 
 \end_inset
@@ -1761,7 +1667,7 @@ External Outputs
 \begin_inset Text
 
 \begin_layout Plain Layout
-4
+5
 \end_layout
 
 \end_inset
@@ -1770,7 +1676,7 @@ External Outputs
 \begin_inset Text
 
 \begin_layout Plain Layout
-6
+7
 \end_layout
 
 \end_inset
@@ -4465,7 +4371,7 @@ Scale Factors
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -10219,7 +10125,7 @@ Hours of work
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -10546,15 +10452,17 @@ begin{adjustwidth}{-0.6cm}{}
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="19" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="9cm">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="9cm">
 <column alignment="center" valignment="top" width="3cm">
 <column alignment="center" valignment="top" width="3cm">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Cost Driver
 \end_layout
 
@@ -10564,6 +10472,8 @@ Cost Driver
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Factor
 \end_layout
 
@@ -10573,6 +10483,8 @@ Factor
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Value
 \end_layout
 
@@ -10580,10 +10492,12 @@ Value
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Required Software Reliability (RELY) 
 \end_layout
 
@@ -10609,10 +10523,12 @@ High
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Data Base Size (DATA) 
 \end_layout
 
@@ -10638,10 +10554,12 @@ Very High
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Product Complexity (CPLX) 
 \end_layout
 
@@ -10667,10 +10585,12 @@ High
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Developed for Reusability (RUSE)
 \end_layout
 
@@ -10696,10 +10616,12 @@ Nominal
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Documentation Match to Life-Cycle Needs (DOCU) 
 \end_layout
 
@@ -10725,10 +10647,12 @@ Nominal
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Execution Time Constraint (TIME)
 \end_layout
 
@@ -10754,10 +10678,12 @@ High
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Main Storge Constraint (STOR)
 \end_layout
 
@@ -10783,10 +10709,12 @@ High
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Platform Volatility (PVOL)
 \end_layout
 
@@ -10812,10 +10740,12 @@ Low
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Analyst Capability (ACAP)
 \end_layout
 
@@ -10841,10 +10771,12 @@ High
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Programmer Capability (PCAP)
 \end_layout
 
@@ -10870,10 +10802,12 @@ High
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Personnel Continuity(PCON)
 \end_layout
 
@@ -10899,10 +10833,12 @@ Low
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Applications Experience (APEX)
 \end_layout
 
@@ -10928,10 +10864,12 @@ Low
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Pltform Experience (PLEX)
 \end_layout
 
@@ -10957,10 +10895,12 @@ Nominal
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Language and Tool Experience (LTEX)
 \end_layout
 
@@ -10986,10 +10926,12 @@ Low
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Use of Software Tools(TOOL)
 \end_layout
 
@@ -11015,10 +10957,12 @@ Very High
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Multisite Development (SITE)
 \end_layout
 
@@ -11044,10 +10988,12 @@ Extra High
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Required Development Schedule (SCED)
 \end_layout
 
@@ -11073,10 +11019,12 @@ Nominal
 </cell>
 </row>
 <row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Total
 \end_layout
 
@@ -11095,7 +11043,7 @@ Total
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.23175
 \end_layout
 
 \end_inset
@@ -11336,7 +11284,78 @@ So in this section we’re going to provide a general, high-level schedule
  However, according to the previous analysis that we have made in that document
  we have tried to do these schedule as more realistica s possible.
  We have hypothesized that the whole realization of the project covering
- a period from TODO September to TODO … 
+ a period from October 2016 to November 2017.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{top=1cm, bottom=2cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Gantt/GeneralGantt.pdf
+	scale 57
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+General Gantt diagram.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -11382,6 +11401,143 @@ So in this section we’re going to provide a general overview of how the
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{top=1cm, bottom=2cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Gantt/GuidoGantt.pdf
+	scale 57
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Muscioni Guido Gantt diagram.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Gantt/MarcoGantt.pdf
+	scale 57
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Orbelli Marco Gantt diagram.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Gantt/PaolaGantt.pdf
+	scale 57
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Marchesini Paola Gantt diagram.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -11400,6 +11556,248 @@ name "risk"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Risk management is a key phase of our project.
+\end_layout
+
+\begin_layout Standard
+So the developers, and all other people that work on the project, can have
+ a complete view of the risks that may affect the system.
+ We assume that a risk is a potential problem, which might or not might
+ happen, that can result in a technical malfunction or human difficulties.
+\end_layout
+
+\begin_layout Standard
+In the section presented above there are all the risks that we have indentified
+ during the building of this and all the previous documents.
+\end_layout
+
+\begin_layout Subsection
+Project Risks
+\end_layout
+
+\begin_layout Standard
+In this section there are all the risks that threaten the project plan.
+ That kind of problems can flow into an unexpected extension of the schedule
+ define in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:schedule"
+
+\end_inset
+
+, and clearly in a cost increasing.
+\end_layout
+
+\begin_layout Paragraph*
+Personnel shortfall
+\end_layout
+
+\begin_layout Standard
+That risk emerge from the loss of one or more members of the project team.
+\end_layout
+
+\begin_layout Standard
+As we know from the start that a problem like that could happen in every
+ moments; we always work as a strong and cooperative team, as we mentioned
+ in the cost drivers of COCOMO II.
+ So that the remaining people in the team can easely substitute the missing
+ members.
+ Obviously the schedule will slip, but will not exceed the upper bound TDEV
+ defined in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:size and cost"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph*
+Unrealistic schedules
+\end_layout
+
+\begin_layout Standard
+That risk involves errors during the schedule phase of the project.
+ In particular, it can emerge from a strict deadline from the stakeholders.
+\end_layout
+
+\begin_layout Standard
+We have tried to take that risk into account by make a more flexible time
+ schedule estimation.
+ In actual fact the variace between the lower and the upper bound of schedule,
+ defined trough COCOMO II, is high.
+\end_layout
+
+\begin_layout Subsection
+Technical Risks
+\end_layout
+
+\begin_layout Paragraph*
+Inexperience team members
+\end_layout
+
+\begin_layout Standard
+That risk emerges during the developing phase of the project.
+ It can be produced by two main reasons:
+\end_layout
+
+\begin_layout Itemize
+The lack of specialized skills required in order to achieve the final version
+ of the system;
+\end_layout
+
+\begin_layout Itemize
+An overstimation of the knowledge of one or more team members.
+\end_layout
+
+\begin_layout Standard
+We have already taken that problem into account during the cost and effort
+ analysis.
+ The parameters that deal with what we have mentioned in this paragraph
+ have been understimated.
+ So that the schedule of the project will not change due to this risk, it
+ will remain in the range of time that we have already defined.
+ 
+\end_layout
+
+\begin_layout Standard
+In addiction, we have always used tools and languages that we have already
+ known from our university studies, so that risk is well coverage.
+\end_layout
+
+\begin_layout Paragraph*
+Bad external components
+\end_layout
+
+\begin_layout Standard
+That risk emerges from the use of external components that have not been
+ developed well.
+ 
+\end_layout
+
+\begin_layout Standard
+During the building of that project we have always selected well known system.
+ So that the probability that a problem occur in that case is remote.
+ Moreover the external systems used in our project are develop by multinational
+ companies that can resolve that kind of problems in a very efficient way.
+\end_layout
+
+\begin_layout Paragraph*
+Real-Time performance shortfalls
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "par:server farm"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+That risk emerges when the system is realesed in the world.
+\end_layout
+
+\begin_layout Standard
+Firstly, we have made a very efficient test plan document, that can cover
+ all the main functionalities of the system.
+ 
+\end_layout
+
+\begin_layout Standard
+Secondly if a problem like that occurs, and result in a malfunctioning in
+ a server of our arrchitecture; the two servers farms designed will make
+ that problem not recognizable by the users.
+ In actual fact, as it was mentioned in the DD document if a server goes
+ down the other can replace all the functionalities of the missing one.
+\end_layout
+
+\begin_layout Paragraph*
+Hacker attack
+\end_layout
+
+\begin_layout Standard
+That risk emerges from smeone that tries to access to our system without
+ permission.
+\end_layout
+
+\begin_layout Standard
+The solution of that risk is already written in the previous paragraph:
+ 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "par:server farm"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph*
+Wrong user interface
+\end_layout
+
+\begin_layout Standard
+That problem can emerge from a malfunctioning or a wrong design in the user
+ interface.
+\end_layout
+
+\begin_layout Standard
+Even if we have designed it properly, if an error occurs, thank to the use
+ of Phonegap, the bug fix must be done only in one code.
+ The reason of that solution is well explained in the previous documents.
+\end_layout
+
+\begin_layout Subsection
+Business Risks
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Gold plating
+\end_layout
+
+\begin_layout Standard
+We have decided to put that risk in the business risks section even if it
+ also deals with the possible technical risks.
+ 
+\end_layout
+
+\begin_layout Standard
+That risk emerge from a maniacal approach to the develop of some part of
+ the system.
+ 
+\end_layout
+
+\begin_layout Standard
+Also in that case the big variance in the schedule lead us to identify and
+ resolve that kind of risk.
+ 
+\end_layout
+
+\begin_layout Paragraph*
+Unrealistic budget
+\end_layout
+
+\begin_layout Standard
+That risk can emerges from an understimation of the whole cost of the project.
+ 
+\end_layout
+
+\begin_layout Standard
+As we have already mentioned, the estimation trough the COCOMO II and the
+ FPs approach has been done very carefully.
+ Furthermore, the bottom up approach used in order to develop the project
+ implicate that is very unlikely that a huge expense can happen without
+ any signs.
 \end_layout
 
 \begin_layout Standard
