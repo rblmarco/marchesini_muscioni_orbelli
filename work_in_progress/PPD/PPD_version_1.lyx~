@@ -11596,6 +11596,13 @@ Personnel shortfall
 \end_layout
 
 \begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 That risk emerge from the loss of one or more members of the project team.
 \end_layout
 
@@ -11622,6 +11629,13 @@ Unrealistic schedules
 \end_layout
 
 \begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 That risk involves errors during the schedule phase of the project.
  In particular, it can emerge from a strict deadline from the stakeholders.
 \end_layout
@@ -11639,6 +11653,13 @@ Technical Risks
 
 \begin_layout Paragraph*
 Inexperience team members
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -11675,6 +11696,13 @@ Bad external components
 \end_layout
 
 \begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 That risk emerges from the use of external components that have not been
  developed well.
  
@@ -11689,6 +11717,13 @@ During the building of that project we have always selected well known system.
 
 \begin_layout Paragraph*
 Real-Time performance shortfalls
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -11724,6 +11759,13 @@ Hacker attack
 \end_layout
 
 \begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 That risk emerges from smeone that tries to access to our system without
  permission.
 \end_layout
@@ -11742,6 +11784,13 @@ reference "par:server farm"
 
 \begin_layout Paragraph*
 Wrong user interface
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -11766,6 +11815,13 @@ Gold plating
 \end_layout
 
 \begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 We have decided to put that risk in the business risks section even if it
  also deals with the possible technical risks.
  
@@ -11785,6 +11841,13 @@ Also in that case the big variance in the schedule lead us to identify and
 
 \begin_layout Paragraph*
 Unrealistic budget
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

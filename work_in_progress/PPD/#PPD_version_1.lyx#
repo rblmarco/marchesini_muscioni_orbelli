@@ -544,10 +544,6 @@ mondomatica.it/function.html
 
 \end_layout
 
-\begin_layout Itemize
-altroboh?
-\end_layout
-
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
@@ -585,8 +581,8 @@ reference "subsec:size"
 
  discloses the size estimation of the project.
  We have decided to base that analysis on the Function Points approach.
- <TODO: check non so boh, intendo la frase seguente>That estimation does
- not take into account the user interface and the web tier developing.
+ That estimation does not take into account the user interface and the web
+ tier developing.
  In actual fact an analysis of these two last things will be to rough, due
  to the variety of language used and the connection with the personal style
  of the developers.
@@ -631,17 +627,11 @@ s of the software.
 \end_layout
 
 \begin_layout Standard
-<TODO: GUIDO tabella con le cose generali con record e data element e con
- FPS finali per ogni file>
-\end_layout
-
-\begin_layout Standard
-+
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1385,7 +1375,7 @@ ILF/ELF values table.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1840,7 +1830,7 @@ Area data: this data structure contains two tables in order to distinguish
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2181,10 +2171,6 @@ Overall FPs for ILFs section.
  diagram, that is contained in the DD document.)
 \end_layout
 
-\begin_layout Standard
-<TODO: GUIDO tabella con tutte le funzioni con coloenne complessita e FPS>
-\end_layout
-
 \begin_layout Subsubsection
 External Logic Files
 \end_layout
@@ -2320,19 +2306,11 @@ According to what is mentioned in that paragraph the level of complexity
 \end_layout
 
 \begin_layout Standard
-<TODO: mettere quei cazzo di function points.>
-\end_layout
-
-\begin_layout Standard
-<TODO: GUIDO tabella con tutte le funzioni con coloenne complessita e FPS>
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3589,21 +3567,8 @@ Overall FPs for EI section.
 
 \end_layout
 
-\begin_layout Standard
-<TODO: GUIDO tabella con tutte le funzioni con coloenne complessita e FPS>
-\end_layout
-
 \begin_layout Subsubsection
 External Inquiries
-\end_layout
-
-\begin_layout Standard
-<TODO: scrivere degli sviluppi futuri LC>
-\end_layout
-
-\begin_layout Standard
-<TODO: GUIDO sono le richieste degli utenti rivolte all'ottenimento di dati.
- Otenere le prorie info dell'account>
 \end_layout
 
 \begin_layout Standard
@@ -3856,10 +3821,6 @@ Overall FPs for EQ section.
 
 \end_layout
 
-\begin_layout Standard
-<TODO: GUIDO tabella con tutte le funzioni con coloenne complessita e FPS>
-\end_layout
-
 \begin_layout Subsubsection
 External Outputs
 \end_layout
@@ -3886,7 +3847,7 @@ Notification sent to the user through the reservation message.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4071,16 +4032,8 @@ Overall FPs for EO section.
 
 \end_layout
 
-\begin_layout Standard
-<TODO: tabella con tutti low>
-\end_layout
-
 \begin_layout Subsubsection
 Overall Estimation
-\end_layout
-
-\begin_layout Standard
-<TODO: all together.>
 \end_layout
 
 \begin_layout Standard
@@ -4088,14 +4041,10 @@ The following table show the results of our extimation:
 \end_layout
 
 \begin_layout Standard
-<TODO: GUIDO tabella i file e loro FPS>
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -11596,6 +11545,13 @@ Personnel shortfall
 \end_layout
 
 \begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 That risk emerge from the loss of one or more members of the project team.
 \end_layout
 
@@ -11622,6 +11578,13 @@ Unrealistic schedules
 \end_layout
 
 \begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 That risk involves errors during the schedule phase of the project.
  In particular, it can emerge from a strict deadline from the stakeholders.
 \end_layout
@@ -11639,6 +11602,13 @@ Technical Risks
 
 \begin_layout Paragraph*
 Inexperience team members
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -11675,6 +11645,13 @@ Bad external components
 \end_layout
 
 \begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 That risk emerges from the use of external components that have not been
  developed well.
  
@@ -11689,6 +11666,13 @@ During the building of that project we have always selected well known system.
 
 \begin_layout Paragraph*
 Real-Time performance shortfalls
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -11724,6 +11708,13 @@ Hacker attack
 \end_layout
 
 \begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 That risk emerges from smeone that tries to access to our system without
  permission.
 \end_layout
@@ -11745,13 +11736,21 @@ Wrong user interface
 \end_layout
 
 \begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 That problem can emerge from a malfunctioning or a wrong design in the user
  interface.
 \end_layout
 
 \begin_layout Standard
 Even if we have designed it properly, if an error occurs, thank to the use
- of Phonegap, the bug fix must b
+ of Phonegap, the bug fix must be done only in one code.
+ The reason of that solution is well explained in the previous documents.
 \end_layout
 
 \begin_layout Subsection
@@ -11762,6 +11761,13 @@ Business Risks
 
 \series bold
 Gold plating
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -11784,6 +11790,13 @@ Also in that case the big variance in the schedule lead us to identify and
 
 \begin_layout Paragraph*
 Unrealistic budget
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
