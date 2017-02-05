@@ -9,6 +9,7 @@
 \usepackage{changepage}
 \usepackage{geometry}
 \usepackage{remreset}
+\usepackage{multicol}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -451,7 +452,7 @@ Kernigan and Ritchie
 \end_inset
 
  to manage the position of braces of the code.
- All the lines follow the phylosophy defined before, so no issues of tha
+ All the lines follow the phylosophy defined before, so no issues of that
  point were found.
 \end_layout
 
@@ -494,6 +495,1462 @@ Where practical, line length does not exceed 80 characters.
 
 \begin_layout Standard
 The lines that exceed 80 characters are: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="3">
+<features islongtable="true" longtabularalignment="center">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="left" valignment="top" width="5cm">
+<row newpage="true">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Line 68: 132 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 71: 113 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 74: 89 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 76: 112 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 77: 86 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 90: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 91: 118 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 93: 190 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 95: 85 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 96: 92 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 97: 293 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 98: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 99: 117 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 100: 135 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 102: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 103: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 104: 87 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 106: 102 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 107: 90 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 108: 113 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 109: 96 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 118: 234 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 119: 103 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 120: 128 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 121: 82 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 122: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 124: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 125: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 127: 106 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 128: 94 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 129: 117 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 130: 100 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 145: 106 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 146: 126 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 147: 86 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 148: 214 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 150: 101 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 151: 100 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 152: 293 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 153: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 154: 117 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 155: 135 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 157: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 159: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 160: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 161: 81characters;
+\end_layout
+
+\begin_layout Itemize
+Line 162: 112 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 163: 106 characters;
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none" width="5cm">
+\begin_inset Text
+
+\begin_layout Itemize
+Line 164: 141characters;
+\end_layout
+
+\begin_layout Itemize
+Line 165: 114 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 166: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 175: 234 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 176: 103 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 177: 128 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 179: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 181: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 182: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 183: 81 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 184: 112 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 185: 106 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 186: 141 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 187: 114 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 188: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 201: 89 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 210: 84 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 211: 85 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 213: 207 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 215: 105 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 216: 97 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 219: 104 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 228: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 165: 114 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 166: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 175: 234 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 176: 103 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 177: 128 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 179: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 181: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 182: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 183: 81 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 184: 112 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 185: 106 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 186: 141 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 187: 114 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 188: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 201: 89 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 210: 84 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 211: 85 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 213: 207 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 215: 105 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 216: 97 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 219: 104 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 228: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 228: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 229: 155 characters;
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Line 230: 126 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 235: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 236: 92 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 238: 186 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 239: 87 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 240: 102 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 247: 93 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 259: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 260: 118 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 262: 190 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 264: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 265: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 266: 116 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 268: 81 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 277: 97 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 292: 97 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 295: 81 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 297: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 300: 140 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 301: 84 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 307: 116 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 324: 140 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 325: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 326: 97 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 332: 88 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 344: 214 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 347: 159 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 348: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 350: 183 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 352: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 357: 279 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 361: 108 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 364: 96 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 377: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 384: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 391: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 398: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 404: 92 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 412: 121 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 418: 140 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 422: 127 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 423: 88 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 425: 125 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 427: 89 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 433: 183 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 436: 108 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 439: 96 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 455: 121 characters;
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="3">
+<features islongtable="true" longtabularalignment="center">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="left" valignment="top" width="5cm">
+<row newpage="true">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Line 68: 132 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 71: 113 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 74: 89 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 76: 112 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 77: 86 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 90: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 91: 118 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 93: 190 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 95: 85 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 96: 92 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 97: 293 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 98: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 99: 117 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 100: 135 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 102: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 103: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 104: 87 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 106: 102 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 107: 90 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 108: 113 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 109: 96 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 118: 234 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 119: 103 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 120: 128 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 121: 82 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 122: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 124: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 125: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 127: 106 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 128: 94 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 129: 117 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 130: 100 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 145: 106 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 146: 126 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 147: 86 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 148: 214 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 150: 101 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 151: 100 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 152: 293 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 153: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 154: 117 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 155: 135 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 157: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 159: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 160: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 161: 81characters;
+\end_layout
+
+\begin_layout Itemize
+Line 162: 112 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 163: 106 characters;
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none" width="5cm">
+\begin_inset Text
+
+\begin_layout Itemize
+Line 164: 141characters;
+\end_layout
+
+\begin_layout Itemize
+Line 165: 114 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 166: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 175: 234 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 176: 103 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 177: 128 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 179: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 181: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 182: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 183: 81 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 184: 112 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 185: 106 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 186: 141 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 187: 114 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 188: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 201: 89 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 210: 84 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 211: 85 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 213: 207 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 215: 105 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 216: 97 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 219: 104 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 228: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 165: 114 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 166: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 175: 234 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 176: 103 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 177: 128 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 179: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 181: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 182: 91 characters;
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Line 230: 126 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 235: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 236: 92 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 238: 186 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 239: 87 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 240: 102 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 247: 93 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 259: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 260: 118 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 262: 190 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 264: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 265: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 266: 116 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 268: 81 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 277: 97 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 292: 97 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 295: 81 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 297: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 300: 140 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 301: 84 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 307: 116 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 324: 140 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 325: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 326: 97 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 332: 88 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 344: 214 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 347: 159 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 348: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 350: 183 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 352: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 357: 279 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 361: 108 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 364: 96 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 377: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 384: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 391: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 398: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 404: 92 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 412: 121 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 418: 140 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 422: 127 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 423: 88 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 425: 125 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 427: 89 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 433: 183 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 436: 108 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 439: 96 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 455: 121 characters;
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="3">
+<features islongtable="true" longtabularalignment="center">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="left" valignment="top" width="5cm">
+<row newpage="true">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Line 182: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 183: 81 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 184: 112 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 185: 106 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 186: 141 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 187: 114 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 188: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 201: 89 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 210: 84 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 211: 85 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 213: 207 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 215: 105 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 216: 97 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 219: 104 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 228: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 228: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 229: 155 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 230: 126 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 235: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 236: 92 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 238: 186 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 239: 87 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 240: 102 characters;
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none" width="5cm">
+\begin_inset Text
+
+\begin_layout Itemize
+Line 247: 93 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 259: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 260: 118 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 262: 190 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 264: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 265: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 266: 116 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 268: 81 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 277: 97 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 292: 97 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 295: 81 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 297: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 300: 140 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 301: 84 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 307: 116 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 324: 140 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 325: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 326: 97 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 332: 88 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 344: 214 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 347: 159 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 348: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 350: 183 characters;
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Line 352: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 357: 279 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 361: 108 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 364: 96 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 377: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 384: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 391: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 398: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 404: 92 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 412: 121 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 418: 140 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 422: 127 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 423: 88 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 425: 125 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 427: 89 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 433: 183 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 436: 108 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 439: 96 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 455: 121 characters;
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -2185,15 +3642,6 @@ Appendices
 
 \begin_layout Subsection
 Used Tools
-\end_layout
-
-\begin_layout Itemize
-Microsoft Visio 2016: for all the diagrams in that document (as Testing
- Diagrams, etc ...);
-\end_layout
-
-\begin_layout Itemize
-Microsoft Excel 2016: for the Gantt defined;
 \end_layout
 
 \begin_layout Itemize
