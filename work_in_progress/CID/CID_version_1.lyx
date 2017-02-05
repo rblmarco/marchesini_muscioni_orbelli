@@ -1,0 +1,460 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{changepage}
+\usepackage{geometry}
+\usepackage{remreset}
+\usepackage{enumitem}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 4
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/front_page/Logo_polimi_grande.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+
+\size huge
+Code Ispection Document
+\end_layout
+
+\begin_layout Author
+\noindent
+Guido Muscioni (mat.
+ 876151)
+\begin_inset Newline newline
+\end_inset
+
+Marco Orbelli (mat.
+ 876649)
+\begin_inset Newline newline
+\end_inset
+
+Paola Marchesini (mat.
+ 876541)
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantom{x}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Class assigned to the group
+\end_layout
+
+\begin_layout Standard
+The class assigned comes from the Apache OFBiz project.
+ That is an open source enterprise resource planning system.
+ As all that kind of systems, it provides useful tools that simplify and
+ automates business process, like the facilities management, the human resources
+ management, etc.
+\end_layout
+
+\begin_layout Standard
+The class assigned is called CatalogUrlFilter, is written in Java and it
+ is contained in the product directory of the system code.
+\end_layout
+
+\begin_layout Section
+Functional role of assigned class
+\end_layout
+
+\begin_layout Standard
+The role of the class assign to us is to filter the requests coming from
+ the other system components.
+ Due to the absence of any kind of documentation for the code given to us,
+ our description of the functional role of the class can not be complete.
+ 
+\end_layout
+
+\begin_layout Standard
+The class is used in order to create the correct link for the given request.
+ Its flow is base on analyzing the categories and the product in the database
+ at which the system refers.
+ That analysis lead in the creation of an url that bring the applicant (that
+ we do not know) both to the product, and the section, category, at which
+ its belongs to.
+\end_layout
+
+\begin_layout Standard
+The class is divided into 6 methods:
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+public void init(FilterConfig filterConfig) throws ServletException {...}
+\shape default
+: this method simply configure the class;
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+public void doFilter(ServletRequest request, ServletResponse response, FilterCha
+in chain) throws IOException, ServletException {...}
+\shape default
+: this is the main method of the class.
+ Base on the analysis that we have made during the code ispection phase,
+ its aim is to retrieve the productId and the categoryId for a specific;
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+public void destroy() {...}
+\shape default
+: no info for that method;
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+public static String makeCategoryUrl(HttpServletRequest request, String
+ previousCategoryId, String productCategoryId, String productId, String
+ viewSize, String viewIndex, String viewSort, String searchString) {...}
+\shape default
+: queries the DB in order to retrieve the product category;
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+public static String makeCategoryUrl(Delegator delegator, CategoryContentWrapper
+ wrapper, List<String> trail, String contextPath, String previousCategoryId,
+ String productCategoryId, String productId, String viewSize, String viewIndex,
+ String viewSort, String searchString) {...}
+\shape default
+: produce the real category url;
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+public static String makeProductUrl(HttpServletRequest request, String previousC
+ategoryId, String productCategoryId, String productId) {...}
+\shape default
+: queries the DB in order to retrieve the product;
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+public static String makeProductUrl(ProductContentWrapper wrapper, List<String>
+ trail, String contextPath, String previousCategoryId, String productCategoryId,
+ String productId) {...}
+\shape default
+: produce the real product real;
+\end_layout
+
+\begin_layout Section
+List of issues found
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+@removefromreset{paragraph}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Braces
+\end_layout
+
+\begin_layout Paragraph
+Consistent bracing style is used, either the preferred “Allman” style (first
+ brace goes underneath the opening block) or the “Kernighan and Ritchie”
+ style (first brace is on the same line of the instruction that opens the
+ new block).
+\end_layout
+
+\begin_layout Paragraph
+All if, while, do-while, try-catch, and for statements that have only one
+ statement to execute are surrounded by curly braces.
+\end_layout
+
+\begin_layout Subsection
+Computation, Comparisons and Assignments
+\end_layout
+
+\begin_layout Paragraph
+Check that the implementation avoids “brutish programming”: (see http://users.csc.
+calpoly.edu/~jdalbey/SWE/CodeSmells/bonehead.
+ html).
+\end_layout
+
+\begin_layout Paragraph
+Check order of computation/evaluation, operator precedence and parenthesizing.
+\end_layout
+
+\begin_layout Paragraph
+Check the liberal use of parenthesis is used to avoid operator precedence
+ problems.
+\end_layout
+
+\begin_layout Paragraph
+Check that all denominators of a division are prevented from being zero.
+\end_layout
+
+\begin_layout Paragraph
+Check that integer arithmetic, especially division, are used appropriately
+ to avoid causing unexpected truncation/rounding.
+\end_layout
+
+\begin_layout Paragraph
+Check that the comparison and Boolean operators are correct.
+\end_layout
+
+\begin_layout Paragraph
+Check throw-catch expressions, and check that the error condition is actually
+ legitimate.
+\end_layout
+
+\begin_layout Paragraph
+Check that the code is free of any implicit type conversions.
+\end_layout
+
+\begin_layout Subsection
+Exeptions
+\end_layout
+
+\begin_layout Paragraph
+Check that the relevant exceptions are caught.
+\end_layout
+
+\begin_layout Paragraph
+Check that the appropriate action are taken for each catch block.
+\end_layout
+
+\begin_layout Subsection
+Flow of Control
+\end_layout
+
+\begin_layout Paragraph
+In a switch statement, check that all cases are addressed by break or return.
+\end_layout
+
+\begin_layout Paragraph
+Check that all switch statements have a default branch.
+\end_layout
+
+\begin_layout Paragraph
+Check that all loops are correctly formed, with the appropriate initialization,
+ increment and termination expressions.
+\end_layout
+
+\begin_layout Section
+Other problems detected
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Appendices
+\end_layout
+
+\begin_layout Subsection
+Used Tools
+\end_layout
+
+\begin_layout Itemize
+Microsoft Visio 2016: for all the diagrams in that document (as Testing
+ Diagrams, etc ...);
+\end_layout
+
+\begin_layout Itemize
+Microsoft Excel 2016: for the Gantt defined;
+\end_layout
+
+\begin_layout Itemize
+Lyx document processor: to write all the document;
+\end_layout
+
+\begin_layout Itemize
+SourceTree: used as GitHub manager;
+\end_layout
+
+\begin_layout Itemize
+GitHub: used to manage the shared building process of that document.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Hours of Work
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
