@@ -9,7 +9,7 @@
 \usepackage{changepage}
 \usepackage{geometry}
 \usepackage{remreset}
-\usepackage{enumitem}
+\usepackage{multicol}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -70,9 +70,9 @@
 \color #008000
 \end_index
 \secnumdepth 4
-\tocdepth 3
+\tocdepth 2
 \paragraph_separation indent
-\paragraph_indentation 0bp
+\paragraph_indentation default
 \quotes_language english
 \papercolumns 1
 \papersides 1
@@ -112,7 +112,7 @@ status collapsed
 \begin_layout Title
 
 \size huge
-Code Ispection Document
+Code Inspection Document
 \end_layout
 
 \begin_layout Author
@@ -282,13 +282,38 @@ List of issues found
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-@removefromreset{paragraph}
+makeatletter
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+@removefromreset{subsubsection}{subsection}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+thesubsubsection}{
+\backslash
+arabic{subsubsection}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+makeatother
 \end_layout
 
 \end_inset
@@ -297,93 +322,1981 @@ status collapsed
 \end_layout
 
 \begin_layout Subsection
+Naming Conventions
+\end_layout
+
+\begin_layout Subsubsection
+All class names, interface names, method names, class variables, method
+ variables, and constants used should have meaningful names and do what
+ the name suggests.
+ 
+\end_layout
+
+\begin_layout Itemize
+Line 235-236-237-238-259-260-261-262: use the variable 
+\begin_inset Quotes eld
+\end_inset
+
+rolllupConds
+\begin_inset Quotes erd
+\end_inset
+
+ while the correct name in english is rollup not rolllup.
+\end_layout
+
+\begin_layout Subsubsection
+If one-character variables are used, they are used only for temporary “throwaway
+” variables, such as those used in for loops.
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found
+\end_layout
+
+\begin_layout Subsubsection
+Interface names should be capitalized like classes.
+ 
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found
+\end_layout
+
+\begin_layout Subsubsection
+Method names should be verbs, with the first letter of each addition word
+ capitalized.
+ Examples: getBackground(); computeTemperature().
+ 
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found
+\end_layout
+
+\begin_layout Subsubsection
+Class variables, also called attributes, are mixed case, but might begin
+ with an underscore (‘ ’) followed by a lowercase first letter.
+ All the remaining words in the variable name have their first letter capitalize
+d.
+ Examples: windowHeight,timeSeriesData.
+ 
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found
+\end_layout
+
+\begin_layout Subsubsection
+Constants are declared using all uppercase with words separated by an underscore.
+ Examples: MIN WIDTH; MAX HEIGHT.
+\end_layout
+
+\begin_layout Itemize
+Line 52 (
+\begin_inset Quotes eld
+\end_inset
+
+module
+\begin_inset Quotes erd
+\end_inset
+
+ should be written 
+\begin_inset Quotes eld
+\end_inset
+
+MODULE
+\begin_inset Quotes erd
+\end_inset
+
+) .
+\end_layout
+
+\begin_layout Subsection
+Indention
+\end_layout
+
+\begin_layout Subsubsection
+Three or four spaces are used for indentation and done so consistently.
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found
+\end_layout
+
+\begin_layout Subsubsection
+No tabs are used to indent.
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found
+\end_layout
+
+\begin_layout Subsection
 Braces
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Consistent bracing style is used, either the preferred “Allman” style (first
  brace goes underneath the opening block) or the “Kernighan and Ritchie”
  style (first brace is on the same line of the instruction that opens the
  new block).
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Itemize
+The developers of that class use the style defined by 
+\begin_inset Quotes eld
+\end_inset
+
+Kernigan and Ritchie
+\begin_inset Quotes erd
+\end_inset
+
+ to manage the position of braces of the code.
+ All the lines follow the phylosophy defined before, so no issues of that
+ point were found.
+\end_layout
+
+\begin_layout Subsubsection
 All if, while, do-while, try-catch, and for statements that have only one
  statement to execute are surrounded by curly braces.
+\end_layout
+
+\begin_layout Itemize
+As it is mentioned before, all the code is coherent with the 
+\begin_inset Quotes eld
+\end_inset
+
+Kernigan and Ritchie
+\begin_inset Quotes erd
+\end_inset
+
+ style, so no line present that kind of issue.
+\end_layout
+
+\begin_layout Subsection
+File Organization
+\end_layout
+
+\begin_layout Subsubsection
+Blank lines and optional comments are used to separate sections (be- ginning
+ comments, package/import statements, class/interface decla- rations which
+ include class variable/attributes declarations, construc- tors, and methods).
+ 
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found
+\end_layout
+
+\begin_layout Subsubsection
+Where practical, line length does not exceed 80 characters.
+ 
+\end_layout
+
+\begin_layout Standard
+The lines that exceed 80 characters are: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{left=2.5cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="3">
+<features islongtable="true" longtabularalignment="center">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="left" valignment="top" width="5cm">
+<row newpage="true">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Line 68: 132 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 71: 113 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 74: 89 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 76: 112 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 77: 86 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 90: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 91: 118 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 93: 190 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 95: 85 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 96: 92 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 97: 293 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 98: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 99: 117 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 100: 135 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 102: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 103: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 104: 87 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 106: 102 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 107: 90 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 108: 113 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 109: 96 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 118: 234 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 119: 103 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 120: 128 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 121: 82 characters;
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none" width="5cm">
+\begin_inset Text
+
+\begin_layout Itemize
+Line 122: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 124: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 125: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 127: 106 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 128: 94 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 129: 117 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 130: 100 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 145: 106 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 146: 126 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 147: 86 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 148: 214 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 150: 101 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 151: 100 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 152: 293 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 153: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 154: 117 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 155: 135 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 157: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 159: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 160: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 161: 81characters;
+\end_layout
+
+\begin_layout Itemize
+Line 162: 112 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 163: 106 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 164: 141characters;
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Line 165: 114 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 166: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 175: 234 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 176: 103 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 177: 128 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 179: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 181: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 182: 91 characters;
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="3">
+<features islongtable="true" longtabularalignment="center">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="left" valignment="top" width="5cm">
+<row newpage="true">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Line 182: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 183: 81 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 184: 112 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 185: 106 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 186: 141 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 187: 114 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 188: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 201: 89 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 210: 84 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 211: 85 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 213: 207 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 215: 105 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 216: 97 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 219: 104 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 228: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 228: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 229: 155 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 230: 126 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 235: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 236: 92 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 238: 186 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 239: 87 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 240: 102 characters;
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none" width="5cm">
+\begin_inset Text
+
+\begin_layout Itemize
+Line 247: 93 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 259: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 260: 118 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 262: 190 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 264: 91 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 265: 95 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 266: 116 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 268: 81 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 277: 97 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 292: 97 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 295: 81 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 297: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 300: 140 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 301: 84 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 307: 116 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 324: 140 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 325: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 326: 97 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 332: 88 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 344: 214 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 347: 159 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 348: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 350: 183 characters;
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Line 352: 98 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 357: 279 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 361: 108 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 364: 96 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 377: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 384: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 391: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 398: 99 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 404: 92 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 412: 121 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 418: 140 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 422: 127 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 423: 88 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 425: 125 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 427: 89 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 433: 183 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 436: 108 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 439: 96 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 455: 121 characters;
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+When line length must exceed 80 characters, it does NOT exceed 120 characters.
+\end_layout
+
+\begin_layout Standard
+The lines that exceed 120 characters are: 
+\end_layout
+
+\begin_layout Itemize
+Line 68: 132 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 93: 190 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 97: 293 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 100: 135 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 118: 234 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 120: 128 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 146: 126 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 148: 214 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 152: 293 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 155: 135 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 164: 141characters;
+\end_layout
+
+\begin_layout Itemize
+Line 175: 234 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 177: 128 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 186: 141 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 213: 207 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 229: 155 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 230: 126 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 238: 186 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 262: 190 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 300: 140 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 324: 140 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 344: 214 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 347: 159 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 350: 183 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 357: 279 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 412: 121 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 418: 140 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 422: 127 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 425: 125 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 433: 183 characters;
+\end_layout
+
+\begin_layout Itemize
+Line 455: 121 characters;
+\end_layout
+
+\begin_layout Subsection
+Wrapping Lines
+\end_layout
+
+\begin_layout Subsubsection
+Line break occurs after a comma or an operator.
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found.
+\end_layout
+
+\begin_layout Subsubsection
+Higher-level breaks are used.
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found.
+\end_layout
+
+\begin_layout Subsubsection
+A new statement is aligned with the beginning of the expression at the same
+ level as the previous line.
+\end_layout
+
+\begin_layout Itemize
+Line 297: shift of 4 space to the right to aligned the expression at the
+ sam level of the previous line.
+\end_layout
+
+\begin_layout Itemize
+To line 299 from 311: shift of 7 space to the right to put the expressions
+ on the right level.
+\end_layout
+
+\begin_layout Subsection
+Comments
+\end_layout
+
+\begin_layout Subsubsection
+Comments are used to adequately explain what the class, interface, methods,
+ and blocks of code are doing.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+The code is not explained in a good way.
+ It lacks of comments to explain the geneal behaviour of the blocks of code
+ which composed the class.
+ In particular some comment must be added:
+\end_layout
+
+\begin_layout Itemize
+Line 66 (to explain the general behaviour of 
+\begin_inset Quotes eld
+\end_inset
+
+doFilter(..)
+\begin_inset Quotes erd
+\end_inset
+
+);
+\end_layout
+
+\begin_layout Itemize
+117 (to explain in details the block of code);
+\end_layout
+
+\begin_layout Itemize
+174 (to explain in details the block of code);
+\end_layout
+
+\begin_layout Itemize
+418 and 433 (to explain the overload of the methods 
+\begin_inset Quotes eld
+\end_inset
+
+makeProductUrl
+\begin_inset Quotes erd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+In addition the comments on the code lack of important details.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Commented out code contains a reason for being commented out and a date
+ it can be removed from the source file if determined it is no longer needed.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+The comments on the code does not contain details about date and authors.
+\end_layout
+
+\begin_layout Subsection
+Java Source Files
+\end_layout
+
+\begin_layout Subsubsection
+
+\series bold
+Each Java source file contains a single public class or interface.
+ 
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found
+\end_layout
+
+\begin_layout Subsubsection
+
+\series bold
+The public class is the first class or interface in the file.
+ 
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found
+\end_layout
+
+\begin_layout Subsubsection
+Check that the external program interfaces are implemented consistently
+ with what is described in the javadoc.
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found
+\end_layout
+
+\begin_layout Subsubsection
+Check that the javadoc is complete (i.e., it covers all classes and files
+ part of the set of classes assigned to you).
+\end_layout
+
+\begin_layout Itemize
+In our code there is no link to the javadoc
+\end_layout
+
+\begin_layout Subsection
+Package and Import Statements
+\end_layout
+
+\begin_layout Subsubsection
+If any package statements are needed, they should be the first noncomment
+ statements.
+ Import statements follow.
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found.
+\end_layout
+
+\begin_layout Subsection
+Class and Interface Declarations
+\end_layout
+
+\begin_layout Subsubsection
+The class or interface declarations shall be in the following order.
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found.
+\end_layout
+
+\begin_layout Subsubsection
+Methods are grouped by functionality rather than by scope or accessibility.
+ 
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found.
+\end_layout
+
+\begin_layout Subsubsection
+Check that the code is free of duplicates, long methods, big classes, breaking
+ encapsulation, as well as if coupling and cohesion are adequate.
+\end_layout
+
+\begin_layout Subparagraph*
+Duplicate Code
+\end_layout
+
+\begin_layout Itemize
+There are two parts of the code which are duplicated: from line 156 to 167
+ and from line 178 to 189.
+\end_layout
+
+\begin_layout Subparagraph*
+Long Methods
+\end_layout
+
+\begin_layout Itemize
+doFilter(..): this method occurs 270 lines.
+ It could be broken, designing new methods to do his sub-functionality.
+\end_layout
+
+\begin_layout Subparagraph*
+Big Classes
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found.
+\end_layout
+
+\begin_layout Subparagraph*
+Breaking Encapsulation
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found.
+\end_layout
+
+\begin_layout Subparagraph*
+Coupling
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found, we have only one class.
+\end_layout
+
+\begin_layout Subparagraph*
+Cohesion
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found.
+\end_layout
+
+\begin_layout Subsection
+Initialization and Declarations
+\end_layout
+
+\begin_layout Subsubsection
+Check that variables and class members are of the correct type.
+ Check that they have the right visibility (public/private/protected).
+\end_layout
+
+\begin_layout Itemize
+Line 52: the variable 
+\begin_inset Quotes eld
+\end_inset
+
+module
+\begin_inset Quotes erd
+\end_inset
+
+ is declared 
+\begin_inset Quotes eld
+\end_inset
+
+public final static String
+\begin_inset Quotes erd
+\end_inset
+
+ while the correct way is 
+\begin_inset Quotes eld
+\end_inset
+
+public static final String
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Check that variables are declared in the proper scope.
+\end_layout
+
+\begin_layout Itemize
+Line 97: The variable 
+\begin_inset Quotes eld
+\end_inset
+
+ContentAssocDataResourceViewTos
+\begin_inset Quotes erd
+\end_inset
+
+ should be written with a lower case letter;
+\end_layout
+
+\begin_layout Itemize
+Line 100: The variable 
+\begin_inset Quotes eld
+\end_inset
+
+ElectronicText
+\begin_inset Quotes erd
+\end_inset
+
+ should be written with a lower case letter;
+\end_layout
+
+\begin_layout Itemize
+Line 120: The variable 
+\begin_inset Quotes eld
+\end_inset
+
+ElectronicText
+\begin_inset Quotes erd
+\end_inset
+
+ should be written with a lower case letter;
+\end_layout
+
+\begin_layout Itemize
+Line 152: The variable 
+\begin_inset Quotes eld
+\end_inset
+
+ContentAssocDataResourceViewTos
+\begin_inset Quotes erd
+\end_inset
+
+ should be written with a lower case letter;
+\end_layout
+
+\begin_layout Itemize
+Line 155: The variable 
+\begin_inset Quotes eld
+\end_inset
+
+ElectronicText
+\begin_inset Quotes erd
+\end_inset
+
+ should be written with a lower case letter;
+\end_layout
+
+\begin_layout Itemize
+Line 177: The variable 
+\begin_inset Quotes eld
+\end_inset
+
+ElectronicText
+\begin_inset Quotes erd
+\end_inset
+
+ should be written with a lower case letter;
+\end_layout
+
+\begin_layout Subsubsection
+Check that constructors are called when a new object is desired.
+\end_layout
+
+\begin_layout Itemize
+Line 90: In this constructor the type specification 
+\begin_inset Quotes eld
+\end_inset
+
+<EntityCondition> 
+\begin_inset Quotes eld
+\end_inset
+
+ is redundant as the this type is implied;
+\end_layout
+
+\begin_layout Itemize
+Line 145: In this constructor the type specification 
+\begin_inset Quotes eld
+\end_inset
+
+<EntityCondition> 
+\begin_inset Quotes eld
+\end_inset
+
+ is redundant as the this type is implied;
+\end_layout
+
+\begin_layout Itemize
+Line 210: In this constructor the type specification 
+\begin_inset Quotes eld
+\end_inset
+
+<EntityCondition> 
+\begin_inset Quotes eld
+\end_inset
+
+ is redundant as the this type is implied;
+\end_layout
+
+\begin_layout Itemize
+Line 253: In this constructor the type specification 
+\begin_inset Quotes eld
+\end_inset
+
+<String>
+\begin_inset Quotes erd
+\end_inset
+
+ is redundant as the this type is implied;
+\end_layout
+
+\begin_layout Itemize
+Line 259: In this constructor the type specification 
+\begin_inset Quotes eld
+\end_inset
+
+<EntityCondition> 
+\begin_inset Quotes eld
+\end_inset
+
+ is redundant as the this type is implied;
+\end_layout
+
+\begin_layout Itemize
+Line 284: In this constructor the type specification 
+\begin_inset Quotes eld
+\end_inset
+
+<String>
+\begin_inset Quotes erd
+\end_inset
+
+ is redundant as the this type is implied;
+\end_layout
+
+\begin_layout Subsubsection
+Check that all object references are initialized before use.
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found
+\end_layout
+
+\begin_layout Subsubsection
+Variables are initialized where they are declared, unless dependent upon
+ a computation.
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found
+\end_layout
+
+\begin_layout Subsubsection
+Declarations appear at the beginning of blocks (A block is any code surrounded
+ by curly braces ‘{’ and ‘}’).
+ The exception is a variable can be declared in a for loop.
+\end_layout
+
+\begin_layout Itemize
+Line 105: In the declaration of 
+\begin_inset Quotes eld
+\end_inset
+
+productIdStr
+\begin_inset Quotes erd
+\end_inset
+
+ variable there is a useless assignment: 
+\begin_inset Quotes eld
+\end_inset
+
+String productIdStr = null
+\begin_inset Quotes erd
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+Line 126 : In the declaration of 
+\begin_inset Quotes eld
+\end_inset
+
+productIdStr
+\begin_inset Quotes erd
+\end_inset
+
+ variable there is a useless assignment: 
+\begin_inset Quotes eld
+\end_inset
+
+String productIdStr = null
+\begin_inset Quotes erd
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+Line 161: In the declaration of 
+\begin_inset Quotes eld
+\end_inset
+
+productCategoryStr
+\begin_inset Quotes erd
+\end_inset
+
+ variable there is a useless assignment: 
+\begin_inset Quotes eld
+\end_inset
+
+String productCategoryStr = null
+\begin_inset Quotes erd
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+Line 183: In the declaration of 
+\begin_inset Quotes eld
+\end_inset
+
+productCategoryStr
+\begin_inset Quotes erd
+\end_inset
+
+ variable there is a useless assignment: 
+\begin_inset Quotes eld
+\end_inset
+
+String productCategoryStr = null
+\begin_inset Quotes erd
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+Line 358: In the declaration of 
+\begin_inset Quotes eld
+\end_inset
+
+url
+\begin_inset Quotes erd
+\end_inset
+
+ variable there is a useless assigment: String url = 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ ;
+\end_layout
+
+\begin_layout Itemize
+Line 434: In the declaration of 
+\begin_inset Quotes eld
+\end_inset
+
+url
+\begin_inset Quotes erd
+\end_inset
+
+ variable there is a useless assigment: String url = 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ ;
+\end_layout
+
+\begin_layout Subsubsection
+Other problems
+\end_layout
+
+\begin_layout Itemize
+Line 357: the delegator is an unused method parameter;
+\end_layout
+
+\begin_layout Subsection
+Method Calls
+\end_layout
+
+\begin_layout Subsubsection
+Check that parameters are presented in the correct order
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found.
+\end_layout
+
+\begin_layout Subsubsection
+Check that the correct method is being called, or should it be a different
+ method with a similar name
+\end_layout
+
+\begin_layout Itemize
+Line 289: at this line the method 
+\begin_inset Quotes eld
+\end_inset
+
+size()
+\begin_inset Quotes erd
+\end_inset
+
+ is invoked to evaluate the size of a list.
+ It is better to invoke the method 
+\begin_inset Quotes eld
+\end_inset
+
+isEmpty()
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Check that method returned values are used properly
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found.
+\end_layout
+
+\begin_layout Subsection
+Arrays
+\end_layout
+
+\begin_layout Subsubsection
+Check that there are no off-by-one errors in array indexing (that is, all
+ required array elements are correctly accessed through the index).
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found.
+\end_layout
+
+\begin_layout Subsubsection
+Check that all array (or other collection) indexes have been prevented from
+ going out-of-bounds.
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found.
+\end_layout
+
+\begin_layout Subsubsection
+Check that constructors are called when a new array item is desired.
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found.
+\end_layout
+
+\begin_layout Subsection
+Output Format
+\end_layout
+
+\begin_layout Subsubsection
+Check that displayed output is free of spelling and grammatical errors.
+\end_layout
+
+\begin_layout Itemize
+Line 352: the use of possessive case (
+\begin_inset Quotes eld
+\end_inset
+
+category's rule
+\begin_inset Quotes erd
+\end_inset
+
+) is wrong.
+ It cannot be used with object.
+\end_layout
+
+\begin_layout Itemize
+Line 427: the use of possessive case (
+\begin_inset Quotes eld
+\end_inset
+
+product's rule
+\begin_inset Quotes erd
+\end_inset
+
+) is wrong.
+ It cannot be used with object.
+\end_layout
+
+\begin_layout Subsubsection
+Check that error messages are comprehensive and provide guidance as to how
+ to correct the problem.
+\end_layout
+
+\begin_layout Itemize
+Lines 247 and 277: the error messages are the same and it is impossible
+ to distinguish the reason of this error and also how to correct the problem.
+\end_layout
+
+\begin_layout Subsubsection
+Check that the output is formatted correctly in terms of line stepping and
+ spacing.
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found.
+\end_layout
+
+\begin_layout Subsection
+Object Comparison
+\end_layout
+
+\begin_layout Subsubsection
+Check that all objects (including Strings) are compared with equals and
+ not with ==.
+\end_layout
+
+\begin_layout Itemize
+Line 101: if (ElectronicText != null);
+\end_layout
+
+\begin_layout Itemize
+Line 156: if (ElectronicText != null);
+\end_layout
+
+\begin_layout Itemize
+Line 178: if (ElectronicText != null);
+\end_layout
+
+\begin_layout Itemize
+Line 283: if (trail == null);
+\end_layout
+
+\begin_layout Itemize
+Line 294: if (trailElements.size() == 1);
+\end_layout
+
+\begin_layout Itemize
+Line 296: if (trailElements.size() == 2);
+\end_layout
+
+\begin_layout Itemize
+Line 316: if (productId != null);
+\end_layout
+
+\begin_layout Itemize
+Line 364: if (urlBuilder.length() == 0 || urlBuilder.charAt(urlBuilder.length()
+ - 1) != '/');
+\end_layout
+
+\begin_layout Itemize
+Line 439: if (urlBuilder.length() == 0 || urlBuilder.charAt(urlBuilder.length()
+ - 1) != '/');
 \end_layout
 
 \begin_layout Subsection
 Computation, Comparisons and Assignments
 \end_layout
 
-\begin_layout Paragraph
-Check that the implementation avoids “brutish programming”: (see http://users.csc.
-calpoly.edu/~jdalbey/SWE/CodeSmells/bonehead.
- html).
+\begin_layout Subsubsection
+Check that the implementation avoids “brutish programming”.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:brut"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Line 111, 132, 167, 189, 243, 270: in these lines, there are always 
+\begin_inset Quotes eld
+\end_inset
+
+
+\shape italic
+break
+\shape default
+
+\begin_inset Quotes erd
+\end_inset
+
+ statements.
+ Althought is not so difficult to understand why the breaks were put, usually
+ a developer has to avoid the use of that kind of instructions.
+ In actual fact, with that lines, the code becomes very unreadable;
+\end_layout
+
+\begin_layout Itemize
+Line 101, 156, 178, 283, 316: these lines present always a conditional statement
+ where null value is involved.
+ That is a common brutish programming tendency, there is a function that
+ return a binary value for nullity comparison.
+ Moreover in the code UtilValidate class is use for empty comparison, so
+ to standardize the code it could be used also in that lines;
+\end_layout
+
+\begin_layout Itemize
+Line 371 to 373 and 446 to 448: the same function is used three times, but
+ it can be used only once as it is shown in the JavaDoc of the append methods;
+\end_layout
+
+\begin_layout Itemize
+All lines: as it is mentioned before the class is use to create url based
+ on some requests.
+ The building of the url, in that class, is performed by the StringBuilder
+ class, however, java language contains itself a class used to build url:
+ the URL class.
+ Moreover there are open source codes that implement the URL class with
+ more useful functionality (as UniRest and HttpComponents);
+\end_layout
+
+\begin_layout Itemize
+Line 289: if (trail.size() > 0) it would better to use isEmpty() to check
+ whether the collection is empty or not;
+\end_layout
+
+\begin_layout Subsubsection
 Check order of computation/evaluation, operator precedence and parenthesizing.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Itemize
+Line 68 to 337: these are the lines occupied by the doFilter method.
+ The order of computation of that method is not well defined: firstly it
+ looks for the various ids, and after make something on them, but if the
+ ids are not found in the correct way the method continues, always asking
+ if the ids are 
+\begin_inset Quotes eld
+\end_inset
+
+ok
+\begin_inset Quotes erd
+\end_inset
+
+.
+ That lead, if the ids are not found, in a waste of time.
+ In actual fact there are many other ways to write that code to prevent
+ this useless computation surplus;
+\end_layout
+
+\begin_layout Subsubsection
 Check the liberal use of parenthesis is used to avoid operator precedence
  problems.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Itemize
+The code does not contains any numerical expression or something that need
+ to take care about operator precedence.
+\end_layout
+
+\begin_layout Subsubsection
 Check that all denominators of a division are prevented from being zero.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Itemize
+The code does not contains any kind of division, so no issue regarding that
+ point have been found.
+\end_layout
+
+\begin_layout Subsubsection
 Check that integer arithmetic, especially division, are used appropriately
  to avoid causing unexpected truncation/rounding.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Itemize
+As it is mentioned in the two previous point no numerical or algebraic expressio
+ns is used, so it is not possible that issues regarding an unexpected result
+ exist.
+ 
+\end_layout
+
+\begin_layout Subsubsection
 Check that the comparison and Boolean operators are correct.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Itemize
+See the point 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:brut"
+
+\end_inset
+
+ to read about the issues found regarding the comparison.
+ However that point does not present issues, in actual fact the use of that
+ kind of istructions is correct, but as it is mentioned in the reported
+ point, it is not reccomended.
+\end_layout
+
+\begin_layout Subsubsection
 Check throw-catch expressions, and check that the error condition is actually
  legitimate.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Itemize
+All the try-catch statement and error conditions are expressed in the correct
+ way, so no issues about that have been found.
+\end_layout
+
+\begin_layout Subsubsection
 Check that the code is free of any implicit type conversions.
+\end_layout
+
+\begin_layout Itemize
+No issues regarding that point have been found.
 \end_layout
 
 \begin_layout Subsection
 Exeptions
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Check that the relevant exceptions are caught.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Itemize
+Line 200, 218, 246, 276, 351, 426: in that lines a catch istruction is placed.
+ All of them caught the correct exceptions, but it is not possible to understand
+ what is the istructions that throws the exception.
+ For example, the doFilter method contains two type of research one for
+ the productId and one for the productCategoryId, but the exception is caught
+ with the same statement so it is not possible to undestand what research
+ fails.
+\end_layout
+
+\begin_layout Subsubsection
 Check that the appropriate action are taken for each catch block.
+\end_layout
+
+\begin_layout Itemize
+As it is mentioned in the previous point, there is no way to understand
+ what failure occur during the execution.
+ Thus lead in unclear and very vague error message, and obviously the only
+ action taken by the code is to log the exception with the generic error
+ message.
 \end_layout
 
 \begin_layout Subsection
 Flow of Control
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 In a switch statement, check that all cases are addressed by break or return.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Itemize
+No switch statement are presented, so no issues have been found for that
+ point.
+\end_layout
+
+\begin_layout Subsubsection
 Check that all switch statements have a default branch.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Itemize
+No switch statement are presented, so no issues have been found for that
+ point.
+\end_layout
+
+\begin_layout Subsubsection
 Check that all loops are correctly formed, with the appropriate initialization,
  increment and termination expressions.
 \end_layout
 
+\begin_layout Itemize
+Two types of loops are presented in the code, while and for statement.
+ The first one is well formed.
+ The second one is also well formed, all are expressed in the generalized
+ form, but the termination expression is inside the code of the loop, written
+ as a break statement.
+ For more information go to point 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:brut"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Files
+\end_layout
+
+\begin_layout Subsubsection
+Check that all files are properly declared and opened.
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found.
+\end_layout
+
+\begin_layout Subsubsection
+Check that all files are closed properly, even in the case of an error.
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found.
+\end_layout
+
+\begin_layout Subsubsection
+Check that EOF conditions are detected and handled correctly.
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found.
+\end_layout
+
+\begin_layout Subsubsection
+Check that all file exceptions are caught and dealt with accordingly.
+\end_layout
+
+\begin_layout Itemize
+No issues about this checklist point have been found.
+\end_layout
+
 \begin_layout Section
 Other problems detected
+\end_layout
+
+\begin_layout Itemize
+Line 410: is better to introduce a new variable instead of reusing the parameter
+ 
+\begin_inset Quotes eld
+\end_inset
+
+trail
+\begin_inset Quotes erd
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+Line 453: is better to introduce a new variable instead of reusing the parameter
+ 
+\begin_inset Quotes eld
+\end_inset
+
+trail
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -402,12 +2315,7 @@ Used Tools
 \end_layout
 
 \begin_layout Itemize
-Microsoft Visio 2016: for all the diagrams in that document (as Testing
- Diagrams, etc ...);
-\end_layout
-
-\begin_layout Itemize
-Microsoft Excel 2016: for the Gantt defined;
+SonarQube: to make an initial analysis of the code;
 \end_layout
 
 \begin_layout Itemize
@@ -434,26 +2342,8 @@ Hours of Work
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FloatList figure
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FloatList table
-
-\end_inset
-
-
+Each member of the team spent 20 hours to build that document.
+ 
 \end_layout
 
 \end_body
